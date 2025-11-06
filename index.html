@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3iGreen - Gối Đỡ PU Foam Cách Nhiệt Chuyên Nghiệp | Tiết Kiệm 70% Thời Gian</title>
+    <meta name="description" content="3igreen chuyên sản xuất gối đỡ PU Foam chất lượng cao với hệ số dẫn nhiệt thấp, khả năng chịu lực tốt. Giải pháp tối ưu cho hệ thống lạnh, chiller, điều hòa không khí.">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="design.css">
+
+    <!-- Three.js -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+        <p class="loading-text">Đang tải...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>3i<strong>Green</strong></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="#demo" class="nav-link">Demo 3D</a></li>
+                <li><a href="#features" class="nav-link">Tính Năng</a></li>
+                <li><a href="#products" class="nav-link">Sản Phẩm</a></li>
+                <li><a href="#specs" class="nav-link">Thông Số</a></li>
+                <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Giải pháp cách nhiệt tiên tiến</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Gối Đỡ PU Foam<br>
+                    <span class="gradient-text">Cách Nhiệt Chuyên Nghiệp</span>
+                </h1>
+
+                <p class="hero-description">
+                    Sản phẩm cách nhiệt thế hệ mới với công nghệ PU Foam tiên tiến.
+                    Tiết kiệm 70% thời gian thi công, chịu lực cao, chống thấm hoàn hảo.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>70%</strong>
+                            <span>Tiết kiệm thời gian</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-temperature-low"></i>
+                        <div>
+                            <strong>0.022</strong>
+                            <span>W/m.K dẫn nhiệt</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <strong>35 kg/m³</strong>
+                            <span>Mật độ cao</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#demo" class="btn btn-primary">
+                        <i class="fas fa-cube"></i>
+                        Xem Demo 3D
+                    </a>
+                    <a href="tel:0973098338" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        0973.098.338
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <i class="fas fa-fire"></i>
+                    <span>Chống cháy B1</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-water"></i>
+                    <span>Chống thấm 100%</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-leaf"></i>
+                    <span>Thân thiện môi trường</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- 3D Demo Section -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Trải nghiệm 3D</span>
+                <h2 class="section-title">Demo Sản Phẩm Tương Tác</h2>
+                <p class="section-description">
+                    Khám phá chi tiết cấu tạo và ưu điểm của gối đỡ PU Foam qua mô hình 3D tương tác
+                </p>
+            </div>
+
+            <div class="demo-container">
+                <div class="demo-canvas-wrapper">
+                    <canvas id="c"></canvas>
+                    <div class="demo-controls">
+                        <button class="control-btn" id="resetView">
+                            <i class="fas fa-redo"></i>
+                            <span>Đặt lại góc nhìn</span>
+                        </button>
+                        <button class="control-btn" id="toggleAnimation">
+                            <i class="fas fa-pause"></i>
+                            <span>Tạm dừng</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="demo-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-box"></i> Gối Đỡ Vuông</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-check"></i> Dễ lắp ráp, không cần chuyên gia</li>
+                            <li><i class="fas fa-check"></i> Cách nhiệt vượt trội λ = 0.022 W/m.K</li>
+                            <li><i class="fas fa-check"></i> Chống thấm hoàn hảo, không hút nước</li>
+                            <li><i class="fas fa-check"></i> Chịu lực cao, ổn định lâu dài</li>
+                            <li><i class="fas fa-check"></i> Tiết kiệm 70% thời gian thi công</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-circle"></i> Gối Đỡ Tròn</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-check"></i> Ôm sát ống, tối ưu cách nhiệt</li>
+                            <li><i class="fas fa-check"></i> Lớp foam đen chống rung động</li>
+                            <li><i class="fas fa-check"></i> Cùm kim loại siết chắc chắn</li>
+                            <li><i class="fas fa-check"></i> Phù hợp mọi đường kính ống</li>
+                            <li><i class="fas fa-check"></i> Bền bỉ với thời tiết khắc nghiệt</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Tính năng nổi bật</span>
+                <h2 class="section-title">Tại Sao Chọn Gối Đỡ PU Foam 3iGreen?</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lắp Đặt Nhanh Chóng</h3>
+                    <p>Thiết kế module thông minh, lắp ráp dễ dàng không cần kỹ năng chuyên môn cao</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Cách Nhiệt Tối Ưu</h3>
+                    <p>Hệ số dẫn nhiệt λ = 0.022 W/m.K, giảm tối đa thất thoát năng lượng</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Chịu Lực Cao</h3>
+                    <p>Mật độ 35 kg/m³, đảm bảo độ cứng và khả năng chịu tải tốt nhất</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3>Chống Thấm 100%</h3>
+                    <p>Không hút nước, chống ngưng tụ hiệu quả, duy trì hiệu suất lâu dài</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Chống Cháy B1</h3>
+                    <p>Đạt chuẩn chống cháy B1, an toàn tuyệt đối cho công trình</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Thân Thiện Môi Trường</h3>
+                    <p>Nguyên liệu xanh, không gây hại, phù hợp công trình bền vững</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Sản phẩm</span>
+                <h2 class="section-title">Dòng Sản Phẩm Gối Đỡ PU Foam</h2>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">Bán chạy</div>
+                    <div class="product-image">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Gối Đỡ Vuông</h3>
+                    <p class="product-desc">Thiết kế module 2 mảnh, lắp đặt đơn giản, phù hợp mọi công trình</p>
+                    <ul class="product-specs">
+                        <li><i class="fas fa-check-circle"></i> Đường kính: 21-219mm</li>
+                        <li><i class="fas fa-check-circle"></i> Độ dày: 25-100mm</li>
+                        <li><i class="fas fa-check-circle"></i> Mật độ: 35 kg/m³</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Liên hệ báo giá</a>
+                </div>
+
+                <div class="product-card featured">
+                    <div class="product-badge premium">Premium</div>
+                    <div class="product-image">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <h3>Gối Đỡ Tròn Cùm Kim Loại</h3>
+                    <p class="product-desc">Có cùm siết kim loại, chắc chắn, dùng cho ống chịu áp lực cao</p>
+                    <ul class="product-specs">
+                        <li><i class="fas fa-check-circle"></i> Đường kính: 27-273mm</li>
+                        <li><i class="fas fa-check-circle"></i> Độ dày: 30-100mm</li>
+                        <li><i class="fas fa-check-circle"></i> Cùm inox 304</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Liên hệ báo giá</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Mới</div>
+                    <div class="product-image">
+                        <i class="fas fa-grip-lines-vertical"></i>
+                    </div>
+                    <h3>Gối Đỡ Đặc Biệt</h3>
+                    <p class="product-desc">Thiết kế theo yêu cầu, phù hợp dự án đặc thù và kích thước lớn</p>
+                    <ul class="product-specs">
+                        <li><i class="fas fa-check-circle"></i> Tùy chỉnh kích thước</li>
+                        <li><i class="fas fa-check-circle"></i> Tùy chỉnh độ dày</li>
+                        <li><i class="fas fa-check-circle"></i> Tư vấn kỹ thuật</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Liên hệ tư vấn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section class="specs-section" id="specs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Thông số kỹ thuật</span>
+                <h2 class="section-title">Đặc Tính Vượt Trội</h2>
+            </div>
+
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <i class="fas fa-temperature-low"></i>
+                    </div>
+                    <div class="spec-content">
+                        <h4>Hệ Số Dẫn Nhiệt</h4>
+                        <p class="spec-value">λ = 0.022 W/m.K</p>
+                        <p class="spec-desc">Cách nhiệt vượt trội, tiết kiệm năng lượng tối đa</p>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <i class="fas fa-weight-hanging"></i>
+                    </div>
+                    <div class="spec-content">
+                        <h4>Mật Độ</h4>
+                        <p class="spec-value">35 ± 2 kg/m³</p>
+                        <p class="spec-desc">Đảm bảo độ cứng và khả năng chịu lực cao</p>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <i class="fas fa-compress"></i>
+                    </div>
+                    <div class="spec-content">
+                        <h4>Độ Bền Nén</h4>
+                        <p class="spec-value">≥ 150 kPa</p>
+                        <p class="spec-desc">Chịu tải tốt, không biến dạng theo thời gian</p>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <i class="fas fa-droplet-slash"></i>
+                    </div>
+                    <div class="spec-content">
+                        <h4>Hút Nước</h4>
+                        <p class="spec-value">&lt; 5% thể tích</p>
+                        <p class="spec-desc">Chống thấm tuyệt đối, không ảnh hưởng cách nhiệt</p>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <div class="spec-content">
+                        <h4>Nhiệt Độ Vận Hành</h4>
+                        <p class="spec-value">-50°C đến +110°C</p>
+                        <p class="spec-desc">Ổn định trong mọi điều kiện khắc nghiệt</p>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <i class="fas fa-fire-extinguisher"></i>
+                    </div>
+                    <div class="spec-content">
+                        <h4>Chống Cháy</h4>
+                        <p class="spec-value">Chuẩn B1 (DIN 4102)</p>
+                        <p class="spec-desc">An toàn phòng cháy chữa cháy tuyệt đối</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Liên Hệ Với Chúng Tôi</h2>
+                    <p>Đội ngũ chuyên gia của 3iGreen sẵn sàng tư vấn giải pháp tối ưu cho dự án của bạn</p>
+
+                    <div class="contact-items">
+                        <a href="tel:0973098338" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Hotline</h4>
+                                <p>0973.098.338</p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:info@3igreen.com.vn" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@3igreen.com.vn</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Địa chỉ</h4>
+                                <p>Tp. Hồ Chí Minh, Việt Nam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Họ và tên *" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" placeholder="Email *" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" placeholder="Số điện thoại *" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea placeholder="Nội dung *" rows="5" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Gửi yêu cầu
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>3i<strong>Green</strong></span>
+                    </div>
+                    <p>Giải pháp cách nhiệt xanh, bền vững cho tương lai</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Sản Phẩm</h4>
+                    <ul>
+                        <li><a href="#products">Gối Đỡ Vuông</a></li>
+                        <li><a href="#products">Gối Đỡ Tròn</a></li>
+                        <li><a href="#products">Sản Phẩm Đặc Biệt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hỗ Trợ</h4>
+                    <ul>
+                        <li><a href="#specs">Thông Số Kỹ Thuật</a></li>
+                        <li><a href="#contact">Liên Hệ</a></li>
+                        <li><a href="#demo">Demo 3D</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Liên Hệ</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 0973.098.338</li>
+                        <li><i class="fas fa-envelope"></i> info@3igreen.com.vn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 3iGreen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script type="module" src="main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

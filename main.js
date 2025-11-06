@@ -243,21 +243,24 @@ scene.add(gridHelper);
 
 // Animation
 const clock = new THREE.Clock();
+let animationPaused = false;
 
 function animate() {
     requestAnimationFrame(animate);
 
-    const elapsedTime = clock.getElapsedTime();
+    if (!animationPaused) {
+        const elapsedTime = clock.getElapsedTime();
 
-    // *** MỚI: Animation lắp ráp cho gối đỡ vuông (Trên/Dưới) ***
-    const assemblyOffset = (Math.sin(elapsedTime * 1.5) + 1) / 2 * 0.3 + 0.05; // Dao động từ 0.05 đến 0.35
-    if (leftSupport.children.length === 2) {
-        leftSupport.children[0].position.y = assemblyOffset; // Nửa trên đi lên
-        leftSupport.children[1].position.y = -assemblyOffset; // Nửa dưới đi xuống
+        // *** MỚI: Animation lắp ráp cho gối đỡ vuông (Trên/Dưới) ***
+        const assemblyOffset = (Math.sin(elapsedTime * 1.5) + 1) / 2 * 0.3 + 0.05; // Dao động từ 0.05 đến 0.35
+        if (leftSupport.children.length === 2) {
+            leftSupport.children[0].position.y = assemblyOffset; // Nửa trên đi lên
+            leftSupport.children[1].position.y = -assemblyOffset; // Nửa dưới đi xuống
+        }
+
+        // Animation xoay nhẹ cho gối đỡ tròn
+        rightSupport.rotation.y = Math.cos(elapsedTime * 0.5) * 0.05;
     }
-
-    // Animation xoay nhẹ cho gối đỡ tròn
-    rightSupport.rotation.y = Math.cos(elapsedTime * 0.5) * 0.05;
 
     controls.update();
     renderer.render(scene, camera);
@@ -272,6 +275,17 @@ function handleResize() {
 
 window.addEventListener('resize', handleResize);
 handleResize();
+
+// Event listeners for UI controls
+window.addEventListener('resetCamera', () => {
+    camera.position.set(0, 6, 14);
+    controls.target.set(0, 0, 0);
+    controls.update();
+});
+
+window.addEventListener('toggleAnimation', (e) => {
+    animationPaused = e.detail.paused;
+});
 
 animate();
 
