@@ -255,23 +255,23 @@
 
     <style>
         :root {
-            /* Bảng màu Green Theme - Xanh lá tươi mát */
-            --primary-color: #10b981;        /* Emerald Green - Xanh lục bảo tươi */
-            --primary-light: #34d399;        /* Mint Green - Xanh bạc hà sáng */
-            --primary-dark: #059669;         /* Forest Green - Xanh rừng đậm */
-            --secondary-color: #6ee7b7;      /* Aqua Green - Xanh ngọc nhạt */
-            --accent-color: #14b8a6;         /* Teal Green - Xanh ngọc lam */
-            --accent-light: #5eead4;         /* Light Teal - Xanh ngọc nhạt */
-            --text-dark: #064e3b;            /* Dark Green Text - Chữ xanh đậm */
-            --text-light: #6b7280;           /* Gray Text - Xám nhạt */
-            --text-muted: #9ca3af;           /* Muted Gray - Xám mờ */
-            --bg-light: #f0fdf4;             /* Green Tint BG - Nền xanh cực nhạt */
-            --bg-section: #d1fae5;           /* Light Green BG - Nền xanh nhạt */
+            /* Bảng màu Lime Green Theme - #94C842 chủ đạo */
+            --primary-color: #94C842;        /* Lime Green - Xanh lá chanh chủ đạo */
+            --primary-light: #B5E550;        /* Light Lime - Xanh chanh sáng */
+            --primary-dark: #78A82E;         /* Dark Lime - Xanh chanh đậm */
+            --secondary-color: #FFD93D;      /* Bright Yellow - Vàng tươi */
+            --accent-color: #FF6B35;         /* Coral Orange - Cam san hô */
+            --accent-light: #FFA372;         /* Light Coral - Cam nhạt */
+            --text-dark: #2d3436;            /* Charcoal - Xám đen */
+            --text-light: #636e72;           /* Gray - Xám */
+            --text-muted: #b2bec3;           /* Light Gray - Xám nhạt */
+            --bg-light: #fcfff5;             /* Cream White - Trắng kem xanh */
+            --bg-section: #f7fce8;           /* Light Lime BG - Nền xanh chanh nhạt */
             --white: #ffffff;
             --glass-bg: rgba(255, 255, 255, 0.15);
-            --shadow: 0 25px 50px rgba(16, 185, 129, 0.15);
-            --shadow-lg: 0 35px 70px rgba(16, 185, 129, 0.20);
-            --shadow-hover: 0 40px 80px rgba(16, 185, 129, 0.25);
+            --shadow: 0 25px 50px rgba(148, 200, 66, 0.15);
+            --shadow-lg: 0 35px 70px rgba(148, 200, 66, 0.20);
+            --shadow-hover: 0 40px 80px rgba(148, 200, 66, 0.25);
             --border-radius: 20px;
             --border-radius-lg: 30px;
             --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -676,7 +676,10 @@
             padding: 2rem;
             color: var(--white);
             box-shadow: var(--shadow-lg);
-            transition: var(--transition);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+            backface-visibility: hidden;
         }
 
         .floating-card:hover {
@@ -1053,10 +1056,13 @@
             border-radius: var(--border-radius-lg);
             padding: 3rem;
             box-shadow: var(--shadow);
-            transition: var(--transition);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid rgba(30, 81, 40, 0.08);
             position: relative;
             overflow: hidden;
+            will-change: transform;
+            backface-visibility: hidden;
         }
 
         .feature-card::before {
@@ -1086,7 +1092,10 @@
             color: var(--white);
             font-size: 2rem;
             box-shadow: var(--shadow);
-            transition: var(--transition);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        background 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+            backface-visibility: hidden;
         }
 
         .feature-card:hover .feature-icon {
@@ -1847,45 +1856,57 @@
         }
 
         .fab.phone {
-            background: linear-gradient(135deg, #10b981, #059669);
+            background: linear-gradient(135deg, #94C842, #78A82E);
         }
 
         .fab.zalo {
             background: linear-gradient(135deg, #2563eb, #1d4ed8);
         }
 
-        /* Animation Classes */
+        /* Animation Classes - Optimized for Performance */
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(60px);
-            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: opacity, transform;
+            backface-visibility: hidden;
         }
 
         .animate-on-scroll.animated {
             opacity: 1;
             transform: translateY(0);
+            will-change: auto;
         }
 
         .slide-in-left {
             opacity: 0;
             transform: translateX(-60px);
-            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: opacity, transform;
+            backface-visibility: hidden;
         }
 
         .slide-in-left.animated {
             opacity: 1;
             transform: translateX(0);
+            will-change: auto;
         }
 
         .slide-in-right {
             opacity: 0;
             transform: translateX(60px);
-            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: opacity, transform;
+            backface-visibility: hidden;
         }
 
         .slide-in-right.animated {
             opacity: 1;
             transform: translateX(0);
+            will-change: auto;
         }
 
         /* Mobile Optimization */
@@ -2392,9 +2413,11 @@
             <ul class="nav-menu">
                 <li><a href="#home">Trang chủ</a></li>
                 <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#team">Lãnh đạo</a></li>
                 <li><a href="#features">Tính năng</a></li>
                 <li><a href="#products">Sản phẩm</a></li>
                 <li><a href="#projects">Dự án</a></li>
+                <li><a href="#news">Tin tức</a></li>
                 <li><a href="#support">Công cụ hỗ trợ</a></li>
                 <li><a href="#applications">Ứng dụng</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
@@ -2583,6 +2606,138 @@
             </div>
         </section>
 
+        <!-- Leadership & Team Section -->
+        <section class="team" id="team" style="padding: 5rem 0; background: linear-gradient(135deg, #fcfff5 0%, #f7fce8 100%);">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">
+                        <i class="fas fa-users"></i>
+                        Đội ngũ lãnh đạo
+                    </div>
+                    <h2 class="section-title">Ban Lãnh Đạo 3iGreen</h2>
+                    <p class="section-subtitle">Đội ngũ lãnh đạo giàu kinh nghiệm, tâm huyết với sứ mệnh phát triển vật liệu xanh bền vững</p>
+                </div>
+
+                <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
+                    <!-- CEO -->
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="member-photo" style="width: 100%; height: 320px; background: linear-gradient(135deg, #94C842, #B5E550); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 180px; height: 180px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                                <i class="fas fa-user-tie" style="font-size: 80px; color: #94C842;"></i>
+                            </div>
+                            <div style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #78A82E;">
+                                <i class="fas fa-crown"></i> CEO
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3436; margin-bottom: 0.5rem;">Nguyễn Văn A</h3>
+                            <p style="color: #94C842; font-weight: 600; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Điều Hành</p>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">Hơn 15 năm kinh nghiệm trong lĩnh vực vật liệu xanh và công nghệ cách nhiệt tiên tiến.</p>
+                            <div class="social-links" style="display: flex; gap: 0.8rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: #f7fce8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s;">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" style="width: 40px; height: 40px; background: #f7fce8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s;">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTO -->
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="member-photo" style="width: 100%; height: 320px; background: linear-gradient(135deg, #FFD93D, #FFA372); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 180px; height: 180px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                                <i class="fas fa-user-cog" style="font-size: 80px; color: #FF6B35;"></i>
+                            </div>
+                            <div style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FF6B35;">
+                                <i class="fas fa-cog"></i> CTO
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3436; margin-bottom: 0.5rem;">Trần Thị B</h3>
+                            <p style="color: #FF6B35; font-weight: 600; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Công Nghệ</p>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia công nghệ PIR/PUR với 12 năm kinh nghiệm nghiên cứu và phát triển sản phẩm.</p>
+                            <div class="social-links" style="display: flex; gap: 0.8rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: #fff5f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FF6B35; text-decoration: none; transition: all 0.3s;">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" style="width: 40px; height: 40px; background: #fff5f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FF6B35; text-decoration: none; transition: all 0.3s;">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sales Director -->
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="member-photo" style="width: 100%; height: 320px; background: linear-gradient(135deg, #78A82E, #94C842); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 180px; height: 180px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                                <i class="fas fa-user-chart" style="font-size: 80px; color: #78A82E;"></i>
+                            </div>
+                            <div style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #78A82E;">
+                                <i class="fas fa-chart-line"></i> Director
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3436; margin-bottom: 0.5rem;">Lê Văn C</h3>
+                            <p style="color: #78A82E; font-weight: 600; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Kinh Doanh</p>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">10 năm kinh nghiệm phát triển thị trường và xây dựng mối quan hệ đối tác chiến lược.</p>
+                            <div class="social-links" style="display: flex; gap: 0.8rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: #f7fce8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #78A82E; text-decoration: none; transition: all 0.3s;">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" style="width: 40px; height: 40px; background: #f7fce8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #78A82E; text-decoration: none; transition: all 0.3s;">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Production Manager -->
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="member-photo" style="width: 100%; height: 320px; background: linear-gradient(135deg, #FF6B35, #FFD93D); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 180px; height: 180px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                                <i class="fas fa-user-hard-hat" style="font-size: 80px; color: #FF6B35;"></i>
+                            </div>
+                            <div style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FF6B35;">
+                                <i class="fas fa-industry"></i> Manager
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3436; margin-bottom: 0.5rem;">Phạm Thị D</h3>
+                            <p style="color: #FF6B35; font-weight: 600; margin-bottom: 1rem; font-size: 1rem;">Quản Lý Sản Xuất</p>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia sản xuất với 14 năm kinh nghiệm đảm bảo chất lượng và tối ưu quy trình.</p>
+                            <div class="social-links" style="display: flex; gap: 0.8rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: #fff5f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FF6B35; text-decoration: none; transition: all 0.3s;">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" style="width: 40px; height: 40px; background: #fff5f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FF6B35; text-decoration: none; transition: all 0.3s;">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Stats -->
+                <div style="margin-top: 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                    <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.1);">
+                        <div style="font-size: 3rem; font-weight: 800; color: #94C842; margin-bottom: 0.5rem;">50+</div>
+                        <div style="color: #636e72; font-weight: 600;">Nhân viên chuyên nghiệp</div>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.1);">
+                        <div style="font-size: 3rem; font-weight: 800; color: #FFD93D; margin-bottom: 0.5rem;">15+</div>
+                        <div style="color: #636e72; font-weight: 600;">Năm kinh nghiệm</div>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.1);">
+                        <div style="font-size: 3rem; font-weight: 800; color: #FF6B35; margin-bottom: 0.5rem;">100%</div>
+                        <div style="color: #636e72; font-weight: 600;">Tâm huyết & chuyên nghiệp</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Features Section -->
         <section class="features" id="features">
             <div class="container">
@@ -2698,180 +2853,180 @@
                 <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
                     <!-- Product 1: Gối đỡ vuông 2 mảnh -->
                     <div class="product-card animate-on-scroll" style="background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden;">
-                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #10b981, #34d399); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
+                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #94C842, #B5E550); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
                             <i class="fas fa-star"></i> Phổ biến
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #6ee7b7, #10b981); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(82, 183, 136, 0.4);">
+                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #FFD93D, #94C842); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(82, 183, 136, 0.4);">
                             <i class="fas fa-cube"></i>
                         </div>
 
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #10b981; margin-bottom: 1rem; text-align: center;">Gối Đỡ Vuông 2 Mảnh</h3>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #94C842; margin-bottom: 1rem; text-align: center;">Gối Đỡ Vuông 2 Mảnh</h3>
 
                         <p style="color: #6b7280; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế module 2 mảnh thông minh, lắp đặt siêu nhanh chóng. Phù hợp cho các dự án quy mô lớn cần tiết kiệm thời gian thi công.</p>
 
                         <div class="product-specs" style="background: #ecfdf5; padding: 1.5rem; border-radius: 20px; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 1rem; color: #10b981; margin-bottom: 1rem; font-weight: 600;">
+                            <h4 style="font-size: 1rem; color: #94C842; margin-bottom: 1rem; font-weight: 600;">
                                 <i class="fas fa-info-circle"></i> Thông số kỹ thuật
                             </h4>
                             <ul style="list-style: none; padding: 0;">
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
                                     <span style="color: #6b7280;">Đường kính ống:</span>
-                                    <strong style="color: #10b981;">Ø21 - Ø219mm</strong>
+                                    <strong style="color: #94C842;">Ø21 - Ø219mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
                                     <span style="color: #6b7280;">Độ dày:</span>
-                                    <strong style="color: #10b981;">25 - 100mm</strong>
+                                    <strong style="color: #94C842;">25 - 100mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
                                     <span style="color: #6b7280;">Mật độ PIR:</span>
-                                    <strong style="color: #10b981;">40 kg/m³</strong>
+                                    <strong style="color: #94C842;">40 kg/m³</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
                                     <span style="color: #6b7280;">Hệ số dẫn nhiệt:</span>
-                                    <strong style="color: #10b981;">λ ≤ 0.022 W/m.K</strong>
+                                    <strong style="color: #94C842;">λ ≤ 0.022 W/m.K</strong>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="product-features" style="margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #6ee7b7; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.2rem;"></i>
                                 <span style="color: #4b5563;">Lắp đặt nhanh, tiết kiệm 70% thời gian</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #6ee7b7; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.2rem;"></i>
                                 <span style="color: #4b5563;">Chống thấm tuyệt đối < 1%</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #6ee7b7; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.2rem;"></i>
                                 <span style="color: #4b5563;">Chịu lực cao, không biến dạng</span>
                             </div>
                         </div>
 
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #10b981, #6ee7b7); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(30, 81, 40, 0.3);">
+                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #94C842, #FFD93D); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(30, 81, 40, 0.3);">
                             <i class="fas fa-envelope"></i> Nhận Báo Giá Ngay
                         </a>
                     </div>
 
                     <!-- Product 2: Gối đỡ tròn có cùm -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 3px solid #6ee7b7;">
-                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #14b8a6, #5eead4); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
+                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 3px solid #FFD93D;">
+                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #FF6B35, #FFA372); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
                             <i class="fas fa-crown"></i> Premium
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #14b8a6, #5eead4); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(247, 127, 0, 0.4);">
+                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #FF6B35, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(247, 127, 0, 0.4);">
                             <i class="fas fa-circle"></i>
                         </div>
 
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #10b981; margin-bottom: 1rem; text-align: center;">Gối Đỡ Tròn Cùm Kim Loại</h3>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #94C842; margin-bottom: 1rem; text-align: center;">Gối Đỡ Tròn Cùm Kim Loại</h3>
 
                         <p style="color: #6b7280; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Tích hợp cùm kim loại inox 304, siết chặt tối ưu. Phù hợp ống chịu áp lực cao, hệ thống chiller công nghiệp.</p>
 
                         <div class="product-specs" style="background: #d1fae5; padding: 1.5rem; border-radius: 20px; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 1rem; color: #14b8a6; margin-bottom: 1rem; font-weight: 600;">
+                            <h4 style="font-size: 1rem; color: #FF6B35; margin-bottom: 1rem; font-weight: 600;">
                                 <i class="fas fa-info-circle"></i> Thông số kỹ thuật
                             </h4>
                             <ul style="list-style: none; padding: 0;">
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #a7f3d0;">
                                     <span style="color: #6b7280;">Đường kính ống:</span>
-                                    <strong style="color: #14b8a6;">Ø27 - Ø273mm</strong>
+                                    <strong style="color: #FF6B35;">Ø27 - Ø273mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #a7f3d0;">
                                     <span style="color: #6b7280;">Độ dày:</span>
-                                    <strong style="color: #14b8a6;">30 - 100mm</strong>
+                                    <strong style="color: #FF6B35;">30 - 100mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #a7f3d0;">
                                     <span style="color: #6b7280;">Mật độ PIR:</span>
-                                    <strong style="color: #14b8a6;">40 kg/m³</strong>
+                                    <strong style="color: #FF6B35;">40 kg/m³</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
                                     <span style="color: #6b7280;">Cùm kim loại:</span>
-                                    <strong style="color: #14b8a6;">Inox 304</strong>
+                                    <strong style="color: #FF6B35;">Inox 304</strong>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="product-features" style="margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #14b8a6; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.2rem;"></i>
                                 <span style="color: #4b5563;">Ôm sát ống, cách nhiệt tối ưu</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #14b8a6; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.2rem;"></i>
                                 <span style="color: #4b5563;">Cùm inox 304 bền bỉ chống gỉ</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #14b8a6; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.2rem;"></i>
                                 <span style="color: #4b5563;">Chịu áp lực cao, rung động mạnh</span>
                             </div>
                         </div>
 
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #14b8a6, #5eead4); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(247, 127, 0, 0.3);">
+                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #FF6B35, #FFA372); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(247, 127, 0, 0.3);">
                             <i class="fas fa-envelope"></i> Nhận Báo Giá Ngay
                         </a>
                     </div>
 
                     <!-- Product 3: Gối đỡ chữ U -->
                     <div class="product-card animate-on-scroll" style="background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden;">
-                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #059669, #10b981); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
+                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #78A82E, #94C842); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
                             <i class="fas fa-fire"></i> Mới
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #059669, #10b981); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);">
+                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #78A82E, #94C842); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);">
                             <i class="fas fa-shapes"></i>
                         </div>
 
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #10b981; margin-bottom: 1rem; text-align: center;">Gối Đỡ Chữ U</h3>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #94C842; margin-bottom: 1rem; text-align: center;">Gối Đỡ Chữ U</h3>
 
                         <p style="color: #6b7280; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế chữ U ôm 3 mặt ống, cách nhiệt toàn diện. Lý tưởng cho ống nằm ngang, ống treo trên trần.</p>
 
                         <div class="product-specs" style="background: #a7f3d0; padding: 1.5rem; border-radius: 20px; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 1rem; color: #059669; margin-bottom: 1rem; font-weight: 600;">
+                            <h4 style="font-size: 1rem; color: #78A82E; margin-bottom: 1rem; font-weight: 600;">
                                 <i class="fas fa-info-circle"></i> Thông số kỹ thuật
                             </h4>
                             <ul style="list-style: none; padding: 0;">
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #6ee7b7;">
+                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #FFD93D;">
                                     <span style="color: #6b7280;">Đường kính ống:</span>
-                                    <strong style="color: #059669;">Ø33 - Ø168mm</strong>
+                                    <strong style="color: #78A82E;">Ø33 - Ø168mm</strong>
                                 </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #6ee7b7;">
+                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #FFD93D;">
                                     <span style="color: #6b7280;">Độ dày:</span>
-                                    <strong style="color: #059669;">25 - 75mm</strong>
+                                    <strong style="color: #78A82E;">25 - 75mm</strong>
                                 </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #6ee7b7;">
+                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #FFD93D;">
                                     <span style="color: #6b7280;">Mật độ PUR:</span>
-                                    <strong style="color: #059669;">35-45 kg/m³</strong>
+                                    <strong style="color: #78A82E;">35-45 kg/m³</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
                                     <span style="color: #6b7280;">Hệ số dẫn nhiệt:</span>
-                                    <strong style="color: #059669;">λ ≤ 0.028 W/m.K</strong>
+                                    <strong style="color: #78A82E;">λ ≤ 0.028 W/m.K</strong>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="product-features" style="margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #059669; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #78A82E; font-size: 1.2rem;"></i>
                                 <span style="color: #4b5563;">Bao phủ 3 mặt, cách nhiệt toàn diện</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #059669; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #78A82E; font-size: 1.2rem;"></i>
                                 <span style="color: #4b5563;">Phù hợp ống nằm ngang, ống treo</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #059669; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #78A82E; font-size: 1.2rem;"></i>
                                 <span style="color: #4b5563;">Tiết kiệm không gian lắp đặt</span>
                             </div>
                         </div>
 
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #059669, #10b981); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);">
+                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #78A82E, #94C842); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);">
                             <i class="fas fa-envelope"></i> Nhận Báo Giá Ngay
                         </a>
                     </div>
 
                     <!-- Product 4: Gối đỡ đặc biệt (custom) -->
-                    <div class="product-card animate-on-scroll" style="background: linear-gradient(135deg, #10b981, #6ee7b7); border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; color: white;">
+                    <div class="product-card animate-on-scroll" style="background: linear-gradient(135deg, #94C842, #FFD93D); border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; color: white;">
                         <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);">
                             <i class="fas fa-cog"></i>
                         </div>
@@ -2902,20 +3057,20 @@
 
                         <div class="product-features" style="margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; color: rgba(255,255,255,0.95);">
-                                <i class="fas fa-star" style="color: #5eead4; font-size: 1.2rem;"></i>
+                                <i class="fas fa-star" style="color: #FFA372; font-size: 1.2rem;"></i>
                                 <span>Thiết kế 100% theo yêu cầu</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; color: rgba(255,255,255,0.95);">
-                                <i class="fas fa-star" style="color: #5eead4; font-size: 1.2rem;"></i>
+                                <i class="fas fa-star" style="color: #FFA372; font-size: 1.2rem;"></i>
                                 <span>Tư vấn miễn phí từ chuyên gia</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; color: rgba(255,255,255,0.95);">
-                                <i class="fas fa-star" style="color: #5eead4; font-size: 1.2rem;"></i>
+                                <i class="fas fa-star" style="color: #FFA372; font-size: 1.2rem;"></i>
                                 <span>Phù hợp dự án quy mô lớn</span>
                             </div>
                         </div>
 
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: white; color: #10b981; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);">
+                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: white; color: #94C842; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);">
                             <i class="fas fa-phone"></i> Liên Hệ Tư Vấn Ngay
                         </a>
                     </div>
@@ -2923,14 +3078,14 @@
 
                 <!-- Product comparison table -->
                 <div class="product-comparison" style="margin-top: 4rem; background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08);">
-                    <h3 style="font-size: 1.8rem; font-weight: 700; color: #10b981; margin-bottom: 2rem; text-align: center;">
+                    <h3 style="font-size: 1.8rem; font-weight: 700; color: #94C842; margin-bottom: 2rem; text-align: center;">
                         <i class="fas fa-balance-scale"></i> So Sánh Các Dòng Sản Phẩm
                     </h3>
 
                     <div style="overflow-x: auto;">
                         <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
                             <thead>
-                                <tr style="background: linear-gradient(135deg, #10b981, #6ee7b7); color: white;">
+                                <tr style="background: linear-gradient(135deg, #94C842, #FFD93D); color: white;">
                                     <th style="padding: 1rem; text-align: left; border-radius: 10px 0 0 0;">Tiêu chí</th>
                                     <th style="padding: 1rem; text-align: center;">Gối đỡ vuông</th>
                                     <th style="padding: 1rem; text-align: center;">Gối đỡ tròn</th>
@@ -2940,32 +3095,32 @@
                             </thead>
                             <tbody>
                                 <tr style="border-bottom: 1px solid #e5e7eb;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #10b981;">Độ dày</td>
+                                    <td style="padding: 1rem; font-weight: 600; color: #94C842;">Độ dày</td>
                                     <td style="padding: 1rem; text-align: center;">25-100mm</td>
                                     <td style="padding: 1rem; text-align: center;">30-100mm</td>
                                     <td style="padding: 1rem; text-align: center;">25-75mm</td>
                                     <td style="padding: 1rem; text-align: center;">Tùy chỉnh</td>
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e5e7eb; background: #f8fffe;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #10b981;">Thời gian lắp đặt</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-bolt" style="color: #6ee7b7;"></i> Rất nhanh</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-check" style="color: #6ee7b7;"></i> Nhanh</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-check" style="color: #6ee7b7;"></i> Nhanh</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-cog" style="color: #6ee7b7;"></i> Theo TC</td>
+                                    <td style="padding: 1rem; font-weight: 600; color: #94C842;">Thời gian lắp đặt</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-bolt" style="color: #FFD93D;"></i> Rất nhanh</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-check" style="color: #FFD93D;"></i> Nhanh</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-check" style="color: #FFD93D;"></i> Nhanh</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-cog" style="color: #FFD93D;"></i> Theo TC</td>
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e5e7eb;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #10b981;">Ứng dụng</td>
+                                    <td style="padding: 1rem; font-weight: 600; color: #94C842;">Ứng dụng</td>
                                     <td style="padding: 1rem; text-align: center;">Mọi loại ống</td>
                                     <td style="padding: 1rem; text-align: center;">Ống áp lực cao</td>
                                     <td style="padding: 1rem; text-align: center;">Ống nằm ngang</td>
                                     <td style="padding: 1rem; text-align: center;">Dự án đặc biệt</td>
                                 </tr>
                                 <tr style="background: #f8fffe;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #10b981;">Giá thành</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #6ee7b7;"></i> Tốt nhất</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #6ee7b7;"></i><i class="fas fa-dollar-sign" style="color: #6ee7b7;"></i> Premium</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #6ee7b7;"></i> Tốt</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-phone" style="color: #6ee7b7;"></i> Liên hệ</td>
+                                    <td style="padding: 1rem; font-weight: 600; color: #94C842;">Giá thành</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #FFD93D;"></i> Tốt nhất</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #FFD93D;"></i><i class="fas fa-dollar-sign" style="color: #FFD93D;"></i> Premium</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #FFD93D;"></i> Tốt</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-phone" style="color: #FFD93D;"></i> Liên hệ</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2974,18 +3129,18 @@
 
                 <!-- CTA Section -->
                 <div style="margin-top: 3rem; text-align: center; background: linear-gradient(135deg, #f0fdfa, #e8f7f5); padding: 3rem; border-radius: 30px;">
-                    <h3 style="font-size: 2rem; font-weight: 700; color: #10b981; margin-bottom: 1rem;">
+                    <h3 style="font-size: 2rem; font-weight: 700; color: #94C842; margin-bottom: 1rem;">
                         Chưa Chắc Chắn Sản Phẩm Nào Phù Hợp?
                     </h3>
                     <p style="color: #6b7280; font-size: 1.1rem; margin-bottom: 2rem;">
                         Đội ngũ kỹ sư của chúng tôi sẵn sàng tư vấn miễn phí để giúp bạn lựa chọn giải pháp tối ưu nhất
                     </p>
                     <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="tel:0973098338" style="display: inline-flex; align-items: center; gap: 0.8rem; background: linear-gradient(135deg, #10b981, #6ee7b7); color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 15px 35px rgba(30, 81, 40, 0.3); transition: all 0.3s;">
+                        <a href="tel:0973098338" style="display: inline-flex; align-items: center; gap: 0.8rem; background: linear-gradient(135deg, #94C842, #FFD93D); color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 15px 35px rgba(30, 81, 40, 0.3); transition: all 0.3s;">
                             <i class="fas fa-phone-alt"></i>
                             0973.098.338
                         </a>
-                        <a href="#contact" style="display: inline-flex; align-items: center; gap: 0.8rem; background: white; color: #10b981; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border: 2px solid #10b981; transition: all 0.3s;">
+                        <a href="#contact" style="display: inline-flex; align-items: center; gap: 0.8rem; background: white; color: #94C842; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border: 2px solid #94C842; transition: all 0.3s;">
                             <i class="fas fa-envelope"></i>
                             Gửi Yêu Cầu Tư Vấn
                         </a>
@@ -3434,6 +3589,146 @@
                     <a href="#contact" class="btn btn-primary">
                         <i class="fas fa-phone"></i>
                         Tư vấn dự án miễn phí
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Blog Section -->
+        <section class="news" id="news" style="padding: 5rem 0; background: white;">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">
+                        <i class="fas fa-newspaper"></i>
+                        Tin tức & Blog
+                    </div>
+                    <h2 class="section-title">Tin Tức Mới Nhất</h2>
+                    <p class="section-subtitle">Cập nhật tin tức, kiến thức và xu hướng công nghệ vật liệu xanh mới nhất</p>
+                </div>
+
+                <div class="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
+                    <!-- News 1 -->
+                    <article class="news-card animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="news-image" style="width: 100%; height: 250px; background: linear-gradient(135deg, #94C842, #B5E550); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h100v100H0z\" fill=\"%2394C842\" fill-opacity=\".1\"/%3E%3Ccircle cx=\"50\" cy=\"50\" r=\"40\" fill=\"%23fff\" fill-opacity=\".2\"/%3E%3C/svg%3E') center/cover; opacity: 0.3;"></div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                                <i class="fas fa-leaf" style="font-size: 80px; opacity: 0.8;"></i>
+                            </div>
+                            <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #94C842;">
+                                <i class="fas fa-calendar"></i> 01/12/2024
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <div style="display: flex; gap: 0.8rem; margin-bottom: 1rem;">
+                                <span style="background: #f7fce8; color: #94C842; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">Công nghệ</span>
+                                <span style="background: #fff5f0; color: #FF6B35; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">Xu hướng</span>
+                            </div>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
+                                Công Nghệ PIR/PUR Thế Hệ Mới - Tiết Kiệm 70% Thời Gian Thi Công
+                            </h3>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
+                                Khám phá công nghệ PIR/PUR tiên tiến giúp tiết kiệm thời gian thi công lên đến 70%, mang lại hiệu quả vượt trội cho các công trình công nghiệp...
+                            </p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #94C842, #B5E550); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">
+                                        A
+                                    </div>
+                                    <div>
+                                        <div style="font-weight: 600; color: #2d3436; font-size: 0.9rem;">Admin 3iGreen</div>
+                                        <div style="font-size: 0.8rem; color: #b2bec3;">5 phút đọc</div>
+                                    </div>
+                                </div>
+                                <a href="#" style="color: #94C842; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                                    Đọc thêm <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News 2 -->
+                    <article class="news-card animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="news-image" style="width: 100%; height: 250px; background: linear-gradient(135deg, #FFD93D, #FFA372); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h100v100H0z\" fill=\"%23FFD93D\" fill-opacity=\".1\"/%3E%3Crect x=\"20\" y=\"20\" width=\"60\" height=\"60\" fill=\"%23fff\" fill-opacity=\".2\" rx=\"10\"/%3E%3C/svg%3E') center/cover; opacity: 0.3;"></div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                                <i class="fas fa-award" style="font-size: 80px; opacity: 0.8;"></i>
+                            </div>
+                            <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FFD93D;">
+                                <i class="fas fa-calendar"></i> 28/11/2024
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <div style="display: flex; gap: 0.8rem; margin-bottom: 1rem;">
+                                <span style="background: #fffbeb; color: #FFD93D; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">Giải thưởng</span>
+                            </div>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
+                                3iGreen Nhận Giải Thưởng "Doanh Nghiệp Xanh 2024"
+                            </h3>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
+                                3iGreen vinh dự được vinh danh tại lễ trao giải "Doanh Nghiệp Xanh 2024" nhờ những đóng góp xuất sắc trong lĩnh vực phát triển vật liệu bền vững...
+                            </p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFD93D, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">
+                                        3i
+                                    </div>
+                                    <div>
+                                        <div style="font-weight: 600; color: #2d3436; font-size: 0.9rem;">3iGreen Team</div>
+                                        <div style="font-size: 0.8rem; color: #b2bec3;">4 phút đọc</div>
+                                    </div>
+                                </div>
+                                <a href="#" style="color: #FFD93D; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                                    Đọc thêm <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News 3 -->
+                    <article class="news-card animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="news-image" style="width: 100%; height: 250px; background: linear-gradient(135deg, #FF6B35, #FFD93D); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h100v100H0z\" fill=\"%23FF6B35\" fill-opacity=\".1\"/%3E%3Cpolygon points=\"50,20 80,80 20,80\" fill=\"%23fff\" fill-opacity=\".2\"/%3E%3C/svg%3E') center/cover; opacity: 0.3;"></div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                                <i class="fas fa-lightbulb" style="font-size: 80px; opacity: 0.8;"></i>
+                            </div>
+                            <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FF6B35;">
+                                <i class="fas fa-calendar"></i> 20/11/2024
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <div style="display: flex; gap: 0.8rem; margin-bottom: 1rem;">
+                                <span style="background: #fff5f0; color: #FF6B35; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">Hướng dẫn</span>
+                            </div>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
+                                5 Bí Quyết Chọn Vật Liệu Cách Nhiệt Hiệu Quả
+                            </h3>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
+                                Hướng dẫn chi tiết giúp bạn lựa chọn vật liệu cách nhiệt phù hợp nhất cho công trình, tiết kiệm chi phí và đảm bảo hiệu suất tối ưu...
+                            </p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #FF6B35, #FFD93D); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">
+                                        KT
+                                    </div>
+                                    <div>
+                                        <div style="font-weight: 600; color: #2d3436; font-size: 0.9rem;">Chuyên gia kỹ thuật</div>
+                                        <div style="font-size: 0.8rem; color: #b2bec3;">7 phút đọc</div>
+                                    </div>
+                                </div>
+                                <a href="#" style="color: #FF6B35; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                                    Đọc thêm <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- View More Button -->
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#" style="display: inline-flex; align-items: center; gap: 1rem; background: linear-gradient(135deg, #94C842, #B5E550); color: white; padding: 1.2rem 3rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 15px 35px rgba(148, 200, 66, 0.3); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <i class="fas fa-newspaper"></i>
+                        Xem tất cả tin tức
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -4105,7 +4400,7 @@
                     const successMessage = document.createElement('div');
                     successMessage.className = 'success-message';
                     successMessage.innerHTML = `
-                        <div style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 1.5rem; border-radius: 15px; text-align: center; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);">
+                        <div style="background: linear-gradient(135deg, #94C842, #78A82E); color: white; padding: 1.5rem; border-radius: 15px; text-align: center; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);">
                             <i class="fas fa-check-circle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
                             <h4 style="margin-bottom: 0.5rem;">Gửi yêu cầu thành công!</h4>
                             <p style="margin: 0; opacity: 0.9;">Cảm ơn bạn đã tin tưởng 3igreen. Chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ với báo giá chi tiết nhất về công nghệ PIR/PUR.</p>
@@ -4165,8 +4460,8 @@
 
         // Console welcome message
         console.log('%c🌱 3igreen - Vật Liệu Xanh Chất Lượng Cao 🌱', 'color: #2c5b3b; font-size: 20px; font-weight: bold;');
-        console.log('%cWebsite được thiết kế và phát triển bởi đội ngũ 3igreen', 'color: #6ee7b7; font-size: 14px;');
-        console.log('%cLiên hệ: 0973.098.338 | info@3igreen.com.vn', 'color: #14b8a6; font-size: 12px;');
+        console.log('%cWebsite được thiết kế và phát triển bởi đội ngũ 3igreen', 'color: #FFD93D; font-size: 14px;');
+        console.log('%cLiên hệ: 0973.098.338 | info@3igreen.com.vn', 'color: #FF6B35; font-size: 12px;');
 
         // Initialize everything when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
