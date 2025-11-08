@@ -944,22 +944,16 @@
             75% { transform: translateY(-20px) rotate(0.5deg); }
         }
 
-        /* Sections */
+        /* Premium Section System */
         section {
-            padding: 8rem 0;
+            padding: var(--space-24) 0;
             position: relative;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 5rem;
-            max-width: 800px;
+            margin-bottom: var(--space-16);
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -967,69 +961,183 @@
         .section-badge {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            gap: var(--space-2);
+            background: var(--primary-green);
             color: var(--white);
-            padding: 0.6rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-size: 0.875rem;
             font-weight: 600;
-            margin-bottom: 1.5rem;
-            box-shadow: var(--shadow);
+            margin-bottom: var(--space-4);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
 
         .section-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3rem;
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3.5rem);
             font-weight: 800;
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-6);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
         }
 
         .section-subtitle {
-            font-size: 1.3rem;
-            color: var(--text-light);
-            line-height: 1.6;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-secondary);
+            line-height: 1.7;
             max-width: 700px;
             margin: 0 auto;
         }
 
-        /* Stats Section */
-        .stats-section {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+        /* Premium Card System */
+        .card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--light-gray);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green);
+        }
+
+        .card-dark {
+            background: var(--navy-dark);
             color: var(--white);
-            padding: 6rem 0;
-            margin: 4rem 0;
+            border-color: var(--navy-light);
+        }
+
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-4);
+            font-size: 1.75rem;
+            color: var(--primary-green);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-3);
+        }
+
+        .card-dark .card-title {
+            color: var(--white);
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .card-dark .card-text {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Premium Grid Systems */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: var(--space-8);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-8);
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-6);
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+                gap: var(--space-6);
+            }
+        }
+
+        /* Stats Section - Modern Premium Industrial */
+        .stats-section {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+            color: var(--white);
+            padding: var(--space-24) 0;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.5;
         }
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-8);
             text-align: center;
+            position: relative;
+            z-index: 2;
         }
 
         .stat-card {
-            padding: 2rem;
+            padding: var(--space-8);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-4px);
+            border-color: var(--primary-green);
         }
 
         .stat-card .number {
-            font-size: 3rem;
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 800;
-            margin-bottom: 0.5rem;
-            color: var(--accent-light);
-            font-family: 'Poppins', sans-serif;
+            margin-bottom: var(--space-3);
+            color: var(--primary-green);
+            letter-spacing: -0.02em;
         }
 
         .stat-card .label {
-            font-size: 1.1rem;
+            font-size: 1.125rem;
             opacity: 0.9;
+            line-height: 1.5;
         }
 
-        /* About Section */
+        /* About Section - Modern Premium Industrial */
         .about {
-            background: var(--bg-section);
+            background: var(--off-white);
             position: relative;
             overflow: hidden;
         }
@@ -1038,76 +1146,108 @@
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 70% 20%, rgba(30, 81, 40, 0.05) 0%, transparent 50%);
+            right: 0;
+            width: 600px;
+            height: 600px;
+            background: var(--primary-green);
+            opacity: 0.03;
+            border-radius: 50%;
+            filter: blur(120px);
         }
 
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 6rem;
+            gap: var(--space-16);
             align-items: center;
             position: relative;
             z-index: 2;
         }
 
         .about-text h3 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            line-height: 1.3;
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 800;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-6);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
         }
 
         .about-text p {
-            font-size: 1.1rem;
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-6);
+            line-height: 1.8;
         }
 
         .about-highlights {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            margin-top: 2.5rem;
+            gap: var(--space-4);
+            margin-top: var(--space-8);
         }
 
         .highlight-item {
             display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
+            align-items: flex-start;
+            gap: var(--space-4);
+            padding: var(--space-6);
             background: var(--white);
-            border-radius: 15px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--light-gray);
+            position: relative;
+        }
+
+        .highlight-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 0;
+            background: var(--primary-green);
+            transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .highlight-item:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-green);
+        }
+
+        .highlight-item:hover::before {
+            height: 100%;
         }
 
         .highlight-item i {
-            font-size: 1.8rem;
-            color: var(--accent-color);
-            min-width: 40px;
+            font-size: 1.5rem;
+            color: var(--primary-green);
+            min-width: 36px;
+            background: rgba(148, 200, 66, 0.1);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-md);
         }
 
         .highlight-item div h5 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 0.3rem;
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-2);
         }
 
         .highlight-item div p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
             margin: 0;
+            line-height: 1.6;
         }
 
         .about-visual {
@@ -1116,9 +1256,10 @@
 
         .company-card {
             background: var(--white);
-            border-radius: var(--border-radius-lg);
-            padding: 3rem;
-            box-shadow: var(--shadow-lg);
+            border-radius: var(--radius-xl);
+            padding: var(--space-12);
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--light-gray);
             border: 1px solid rgba(30, 81, 40, 0.1);
         }
 
@@ -1218,68 +1359,70 @@
 
         .feature-card {
             background: var(--white);
-            border-radius: var(--border-radius-lg);
-            padding: 3rem;
-            box-shadow: var(--shadow);
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                        box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(30, 81, 40, 0.08);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--light-gray);
             position: relative;
             overflow: hidden;
-            will-change: transform;
-            backface-visibility: hidden;
         }
 
-        .feature-card::before {
+        .feature-card::after {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            width: 4px;
+            height: 100%;
+            background: var(--primary-green);
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .feature-card:hover {
-            transform: translateY(-15px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green);
+        }
+
+        .feature-card:hover::after {
+            transform: scaleY(1);
         }
 
         .feature-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            border-radius: 20px;
+            width: 72px;
+            height: 72px;
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 2rem;
-            color: var(--white);
+            margin-bottom: var(--space-6);
+            color: var(--primary-green);
             font-size: 2rem;
-            box-shadow: var(--shadow);
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                        background 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            will-change: transform;
-            backface-visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .feature-card:hover .feature-icon {
-            transform: scale(1.1) rotate(5deg);
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+            transform: scale(1.1);
+            background: var(--primary-green);
+            color: var(--white);
         }
 
         .feature-card h3 {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-family: 'Poppins', sans-serif;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-3);
+            font-family: var(--font-display);
         }
 
         .feature-card p {
-            color: var(--text-light);
+            color: var(--text-secondary);
             line-height: 1.7;
-            margin-bottom: 1.5rem;
+            margin-bottom: var(--space-4);
             font-size: 1rem;
         }
 
@@ -1302,9 +1445,9 @@
             font-size: 1rem;
         }
 
-        /* Technical Specifications */
+        /* Technical Specifications - Modern Premium Industrial */
         .specs {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             color: var(--white);
             position: relative;
             overflow: hidden;
@@ -1317,7 +1460,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="specs-pattern" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23specs-pattern)"/></svg>');
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
         }
 
         .specs-content {
@@ -1328,48 +1474,53 @@
         .specs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
+            gap: var(--space-8);
+            margin-top: var(--space-16);
         }
 
         .spec-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(30px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: var(--border-radius);
-            padding: 2.5rem;
-            transition: var(--transition);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .spec-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary-green);
+            box-shadow: var(--shadow-xl);
         }
 
         .spec-header {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
         }
 
         .spec-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--accent-color);
-            border-radius: 15px;
+            width: 64px;
+            height: 64px;
+            background: var(--primary-green);
+            border-radius: var(--radius-md);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            color: var(--text-dark);
+            font-size: 1.75rem;
+            color: var(--navy-dark);
             font-weight: 700;
+            box-shadow: var(--shadow-md);
         }
 
         .spec-header h4 {
-            font-size: 1.4rem;
-            font-weight: 600;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
             margin: 0;
+            letter-spacing: -0.01em;
         }
 
         .spec-list {
@@ -1381,9 +1532,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.8rem 0;
+            padding: var(--space-3) 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
 
         .spec-list li:last-child {
@@ -1391,13 +1542,14 @@
         }
 
         .spec-value {
-            font-weight: 600;
-            color: var(--accent-light);
+            font-weight: 700;
+            color: var(--primary-green);
+            font-family: var(--font-display);
         }
 
-        /* Applications Section */
+        /* Applications Section - Modern Premium Industrial */
         .applications {
-            background: var(--bg-section);
+            background: var(--off-white);
             position: relative;
         }
 
@@ -1406,79 +1558,91 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 100%;
-            height: 50%;
-            background: linear-gradient(45deg, rgba(82, 183, 136, 0.05), rgba(30, 81, 40, 0.03));
-            border-radius: 100px 100px 0 0;
+            width: 600px;
+            height: 600px;
+            background: var(--primary-green);
+            opacity: 0.03;
+            border-radius: 50%;
+            filter: blur(120px);
         }
 
         .app-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
-            margin-top: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-16);
             position: relative;
             z-index: 2;
         }
 
         .app-item {
             background: var(--white);
-            border-radius: var(--border-radius);
-            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
             text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(30, 81, 40, 0.08);
+            border: 1px solid var(--light-gray);
         }
 
-        .app-item::before {
+        .app-item::after {
             content: '';
             position: absolute;
             top: 0;
-            left: -100%;
+            left: 0;
             width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(82, 183, 136, 0.1), transparent);
-            transition: left 0.6s ease;
+            height: 4px;
+            background: var(--primary-green);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .app-item:hover::before {
-            left: 100%;
+        .app-item:hover::after {
+            transform: scaleX(1);
         }
 
         .app-item:hover {
-            transform: translateY(-15px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green);
         }
 
         .app-icon {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            transition: var(--transition);
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--space-6);
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .app-item:hover .app-icon {
-            transform: scale(1.2);
+            transform: scale(1.1) rotate(5deg);
+            background: var(--primary-green);
+            color: var(--white);
         }
 
         .app-item h3 {
-            font-size: 1.4rem;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-family: 'Poppins', sans-serif;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-3);
+            letter-spacing: -0.01em;
         }
 
         .app-item p {
-            color: var(--text-light);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: var(--space-6);
         }
 
         .app-benefits {
@@ -1490,20 +1654,20 @@
         .app-benefits li {
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            margin-bottom: 0.8rem;
-            font-size: 0.9rem;
-            color: var(--text-light);
+            gap: var(--space-3);
+            margin-bottom: var(--space-2);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
         }
 
         .app-benefits li i {
-            color: var(--accent-color);
-            font-size: 0.8rem;
+            color: var(--primary-green);
+            font-size: 0.75rem;
         }
 
-        /* Projects Section */
+        /* Projects Section - Modern Premium Industrial */
         .projects {
-            background: var(--bg-light);
+            background: var(--white);
             position: relative;
             overflow: hidden;
         }
@@ -1512,41 +1676,43 @@
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 20%, rgba(30, 81, 40, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(247, 127, 0, 0.05) 0%, transparent 50%);
+            right: 0;
+            width: 600px;
+            height: 600px;
+            background: var(--primary-green);
+            opacity: 0.03;
+            border-radius: 50%;
+            filter: blur(120px);
         }
 
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
+            gap: var(--space-8);
+            margin-top: var(--space-16);
             position: relative;
             z-index: 2;
         }
 
         .project-card {
             background: var(--white);
-            border-radius: var(--border-radius-lg);
+            border-radius: var(--radius-lg);
             overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(30, 81, 40, 0.08);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--light-gray);
             position: relative;
         }
 
         .project-card:hover {
-            transform: translateY(-15px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green);
         }
 
         .project-image {
-            height: 200px;
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            height: 220px;
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             position: relative;
             overflow: hidden;
         }
@@ -1558,7 +1724,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="project-pattern" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="20" height="20" fill="none"/><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23project-pattern)"/></svg>');
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
         }
 
         .project-overlay {
@@ -1567,12 +1736,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(10, 22, 40, 0.8);
             display: flex;
             align-items: center;
             justify-content: center;
             opacity: 0;
-            transition: var(--transition);
+            transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .project-card:hover .project-overlay {
@@ -1581,7 +1750,7 @@
 
         .project-stats {
             display: flex;
-            gap: 2rem;
+            gap: var(--space-8);
             color: var(--white);
         }
 
@@ -1591,96 +1760,98 @@
 
         .stat-number {
             display: block;
-            font-size: 2rem;
+            font-family: var(--font-display);
+            font-size: 2.5rem;
             font-weight: 800;
-            font-family: 'Poppins', sans-serif;
-            color: var(--accent-light);
+            color: var(--primary-green);
+            letter-spacing: -0.02em;
         }
 
         .stat-label {
-            font-size: 0.9rem;
+            font-size: 1rem;
             opacity: 0.9;
         }
 
         .project-content {
-            padding: 2.5rem;
+            padding: var(--space-8);
         }
 
         .project-category {
             display: inline-block;
-            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            background: var(--primary-green);
             color: var(--white);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-size: 0.75rem;
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-bottom: var(--space-4);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.05em;
         }
 
         .project-content h3 {
+            font-family: var(--font-display);
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-3);
             line-height: 1.3;
-            font-family: 'Poppins', sans-serif;
+            letter-spacing: -0.01em;
         }
 
         .project-content p {
-            color: var(--text-light);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: var(--space-6);
+            font-size: 1rem;
         }
 
         .project-features {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
+            gap: var(--space-2);
+            margin-bottom: var(--space-6);
         }
 
         .feature-tag {
-            background: var(--bg-section);
-            color: var(--text-dark);
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
+            background: rgba(148, 200, 66, 0.1);
+            color: var(--primary-green);
+            padding: var(--space-2) var(--space-3);
+            border-radius: var(--radius-md);
             font-size: 0.75rem;
-            font-weight: 500;
-            border: 1px solid rgba(30, 81, 40, 0.1);
+            font-weight: 600;
+            border: 1px solid rgba(148, 200, 66, 0.2);
         }
 
         .project-details {
             display: flex;
-            gap: 1.5rem;
+            gap: var(--space-6);
             flex-wrap: wrap;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(30, 81, 40, 0.1);
+            padding-top: var(--space-4);
+            border-top: 1px solid var(--light-gray);
         }
 
         .detail-item {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: var(--space-2);
             color: var(--text-muted);
-            font-size: 0.85rem;
+            font-size: 0.875rem;
             font-weight: 500;
         }
 
         .detail-item i {
-            color: var(--accent-color);
-            font-size: 0.9rem;
+            color: var(--primary-green);
+            font-size: 1rem;
         }
 
         .projects-cta {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             color: var(--white);
-            border-radius: var(--border-radius-lg);
-            padding: 4rem 3rem;
+            border-radius: var(--radius-xl);
+            padding: var(--space-16) var(--space-12);
             text-align: center;
-            margin-top: 5rem;
+            margin-top: var(--space-16);
             position: relative;
             overflow: hidden;
         }
@@ -1692,33 +1863,39 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="cta-pattern" width="30" height="30" patternUnits="userSpaceOnUse"><polygon points="15,0 30,15 15,30 0,15" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23cta-pattern)"/></svg>');
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
         }
 
         .projects-cta h3 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 800;
+            margin-bottom: var(--space-4);
             position: relative;
             z-index: 2;
+            letter-spacing: -0.02em;
         }
 
         .projects-cta p {
-            font-size: 1.1rem;
+            font-size: 1.125rem;
             opacity: 0.9;
-            margin-bottom: 2rem;
+            margin-bottom: var(--space-8);
             position: relative;
             z-index: 2;
+            line-height: 1.7;
         }
 
         .projects-cta .btn {
             position: relative;
             z-index: 2;
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-            color: var(--text-dark);
         }
+
+        /* Contact Section - Modern Premium Industrial */
         .contact {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             color: var(--white);
             position: relative;
             overflow: hidden;
@@ -1731,44 +1908,48 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="contact-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><polygon points="50,0 100,50 50,100 0,50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23contact-pattern)"/></svg>');
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
         }
 
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 6rem;
+            gap: var(--space-16);
             align-items: start;
             position: relative;
             z-index: 2;
         }
 
         .contact-info h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.8rem;
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 800;
-            margin-bottom: 2rem;
+            margin-bottom: var(--space-8);
             line-height: 1.2;
+            letter-spacing: -0.02em;
         }
 
         .contact-description {
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
+            font-size: 1.125rem;
+            margin-bottom: var(--space-8);
             opacity: 0.9;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         .contact-details {
-            space-y: 2rem;
+            space-y: var(--space-6);
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: var(--glass-bg);
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
+            padding: var(--space-6);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1776,180 +1957,200 @@
         }
 
         .contact-item:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(4px);
+            border-color: var(--primary-green);
         }
 
         .contact-item i {
-            font-size: 1.8rem;
-            color: var(--accent-light);
-            min-width: 40px;
+            font-size: 1.75rem;
+            color: var(--primary-green);
+            min-width: 48px;
+            width: 56px;
+            height: 56px;
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .contact-item div h5 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: var(--space-2);
         }
 
         .contact-item div p {
             opacity: 0.9;
             margin: 0;
             font-size: 1rem;
+            line-height: 1.5;
         }
 
         .contact-form {
-            background: var(--glass-bg);
-            backdrop-filter: blur(30px);
-            border-radius: var(--border-radius-lg);
-            padding: 3rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: var(--shadow-lg);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: var(--radius-lg);
+            padding: var(--space-12);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-xl);
         }
 
         .contact-form h3 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 800;
+            margin-bottom: var(--space-8);
             text-align: center;
+            letter-spacing: -0.02em;
         }
 
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
+            gap: var(--space-6);
+            margin-bottom: var(--space-6);
         }
 
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: var(--space-6);
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 0.8rem;
+            margin-bottom: var(--space-3);
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
 
         .form-group input,
         .form-group textarea,
         .form-group select {
             width: 100%;
-            padding: 1.2rem;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.05);
             color: var(--white);
             font-size: 1rem;
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .form-group input::placeholder,
         .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.6);
         }
 
         .form-group input:focus,
         .form-group textarea:focus,
         .form-group select:focus {
             outline: none;
-            border-color: var(--accent-color);
-            background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 0 0 3px rgba(247, 127, 0, 0.1);
+            border-color: var(--primary-green);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 3px rgba(148, 200, 66, 0.1);
         }
 
         .form-group textarea {
             resize: vertical;
-            min-height: 120px;
+            min-height: 140px;
         }
 
         .form-submit {
             text-align: center;
-            margin-top: 2rem;
+            margin-top: var(--space-8);
         }
 
         .btn-submit {
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-            color: var(--text-dark);
-            padding: 1.2rem 3rem;
+            background: var(--primary-green);
+            color: var(--white);
+            padding: var(--space-4) var(--space-8);
             border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
+            border-radius: var(--radius-md);
+            font-size: 1.125rem;
             font-weight: 700;
+            font-family: var(--font-display);
             cursor: pointer;
-            transition: var(--transition);
-            box-shadow: var(--shadow);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-md);
             display: inline-flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: var(--space-3);
         }
 
         .btn-submit:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background: var(--primary-green-dark);
         }
 
-        /* Footer */
+        /* Footer - Modern Premium Industrial */
         footer {
-            background: var(--text-dark);
+            background: var(--navy-dark);
             color: var(--white);
-            padding: 4rem 0 2rem 0;
+            padding: var(--space-24) 0 var(--space-8) 0;
             position: relative;
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 4rem;
-            margin-bottom: 3rem;
+            gap: var(--space-16);
+            margin-bottom: var(--space-12);
         }
 
         .footer-brand h3 {
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-display);
             font-size: 2rem;
             font-weight: 800;
-            color: var(--accent-light);
-            margin-bottom: 1rem;
+            color: var(--primary-green);
+            margin-bottom: var(--space-4);
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: var(--space-2);
+            letter-spacing: -0.02em;
         }
 
         .footer-brand p {
             opacity: 0.8;
-            line-height: 1.6;
-            margin-bottom: 2rem;
+            line-height: 1.7;
+            margin-bottom: var(--space-8);
         }
 
         .footer-social {
             display: flex;
-            gap: 1rem;
+            gap: var(--space-3);
         }
 
         .social-link {
-            width: 45px;
-            height: 45px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--white);
+            color: var(--primary-green);
             text-decoration: none;
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(148, 200, 66, 0.2);
         }
 
         .social-link:hover {
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-            transform: translateY(-3px);
+            background: var(--primary-green);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
         }
 
         .footer-section h4 {
-            font-size: 1.3rem;
+            font-family: var(--font-display);
+            font-size: 1.25rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: var(--accent-light);
+            margin-bottom: var(--space-6);
+            color: var(--primary-green);
+            letter-spacing: -0.01em;
         }
 
         .footer-links {
@@ -1958,17 +2159,19 @@
         }
 
         .footer-links li {
-            margin-bottom: 0.8rem;
+            margin-bottom: var(--space-3);
         }
 
         .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
         }
 
         .footer-links a:hover {
-            color: var(--accent-light);
+            color: var(--primary-green);
+            padding-left: var(--space-2);
             padding-left: 5px;
         }
 
@@ -2847,7 +3050,7 @@
         </section>
 
         <!-- Leadership & Team Section -->
-        <section class="team" id="team" style="padding: 5rem 0; background: linear-gradient(135deg, #fcfff5 0%, #f7fce8 100%);">
+        <section class="team" id="team" style="padding: 6rem 0; background: var(--white); position: relative;">
             <div class="container">
                 <div class="section-header animate-on-scroll">
                     <div class="section-badge">
@@ -2858,26 +3061,26 @@
                     <p class="section-subtitle">Đội ngũ lãnh đạo giàu kinh nghiệm, tâm huyết với sứ mệnh phát triển vật liệu xanh bền vững</p>
                 </div>
 
-                <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
+                <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
                     <!-- CEO -->
-                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
-                        <div class="member-photo" style="width: 100%; height: 320px; background: linear-gradient(135deg, #94C842, #B5E550); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                            <div style="width: 180px; height: 180px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                                <i class="fas fa-user-tie" style="font-size: 80px; color: #94C842;"></i>
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                <i class="fas fa-user-tie" style="font-size: 64px; color: #94C842;"></i>
                             </div>
-                            <div style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #78A82E;">
+                            <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-crown"></i> CEO
                             </div>
                         </div>
                         <div style="padding: 2rem;">
-                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3436; margin-bottom: 0.5rem;">Nguyễn Văn A</h3>
-                            <p style="color: #94C842; font-weight: 600; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Điều Hành</p>
-                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">Hơn 15 năm kinh nghiệm trong lĩnh vực vật liệu xanh và công nghệ cách nhiệt tiên tiến.</p>
-                            <div class="social-links" style="display: flex; gap: 0.8rem;">
-                                <a href="#" style="width: 40px; height: 40px; background: #f7fce8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s;">
+                            <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Nguyễn Văn A</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Điều Hành</p>
+                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">Hơn 15 năm kinh nghiệm trong lĩnh vực vật liệu xanh và công nghệ cách nhiệt tiên tiến.</p>
+                            <div class="social-links" style="display: flex; gap: 0.75rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" style="width: 40px; height: 40px; background: #f7fce8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fas fa-envelope"></i>
                                 </a>
                             </div>
@@ -2885,24 +3088,24 @@
                     </div>
 
                     <!-- CTO -->
-                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
-                        <div class="member-photo" style="width: 100%; height: 320px; background: linear-gradient(135deg, #FFD93D, #FFA372); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                            <div style="width: 180px; height: 180px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                                <i class="fas fa-user-cog" style="font-size: 80px; color: #FF6B35;"></i>
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                <i class="fas fa-user-cog" style="font-size: 64px; color: #94C842;"></i>
                             </div>
-                            <div style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FF6B35;">
+                            <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-cog"></i> CTO
                             </div>
                         </div>
                         <div style="padding: 2rem;">
-                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3436; margin-bottom: 0.5rem;">Trần Thị B</h3>
-                            <p style="color: #FF6B35; font-weight: 600; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Công Nghệ</p>
-                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia công nghệ PU Foam với 12 năm kinh nghiệm nghiên cứu và phát triển sản phẩm.</p>
-                            <div class="social-links" style="display: flex; gap: 0.8rem;">
-                                <a href="#" style="width: 40px; height: 40px; background: #fff5f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FF6B35; text-decoration: none; transition: all 0.3s;">
+                            <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Trần Thị B</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Công Nghệ</p>
+                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia công nghệ PU Foam với 12 năm kinh nghiệm nghiên cứu và phát triển sản phẩm.</p>
+                            <div class="social-links" style="display: flex; gap: 0.75rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" style="width: 40px; height: 40px; background: #fff5f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FF6B35; text-decoration: none; transition: all 0.3s;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fas fa-envelope"></i>
                                 </a>
                             </div>
@@ -2910,24 +3113,24 @@
                     </div>
 
                     <!-- Sales Director -->
-                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
-                        <div class="member-photo" style="width: 100%; height: 320px; background: linear-gradient(135deg, #78A82E, #94C842); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                            <div style="width: 180px; height: 180px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                                <i class="fas fa-user-chart" style="font-size: 80px; color: #78A82E;"></i>
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                <i class="fas fa-user-chart" style="font-size: 64px; color: #94C842;"></i>
                             </div>
-                            <div style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #78A82E;">
+                            <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-chart-line"></i> Director
                             </div>
                         </div>
                         <div style="padding: 2rem;">
-                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3436; margin-bottom: 0.5rem;">Lê Văn C</h3>
-                            <p style="color: #78A82E; font-weight: 600; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Kinh Doanh</p>
-                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">10 năm kinh nghiệm phát triển thị trường và xây dựng mối quan hệ đối tác chiến lược.</p>
-                            <div class="social-links" style="display: flex; gap: 0.8rem;">
-                                <a href="#" style="width: 40px; height: 40px; background: #f7fce8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #78A82E; text-decoration: none; transition: all 0.3s;">
+                            <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Lê Văn C</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Kinh Doanh</p>
+                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">10 năm kinh nghiệm phát triển thị trường và xây dựng mối quan hệ đối tác chiến lược.</p>
+                            <div class="social-links" style="display: flex; gap: 0.75rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" style="width: 40px; height: 40px; background: #f7fce8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #78A82E; text-decoration: none; transition: all 0.3s;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fas fa-envelope"></i>
                                 </a>
                             </div>
@@ -2935,24 +3138,24 @@
                     </div>
 
                     <!-- Production Manager -->
-                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
-                        <div class="member-photo" style="width: 100%; height: 320px; background: linear-gradient(135deg, #FF6B35, #FFD93D); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                            <div style="width: 180px; height: 180px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                                <i class="fas fa-user-hard-hat" style="font-size: 80px; color: #FF6B35;"></i>
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                <i class="fas fa-user-hard-hat" style="font-size: 64px; color: #94C842;"></i>
                             </div>
-                            <div style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.9); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FF6B35;">
+                            <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-industry"></i> Manager
                             </div>
                         </div>
                         <div style="padding: 2rem;">
-                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3436; margin-bottom: 0.5rem;">Phạm Thị D</h3>
-                            <p style="color: #FF6B35; font-weight: 600; margin-bottom: 1rem; font-size: 1rem;">Quản Lý Sản Xuất</p>
-                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia sản xuất với 14 năm kinh nghiệm đảm bảo chất lượng và tối ưu quy trình.</p>
-                            <div class="social-links" style="display: flex; gap: 0.8rem;">
-                                <a href="#" style="width: 40px; height: 40px; background: #fff5f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FF6B35; text-decoration: none; transition: all 0.3s;">
+                            <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Phạm Thị D</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Quản Lý Sản Xuất</p>
+                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia sản xuất với 14 năm kinh nghiệm đảm bảo chất lượng và tối ưu quy trình.</p>
+                            <div class="social-links" style="display: flex; gap: 0.75rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" style="width: 40px; height: 40px; background: #fff5f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FF6B35; text-decoration: none; transition: all 0.3s;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fas fa-envelope"></i>
                                 </a>
                             </div>
