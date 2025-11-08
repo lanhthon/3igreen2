@@ -247,7 +247,7 @@
     
     <title>Gói Đỡ PU Foam Cách Nhiệt, Chịu Lực Cao - 3igreen | Tiết Kiệm 70% Thời Gian Thi Công</title>
     <meta name="description" content="3igreen chuyên sản xuất gói đỡ PU Foam chất lượng cao với hệ số dẫn nhiệt thấp, khả năng chịu lực tốt. Giải pháp tối ưu cho hệ thống lạnh, chiller, điều hòa không khí. Tiết kiệm 70% thời gian thi công.">
-    <meta name="keywords" content="gói đỡ pu foam, gói đỡ ống chiller, gói đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pir foam, pur foam, kingspipe">
+    <meta name="keywords" content="gói đỡ pu foam, gói đỡ ống chiller, gói đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pu foam đế vuông, pu foam đế tròn, kingspipe">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -1863,6 +1863,45 @@
             background: linear-gradient(135deg, #2563eb, #1d4ed8);
         }
 
+        /* Product Cards */
+        .product-card {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 35px 70px rgba(148, 200, 66, 0.25) !important;
+        }
+
+        .product-icon {
+            transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .product-card:hover .product-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .product-badge {
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .product-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+
+        .product-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(148, 200, 66, 0.4) !important;
+        }
+
         /* Animation Classes - Optimized for Performance */
         .animate-on-scroll {
             opacity: 0;
@@ -2474,7 +2513,7 @@
                     <div class="floating-cards">
                         <div class="floating-card card-1">
                             <h4><i class="fas fa-award"></i> Chất Lượng Cao</h4>
-                            <p>Sản phẩm đạt tiêu chuẩn quốc tế PIR/PUR, được kiểm định nghiêm ngặt</p>
+                            <p>Sản phẩm đạt tiêu chuẩn quốc tế PU Foam, được kiểm định nghiêm ngặt</p>
                             <div class="stats">
                                 <div class="stat-item">
                                     <div class="stat-number">99%</div>
@@ -2534,21 +2573,21 @@
                         Về chúng tôi
                     </div>
                     <h2 class="section-title">Công Ty Hàng Đầu Về Vật Liệu Xanh</h2>
-                    <p class="section-subtitle">3igreen cam kết mang đến những sản phẩm chất lượng cao nhất, áp dụng công nghệ PIR/PUR tiên tiến như KingsPipe, góp phần xây dựng một tương lai bền vững cho môi trường và xã hội.</p>
+                    <p class="section-subtitle">3igreen cam kết mang đến những sản phẩm chất lượng cao nhất, áp dụng công nghệ PU Foam tiên tiến như KingsPipe, góp phần xây dựng một tương lai bền vững cho môi trường và xã hội.</p>
                 </div>
                 
                 <div class="about-content">
                     <div class="about-text slide-in-left animate-on-scroll">
-                        <h3>Tiên Phong Trong Công Nghệ Vật Liệu Xanh PIR/PUR</h3>
+                        <h3>Tiên Phong Trong Công Nghệ Vật Liệu Xanh PU Foam</h3>
                         <p>Với hơn 10 năm kinh nghiệm trong lĩnh vực sản xuất và ứng dụng vật liệu xanh, <strong>CÔNG TY TNHH SẢN XUẤT VÀ ỨNG DỤNG VẬT LIỆU XANH 3I</strong> đã khẳng định được vị thế hàng đầu trong ngành.</p>
                         
-                        <p>Chúng tôi chuyên sản xuất các sản phẩm gói đỡ PU Foam chất lượng cao, ứng dụng công nghệ PIR (Polyisocyanurate) và PUR (Polyurethane) tiên tiến, được ứng dụng rộng rãi trong các hệ thống công nghiệp hiện đại. <strong>Tiết kiệm 70% thời gian thi công</strong> nhờ thiết kế sáng tạo và quy trình tối ưu.</p>
+                        <p>Chúng tôi chuyên sản xuất các sản phẩm gói đỡ PU Foam chất lượng cao, ứng dụng công nghệ PU (Polyisocyanurate) và PUR (Polyurethane) tiên tiến, được ứng dụng rộng rãi trong các hệ thống công nghiệp hiện đại. <strong>Tiết kiệm 70% thời gian thi công</strong> nhờ thiết kế sáng tạo và quy trình tối ưu.</p>
 
                         <div class="about-highlights">
                             <div class="highlight-item">
                                 <i class="fas fa-industry"></i>
                                 <div>
-                                    <h5>Công nghệ PIR/PUR tiên tiến</h5>
+                                    <h5>Công nghệ PU Foam tiên tiến</h5>
                                     <p>Dây chuyền sản xuất hiện đại từ Châu Âu</p>
                                 </div>
                             </div>
@@ -2584,7 +2623,7 @@
                             <div class="company-info">
                                 <h4>3igreen - Vật Liệu Xanh</h4>
                                 <p>Mã số thuế: <strong>0110886479</strong></p>
-                                <p>Chúng tôi tự hào là đối tác tin cậy của hàng trăm doanh nghiệp lớn trong và ngoài nước, góp phần vào sự phát triển bền vững của ngành công nghiệp Việt Nam với công nghệ PIR/PUR tiên tiến.</p>
+                                <p>Chúng tôi tự hào là đối tác tin cậy của hàng trăm doanh nghiệp lớn trong và ngoài nước, góp phần vào sự phát triển bền vững của ngành công nghiệp Việt Nam với công nghệ PU Foam tiên tiến.</p>
                             </div>
                             <div class="company-stats">
                                 <div class="stat-card">
@@ -2657,7 +2696,7 @@
                         <div style="padding: 2rem;">
                             <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3436; margin-bottom: 0.5rem;">Trần Thị B</h3>
                             <p style="color: #FF6B35; font-weight: 600; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Công Nghệ</p>
-                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia công nghệ PIR/PUR với 12 năm kinh nghiệm nghiên cứu và phát triển sản phẩm.</p>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia công nghệ PU Foam với 12 năm kinh nghiệm nghiên cứu và phát triển sản phẩm.</p>
                             <div class="social-links" style="display: flex; gap: 0.8rem;">
                                 <a href="#" style="width: 40px; height: 40px; background: #fff5f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FF6B35; text-decoration: none; transition: all 0.3s;">
                                     <i class="fab fa-linkedin-in"></i>
@@ -2746,8 +2785,8 @@
                         <i class="fas fa-star"></i>
                         Tính năng vượt trội
                     </div>
-                    <h2 class="section-title">Đặc Tính Nổi Bật Của Gói Đỡ PU Foam PIR/PUR</h2>
-                    <p class="section-subtitle">Sản phẩm gói đỡ PU Foam 3igreen được thiết kế và sản xuất với những tính năng vượt trội, áp dụng công nghệ PIR/PUR hiện đại nhất, đáp ứng mọi yêu cầu khắt khe của các hệ thống công nghiệp hiện đại.</p>
+                    <h2 class="section-title">Đặc Tính Nổi Bật Của Gói Đỡ PU Foam PU Foam</h2>
+                    <p class="section-subtitle">Sản phẩm gói đỡ PU Foam 3igreen được thiết kế và sản xuất với những tính năng vượt trội, áp dụng công nghệ PU Foam hiện đại nhất, đáp ứng mọi yêu cầu khắt khe của các hệ thống công nghiệp hiện đại.</p>
                 </div>
                 
                 <div class="features-grid">
@@ -2755,8 +2794,8 @@
                         <div class="feature-icon">
                             <i class="fas fa-thermometer-half"></i>
                         </div>
-                        <h3>Cách Nhiệt Siêu Việt PIR</h3>
-                        <p>Với hệ số dẫn nhiệt cực thấp λ ≤ 0.022 W/m.K của công nghệ PIR (Polyisocyanurate), gói đỡ PU Foam ngăn chặn hiệu quả sự trao đổi nhiệt, giúp duy trì nhiệt độ ổn định cho hệ thống.</p>
+                        <h3>Cách Nhiệt Siêu Việt PU</h3>
+                        <p>Với hệ số dẫn nhiệt cực thấp λ ≤ 0.022 W/m.K của công nghệ PU (Polyisocyanurate), gói đỡ PU Foam ngăn chặn hiệu quả sự trao đổi nhiệt, giúp duy trì nhiệt độ ổn định cho hệ thống.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Giảm thất thoát nhiệt lên đến 95%</li>
                             <li><i class="fas fa-check-circle"></i> Chống đọng sương hoàn toàn</li>
@@ -2770,7 +2809,7 @@
                             <i class="fas fa-dumbbell"></i>
                         </div>
                         <h3>Sức Chịu Tải Vượt Trội</h3>
-                        <p>Khả năng chịu nén lên đến 300 kPa với công nghệ PUR/PIR, đảm bảo chịu được tải trọng lớn của đường ống và áp lực vận hành mà không bị biến dạng.</p>
+                        <p>Khả năng chịu nén lên đến 300 kPa với công nghệ PU Foam, đảm bảo chịu được tải trọng lớn của đường ống và áp lực vận hành mà không bị biến dạng.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Chịu tải trọng lên đến 5 tấn/m²</li>
                             <li><i class="fas fa-check-circle"></i> Không bị lún, biến dạng theo thời gian</li>
@@ -2784,7 +2823,7 @@
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <h3>Chống Thấm Tuyệt Đối</h3>
-                        <p>Cấu trúc ô kín hoàn toàn với độ hút nước < 1% theo thể tích của PIR, ngăn nước và hơi ẩm xâm nhập, bảo vệ đường ống khỏi ăn mòn.</p>
+                        <p>Cấu trúc ô kín hoàn toàn với độ hút nước < 1% theo thể tích của PU, ngăn nước và hơi ẩm xâm nhập, bảo vệ đường ống khỏi ăn mòn.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Độ hút nước cực thấp < 1%</li>
                             <li><i class="fas fa-check-circle"></i> Chống ăn mòn hiệu quả</li>
@@ -2826,7 +2865,7 @@
                             <i class="fas fa-leaf"></i>
                         </div>
                         <h3>Thân Thiện Môi Trường</h3>
-                        <p>Sản xuất không sử dụng CFC, HCFC theo công nghệ PIR, hoàn toàn thân thiện với môi trường và tầng ozone, góp phần bảo vệ Trái đất xanh.</p>
+                        <p>Sản xuất không sử dụng CFC, HCFC theo công nghệ PU, hoàn toàn thân thiện với môi trường và tầng ozone, góp phần bảo vệ Trái đất xanh.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Không chứa CFC, HCFC</li>
                             <li><i class="fas fa-check-circle"></i> Có thể tái chế</li>
@@ -2879,7 +2918,7 @@
                                     <strong style="color: #94C842;">25 - 100mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
-                                    <span style="color: #6b7280;">Mật độ PIR:</span>
+                                    <span style="color: #6b7280;">Mật độ PU:</span>
                                     <strong style="color: #94C842;">40 kg/m³</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
@@ -2937,7 +2976,7 @@
                                     <strong style="color: #FF6B35;">30 - 100mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #a7f3d0;">
-                                    <span style="color: #6b7280;">Mật độ PIR:</span>
+                                    <span style="color: #6b7280;">Mật độ PU:</span>
                                     <strong style="color: #FF6B35;">40 kg/m³</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
@@ -2967,113 +3006,6 @@
                         </a>
                     </div>
 
-                    <!-- Product 3: Gối đỡ chữ U -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden;">
-                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #78A82E, #94C842); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
-                            <i class="fas fa-fire"></i> Mới
-                        </div>
-
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #78A82E, #94C842); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);">
-                            <i class="fas fa-shapes"></i>
-                        </div>
-
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #94C842; margin-bottom: 1rem; text-align: center;">Gối Đỡ Chữ U</h3>
-
-                        <p style="color: #6b7280; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế chữ U ôm 3 mặt ống, cách nhiệt toàn diện. Lý tưởng cho ống nằm ngang, ống treo trên trần.</p>
-
-                        <div class="product-specs" style="background: #a7f3d0; padding: 1.5rem; border-radius: 20px; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 1rem; color: #78A82E; margin-bottom: 1rem; font-weight: 600;">
-                                <i class="fas fa-info-circle"></i> Thông số kỹ thuật
-                            </h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #FFD93D;">
-                                    <span style="color: #6b7280;">Đường kính ống:</span>
-                                    <strong style="color: #78A82E;">Ø33 - Ø168mm</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #FFD93D;">
-                                    <span style="color: #6b7280;">Độ dày:</span>
-                                    <strong style="color: #78A82E;">25 - 75mm</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #FFD93D;">
-                                    <span style="color: #6b7280;">Mật độ PUR:</span>
-                                    <strong style="color: #78A82E;">35-45 kg/m³</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
-                                    <span style="color: #6b7280;">Hệ số dẫn nhiệt:</span>
-                                    <strong style="color: #78A82E;">λ ≤ 0.028 W/m.K</strong>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="product-features" style="margin-bottom: 1.5rem;">
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #78A82E; font-size: 1.2rem;"></i>
-                                <span style="color: #4b5563;">Bao phủ 3 mặt, cách nhiệt toàn diện</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #78A82E; font-size: 1.2rem;"></i>
-                                <span style="color: #4b5563;">Phù hợp ống nằm ngang, ống treo</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #78A82E; font-size: 1.2rem;"></i>
-                                <span style="color: #4b5563;">Tiết kiệm không gian lắp đặt</span>
-                            </div>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #78A82E, #94C842); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);">
-                            <i class="fas fa-envelope"></i> Nhận Báo Giá Ngay
-                        </a>
-                    </div>
-
-                    <!-- Product 4: Gối đỡ đặc biệt (custom) -->
-                    <div class="product-card animate-on-scroll" style="background: linear-gradient(135deg, #94C842, #FFD93D); border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; color: white;">
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);">
-                            <i class="fas fa-cog"></i>
-                        </div>
-
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 1rem; text-align: center;">Gối Đỡ Đặc Biệt</h3>
-
-                        <p style="color: rgba(255, 255, 255, 0.9); text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế theo yêu cầu riêng của từng dự án. Tư vấn miễn phí giải pháp tối ưu nhất cho công trình của bạn.</p>
-
-                        <div class="product-specs" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 20px; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 1rem; color: white; margin-bottom: 1rem; font-weight: 600;">
-                                <i class="fas fa-wrench"></i> Tùy chỉnh theo yêu cầu
-                            </h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; border-bottom: 1px dashed rgba(255,255,255,0.3); color: rgba(255,255,255,0.95);">
-                                    <i class="fas fa-check"></i> Kích thước tùy chỉnh theo ống
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; border-bottom: 1px dashed rgba(255,255,255,0.3); color: rgba(255,255,255,0.95);">
-                                    <i class="fas fa-check"></i> Độ dày cách nhiệt linh hoạt
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; border-bottom: 1px dashed rgba(255,255,255,0.3); color: rgba(255,255,255,0.95);">
-                                    <i class="fas fa-check"></i> Hình dạng đặc biệt theo dự án
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; color: rgba(255,255,255,0.95);">
-                                    <i class="fas fa-check"></i> Tư vấn kỹ thuật chuyên sâu
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="product-features" style="margin-bottom: 1.5rem;">
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; color: rgba(255,255,255,0.95);">
-                                <i class="fas fa-star" style="color: #FFA372; font-size: 1.2rem;"></i>
-                                <span>Thiết kế 100% theo yêu cầu</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; color: rgba(255,255,255,0.95);">
-                                <i class="fas fa-star" style="color: #FFA372; font-size: 1.2rem;"></i>
-                                <span>Tư vấn miễn phí từ chuyên gia</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem; color: rgba(255,255,255,0.95);">
-                                <i class="fas fa-star" style="color: #FFA372; font-size: 1.2rem;"></i>
-                                <span>Phù hợp dự án quy mô lớn</span>
-                            </div>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: white; color: #94C842; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);">
-                            <i class="fas fa-phone"></i> Liên Hệ Tư Vấn Ngay
-                        </a>
-                    </div>
                 </div>
 
                 <!-- Product comparison table -->
@@ -3086,41 +3018,40 @@
                         <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
                             <thead>
                                 <tr style="background: linear-gradient(135deg, #94C842, #FFD93D); color: white;">
-                                    <th style="padding: 1rem; text-align: left; border-radius: 10px 0 0 0;">Tiêu chí</th>
-                                    <th style="padding: 1rem; text-align: center;">Gối đỡ vuông</th>
-                                    <th style="padding: 1rem; text-align: center;">Gối đỡ tròn</th>
-                                    <th style="padding: 1rem; text-align: center;">Gối đỡ chữ U</th>
-                                    <th style="padding: 1rem; text-align: center; border-radius: 0 10px 0 0;">Đặc biệt</th>
+                                    <th style="padding: 1.2rem; text-align: left; border-radius: 10px 0 0 0; font-size: 1.05rem;">Tiêu chí</th>
+                                    <th style="padding: 1.2rem; text-align: center; font-size: 1.05rem;">
+                                        <i class="fas fa-cube"></i> Gối đỡ đế vuông
+                                    </th>
+                                    <th style="padding: 1.2rem; text-align: center; border-radius: 0 10px 0 0; font-size: 1.05rem;">
+                                        <i class="fas fa-circle"></i> Gối đỡ đế tròn
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr style="border-bottom: 1px solid #e5e7eb;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #94C842;">Độ dày</td>
-                                    <td style="padding: 1rem; text-align: center;">25-100mm</td>
-                                    <td style="padding: 1rem; text-align: center;">30-100mm</td>
-                                    <td style="padding: 1rem; text-align: center;">25-75mm</td>
-                                    <td style="padding: 1rem; text-align: center;">Tùy chỉnh</td>
+                                    <td style="padding: 1.2rem; font-weight: 600; color: #94C842;"><i class="fas fa-ruler"></i> Độ dày</td>
+                                    <td style="padding: 1.2rem; text-align: center; font-size: 1rem;">25 - 100mm</td>
+                                    <td style="padding: 1.2rem; text-align: center; font-size: 1rem;">30 - 100mm</td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e5e7eb; background: #f8fffe;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #94C842;">Thời gian lắp đặt</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-bolt" style="color: #FFD93D;"></i> Rất nhanh</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-check" style="color: #FFD93D;"></i> Nhanh</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-check" style="color: #FFD93D;"></i> Nhanh</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-cog" style="color: #FFD93D;"></i> Theo TC</td>
+                                <tr style="border-bottom: 1px solid #e5e7eb; background: #fcfff5;">
+                                    <td style="padding: 1.2rem; font-weight: 600; color: #94C842;"><i class="fas fa-clock"></i> Thời gian lắp đặt</td>
+                                    <td style="padding: 1.2rem; text-align: center;"><i class="fas fa-bolt" style="color: #FFD93D;"></i> <strong style="color: #94C842;">Rất nhanh - 70% thời gian</strong></td>
+                                    <td style="padding: 1.2rem; text-align: center;"><i class="fas fa-check" style="color: #FF6B35;"></i> Nhanh</td>
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e5e7eb;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #94C842;">Ứng dụng</td>
-                                    <td style="padding: 1rem; text-align: center;">Mọi loại ống</td>
-                                    <td style="padding: 1rem; text-align: center;">Ống áp lực cao</td>
-                                    <td style="padding: 1rem; text-align: center;">Ống nằm ngang</td>
-                                    <td style="padding: 1rem; text-align: center;">Dự án đặc biệt</td>
+                                    <td style="padding: 1.2rem; font-weight: 600; color: #94C842;"><i class="fas fa-cogs"></i> Ứng dụng</td>
+                                    <td style="padding: 1.2rem; text-align: center;">Mọi loại ống, Chiller, HVAC</td>
+                                    <td style="padding: 1.2rem; text-align: center;">Ống áp lực cao, Chiller công nghiệp</td>
                                 </tr>
-                                <tr style="background: #f8fffe;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #94C842;">Giá thành</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #FFD93D;"></i> Tốt nhất</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #FFD93D;"></i><i class="fas fa-dollar-sign" style="color: #FFD93D;"></i> Premium</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #FFD93D;"></i> Tốt</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-phone" style="color: #FFD93D;"></i> Liên hệ</td>
+                                <tr style="border-bottom: 1px solid #e5e7eb; background: #fcfff5;">
+                                    <td style="padding: 1.2rem; font-weight: 600; color: #94C842;"><i class="fas fa-fire"></i> Hệ số dẫn nhiệt</td>
+                                    <td style="padding: 1.2rem; text-align: center;"><strong style="color: #94C842;">λ ≤ 0.022 W/m.K</strong></td>
+                                    <td style="padding: 1.2rem; text-align: center;"><strong style="color: #FF6B35;">λ ≤ 0.022 W/m.K</strong></td>
+                                </tr>
+                                <tr style="background: #fcfff5;">
+                                    <td style="padding: 1.2rem; font-weight: 600; color: #94C842;"><i class="fas fa-dollar-sign"></i> Giá thành</td>
+                                    <td style="padding: 1.2rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #FFD93D;"></i> <strong style="color: #94C842;">Tốt nhất</strong></td>
+                                    <td style="padding: 1.2rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #FF6B35;"></i><i class="fas fa-dollar-sign" style="color: #FF6B35;"></i> <strong style="color: #FF6B35;">Premium</strong></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -3158,18 +3089,18 @@
                             <i class="fas fa-cogs"></i>
                             Thông số kỹ thuật
                         </div>
-                        <h2 class="section-title" style="color: white;">Thông Số Kỹ Thuật Chi Tiết PIR/PUR</h2>
-                        <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Các thông số kỹ thuật được kiểm định nghiêm ngặt theo tiêu chuẩn quốc tế PIR/PUR, đảm bảo chất lượng cao nhất cho sản phẩm.</p>
+                        <h2 class="section-title" style="color: white;">Thông Số Kỹ Thuật Chi Tiết PU Foam</h2>
+                        <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Các thông số kỹ thuật được kiểm định nghiêm ngặt theo tiêu chuẩn quốc tế PU Foam, đảm bảo chất lượng cao nhất cho sản phẩm.</p>
                     </div>
 
                     <div class="specs-grid">
                         <div class="spec-card animate-on-scroll">
                             <div class="spec-header">
                                 <div class="spec-icon">🌡️</div>
-                                <h4>Tính Chất Nhiệt PIR</h4>
+                                <h4>Tính Chất Nhiệt PU</h4>
                             </div>
                             <ul class="spec-list">
-                                <li><span>Hệ số dẫn nhiệt (λ) PIR</span> <span class="spec-value">≤ 0.022 W/m.K</span></li>
+                                <li><span>Hệ số dẫn nhiệt (λ) PU</span> <span class="spec-value">≤ 0.022 W/m.K</span></li>
                                 <li><span>Hệ số dẫn nhiệt (λ) PUR</span> <span class="spec-value">≤ 0.028 W/m.K</span></li>
                                 <li><span>Khoảng nhiệt độ sử dụng</span> <span class="spec-value">-196°C đến +120°C</span></li>
                                 <li><span>Độ bền nhiệt</span> <span class="spec-value">Excellent</span></li>
@@ -3183,7 +3114,7 @@
                                 <h4>Tính Chất Cơ Học</h4>
                             </div>
                             <ul class="spec-list">
-                                <li><span>Khối lượng riêng PIR</span> <span class="spec-value">40 kg/m³</span></li>
+                                <li><span>Khối lượng riêng PU</span> <span class="spec-value">40 kg/m³</span></li>
                                 <li><span>Khối lượng riêng PUR</span> <span class="spec-value">32-60 kg/m³</span></li>
                                 <li><span>Sức chịu nén (10%)</span> <span class="spec-value">≥ 300 kPa</span></li>
                                 <li><span>Độ bền kéo</span> <span class="spec-value">≥ 200 kPa</span></li>
@@ -3241,7 +3172,7 @@
                             <i class="fas fa-snowflake"></i>
                         </div>
                         <h3>Hệ Thống Lạnh Trung Tâm</h3>
-                        <p>Ứng dụng trong các hệ thống làm lạnh công nghiệp, đảm bảo hiệu suất tối ưu và tiết kiệm năng lượng với công nghệ PIR/PUR.</p>
+                        <p>Ứng dụng trong các hệ thống làm lạnh công nghiệp, đảm bảo hiệu suất tối ưu và tiết kiệm năng lượng với công nghệ PU Foam.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Trung tâm thương mại, siêu thị</li>
                             <li><i class="fas fa-chevron-right"></i> Nhà máy sản xuất thực phẩm</li>
@@ -3255,7 +3186,7 @@
                             <i class="fas fa-wind"></i>
                         </div>
                         <h3>Hệ Thống HVAC</h3>
-                        <p>Tối ưu hóa hệ thống điều hòa không khí, giảm thất thoát nhiệt và tăng tuổi thọ thiết bị với vật liệu PIR chất lượng cao.</p>
+                        <p>Tối ưu hóa hệ thống điều hòa không khí, giảm thất thoát nhiệt và tăng tuổi thọ thiết bị với vật liệu PU chất lượng cao.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Tòa nhà văn phòng cao tầng</li>
                             <li><i class="fas fa-chevron-right"></i> Khách sạn, resort</li>
@@ -3269,7 +3200,7 @@
                             <i class="fas fa-industry"></i>
                         </div>
                     <h3>Hệ Thống Chiller Chuyên Nghiệp</h3>
-                        <p>Ứng dụng trong các hệ thống chiller giải nhiệt nước từ 7°C đến 12°C, đảm bảo hiệu suất tối ưu và tiết kiệm năng lượng với công nghệ PIR/PUR cách nhiệt vượt trội.</p>
+                        <p>Ứng dụng trong các hệ thống chiller giải nhiệt nước từ 7°C đến 12°C, đảm bảo hiệu suất tối ưu và tiết kiệm năng lượng với công nghệ PU Foam cách nhiệt vượt trội.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Hệ thống chiller giải nhiệt nước công nghiệp</li>
                             <li><i class="fas fa-chevron-right"></i> Chiller điều hòa trung tâm (7°C-12°C)</li>
@@ -3283,7 +3214,7 @@
                             <i class="fas fa-warehouse"></i>
                         </div>
                         <h3>Phòng Lạnh & Kho Đông</h3>
-                        <p>Cách nhiệt hiệu quả cho các hệ thống làm lạnh ở nhiệt độ cực thấp, ứng dụng công nghệ PIR chịu nhiệt độ xuống -196°C.</p>
+                        <p>Cách nhiệt hiệu quả cho các hệ thống làm lạnh ở nhiệt độ cực thấp, ứng dụng công nghệ PU chịu nhiệt độ xuống -196°C.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Kho bảo quản thủy hải sản</li>
                             <li><i class="fas fa-chevron-right"></i> Nhà máy chế biến thức ăn đông lạnh</li>
@@ -3297,7 +3228,7 @@
                             <i class="fas fa-home"></i>
                         </div>
                         <h3>Ứng Dụng Dân Dụng</h3>
-                        <p>Phục vụ các công trình dân dụng, mang lại sự thoải mái và tiết kiệm cho gia đình với vật liệu PUR/PIR an toàn.</p>
+                        <p>Phục vụ các công trình dân dụng, mang lại sự thoải mái và tiết kiệm cho gia đình với vật liệu PU Foam an toàn.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Căn hộ chung cư cao cấp</li>
                             <li><i class="fas fa-chevron-right"></i> Villa, biệt thự</li>
@@ -3311,7 +3242,7 @@
                             <i class="fas fa-flask"></i>
                         </div>
                         <h3>Công Nghiệp Đặc Biệt</h3>
-                        <p>Đáp ứng các yêu cầu khắt khe của những ngành công nghiệp có tính đặc thù cao với vật liệu PIR chất lượng quốc tế.</p>
+                        <p>Đáp ứng các yêu cầu khắt khe của những ngành công nghiệp có tính đặc thù cao với vật liệu PU chất lượng quốc tế.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Ngành dược phẩm</li>
                             <li><i class="fas fa-chevron-right"></i> Công nghiệp điện tử</li>
@@ -3332,7 +3263,7 @@
                         Dự án tiêu biểu
                     </div>
                     <h2 class="section-title">Dự Án Cách Nhiệt Chuyên Nghiệp</h2>
-                    <p class="section-subtitle">3igreen tự hào đã thực hiện thành công nhiều dự án cách nhiệt lớn cho các nhà máy, tập đoàn hàng đầu với công nghệ PIR/PUR tiên tiến, tiết kiệm 70% thời gian thi công.</p>
+                    <p class="section-subtitle">3igreen tự hào đã thực hiện thành công nhiều dự án cách nhiệt lớn cho các nhà máy, tập đoàn hàng đầu với công nghệ PU Foam tiên tiến, tiết kiệm 70% thời gian thi công.</p>
                 </div>
                 
                 <div class="projects-grid">
@@ -3354,7 +3285,7 @@
                         <div class="project-content">
                             <div class="project-category">Nhà máy điện tử</div>
                             <h3>Nhà Máy Điện Tử Thông Minh Phenikaa</h3>
-                            <p>Hệ thống cách nhiệt PIR/PUR cho nhà máy điện tử thông minh công suất 4.5 tỷ linh kiện/năm tại Khu Công nghệ cao Hòa Lạc, Hà Nội.</p>
+                            <p>Hệ thống cách nhiệt PU Foam cho nhà máy điện tử thông minh công suất 4.5 tỷ linh kiện/năm tại Khu Công nghệ cao Hòa Lạc, Hà Nội.</p>
                             <div class="project-features">
                                 <span class="feature-tag">Cách nhiệt thông minh</span>
                                 <span class="feature-tag">Tiêu chuẩn ISO</span>
@@ -3439,7 +3370,7 @@
                             <p>Dự án cách nhiệt cho nhà máy sản xuất panel cách nhiệt cao cấp tiêu chuẩn LEED Platinum tại KCN Phú Mỹ II, Bà Rịa - Vũng Tàu.</p>
                             <div class="project-features">
                                 <span class="feature-tag">LEED Platinum</span>
-                                <span class="feature-tag">Panel PIR</span>
+                                <span class="feature-tag">Panel PU</span>
                                 <span class="feature-tag">Châu Âu</span>
                             </div>
                             <div class="project-details">
@@ -3624,10 +3555,10 @@
                                 <span style="background: #fff5f0; color: #FF6B35; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">Xu hướng</span>
                             </div>
                             <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
-                                Công Nghệ PIR/PUR Thế Hệ Mới - Tiết Kiệm 70% Thời Gian Thi Công
+                                Công Nghệ PU Foam Thế Hệ Mới - Tiết Kiệm 70% Thời Gian Thi Công
                             </h3>
                             <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
-                                Khám phá công nghệ PIR/PUR tiên tiến giúp tiết kiệm thời gian thi công lên đến 70%, mang lại hiệu quả vượt trội cho các công trình công nghiệp...
+                                Khám phá công nghệ PU Foam tiên tiến giúp tiết kiệm thời gian thi công lên đến 70%, mang lại hiệu quả vượt trội cho các công trình công nghiệp...
                             </p>
                             <div style="display: flex; justify-content: space-between; align-items: center;">
                                 <div style="display: flex; align-items: center; gap: 0.8rem;">
@@ -3877,7 +3808,7 @@
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-check"></i>
-                                <span>Phù hợp PIR/PUR foam</span>
+                                <span>Phù hợp PU Foam foam</span>
                             </div>
                         </div>
                         <button class="calc-btn" onclick="openCalculator('chiller')">
@@ -3945,7 +3876,7 @@
                     <div class="contact-info animate-on-scroll slide-in-left">
                         <h2>Liên Hệ Với Chúng Tôi</h2>
                         <p class="contact-description">
-                            Hãy để 3igreen tư vấn miễn phí và cung cấp giải pháp tối ưu nhất cho dự án của bạn. Chúng tôi cam kết phản hồi trong vòng 24 giờ với báo giá cạnh tranh nhất thị trường và công nghệ PIR/PUR tiên tiến.
+                            Hãy để 3igreen tư vấn miễn phí và cung cấp giải pháp tối ưu nhất cho dự án của bạn. Chúng tôi cam kết phản hồi trong vòng 24 giờ với báo giá cạnh tranh nhất thị trường và công nghệ PU Foam tiên tiến.
                         </p>
                         
                         <div class="contact-details">
@@ -4061,7 +3992,7 @@
                             
                             <div class="form-group">
                                 <label for="message">Mô tả chi tiết dự án *</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Vui lòng mô tả chi tiết về dự án: diện tích, yêu cầu kỹ thuật, điều kiện đặc biệt, loại vật liệu PIR/PUR cần sử dụng..." required></textarea>
+                                <textarea id="message" name="message" rows="5" placeholder="Vui lòng mô tả chi tiết về dự án: diện tích, yêu cầu kỹ thuật, điều kiện đặc biệt, loại vật liệu PU Foam cần sử dụng..." required></textarea>
                             </div>
                             
                             <div class="form-submit">
@@ -4083,7 +4014,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3><i class="fas fa-leaf"></i> 3igreen</h3>
-                    <p>Chuyên sản xuất và cung cấp các giải pháp vật liệu xanh chất lượng cao cho công nghiệp. Với hơn 10 năm kinh nghiệm và công nghệ PIR/PUR tiên tiến, chúng tôi tự hào là đối tác tin cậy của hàng trăm doanh nghiệp lớn.</p>
+                    <p>Chuyên sản xuất và cung cấp các giải pháp vật liệu xanh chất lượng cao cho công nghiệp. Với hơn 10 năm kinh nghiệm và công nghệ PU Foam tiên tiến, chúng tôi tự hào là đối tác tin cậy của hàng trăm doanh nghiệp lớn.</p>
                     <div class="footer-social">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
@@ -4096,7 +4027,7 @@
                     <h4>Sản phẩm</h4>
                     <ul class="footer-links">
                         <li><a href="#features">Gói đỡ PU Foam</a></li>
-                        <li><a href="#applications">Ứng dụng PIR/PUR</a></li>
+                        <li><a href="#applications">Ứng dụng PU Foam</a></li>
                         <li><a href="#specs">Thông số kỹ thuật</a></li>
                         <li><a href="#contact">Báo giá</a></li>
                         <li><a href="#about">Công nghệ KingsPipe</a></li>
@@ -4403,7 +4334,7 @@
                         <div style="background: linear-gradient(135deg, #94C842, #78A82E); color: white; padding: 1.5rem; border-radius: 15px; text-align: center; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);">
                             <i class="fas fa-check-circle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
                             <h4 style="margin-bottom: 0.5rem;">Gửi yêu cầu thành công!</h4>
-                            <p style="margin: 0; opacity: 0.9;">Cảm ơn bạn đã tin tưởng 3igreen. Chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ với báo giá chi tiết nhất về công nghệ PIR/PUR.</p>
+                            <p style="margin: 0; opacity: 0.9;">Cảm ơn bạn đã tin tưởng 3igreen. Chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ với báo giá chi tiết nhất về công nghệ PU Foam.</p>
                         </div>
                     `;
                     
