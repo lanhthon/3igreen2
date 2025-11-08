@@ -247,7 +247,7 @@
     
     <title>Gói Đỡ PU Foam Cách Nhiệt, Chịu Lực Cao - 3igreen | Tiết Kiệm 70% Thời Gian Thi Công</title>
     <meta name="description" content="3igreen chuyên sản xuất gói đỡ PU Foam chất lượng cao với hệ số dẫn nhiệt thấp, khả năng chịu lực tốt. Giải pháp tối ưu cho hệ thống lạnh, chiller, điều hòa không khí. Tiết kiệm 70% thời gian thi công.">
-    <meta name="keywords" content="gói đỡ pu foam, gói đỡ ống chiller, gói đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pir foam, pur foam, kingspipe">
+    <meta name="keywords" content="gói đỡ pu foam, gói đỡ ống chiller, gói đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pu foam đế vuông, pu foam đế tròn, kingspipe">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -255,26 +255,58 @@
 
     <style>
         :root {
-            /* Bảng màu Green Theme - Xanh lá tươi mát */
-            --primary-color: #10b981;        /* Emerald Green - Xanh lục bảo tươi */
-            --primary-light: #34d399;        /* Mint Green - Xanh bạc hà sáng */
-            --primary-dark: #059669;         /* Forest Green - Xanh rừng đậm */
-            --secondary-color: #6ee7b7;      /* Aqua Green - Xanh ngọc nhạt */
-            --accent-color: #14b8a6;         /* Teal Green - Xanh ngọc lam */
-            --accent-light: #5eead4;         /* Light Teal - Xanh ngọc nhạt */
-            --text-dark: #064e3b;            /* Dark Green Text - Chữ xanh đậm */
-            --text-light: #6b7280;           /* Gray Text - Xám nhạt */
-            --text-muted: #9ca3af;           /* Muted Gray - Xám mờ */
-            --bg-light: #f0fdf4;             /* Green Tint BG - Nền xanh cực nhạt */
-            --bg-section: #d1fae5;           /* Light Green BG - Nền xanh nhạt */
-            --white: #ffffff;
-            --glass-bg: rgba(255, 255, 255, 0.15);
-            --shadow: 0 25px 50px rgba(16, 185, 129, 0.15);
-            --shadow-lg: 0 35px 70px rgba(16, 185, 129, 0.20);
-            --shadow-hover: 0 40px 80px rgba(16, 185, 129, 0.25);
-            --border-radius: 20px;
-            --border-radius-lg: 30px;
-            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            /* Modern Premium Industrial Color Palette */
+            --primary-green: #94C842;           /* Industrial Green */
+            --primary-green-dark: #6B9631;      /* Dark Green */
+            --primary-green-light: #A8D657;     /* Light Green */
+
+            --navy-dark: #0A1628;               /* Deep Navy - Premium Dark */
+            --navy: #1A2332;                    /* Navy - Dark BG */
+            --navy-light: #2C3E50;              /* Light Navy */
+
+            --white: #FFFFFF;                   /* Pure White */
+            --off-white: #F8F9FA;               /* Off White - Light BG */
+            --light-gray: #E9ECEF;              /* Light Gray */
+
+            --text-primary: #0A1628;            /* Primary Text - Dark Navy */
+            --text-secondary: #4A5568;          /* Secondary Text - Gray */
+            --text-muted: #A0AEC0;              /* Muted Text */
+
+            --accent-gold: #FFD93D;             /* Premium Gold Accent */
+            --accent-orange: #FF6B35;           /* Energy Orange */
+
+            /* Industrial Shadows - Elevated, Premium */
+            --shadow-sm: 0 2px 8px rgba(10, 22, 40, 0.08);
+            --shadow-md: 0 4px 16px rgba(10, 22, 40, 0.12);
+            --shadow-lg: 0 8px 32px rgba(10, 22, 40, 0.16);
+            --shadow-xl: 0 16px 48px rgba(10, 22, 40, 0.20);
+            --shadow-2xl: 0 24px 64px rgba(10, 22, 40, 0.24);
+
+            /* Geometric Border Radius - Less rounded, more industrial */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+
+            /* Professional Transitions */
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+            /* Typography Scale - Industrial Bold */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Poppins', sans-serif;
+
+            /* Spacing System */
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            --space-24: 6rem;
         }
 
         * {
@@ -283,111 +315,185 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.7;
-            color: var(--text-dark);
-            overflow-x: hidden;
+        html {
             scroll-behavior: smooth;
         }
 
-        /* Custom Scrollbar */
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Modern Premium Scrollbar */
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 10px;
         }
 
         ::-webkit-scrollbar-track {
-            background: var(--bg-light);
+            background: var(--light-gray);
         }
 
         ::-webkit-scrollbar-thumb {
-            background: var(--primary-color);
-            border-radius: 10px;
+            background: var(--primary-green);
+            border-radius: var(--radius-sm);
+            border: 2px solid var(--light-gray);
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: var(--primary-dark);
+            background: var(--primary-green-dark);
         }
 
-        /* Loading Animation */
+        /* Industrial Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--navy-dark);
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-base);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Premium Loading Screen */
         .loading {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            background: var(--navy-dark);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             z-index: 9999;
-            transition: opacity 0.8s ease, visibility 0.8s ease;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
         }
 
         .loading.hidden {
             opacity: 0;
             visibility: hidden;
+            pointer-events: none;
         }
 
         .loader {
-            width: 80px;
-            height: 80px;
-            border: 4px solid transparent;
-            border-top: 4px solid var(--accent-color);
+            width: 60px;
+            height: 60px;
+            border: 3px solid var(--navy-light);
+            border-top: 3px solid var(--primary-green);
             border-radius: 50%;
-            animation: spin 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
-            margin-bottom: 2rem;
+            animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            margin-bottom: var(--space-6);
         }
 
         .loading-text {
             color: var(--white);
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
-            letter-spacing: 1px;
-            animation: pulse 2s ease-in-out infinite;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            opacity: 0.8;
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            to { transform: rotate(360deg); }
         }
 
-        @keyframes pulse {
-            0%, 100% { opacity: 0.7; }
-            50% { opacity: 1; }
+        /* Container System */
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--space-6);
         }
 
-        /* Scroll Progress */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 var(--space-4);
+            }
+        }
+
+        /* Utility Classes */
+        .section {
+            padding: var(--space-24) 0;
+        }
+
+        .section-dark {
+            background: var(--navy-dark);
+            color: var(--white);
+        }
+
+        .section-light {
+            background: var(--off-white);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Premium Scroll Progress Bar */
         .scroll-progress {
             position: fixed;
             top: 0;
             left: 0;
             width: 0%;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-light));
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-green), var(--accent-gold));
             z-index: 10000;
-            transition: width 0.3s ease;
-            box-shadow: 0 2px 10px rgba(247, 127, 0, 0.3);
+            transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* Header */
+        /* Premium Industrial Header */
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(30px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 1rem 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--light-gray);
+            padding: var(--space-4) 0;
             z-index: 1000;
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         header.scrolled {
-            background: rgba(255, 255, 255, 0.95);
-            box-shadow: var(--shadow);
-            padding: 0.8rem 0;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-md);
+            padding: var(--space-3) 0;
         }
 
         nav {
@@ -396,128 +502,130 @@
             align-items: center;
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 var(--space-6);
         }
 
+        /* Industrial Logo */
         .logo {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
+            font-family: var(--font-display);
+            font-size: 1.75rem;
             font-weight: 800;
-            color: var(--primary-color);
+            color: var(--navy-dark);
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            transition: var(--transition);
+            gap: var(--space-3);
+            transition: var(--transition-base);
+            letter-spacing: -0.02em;
         }
 
         .logo:hover {
-            transform: scale(1.05);
-        }
-
-        .logo-img {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-        }
-
-        .logo-text {
-            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            transform: translateX(4px);
         }
 
         .logo i {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 2rem;
+            color: var(--primary-green);
+            padding: var(--space-2);
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
         }
 
+        .logo-text {
+            color: var(--navy-dark);
+        }
+
+        /* Premium Navigation Menu */
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            gap: var(--space-8);
+            align-items: center;
         }
 
         .nav-menu a {
             text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 600;
-            font-size: 1rem;
-            transition: var(--transition);
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition-base);
             position: relative;
-            padding: 0.5rem 0;
+            padding: var(--space-2) 0;
+            letter-spacing: 0.01em;
         }
 
         .nav-menu a:hover {
-            color: var(--primary-color);
-            transform: translateY(-2px);
+            color: var(--navy-dark);
         }
 
-        .nav-menu a::after {
+        .nav-menu a::before {
             content: '';
             position: absolute;
             width: 0;
-            height: 3px;
-            bottom: -2px;
+            height: 2px;
+            bottom: 0;
             left: 0;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            transition: width 0.4s ease;
-            border-radius: 2px;
+            background: var(--primary-green);
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .nav-menu a:hover::after {
+        .nav-menu a:hover::before {
             width: 100%;
         }
 
+        /* Premium CTA Button */
         .nav-cta {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            background: var(--primary-green);
             color: var(--white);
-            padding: 0.8rem 1.8rem;
-            border-radius: 50px;
+            padding: var(--space-3) var(--space-6);
+            border-radius: var(--radius-md);
             text-decoration: none;
             font-weight: 600;
             font-size: 0.95rem;
-            transition: var(--transition);
-            box-shadow: var(--shadow);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-sm);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
         }
 
         .nav-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-hover);
-            background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            background: var(--primary-green-dark);
         }
 
+        .nav-cta i {
+            font-size: 1rem;
+        }
+
+        /* Mobile Menu Toggle */
         .mobile-menu {
             display: none;
             cursor: pointer;
-            font-size: 1.8rem;
-            color: var(--primary-color);
-            transition: var(--transition);
+            font-size: 1.5rem;
+            color: var(--navy-dark);
+            padding: var(--space-2);
+            transition: var(--transition-base);
         }
 
         .mobile-menu:hover {
-            transform: scale(1.1);
+            color: var(--primary-green);
         }
 
         /* Hero Section */
+        /* Premium Industrial Hero */
         .hero {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, 
-                rgba(30, 81, 40, 0.95), 
-                rgba(78, 124, 89, 0.9)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="grad1" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:rgba(82,183,136,0.1);stop-opacity:1" /><stop offset="100%" style="stop-color:rgba(30,81,40,0.1);stop-opacity:1" /></radialGradient><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grad1)"/><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             position: relative;
             overflow: hidden;
+            padding: calc(var(--space-24) + 80px) 0 var(--space-24);
         }
 
+        /* Industrial Grid Pattern */
         .hero::before {
             content: '';
             position: absolute;
@@ -525,135 +633,192 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 20% 80%, rgba(247, 127, 0, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(82, 183, 136, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 40% 40%, rgba(252, 191, 73, 0.1) 0%, transparent 50%);
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.5;
+        }
+
+        /* Diagonal Accent Cut */
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-light) 100%);
+            opacity: 0.08;
+            border-radius: 50%;
+            filter: blur(100px);
+            animation: float-blob 20s ease-in-out infinite;
+        }
+
+        @keyframes float-blob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-50px, 50px) scale(1.1); }
         }
 
         .hero-content {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 var(--space-6);
             display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 5rem;
+            grid-template-columns: 1.3fr 1fr;
+            gap: var(--space-16);
             align-items: center;
             position: relative;
             z-index: 2;
         }
 
+        /* Industrial Typography - Hero */
         .hero-text h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 4rem;
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 6vw, 5.5rem);
             font-weight: 800;
             color: var(--white);
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
+            margin-bottom: var(--space-6);
+            line-height: 1.05;
+            letter-spacing: -0.03em;
             opacity: 0;
-            animation: slideInLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards 0.5s;
+            animation: slideInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.3s;
         }
 
         .hero-text .highlight {
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--primary-green);
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-text .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 0.1em;
+            left: 0;
+            width: 100%;
+            height: 0.15em;
+            background: var(--primary-green);
+            opacity: 0.3;
+            z-index: -1;
         }
 
         .hero-text .subtitle {
-            font-size: 1.4rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 2.5rem;
+            font-size: clamp(1.125rem, 2vw, 1.375rem);
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: var(--space-8);
             font-weight: 400;
-            line-height: 1.6;
+            line-height: 1.7;
+            max-width: 600px;
             opacity: 0;
-            animation: slideInLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards 0.7s;
+            animation: slideInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.5s;
         }
 
+        /* Industrial Stats/Features */
         .hero-features {
             display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
-            margin-bottom: 2.5rem;
+            gap: var(--space-6);
+            margin-bottom: var(--space-8);
             opacity: 0;
-            animation: slideInLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards 0.8s;
+            animation: slideInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.7s;
         }
 
         .hero-feature {
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1rem;
-            font-weight: 500;
+            gap: var(--space-3);
+            background: rgba(255, 255, 255, 0.05);
+            padding: var(--space-3) var(--space-4);
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
         }
 
         .hero-feature i {
-            color: var(--accent-color);
-            font-size: 1.2rem;
+            color: var(--primary-green);
+            font-size: 1.25rem;
         }
 
+        .hero-feature span {
+            color: var(--white);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* Premium CTA Buttons */
         .hero-buttons {
             display: flex;
-            gap: 1.5rem;
+            gap: var(--space-4);
             flex-wrap: wrap;
             opacity: 0;
-            animation: slideInLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards 1s;
+            animation: slideInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.9s;
         }
 
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Industrial Button System */
         .btn {
-            padding: 1.2rem 2.5rem;
+            padding: var(--space-4) var(--space-8);
             border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
+            border-radius: var(--radius-md);
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: var(--space-3);
             position: relative;
             overflow: hidden;
+            letter-spacing: 0.01em;
         }
 
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .btn:hover::before {
-            left: 100%;
+        .btn i {
+            font-size: 1.125rem;
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-            color: var(--text-dark);
-            box-shadow: var(--shadow);
+            background: var(--primary-green);
+            color: var(--white);
+            box-shadow: var(--shadow-md);
         }
 
         .btn-primary:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background: var(--primary-green-dark);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
         }
 
         .btn-outline {
             background: transparent;
             color: var(--white);
-            border: 2px solid rgba(255, 255, 255, 0.8);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
         }
 
         .btn-outline:hover {
             background: rgba(255, 255, 255, 0.1);
-            border-color: var(--white);
-            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline:active {
+            transform: translateY(0);
         }
 
         .hero-visual {
@@ -676,7 +841,10 @@
             padding: 2rem;
             color: var(--white);
             box-shadow: var(--shadow-lg);
-            transition: var(--transition);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+            backface-visibility: hidden;
         }
 
         .floating-card:hover {
@@ -776,22 +944,16 @@
             75% { transform: translateY(-20px) rotate(0.5deg); }
         }
 
-        /* Sections */
+        /* Premium Section System */
         section {
-            padding: 8rem 0;
+            padding: var(--space-24) 0;
             position: relative;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 5rem;
-            max-width: 800px;
+            margin-bottom: var(--space-16);
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -799,69 +961,183 @@
         .section-badge {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            gap: var(--space-2);
+            background: var(--primary-green);
             color: var(--white);
-            padding: 0.6rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-size: 0.875rem;
             font-weight: 600;
-            margin-bottom: 1.5rem;
-            box-shadow: var(--shadow);
+            margin-bottom: var(--space-4);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
 
         .section-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3rem;
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3.5rem);
             font-weight: 800;
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-6);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
         }
 
         .section-subtitle {
-            font-size: 1.3rem;
-            color: var(--text-light);
-            line-height: 1.6;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-secondary);
+            line-height: 1.7;
             max-width: 700px;
             margin: 0 auto;
         }
 
-        /* Stats Section */
-        .stats-section {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+        /* Premium Card System */
+        .card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--light-gray);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green);
+        }
+
+        .card-dark {
+            background: var(--navy-dark);
             color: var(--white);
-            padding: 6rem 0;
-            margin: 4rem 0;
+            border-color: var(--navy-light);
+        }
+
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-4);
+            font-size: 1.75rem;
+            color: var(--primary-green);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-3);
+        }
+
+        .card-dark .card-title {
+            color: var(--white);
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .card-dark .card-text {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Premium Grid Systems */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: var(--space-8);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-8);
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-6);
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+                gap: var(--space-6);
+            }
+        }
+
+        /* Stats Section - Modern Premium Industrial */
+        .stats-section {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+            color: var(--white);
+            padding: var(--space-24) 0;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.5;
         }
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-8);
             text-align: center;
+            position: relative;
+            z-index: 2;
         }
 
         .stat-card {
-            padding: 2rem;
+            padding: var(--space-8);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-4px);
+            border-color: var(--primary-green);
         }
 
         .stat-card .number {
-            font-size: 3rem;
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 800;
-            margin-bottom: 0.5rem;
-            color: var(--accent-light);
-            font-family: 'Poppins', sans-serif;
+            margin-bottom: var(--space-3);
+            color: var(--primary-green);
+            letter-spacing: -0.02em;
         }
 
         .stat-card .label {
-            font-size: 1.1rem;
+            font-size: 1.125rem;
             opacity: 0.9;
+            line-height: 1.5;
         }
 
-        /* About Section */
+        /* About Section - Modern Premium Industrial */
         .about {
-            background: var(--bg-section);
+            background: var(--off-white);
             position: relative;
             overflow: hidden;
         }
@@ -870,76 +1146,108 @@
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 70% 20%, rgba(30, 81, 40, 0.05) 0%, transparent 50%);
+            right: 0;
+            width: 600px;
+            height: 600px;
+            background: var(--primary-green);
+            opacity: 0.03;
+            border-radius: 50%;
+            filter: blur(120px);
         }
 
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 6rem;
+            gap: var(--space-16);
             align-items: center;
             position: relative;
             z-index: 2;
         }
 
         .about-text h3 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            line-height: 1.3;
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 800;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-6);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
         }
 
         .about-text p {
-            font-size: 1.1rem;
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-6);
+            line-height: 1.8;
         }
 
         .about-highlights {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            margin-top: 2.5rem;
+            gap: var(--space-4);
+            margin-top: var(--space-8);
         }
 
         .highlight-item {
             display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
+            align-items: flex-start;
+            gap: var(--space-4);
+            padding: var(--space-6);
             background: var(--white);
-            border-radius: 15px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--light-gray);
+            position: relative;
+        }
+
+        .highlight-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 0;
+            background: var(--primary-green);
+            transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .highlight-item:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-green);
+        }
+
+        .highlight-item:hover::before {
+            height: 100%;
         }
 
         .highlight-item i {
-            font-size: 1.8rem;
-            color: var(--accent-color);
-            min-width: 40px;
+            font-size: 1.5rem;
+            color: var(--primary-green);
+            min-width: 36px;
+            background: rgba(148, 200, 66, 0.1);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-md);
         }
 
         .highlight-item div h5 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 0.3rem;
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-2);
         }
 
         .highlight-item div p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
             margin: 0;
+            line-height: 1.6;
         }
 
         .about-visual {
@@ -948,9 +1256,10 @@
 
         .company-card {
             background: var(--white);
-            border-radius: var(--border-radius-lg);
-            padding: 3rem;
-            box-shadow: var(--shadow-lg);
+            border-radius: var(--radius-xl);
+            padding: var(--space-12);
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--light-gray);
             border: 1px solid rgba(30, 81, 40, 0.1);
         }
 
@@ -1050,62 +1359,70 @@
 
         .feature-card {
             background: var(--white);
-            border-radius: var(--border-radius-lg);
-            padding: 3rem;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(30, 81, 40, 0.08);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--light-gray);
             position: relative;
             overflow: hidden;
         }
 
-        .feature-card::before {
+        .feature-card::after {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            width: 4px;
+            height: 100%;
+            background: var(--primary-green);
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .feature-card:hover {
-            transform: translateY(-15px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green);
+        }
+
+        .feature-card:hover::after {
+            transform: scaleY(1);
         }
 
         .feature-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            border-radius: 20px;
+            width: 72px;
+            height: 72px;
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 2rem;
-            color: var(--white);
+            margin-bottom: var(--space-6);
+            color: var(--primary-green);
             font-size: 2rem;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .feature-card:hover .feature-icon {
-            transform: scale(1.1) rotate(5deg);
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+            transform: scale(1.1);
+            background: var(--primary-green);
+            color: var(--white);
         }
 
         .feature-card h3 {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-family: 'Poppins', sans-serif;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-3);
+            font-family: var(--font-display);
         }
 
         .feature-card p {
-            color: var(--text-light);
+            color: var(--text-secondary);
             line-height: 1.7;
-            margin-bottom: 1.5rem;
+            margin-bottom: var(--space-4);
             font-size: 1rem;
         }
 
@@ -1128,9 +1445,9 @@
             font-size: 1rem;
         }
 
-        /* Technical Specifications */
+        /* Technical Specifications - Modern Premium Industrial */
         .specs {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             color: var(--white);
             position: relative;
             overflow: hidden;
@@ -1143,7 +1460,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="specs-pattern" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23specs-pattern)"/></svg>');
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
         }
 
         .specs-content {
@@ -1154,48 +1474,53 @@
         .specs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
+            gap: var(--space-8);
+            margin-top: var(--space-16);
         }
 
         .spec-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(30px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: var(--border-radius);
-            padding: 2.5rem;
-            transition: var(--transition);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .spec-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary-green);
+            box-shadow: var(--shadow-xl);
         }
 
         .spec-header {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
         }
 
         .spec-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--accent-color);
-            border-radius: 15px;
+            width: 64px;
+            height: 64px;
+            background: var(--primary-green);
+            border-radius: var(--radius-md);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            color: var(--text-dark);
+            font-size: 1.75rem;
+            color: var(--navy-dark);
             font-weight: 700;
+            box-shadow: var(--shadow-md);
         }
 
         .spec-header h4 {
-            font-size: 1.4rem;
-            font-weight: 600;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
             margin: 0;
+            letter-spacing: -0.01em;
         }
 
         .spec-list {
@@ -1207,9 +1532,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.8rem 0;
+            padding: var(--space-3) 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
 
         .spec-list li:last-child {
@@ -1217,13 +1542,14 @@
         }
 
         .spec-value {
-            font-weight: 600;
-            color: var(--accent-light);
+            font-weight: 700;
+            color: var(--primary-green);
+            font-family: var(--font-display);
         }
 
-        /* Applications Section */
+        /* Applications Section - Modern Premium Industrial */
         .applications {
-            background: var(--bg-section);
+            background: var(--off-white);
             position: relative;
         }
 
@@ -1232,79 +1558,91 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 100%;
-            height: 50%;
-            background: linear-gradient(45deg, rgba(82, 183, 136, 0.05), rgba(30, 81, 40, 0.03));
-            border-radius: 100px 100px 0 0;
+            width: 600px;
+            height: 600px;
+            background: var(--primary-green);
+            opacity: 0.03;
+            border-radius: 50%;
+            filter: blur(120px);
         }
 
         .app-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
-            margin-top: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-16);
             position: relative;
             z-index: 2;
         }
 
         .app-item {
             background: var(--white);
-            border-radius: var(--border-radius);
-            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
             text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(30, 81, 40, 0.08);
+            border: 1px solid var(--light-gray);
         }
 
-        .app-item::before {
+        .app-item::after {
             content: '';
             position: absolute;
             top: 0;
-            left: -100%;
+            left: 0;
             width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(82, 183, 136, 0.1), transparent);
-            transition: left 0.6s ease;
+            height: 4px;
+            background: var(--primary-green);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .app-item:hover::before {
-            left: 100%;
+        .app-item:hover::after {
+            transform: scaleX(1);
         }
 
         .app-item:hover {
-            transform: translateY(-15px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green);
         }
 
         .app-icon {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            transition: var(--transition);
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--space-6);
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .app-item:hover .app-icon {
-            transform: scale(1.2);
+            transform: scale(1.1) rotate(5deg);
+            background: var(--primary-green);
+            color: var(--white);
         }
 
         .app-item h3 {
-            font-size: 1.4rem;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-family: 'Poppins', sans-serif;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-3);
+            letter-spacing: -0.01em;
         }
 
         .app-item p {
-            color: var(--text-light);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: var(--space-6);
         }
 
         .app-benefits {
@@ -1316,20 +1654,20 @@
         .app-benefits li {
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            margin-bottom: 0.8rem;
-            font-size: 0.9rem;
-            color: var(--text-light);
+            gap: var(--space-3);
+            margin-bottom: var(--space-2);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
         }
 
         .app-benefits li i {
-            color: var(--accent-color);
-            font-size: 0.8rem;
+            color: var(--primary-green);
+            font-size: 0.75rem;
         }
 
-        /* Projects Section */
+        /* Projects Section - Modern Premium Industrial */
         .projects {
-            background: var(--bg-light);
+            background: var(--white);
             position: relative;
             overflow: hidden;
         }
@@ -1338,41 +1676,43 @@
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 20%, rgba(30, 81, 40, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(247, 127, 0, 0.05) 0%, transparent 50%);
+            right: 0;
+            width: 600px;
+            height: 600px;
+            background: var(--primary-green);
+            opacity: 0.03;
+            border-radius: 50%;
+            filter: blur(120px);
         }
 
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
+            gap: var(--space-8);
+            margin-top: var(--space-16);
             position: relative;
             z-index: 2;
         }
 
         .project-card {
             background: var(--white);
-            border-radius: var(--border-radius-lg);
+            border-radius: var(--radius-lg);
             overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(30, 81, 40, 0.08);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--light-gray);
             position: relative;
         }
 
         .project-card:hover {
-            transform: translateY(-15px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green);
         }
 
         .project-image {
-            height: 200px;
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            height: 220px;
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             position: relative;
             overflow: hidden;
         }
@@ -1384,7 +1724,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="project-pattern" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="20" height="20" fill="none"/><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23project-pattern)"/></svg>');
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
         }
 
         .project-overlay {
@@ -1393,12 +1736,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(10, 22, 40, 0.8);
             display: flex;
             align-items: center;
             justify-content: center;
             opacity: 0;
-            transition: var(--transition);
+            transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .project-card:hover .project-overlay {
@@ -1407,7 +1750,7 @@
 
         .project-stats {
             display: flex;
-            gap: 2rem;
+            gap: var(--space-8);
             color: var(--white);
         }
 
@@ -1417,96 +1760,98 @@
 
         .stat-number {
             display: block;
-            font-size: 2rem;
+            font-family: var(--font-display);
+            font-size: 2.5rem;
             font-weight: 800;
-            font-family: 'Poppins', sans-serif;
-            color: var(--accent-light);
+            color: var(--primary-green);
+            letter-spacing: -0.02em;
         }
 
         .stat-label {
-            font-size: 0.9rem;
+            font-size: 1rem;
             opacity: 0.9;
         }
 
         .project-content {
-            padding: 2.5rem;
+            padding: var(--space-8);
         }
 
         .project-category {
             display: inline-block;
-            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            background: var(--primary-green);
             color: var(--white);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-size: 0.75rem;
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-bottom: var(--space-4);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.05em;
         }
 
         .project-content h3 {
+            font-family: var(--font-display);
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-3);
             line-height: 1.3;
-            font-family: 'Poppins', sans-serif;
+            letter-spacing: -0.01em;
         }
 
         .project-content p {
-            color: var(--text-light);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: var(--space-6);
+            font-size: 1rem;
         }
 
         .project-features {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
+            gap: var(--space-2);
+            margin-bottom: var(--space-6);
         }
 
         .feature-tag {
-            background: var(--bg-section);
-            color: var(--text-dark);
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
+            background: rgba(148, 200, 66, 0.1);
+            color: var(--primary-green);
+            padding: var(--space-2) var(--space-3);
+            border-radius: var(--radius-md);
             font-size: 0.75rem;
-            font-weight: 500;
-            border: 1px solid rgba(30, 81, 40, 0.1);
+            font-weight: 600;
+            border: 1px solid rgba(148, 200, 66, 0.2);
         }
 
         .project-details {
             display: flex;
-            gap: 1.5rem;
+            gap: var(--space-6);
             flex-wrap: wrap;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(30, 81, 40, 0.1);
+            padding-top: var(--space-4);
+            border-top: 1px solid var(--light-gray);
         }
 
         .detail-item {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: var(--space-2);
             color: var(--text-muted);
-            font-size: 0.85rem;
+            font-size: 0.875rem;
             font-weight: 500;
         }
 
         .detail-item i {
-            color: var(--accent-color);
-            font-size: 0.9rem;
+            color: var(--primary-green);
+            font-size: 1rem;
         }
 
         .projects-cta {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             color: var(--white);
-            border-radius: var(--border-radius-lg);
-            padding: 4rem 3rem;
+            border-radius: var(--radius-xl);
+            padding: var(--space-16) var(--space-12);
             text-align: center;
-            margin-top: 5rem;
+            margin-top: var(--space-16);
             position: relative;
             overflow: hidden;
         }
@@ -1518,33 +1863,39 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="cta-pattern" width="30" height="30" patternUnits="userSpaceOnUse"><polygon points="15,0 30,15 15,30 0,15" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23cta-pattern)"/></svg>');
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
         }
 
         .projects-cta h3 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 800;
+            margin-bottom: var(--space-4);
             position: relative;
             z-index: 2;
+            letter-spacing: -0.02em;
         }
 
         .projects-cta p {
-            font-size: 1.1rem;
+            font-size: 1.125rem;
             opacity: 0.9;
-            margin-bottom: 2rem;
+            margin-bottom: var(--space-8);
             position: relative;
             z-index: 2;
+            line-height: 1.7;
         }
 
         .projects-cta .btn {
             position: relative;
             z-index: 2;
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-            color: var(--text-dark);
         }
+
+        /* Contact Section - Modern Premium Industrial */
         .contact {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             color: var(--white);
             position: relative;
             overflow: hidden;
@@ -1557,44 +1908,48 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="contact-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><polygon points="50,0 100,50 50,100 0,50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23contact-pattern)"/></svg>');
+            background-image:
+                linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
         }
 
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 6rem;
+            gap: var(--space-16);
             align-items: start;
             position: relative;
             z-index: 2;
         }
 
         .contact-info h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.8rem;
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 800;
-            margin-bottom: 2rem;
+            margin-bottom: var(--space-8);
             line-height: 1.2;
+            letter-spacing: -0.02em;
         }
 
         .contact-description {
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
+            font-size: 1.125rem;
+            margin-bottom: var(--space-8);
             opacity: 0.9;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         .contact-details {
-            space-y: 2rem;
+            space-y: var(--space-6);
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: var(--glass-bg);
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
+            padding: var(--space-6);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1602,180 +1957,200 @@
         }
 
         .contact-item:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(4px);
+            border-color: var(--primary-green);
         }
 
         .contact-item i {
-            font-size: 1.8rem;
-            color: var(--accent-light);
-            min-width: 40px;
+            font-size: 1.75rem;
+            color: var(--primary-green);
+            min-width: 48px;
+            width: 56px;
+            height: 56px;
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .contact-item div h5 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: var(--space-2);
         }
 
         .contact-item div p {
             opacity: 0.9;
             margin: 0;
             font-size: 1rem;
+            line-height: 1.5;
         }
 
         .contact-form {
-            background: var(--glass-bg);
-            backdrop-filter: blur(30px);
-            border-radius: var(--border-radius-lg);
-            padding: 3rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: var(--shadow-lg);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: var(--radius-lg);
+            padding: var(--space-12);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-xl);
         }
 
         .contact-form h3 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 800;
+            margin-bottom: var(--space-8);
             text-align: center;
+            letter-spacing: -0.02em;
         }
 
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
+            gap: var(--space-6);
+            margin-bottom: var(--space-6);
         }
 
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: var(--space-6);
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 0.8rem;
+            margin-bottom: var(--space-3);
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
 
         .form-group input,
         .form-group textarea,
         .form-group select {
             width: 100%;
-            padding: 1.2rem;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.05);
             color: var(--white);
             font-size: 1rem;
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .form-group input::placeholder,
         .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.6);
         }
 
         .form-group input:focus,
         .form-group textarea:focus,
         .form-group select:focus {
             outline: none;
-            border-color: var(--accent-color);
-            background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 0 0 3px rgba(247, 127, 0, 0.1);
+            border-color: var(--primary-green);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 3px rgba(148, 200, 66, 0.1);
         }
 
         .form-group textarea {
             resize: vertical;
-            min-height: 120px;
+            min-height: 140px;
         }
 
         .form-submit {
             text-align: center;
-            margin-top: 2rem;
+            margin-top: var(--space-8);
         }
 
         .btn-submit {
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-            color: var(--text-dark);
-            padding: 1.2rem 3rem;
+            background: var(--primary-green);
+            color: var(--white);
+            padding: var(--space-4) var(--space-8);
             border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
+            border-radius: var(--radius-md);
+            font-size: 1.125rem;
             font-weight: 700;
+            font-family: var(--font-display);
             cursor: pointer;
-            transition: var(--transition);
-            box-shadow: var(--shadow);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-md);
             display: inline-flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: var(--space-3);
         }
 
         .btn-submit:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background: var(--primary-green-dark);
         }
 
-        /* Footer */
+        /* Footer - Modern Premium Industrial */
         footer {
-            background: var(--text-dark);
+            background: var(--navy-dark);
             color: var(--white);
-            padding: 4rem 0 2rem 0;
+            padding: var(--space-24) 0 var(--space-8) 0;
             position: relative;
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 4rem;
-            margin-bottom: 3rem;
+            gap: var(--space-16);
+            margin-bottom: var(--space-12);
         }
 
         .footer-brand h3 {
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-display);
             font-size: 2rem;
             font-weight: 800;
-            color: var(--accent-light);
-            margin-bottom: 1rem;
+            color: var(--primary-green);
+            margin-bottom: var(--space-4);
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: var(--space-2);
+            letter-spacing: -0.02em;
         }
 
         .footer-brand p {
             opacity: 0.8;
-            line-height: 1.6;
-            margin-bottom: 2rem;
+            line-height: 1.7;
+            margin-bottom: var(--space-8);
         }
 
         .footer-social {
             display: flex;
-            gap: 1rem;
+            gap: var(--space-3);
         }
 
         .social-link {
-            width: 45px;
-            height: 45px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            background: rgba(148, 200, 66, 0.1);
+            border-radius: var(--radius-md);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--white);
+            color: var(--primary-green);
             text-decoration: none;
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(148, 200, 66, 0.2);
         }
 
         .social-link:hover {
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-            transform: translateY(-3px);
+            background: var(--primary-green);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
         }
 
         .footer-section h4 {
-            font-size: 1.3rem;
+            font-family: var(--font-display);
+            font-size: 1.25rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: var(--accent-light);
+            margin-bottom: var(--space-6);
+            color: var(--primary-green);
+            letter-spacing: -0.01em;
         }
 
         .footer-links {
@@ -1784,17 +2159,19 @@
         }
 
         .footer-links li {
-            margin-bottom: 0.8rem;
+            margin-bottom: var(--space-3);
         }
 
         .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
         }
 
         .footer-links a:hover {
-            color: var(--accent-light);
+            color: var(--primary-green);
+            padding-left: var(--space-2);
             padding-left: 5px;
         }
 
@@ -1847,45 +2224,132 @@
         }
 
         .fab.phone {
-            background: linear-gradient(135deg, #10b981, #059669);
+            background: linear-gradient(135deg, #94C842, #78A82E);
         }
 
         .fab.zalo {
             background: linear-gradient(135deg, #2563eb, #1d4ed8);
         }
 
-        /* Animation Classes */
+        /* Product Cards */
+        .product-card {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 35px 70px rgba(148, 200, 66, 0.25) !important;
+        }
+
+        .product-icon {
+            transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .product-card:hover .product-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .product-badge {
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .product-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+
+        .product-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(148, 200, 66, 0.4) !important;
+        }
+
+        /* Calculator Tools Animations */
+        .calc-tool {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                        border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        .calc-tool:hover {
+            transform: translateY(-12px) scale(1.02);
+            border-color: rgba(148, 200, 66, 0.5) !important;
+            box-shadow: 0 25px 50px rgba(148, 200, 66, 0.25) !important;
+        }
+
+        .calc-tool:hover > div:first-of-type {
+            transform: scale(1.15) rotate(5deg);
+        }
+
+        .calc-tool button:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(148, 200, 66, 0.5) !important;
+        }
+
+        @keyframes float-slow {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            33% {
+                transform: translate(30px, -30px) scale(1.1);
+            }
+            66% {
+                transform: translate(-20px, 20px) scale(0.9);
+            }
+        }
+
+        /* Animation Classes - Optimized for Performance */
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(60px);
-            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: opacity, transform;
+            backface-visibility: hidden;
         }
 
         .animate-on-scroll.animated {
             opacity: 1;
             transform: translateY(0);
+            will-change: auto;
         }
 
         .slide-in-left {
             opacity: 0;
             transform: translateX(-60px);
-            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: opacity, transform;
+            backface-visibility: hidden;
         }
 
         .slide-in-left.animated {
             opacity: 1;
             transform: translateX(0);
+            will-change: auto;
         }
 
         .slide-in-right {
             opacity: 0;
             transform: translateX(60px);
-            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: opacity, transform;
+            backface-visibility: hidden;
         }
 
         .slide-in-right.animated {
             opacity: 1;
             transform: translateX(0);
+            will-change: auto;
         }
 
         /* Mobile Optimization */
@@ -2392,9 +2856,11 @@
             <ul class="nav-menu">
                 <li><a href="#home">Trang chủ</a></li>
                 <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#team">Lãnh đạo</a></li>
                 <li><a href="#features">Tính năng</a></li>
                 <li><a href="#products">Sản phẩm</a></li>
                 <li><a href="#projects">Dự án</a></li>
+                <li><a href="#news">Tin tức</a></li>
                 <li><a href="#support">Công cụ hỗ trợ</a></li>
                 <li><a href="#applications">Ứng dụng</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
@@ -2451,7 +2917,7 @@
                     <div class="floating-cards">
                         <div class="floating-card card-1">
                             <h4><i class="fas fa-award"></i> Chất Lượng Cao</h4>
-                            <p>Sản phẩm đạt tiêu chuẩn quốc tế PIR/PUR, được kiểm định nghiêm ngặt</p>
+                            <p>Sản phẩm đạt tiêu chuẩn quốc tế PU Foam, được kiểm định nghiêm ngặt</p>
                             <div class="stats">
                                 <div class="stat-item">
                                     <div class="stat-number">99%</div>
@@ -2511,21 +2977,21 @@
                         Về chúng tôi
                     </div>
                     <h2 class="section-title">Công Ty Hàng Đầu Về Vật Liệu Xanh</h2>
-                    <p class="section-subtitle">3igreen cam kết mang đến những sản phẩm chất lượng cao nhất, áp dụng công nghệ PIR/PUR tiên tiến như KingsPipe, góp phần xây dựng một tương lai bền vững cho môi trường và xã hội.</p>
+                    <p class="section-subtitle">3igreen cam kết mang đến những sản phẩm chất lượng cao nhất, áp dụng công nghệ PU Foam tiên tiến như KingsPipe, góp phần xây dựng một tương lai bền vững cho môi trường và xã hội.</p>
                 </div>
                 
                 <div class="about-content">
                     <div class="about-text slide-in-left animate-on-scroll">
-                        <h3>Tiên Phong Trong Công Nghệ Vật Liệu Xanh PIR/PUR</h3>
+                        <h3>Tiên Phong Trong Công Nghệ Vật Liệu Xanh PU Foam</h3>
                         <p>Với hơn 10 năm kinh nghiệm trong lĩnh vực sản xuất và ứng dụng vật liệu xanh, <strong>CÔNG TY TNHH SẢN XUẤT VÀ ỨNG DỤNG VẬT LIỆU XANH 3I</strong> đã khẳng định được vị thế hàng đầu trong ngành.</p>
                         
-                        <p>Chúng tôi chuyên sản xuất các sản phẩm gói đỡ PU Foam chất lượng cao, ứng dụng công nghệ PIR (Polyisocyanurate) và PUR (Polyurethane) tiên tiến, được ứng dụng rộng rãi trong các hệ thống công nghiệp hiện đại. <strong>Tiết kiệm 70% thời gian thi công</strong> nhờ thiết kế sáng tạo và quy trình tối ưu.</p>
+                        <p>Chúng tôi chuyên sản xuất các sản phẩm gói đỡ PU Foam chất lượng cao, ứng dụng công nghệ PU (Polyisocyanurate) và PUR (Polyurethane) tiên tiến, được ứng dụng rộng rãi trong các hệ thống công nghiệp hiện đại. <strong>Tiết kiệm 70% thời gian thi công</strong> nhờ thiết kế sáng tạo và quy trình tối ưu.</p>
 
                         <div class="about-highlights">
                             <div class="highlight-item">
                                 <i class="fas fa-industry"></i>
                                 <div>
-                                    <h5>Công nghệ PIR/PUR tiên tiến</h5>
+                                    <h5>Công nghệ PU Foam tiên tiến</h5>
                                     <p>Dây chuyền sản xuất hiện đại từ Châu Âu</p>
                                 </div>
                             </div>
@@ -2561,7 +3027,7 @@
                             <div class="company-info">
                                 <h4>3igreen - Vật Liệu Xanh</h4>
                                 <p>Mã số thuế: <strong>0110886479</strong></p>
-                                <p>Chúng tôi tự hào là đối tác tin cậy của hàng trăm doanh nghiệp lớn trong và ngoài nước, góp phần vào sự phát triển bền vững của ngành công nghiệp Việt Nam với công nghệ PIR/PUR tiên tiến.</p>
+                                <p>Chúng tôi tự hào là đối tác tin cậy của hàng trăm doanh nghiệp lớn trong và ngoài nước, góp phần vào sự phát triển bền vững của ngành công nghiệp Việt Nam với công nghệ PU Foam tiên tiến.</p>
                             </div>
                             <div class="company-stats">
                                 <div class="stat-card">
@@ -2583,6 +3049,138 @@
             </div>
         </section>
 
+        <!-- Leadership & Team Section -->
+        <section class="team" id="team" style="padding: 6rem 0; background: var(--white); position: relative;">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">
+                        <i class="fas fa-users"></i>
+                        Đội ngũ lãnh đạo
+                    </div>
+                    <h2 class="section-title">Ban Lãnh Đạo 3iGreen</h2>
+                    <p class="section-subtitle">Đội ngũ lãnh đạo giàu kinh nghiệm, tâm huyết với sứ mệnh phát triển vật liệu xanh bền vững</p>
+                </div>
+
+                <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                    <!-- CEO -->
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                <i class="fas fa-user-tie" style="font-size: 64px; color: #94C842;"></i>
+                            </div>
+                            <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
+                                <i class="fas fa-crown"></i> CEO
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Nguyễn Văn A</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Điều Hành</p>
+                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">Hơn 15 năm kinh nghiệm trong lĩnh vực vật liệu xanh và công nghệ cách nhiệt tiên tiến.</p>
+                            <div class="social-links" style="display: flex; gap: 0.75rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTO -->
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                <i class="fas fa-user-cog" style="font-size: 64px; color: #94C842;"></i>
+                            </div>
+                            <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
+                                <i class="fas fa-cog"></i> CTO
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Trần Thị B</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Công Nghệ</p>
+                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia công nghệ PU Foam với 12 năm kinh nghiệm nghiên cứu và phát triển sản phẩm.</p>
+                            <div class="social-links" style="display: flex; gap: 0.75rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sales Director -->
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                <i class="fas fa-user-chart" style="font-size: 64px; color: #94C842;"></i>
+                            </div>
+                            <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
+                                <i class="fas fa-chart-line"></i> Director
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Lê Văn C</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Kinh Doanh</p>
+                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">10 năm kinh nghiệm phát triển thị trường và xây dựng mối quan hệ đối tác chiến lược.</p>
+                            <div class="social-links" style="display: flex; gap: 0.75rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Production Manager -->
+                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                <i class="fas fa-user-hard-hat" style="font-size: 64px; color: #94C842;"></i>
+                            </div>
+                            <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
+                                <i class="fas fa-industry"></i> Manager
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Phạm Thị D</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Quản Lý Sản Xuất</p>
+                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia sản xuất với 14 năm kinh nghiệm đảm bảo chất lượng và tối ưu quy trình.</p>
+                            <div class="social-links" style="display: flex; gap: 0.75rem;">
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Stats -->
+                <div style="margin-top: 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                    <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.1);">
+                        <div style="font-size: 3rem; font-weight: 800; color: #94C842; margin-bottom: 0.5rem;">50+</div>
+                        <div style="color: #636e72; font-weight: 600;">Nhân viên chuyên nghiệp</div>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.1);">
+                        <div style="font-size: 3rem; font-weight: 800; color: #FFD93D; margin-bottom: 0.5rem;">15+</div>
+                        <div style="color: #636e72; font-weight: 600;">Năm kinh nghiệm</div>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.1);">
+                        <div style="font-size: 3rem; font-weight: 800; color: #FF6B35; margin-bottom: 0.5rem;">100%</div>
+                        <div style="color: #636e72; font-weight: 600;">Tâm huyết & chuyên nghiệp</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Features Section -->
         <section class="features" id="features">
             <div class="container">
@@ -2591,8 +3189,8 @@
                         <i class="fas fa-star"></i>
                         Tính năng vượt trội
                     </div>
-                    <h2 class="section-title">Đặc Tính Nổi Bật Của Gói Đỡ PU Foam PIR/PUR</h2>
-                    <p class="section-subtitle">Sản phẩm gói đỡ PU Foam 3igreen được thiết kế và sản xuất với những tính năng vượt trội, áp dụng công nghệ PIR/PUR hiện đại nhất, đáp ứng mọi yêu cầu khắt khe của các hệ thống công nghiệp hiện đại.</p>
+                    <h2 class="section-title">Đặc Tính Nổi Bật Của Gói Đỡ PU Foam PU Foam</h2>
+                    <p class="section-subtitle">Sản phẩm gói đỡ PU Foam 3igreen được thiết kế và sản xuất với những tính năng vượt trội, áp dụng công nghệ PU Foam hiện đại nhất, đáp ứng mọi yêu cầu khắt khe của các hệ thống công nghiệp hiện đại.</p>
                 </div>
                 
                 <div class="features-grid">
@@ -2600,8 +3198,8 @@
                         <div class="feature-icon">
                             <i class="fas fa-thermometer-half"></i>
                         </div>
-                        <h3>Cách Nhiệt Siêu Việt PIR</h3>
-                        <p>Với hệ số dẫn nhiệt cực thấp λ ≤ 0.022 W/m.K của công nghệ PIR (Polyisocyanurate), gói đỡ PU Foam ngăn chặn hiệu quả sự trao đổi nhiệt, giúp duy trì nhiệt độ ổn định cho hệ thống.</p>
+                        <h3>Cách Nhiệt Siêu Việt PU</h3>
+                        <p>Với hệ số dẫn nhiệt cực thấp λ ≤ 0.022 W/m.K của công nghệ PU (Polyisocyanurate), gói đỡ PU Foam ngăn chặn hiệu quả sự trao đổi nhiệt, giúp duy trì nhiệt độ ổn định cho hệ thống.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Giảm thất thoát nhiệt lên đến 95%</li>
                             <li><i class="fas fa-check-circle"></i> Chống đọng sương hoàn toàn</li>
@@ -2615,7 +3213,7 @@
                             <i class="fas fa-dumbbell"></i>
                         </div>
                         <h3>Sức Chịu Tải Vượt Trội</h3>
-                        <p>Khả năng chịu nén lên đến 300 kPa với công nghệ PUR/PIR, đảm bảo chịu được tải trọng lớn của đường ống và áp lực vận hành mà không bị biến dạng.</p>
+                        <p>Khả năng chịu nén lên đến 300 kPa với công nghệ PU Foam, đảm bảo chịu được tải trọng lớn của đường ống và áp lực vận hành mà không bị biến dạng.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Chịu tải trọng lên đến 5 tấn/m²</li>
                             <li><i class="fas fa-check-circle"></i> Không bị lún, biến dạng theo thời gian</li>
@@ -2629,7 +3227,7 @@
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <h3>Chống Thấm Tuyệt Đối</h3>
-                        <p>Cấu trúc ô kín hoàn toàn với độ hút nước < 1% theo thể tích của PIR, ngăn nước và hơi ẩm xâm nhập, bảo vệ đường ống khỏi ăn mòn.</p>
+                        <p>Cấu trúc ô kín hoàn toàn với độ hút nước < 1% theo thể tích của PU, ngăn nước và hơi ẩm xâm nhập, bảo vệ đường ống khỏi ăn mòn.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Độ hút nước cực thấp < 1%</li>
                             <li><i class="fas fa-check-circle"></i> Chống ăn mòn hiệu quả</li>
@@ -2671,7 +3269,7 @@
                             <i class="fas fa-leaf"></i>
                         </div>
                         <h3>Thân Thiện Môi Trường</h3>
-                        <p>Sản xuất không sử dụng CFC, HCFC theo công nghệ PIR, hoàn toàn thân thiện với môi trường và tầng ozone, góp phần bảo vệ Trái đất xanh.</p>
+                        <p>Sản xuất không sử dụng CFC, HCFC theo công nghệ PU, hoàn toàn thân thiện với môi trường và tầng ozone, góp phần bảo vệ Trái đất xanh.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Không chứa CFC, HCFC</li>
                             <li><i class="fas fa-check-circle"></i> Có thể tái chế</li>
@@ -2684,7 +3282,7 @@
         </section>
 
         <!-- Products Section -->
-        <section class="products" id="products" style="background: linear-gradient(135deg, #f8fffe 0%, #e8f7f5 100%); padding: 5rem 0;">
+        <section class="products" id="products" style="background: var(--off-white); padding: 6rem 0; position: relative;">
             <div class="container">
                 <div class="section-header animate-on-scroll">
                     <div class="section-badge">
@@ -2695,277 +3293,169 @@
                     <p class="section-subtitle">Đa dạng các loại gối đỡ phù hợp với mọi nhu cầu công trình, từ dân dụng đến công nghiệp quy mô lớn</p>
                 </div>
 
-                <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
+                <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
                     <!-- Product 1: Gối đỡ vuông 2 mảnh -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden;">
-                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #10b981, #34d399); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
+                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 1px solid #E9ECEF;">
+                        <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: var(--primary-green); color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">
                             <i class="fas fa-star"></i> Phổ biến
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #6ee7b7, #10b981); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(82, 183, 136, 0.4);">
+                        <div class="product-icon" style="width: 100px; height: 100px; margin: 0 auto 1.5rem; background: rgba(148, 200, 66, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #94C842;">
                             <i class="fas fa-cube"></i>
                         </div>
 
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #10b981; margin-bottom: 1rem; text-align: center;">Gối Đỡ Vuông 2 Mảnh</h3>
+                        <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 1rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Gối Đỡ Vuông 2 Mảnh</h3>
 
                         <p style="color: #6b7280; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế module 2 mảnh thông minh, lắp đặt siêu nhanh chóng. Phù hợp cho các dự án quy mô lớn cần tiết kiệm thời gian thi công.</p>
 
-                        <div class="product-specs" style="background: #ecfdf5; padding: 1.5rem; border-radius: 20px; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 1rem; color: #10b981; margin-bottom: 1rem; font-weight: 600;">
-                                <i class="fas fa-info-circle"></i> Thông số kỹ thuật
+                        <div class="product-specs" style="background: rgba(148, 200, 66, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(148, 200, 66, 0.1);">
+                            <h4 style="font-size: 1rem; color: #0A1628; margin-bottom: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;">
+                                <i class="fas fa-info-circle" style="color: #94C842;"></i> Thông số kỹ thuật
                             </h4>
                             <ul style="list-style: none; padding: 0;">
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
                                     <span style="color: #6b7280;">Đường kính ống:</span>
-                                    <strong style="color: #10b981;">Ø21 - Ø219mm</strong>
+                                    <strong style="color: #94C842;">Ø21 - Ø219mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
                                     <span style="color: #6b7280;">Độ dày:</span>
-                                    <strong style="color: #10b981;">25 - 100mm</strong>
+                                    <strong style="color: #94C842;">25 - 100mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
-                                    <span style="color: #6b7280;">Mật độ PIR:</span>
-                                    <strong style="color: #10b981;">40 kg/m³</strong>
+                                    <span style="color: #6b7280;">Mật độ PU:</span>
+                                    <strong style="color: #94C842;">40 kg/m³</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
                                     <span style="color: #6b7280;">Hệ số dẫn nhiệt:</span>
-                                    <strong style="color: #10b981;">λ ≤ 0.022 W/m.K</strong>
+                                    <strong style="color: #94C842;">λ ≤ 0.022 W/m.K</strong>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="product-features" style="margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #6ee7b7; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
                                 <span style="color: #4b5563;">Lắp đặt nhanh, tiết kiệm 70% thời gian</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #6ee7b7; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
                                 <span style="color: #4b5563;">Chống thấm tuyệt đối < 1%</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #6ee7b7; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
                                 <span style="color: #4b5563;">Chịu lực cao, không biến dạng</span>
                             </div>
                         </div>
 
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #10b981, #6ee7b7); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(30, 81, 40, 0.3);">
+                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: var(--primary-green); color: white; text-align: center; padding: 1rem; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(148, 200, 66, 0.3); font-family: 'Poppins', sans-serif;">
                             <i class="fas fa-envelope"></i> Nhận Báo Giá Ngay
                         </a>
                     </div>
 
                     <!-- Product 2: Gối đỡ tròn có cùm -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 3px solid #6ee7b7;">
-                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #14b8a6, #5eead4); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
+                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #94C842;">
+                        <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: var(--navy-dark); color: var(--primary-green); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">
                             <i class="fas fa-crown"></i> Premium
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #14b8a6, #5eead4); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(247, 127, 0, 0.4);">
+                        <div class="product-icon" style="width: 100px; height: 100px; margin: 0 auto 1.5rem; background: var(--navy-dark); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #94C842;">
                             <i class="fas fa-circle"></i>
                         </div>
 
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #10b981; margin-bottom: 1rem; text-align: center;">Gối Đỡ Tròn Cùm Kim Loại</h3>
+                        <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 1rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Gối Đỡ Tròn Cùm Kim Loại</h3>
 
                         <p style="color: #6b7280; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Tích hợp cùm kim loại inox 304, siết chặt tối ưu. Phù hợp ống chịu áp lực cao, hệ thống chiller công nghiệp.</p>
 
-                        <div class="product-specs" style="background: #d1fae5; padding: 1.5rem; border-radius: 20px; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 1rem; color: #14b8a6; margin-bottom: 1rem; font-weight: 600;">
-                                <i class="fas fa-info-circle"></i> Thông số kỹ thuật
+                        <div class="product-specs" style="background: rgba(10, 22, 40, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(10, 22, 40, 0.1);">
+                            <h4 style="font-size: 1rem; color: #0A1628; margin-bottom: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;">
+                                <i class="fas fa-info-circle" style="color: #94C842;"></i> Thông số kỹ thuật
                             </h4>
                             <ul style="list-style: none; padding: 0;">
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #a7f3d0;">
+                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(10, 22, 40, 0.1);">
                                     <span style="color: #6b7280;">Đường kính ống:</span>
-                                    <strong style="color: #14b8a6;">Ø27 - Ø273mm</strong>
+                                    <strong style="color: #0A1628;">Ø27 - Ø273mm</strong>
                                 </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #a7f3d0;">
+                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(10, 22, 40, 0.1);">
                                     <span style="color: #6b7280;">Độ dày:</span>
-                                    <strong style="color: #14b8a6;">30 - 100mm</strong>
+                                    <strong style="color: #0A1628;">30 - 100mm</strong>
                                 </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #a7f3d0;">
-                                    <span style="color: #6b7280;">Mật độ PIR:</span>
-                                    <strong style="color: #14b8a6;">40 kg/m³</strong>
+                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(10, 22, 40, 0.1);">
+                                    <span style="color: #6b7280;">Mật độ PU:</span>
+                                    <strong style="color: #0A1628;">40 kg/m³</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
                                     <span style="color: #6b7280;">Cùm kim loại:</span>
-                                    <strong style="color: #14b8a6;">Inox 304</strong>
+                                    <strong style="color: #0A1628;">Inox 304</strong>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="product-features" style="margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #14b8a6; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
                                 <span style="color: #4b5563;">Ôm sát ống, cách nhiệt tối ưu</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #14b8a6; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
                                 <span style="color: #4b5563;">Cùm inox 304 bền bỉ chống gỉ</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #14b8a6; font-size: 1.2rem;"></i>
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
                                 <span style="color: #4b5563;">Chịu áp lực cao, rung động mạnh</span>
                             </div>
                         </div>
 
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #14b8a6, #5eead4); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(247, 127, 0, 0.3);">
+                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: var(--navy-dark); color: var(--primary-green); text-align: center; padding: 1rem; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(10, 22, 40, 0.3); font-family: 'Poppins', sans-serif; border: 1px solid rgba(148, 200, 66, 0.3);">
                             <i class="fas fa-envelope"></i> Nhận Báo Giá Ngay
                         </a>
                     </div>
 
-                    <!-- Product 3: Gối đỡ chữ U -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden;">
-                        <div class="product-badge" style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, #059669, #10b981); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">
-                            <i class="fas fa-fire"></i> Mới
-                        </div>
-
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #059669, #10b981); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);">
-                            <i class="fas fa-shapes"></i>
-                        </div>
-
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #10b981; margin-bottom: 1rem; text-align: center;">Gối Đỡ Chữ U</h3>
-
-                        <p style="color: #6b7280; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế chữ U ôm 3 mặt ống, cách nhiệt toàn diện. Lý tưởng cho ống nằm ngang, ống treo trên trần.</p>
-
-                        <div class="product-specs" style="background: #a7f3d0; padding: 1.5rem; border-radius: 20px; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 1rem; color: #059669; margin-bottom: 1rem; font-weight: 600;">
-                                <i class="fas fa-info-circle"></i> Thông số kỹ thuật
-                            </h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #6ee7b7;">
-                                    <span style="color: #6b7280;">Đường kính ống:</span>
-                                    <strong style="color: #059669;">Ø33 - Ø168mm</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #6ee7b7;">
-                                    <span style="color: #6b7280;">Độ dày:</span>
-                                    <strong style="color: #059669;">25 - 75mm</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #6ee7b7;">
-                                    <span style="color: #6b7280;">Mật độ PUR:</span>
-                                    <strong style="color: #059669;">35-45 kg/m³</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
-                                    <span style="color: #6b7280;">Hệ số dẫn nhiệt:</span>
-                                    <strong style="color: #059669;">λ ≤ 0.028 W/m.K</strong>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="product-features" style="margin-bottom: 1.5rem;">
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #059669; font-size: 1.2rem;"></i>
-                                <span style="color: #4b5563;">Bao phủ 3 mặt, cách nhiệt toàn diện</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #059669; font-size: 1.2rem;"></i>
-                                <span style="color: #4b5563;">Phù hợp ống nằm ngang, ống treo</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #059669; font-size: 1.2rem;"></i>
-                                <span style="color: #4b5563;">Tiết kiệm không gian lắp đặt</span>
-                            </div>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #059669, #10b981); color: white; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);">
-                            <i class="fas fa-envelope"></i> Nhận Báo Giá Ngay
-                        </a>
-                    </div>
-
-                    <!-- Product 4: Gối đỡ đặc biệt (custom) -->
-                    <div class="product-card animate-on-scroll" style="background: linear-gradient(135deg, #10b981, #6ee7b7); border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; color: white;">
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);">
-                            <i class="fas fa-cog"></i>
-                        </div>
-
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 1rem; text-align: center;">Gối Đỡ Đặc Biệt</h3>
-
-                        <p style="color: rgba(255, 255, 255, 0.9); text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế theo yêu cầu riêng của từng dự án. Tư vấn miễn phí giải pháp tối ưu nhất cho công trình của bạn.</p>
-
-                        <div class="product-specs" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 20px; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 1rem; color: white; margin-bottom: 1rem; font-weight: 600;">
-                                <i class="fas fa-wrench"></i> Tùy chỉnh theo yêu cầu
-                            </h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; border-bottom: 1px dashed rgba(255,255,255,0.3); color: rgba(255,255,255,0.95);">
-                                    <i class="fas fa-check"></i> Kích thước tùy chỉnh theo ống
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; border-bottom: 1px dashed rgba(255,255,255,0.3); color: rgba(255,255,255,0.95);">
-                                    <i class="fas fa-check"></i> Độ dày cách nhiệt linh hoạt
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; border-bottom: 1px dashed rgba(255,255,255,0.3); color: rgba(255,255,255,0.95);">
-                                    <i class="fas fa-check"></i> Hình dạng đặc biệt theo dự án
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; color: rgba(255,255,255,0.95);">
-                                    <i class="fas fa-check"></i> Tư vấn kỹ thuật chuyên sâu
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="product-features" style="margin-bottom: 1.5rem;">
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; color: rgba(255,255,255,0.95);">
-                                <i class="fas fa-star" style="color: #5eead4; font-size: 1.2rem;"></i>
-                                <span>Thiết kế 100% theo yêu cầu</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; color: rgba(255,255,255,0.95);">
-                                <i class="fas fa-star" style="color: #5eead4; font-size: 1.2rem;"></i>
-                                <span>Tư vấn miễn phí từ chuyên gia</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem; color: rgba(255,255,255,0.95);">
-                                <i class="fas fa-star" style="color: #5eead4; font-size: 1.2rem;"></i>
-                                <span>Phù hợp dự án quy mô lớn</span>
-                            </div>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: white; color: #10b981; text-align: center; padding: 1rem; border-radius: 15px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);">
-                            <i class="fas fa-phone"></i> Liên Hệ Tư Vấn Ngay
-                        </a>
-                    </div>
                 </div>
 
                 <!-- Product comparison table -->
-                <div class="product-comparison" style="margin-top: 4rem; background: white; border-radius: 30px; padding: 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.08);">
-                    <h3 style="font-size: 1.8rem; font-weight: 700; color: #10b981; margin-bottom: 2rem; text-align: center;">
-                        <i class="fas fa-balance-scale"></i> So Sánh Các Dòng Sản Phẩm
+                <div class="product-comparison" style="margin-top: 4rem; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); border: 1px solid #E9ECEF;">
+                    <h3 style="font-size: 1.75rem; font-weight: 800; color: #0A1628; margin-bottom: 2rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">
+                        <i class="fas fa-balance-scale" style="color: #94C842;"></i> So Sánh Các Dòng Sản Phẩm
                     </h3>
 
                     <div style="overflow-x: auto;">
                         <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
                             <thead>
-                                <tr style="background: linear-gradient(135deg, #10b981, #6ee7b7); color: white;">
-                                    <th style="padding: 1rem; text-align: left; border-radius: 10px 0 0 0;">Tiêu chí</th>
-                                    <th style="padding: 1rem; text-align: center;">Gối đỡ vuông</th>
-                                    <th style="padding: 1rem; text-align: center;">Gối đỡ tròn</th>
-                                    <th style="padding: 1rem; text-align: center;">Gối đỡ chữ U</th>
-                                    <th style="padding: 1rem; text-align: center; border-radius: 0 10px 0 0;">Đặc biệt</th>
+                                <tr style="background: var(--navy-dark); color: white;">
+                                    <th style="padding: 1rem; text-align: left; border-radius: 8px 0 0 0; font-size: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;">Tiêu chí</th>
+                                    <th style="padding: 1rem; text-align: center; font-size: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;">
+                                        <i class="fas fa-cube"></i> Gối đỡ đế vuông
+                                    </th>
+                                    <th style="padding: 1rem; text-align: center; border-radius: 0 8px 0 0; font-size: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;">
+                                        <i class="fas fa-circle"></i> Gối đỡ đế tròn
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr style="border-bottom: 1px solid #e5e7eb;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #10b981;">Độ dày</td>
-                                    <td style="padding: 1rem; text-align: center;">25-100mm</td>
-                                    <td style="padding: 1rem; text-align: center;">30-100mm</td>
-                                    <td style="padding: 1rem; text-align: center;">25-75mm</td>
-                                    <td style="padding: 1rem; text-align: center;">Tùy chỉnh</td>
+                                    <td style="padding: 1rem; font-weight: 700; color: #0A1628;"><i class="fas fa-ruler" style="color: #94C842;"></i> Độ dày</td>
+                                    <td style="padding: 1rem; text-align: center; color: #4A5568;">25 - 100mm</td>
+                                    <td style="padding: 1rem; text-align: center; color: #4A5568;">30 - 100mm</td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e5e7eb; background: #f8fffe;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #10b981;">Thời gian lắp đặt</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-bolt" style="color: #6ee7b7;"></i> Rất nhanh</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-check" style="color: #6ee7b7;"></i> Nhanh</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-check" style="color: #6ee7b7;"></i> Nhanh</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-cog" style="color: #6ee7b7;"></i> Theo TC</td>
+                                <tr style="border-bottom: 1px solid #e5e7eb; background: rgba(148, 200, 66, 0.03);">
+                                    <td style="padding: 1rem; font-weight: 700; color: #0A1628;"><i class="fas fa-clock" style="color: #94C842;"></i> Thời gian lắp đặt</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-bolt" style="color: #94C842;"></i> <strong style="color: #94C842;">Rất nhanh - 70% thời gian</strong></td>
+                                    <td style="padding: 1rem; text-align: center; color: #4A5568;"><i class="fas fa-check" style="color: #94C842;"></i> Nhanh</td>
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e5e7eb;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #10b981;">Ứng dụng</td>
-                                    <td style="padding: 1rem; text-align: center;">Mọi loại ống</td>
-                                    <td style="padding: 1rem; text-align: center;">Ống áp lực cao</td>
-                                    <td style="padding: 1rem; text-align: center;">Ống nằm ngang</td>
-                                    <td style="padding: 1rem; text-align: center;">Dự án đặc biệt</td>
+                                    <td style="padding: 1rem; font-weight: 700; color: #0A1628;"><i class="fas fa-cogs" style="color: #94C842;"></i> Ứng dụng</td>
+                                    <td style="padding: 1rem; text-align: center; color: #4A5568;">Mọi loại ống, Chiller, HVAC</td>
+                                    <td style="padding: 1rem; text-align: center; color: #4A5568;">Ống áp lực cao, Chiller công nghiệp</td>
                                 </tr>
-                                <tr style="background: #f8fffe;">
-                                    <td style="padding: 1rem; font-weight: 600; color: #10b981;">Giá thành</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #6ee7b7;"></i> Tốt nhất</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #6ee7b7;"></i><i class="fas fa-dollar-sign" style="color: #6ee7b7;"></i> Premium</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #6ee7b7;"></i> Tốt</td>
-                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-phone" style="color: #6ee7b7;"></i> Liên hệ</td>
+                                <tr style="border-bottom: 1px solid #e5e7eb; background: rgba(148, 200, 66, 0.03);">
+                                    <td style="padding: 1rem; font-weight: 700; color: #0A1628;"><i class="fas fa-fire" style="color: #94C842;"></i> Hệ số dẫn nhiệt</td>
+                                    <td style="padding: 1rem; text-align: center;"><strong style="color: #94C842;">λ ≤ 0.022 W/m.K</strong></td>
+                                    <td style="padding: 1rem; text-align: center;"><strong style="color: #0A1628;">λ ≤ 0.022 W/m.K</strong></td>
+                                </tr>
+                                <tr style="background: rgba(148, 200, 66, 0.03);">
+                                    <td style="padding: 1rem; font-weight: 700; color: #0A1628;"><i class="fas fa-dollar-sign" style="color: #94C842;"></i> Giá thành</td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #94C842;"></i> <strong style="color: #94C842;">Tốt nhất</strong></td>
+                                    <td style="padding: 1rem; text-align: center;"><i class="fas fa-dollar-sign" style="color: #0A1628;"></i><i class="fas fa-dollar-sign" style="color: #0A1628;"></i> <strong style="color: #0A1628;">Premium</strong></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2973,19 +3463,19 @@
                 </div>
 
                 <!-- CTA Section -->
-                <div style="margin-top: 3rem; text-align: center; background: linear-gradient(135deg, #f0fdfa, #e8f7f5); padding: 3rem; border-radius: 30px;">
-                    <h3 style="font-size: 2rem; font-weight: 700; color: #10b981; margin-bottom: 1rem;">
+                <div style="margin-top: 3rem; text-align: center; background: rgba(148, 200, 66, 0.05); padding: 3rem; border-radius: 12px; border: 1px solid rgba(148, 200, 66, 0.1);">
+                    <h3 style="font-size: 1.75rem; font-weight: 800; color: #0A1628; margin-bottom: 1rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">
                         Chưa Chắc Chắn Sản Phẩm Nào Phù Hợp?
                     </h3>
-                    <p style="color: #6b7280; font-size: 1.1rem; margin-bottom: 2rem;">
+                    <p style="color: #4A5568; font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.7;">
                         Đội ngũ kỹ sư của chúng tôi sẵn sàng tư vấn miễn phí để giúp bạn lựa chọn giải pháp tối ưu nhất
                     </p>
-                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="tel:0973098338" style="display: inline-flex; align-items: center; gap: 0.8rem; background: linear-gradient(135deg, #10b981, #6ee7b7); color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 15px 35px rgba(30, 81, 40, 0.3); transition: all 0.3s;">
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="tel:0973098338" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--primary-green); color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.05rem; box-shadow: 0 4px 16px rgba(148, 200, 66, 0.3); transition: all 0.3s; font-family: 'Poppins', sans-serif;">
                             <i class="fas fa-phone-alt"></i>
                             0973.098.338
                         </a>
-                        <a href="#contact" style="display: inline-flex; align-items: center; gap: 0.8rem; background: white; color: #10b981; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border: 2px solid #10b981; transition: all 0.3s;">
+                        <a href="#contact" style="display: inline-flex; align-items: center; gap: 0.75rem; background: white; color: var(--primary-green); padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.05rem; box-shadow: 0 4px 16px rgba(10, 22, 40, 0.08); border: 2px solid var(--primary-green); transition: all 0.3s; font-family: 'Poppins', sans-serif;">
                             <i class="fas fa-envelope"></i>
                             Gửi Yêu Cầu Tư Vấn
                         </a>
@@ -3003,18 +3493,18 @@
                             <i class="fas fa-cogs"></i>
                             Thông số kỹ thuật
                         </div>
-                        <h2 class="section-title" style="color: white;">Thông Số Kỹ Thuật Chi Tiết PIR/PUR</h2>
-                        <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Các thông số kỹ thuật được kiểm định nghiêm ngặt theo tiêu chuẩn quốc tế PIR/PUR, đảm bảo chất lượng cao nhất cho sản phẩm.</p>
+                        <h2 class="section-title" style="color: white;">Thông Số Kỹ Thuật Chi Tiết PU Foam</h2>
+                        <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Các thông số kỹ thuật được kiểm định nghiêm ngặt theo tiêu chuẩn quốc tế PU Foam, đảm bảo chất lượng cao nhất cho sản phẩm.</p>
                     </div>
 
                     <div class="specs-grid">
                         <div class="spec-card animate-on-scroll">
                             <div class="spec-header">
                                 <div class="spec-icon">🌡️</div>
-                                <h4>Tính Chất Nhiệt PIR</h4>
+                                <h4>Tính Chất Nhiệt PU</h4>
                             </div>
                             <ul class="spec-list">
-                                <li><span>Hệ số dẫn nhiệt (λ) PIR</span> <span class="spec-value">≤ 0.022 W/m.K</span></li>
+                                <li><span>Hệ số dẫn nhiệt (λ) PU</span> <span class="spec-value">≤ 0.022 W/m.K</span></li>
                                 <li><span>Hệ số dẫn nhiệt (λ) PUR</span> <span class="spec-value">≤ 0.028 W/m.K</span></li>
                                 <li><span>Khoảng nhiệt độ sử dụng</span> <span class="spec-value">-196°C đến +120°C</span></li>
                                 <li><span>Độ bền nhiệt</span> <span class="spec-value">Excellent</span></li>
@@ -3028,7 +3518,7 @@
                                 <h4>Tính Chất Cơ Học</h4>
                             </div>
                             <ul class="spec-list">
-                                <li><span>Khối lượng riêng PIR</span> <span class="spec-value">40 kg/m³</span></li>
+                                <li><span>Khối lượng riêng PU</span> <span class="spec-value">40 kg/m³</span></li>
                                 <li><span>Khối lượng riêng PUR</span> <span class="spec-value">32-60 kg/m³</span></li>
                                 <li><span>Sức chịu nén (10%)</span> <span class="spec-value">≥ 300 kPa</span></li>
                                 <li><span>Độ bền kéo</span> <span class="spec-value">≥ 200 kPa</span></li>
@@ -3086,7 +3576,7 @@
                             <i class="fas fa-snowflake"></i>
                         </div>
                         <h3>Hệ Thống Lạnh Trung Tâm</h3>
-                        <p>Ứng dụng trong các hệ thống làm lạnh công nghiệp, đảm bảo hiệu suất tối ưu và tiết kiệm năng lượng với công nghệ PIR/PUR.</p>
+                        <p>Ứng dụng trong các hệ thống làm lạnh công nghiệp, đảm bảo hiệu suất tối ưu và tiết kiệm năng lượng với công nghệ PU Foam.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Trung tâm thương mại, siêu thị</li>
                             <li><i class="fas fa-chevron-right"></i> Nhà máy sản xuất thực phẩm</li>
@@ -3100,7 +3590,7 @@
                             <i class="fas fa-wind"></i>
                         </div>
                         <h3>Hệ Thống HVAC</h3>
-                        <p>Tối ưu hóa hệ thống điều hòa không khí, giảm thất thoát nhiệt và tăng tuổi thọ thiết bị với vật liệu PIR chất lượng cao.</p>
+                        <p>Tối ưu hóa hệ thống điều hòa không khí, giảm thất thoát nhiệt và tăng tuổi thọ thiết bị với vật liệu PU chất lượng cao.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Tòa nhà văn phòng cao tầng</li>
                             <li><i class="fas fa-chevron-right"></i> Khách sạn, resort</li>
@@ -3114,7 +3604,7 @@
                             <i class="fas fa-industry"></i>
                         </div>
                     <h3>Hệ Thống Chiller Chuyên Nghiệp</h3>
-                        <p>Ứng dụng trong các hệ thống chiller giải nhiệt nước từ 7°C đến 12°C, đảm bảo hiệu suất tối ưu và tiết kiệm năng lượng với công nghệ PIR/PUR cách nhiệt vượt trội.</p>
+                        <p>Ứng dụng trong các hệ thống chiller giải nhiệt nước từ 7°C đến 12°C, đảm bảo hiệu suất tối ưu và tiết kiệm năng lượng với công nghệ PU Foam cách nhiệt vượt trội.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Hệ thống chiller giải nhiệt nước công nghiệp</li>
                             <li><i class="fas fa-chevron-right"></i> Chiller điều hòa trung tâm (7°C-12°C)</li>
@@ -3128,7 +3618,7 @@
                             <i class="fas fa-warehouse"></i>
                         </div>
                         <h3>Phòng Lạnh & Kho Đông</h3>
-                        <p>Cách nhiệt hiệu quả cho các hệ thống làm lạnh ở nhiệt độ cực thấp, ứng dụng công nghệ PIR chịu nhiệt độ xuống -196°C.</p>
+                        <p>Cách nhiệt hiệu quả cho các hệ thống làm lạnh ở nhiệt độ cực thấp, ứng dụng công nghệ PU chịu nhiệt độ xuống -196°C.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Kho bảo quản thủy hải sản</li>
                             <li><i class="fas fa-chevron-right"></i> Nhà máy chế biến thức ăn đông lạnh</li>
@@ -3142,7 +3632,7 @@
                             <i class="fas fa-home"></i>
                         </div>
                         <h3>Ứng Dụng Dân Dụng</h3>
-                        <p>Phục vụ các công trình dân dụng, mang lại sự thoải mái và tiết kiệm cho gia đình với vật liệu PUR/PIR an toàn.</p>
+                        <p>Phục vụ các công trình dân dụng, mang lại sự thoải mái và tiết kiệm cho gia đình với vật liệu PU Foam an toàn.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Căn hộ chung cư cao cấp</li>
                             <li><i class="fas fa-chevron-right"></i> Villa, biệt thự</li>
@@ -3156,7 +3646,7 @@
                             <i class="fas fa-flask"></i>
                         </div>
                         <h3>Công Nghiệp Đặc Biệt</h3>
-                        <p>Đáp ứng các yêu cầu khắt khe của những ngành công nghiệp có tính đặc thù cao với vật liệu PIR chất lượng quốc tế.</p>
+                        <p>Đáp ứng các yêu cầu khắt khe của những ngành công nghiệp có tính đặc thù cao với vật liệu PU chất lượng quốc tế.</p>
                         <ul class="app-benefits">
                             <li><i class="fas fa-chevron-right"></i> Ngành dược phẩm</li>
                             <li><i class="fas fa-chevron-right"></i> Công nghiệp điện tử</li>
@@ -3177,7 +3667,7 @@
                         Dự án tiêu biểu
                     </div>
                     <h2 class="section-title">Dự Án Cách Nhiệt Chuyên Nghiệp</h2>
-                    <p class="section-subtitle">3igreen tự hào đã thực hiện thành công nhiều dự án cách nhiệt lớn cho các nhà máy, tập đoàn hàng đầu với công nghệ PIR/PUR tiên tiến, tiết kiệm 70% thời gian thi công.</p>
+                    <p class="section-subtitle">3igreen tự hào đã thực hiện thành công nhiều dự án cách nhiệt lớn cho các nhà máy, tập đoàn hàng đầu với công nghệ PU Foam tiên tiến, tiết kiệm 70% thời gian thi công.</p>
                 </div>
                 
                 <div class="projects-grid">
@@ -3199,7 +3689,7 @@
                         <div class="project-content">
                             <div class="project-category">Nhà máy điện tử</div>
                             <h3>Nhà Máy Điện Tử Thông Minh Phenikaa</h3>
-                            <p>Hệ thống cách nhiệt PIR/PUR cho nhà máy điện tử thông minh công suất 4.5 tỷ linh kiện/năm tại Khu Công nghệ cao Hòa Lạc, Hà Nội.</p>
+                            <p>Hệ thống cách nhiệt PU Foam cho nhà máy điện tử thông minh công suất 4.5 tỷ linh kiện/năm tại Khu Công nghệ cao Hòa Lạc, Hà Nội.</p>
                             <div class="project-features">
                                 <span class="feature-tag">Cách nhiệt thông minh</span>
                                 <span class="feature-tag">Tiêu chuẩn ISO</span>
@@ -3284,7 +3774,7 @@
                             <p>Dự án cách nhiệt cho nhà máy sản xuất panel cách nhiệt cao cấp tiêu chuẩn LEED Platinum tại KCN Phú Mỹ II, Bà Rịa - Vũng Tàu.</p>
                             <div class="project-features">
                                 <span class="feature-tag">LEED Platinum</span>
-                                <span class="feature-tag">Panel PIR</span>
+                                <span class="feature-tag">Panel PU</span>
                                 <span class="feature-tag">Châu Âu</span>
                             </div>
                             <div class="project-details">
@@ -3439,205 +3929,428 @@
             </div>
         </section>
 
-        <!-- Support Tools Section -->
-        <section class="support-tools" id="support">
+        <!-- News & Blog Section -->
+        <section class="news" id="news" style="padding: 5rem 0; background: white;">
             <div class="container">
                 <div class="section-header animate-on-scroll">
                     <div class="section-badge">
-                        <i class="fas fa-calculator"></i>
-                        Công cụ hỗ trợ
+                        <i class="fas fa-newspaper"></i>
+                        Tin tức & Blog
                     </div>
-                    <h2 class="section-title">3iCalc - Công Cụ Tính Toán Cách Nhiệt Chuyên Nghiệp</h2>
-                    <p class="section-subtitle">Phần mềm tính toán cách nhiệt chuyên nghiệp được phát triển bởi 3igreen để hỗ trợ tư vấn thiết kế, kỹ sư giám sát và nhà thầu tính toán chính xác độ dày cách nhiệt kinh tế.</p>
+                    <h2 class="section-title">Tin Tức Mới Nhất</h2>
+                    <p class="section-subtitle">Cập nhật tin tức, kiến thức và xu hướng công nghệ vật liệu xanh mới nhất</p>
                 </div>
-                
-                <div class="calc-intro animate-on-scroll">
-                    <div class="calc-content">
-                        <h3>Tại Sao Cần Tính Toán Độ Dày Cách Nhiệt Chính Xác?</h3>
-                        <p>Việc lựa chọn chính xác độ dày cách nhiệt là công việc vô cùng quan trọng trong công tác thiết kế cách nhiệt cơ khí. Việc lựa chọn đúng độ dày bảo ôn sẽ <strong>ngăn chặn hiệu quả nhất sự đọng sương trên bề mặt của đường ống lạnh, giảm thiểu sự thất thoát năng lượng, giúp tối đa hóa chi phí vận hành hệ thống</strong> cho chủ đầu tư.</p>
-                        
-                        <div class="factors-grid">
-                            <div class="factor-card">
-                                <h4>Nhiệt độ môi trường</h4>
-                                <div class="impact-level moderate">Ảnh hưởng vừa</div>
-                                <p>Chênh lệch nhiệt độ bên trong và bên ngoài đường ống</p>
+
+                <div class="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
+                    <!-- News 1 -->
+                    <article class="news-card animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="news-image" style="width: 100%; height: 250px; background: linear-gradient(135deg, #94C842, #B5E550); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h100v100H0z\" fill=\"%2394C842\" fill-opacity=\".1\"/%3E%3Ccircle cx=\"50\" cy=\"50\" r=\"40\" fill=\"%23fff\" fill-opacity=\".2\"/%3E%3C/svg%3E') center/cover; opacity: 0.3;"></div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                                <i class="fas fa-leaf" style="font-size: 80px; opacity: 0.8;"></i>
                             </div>
-                            <div class="factor-card">
-                                <h4>Độ ẩm môi trường</h4>
-                                <div class="impact-level high">Ảnh hưởng rất lớn</div>
-                                <p>Độ ẩm của môi trường xung quanh hệ thống</p>
+                            <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #94C842;">
+                                <i class="fas fa-calendar"></i> 01/12/2024
                             </div>
-                            <div class="factor-card">
-                                <h4>Hệ số dẫn nhiệt</h4>
-                                <div class="impact-level significant">Ảnh hưởng lớn</div>
-                                <p>Của vật liệu bảo ôn (kể cả độ suy giảm theo thời gian)</p>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <div style="display: flex; gap: 0.8rem; margin-bottom: 1rem;">
+                                <span style="background: #f7fce8; color: #94C842; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">Công nghệ</span>
+                                <span style="background: #fff5f0; color: #FF6B35; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">Xu hướng</span>
                             </div>
-                            <div class="factor-card">
-                                <h4>Vật liệu Jacketing</h4>
-                                <div class="impact-level significant">Ảnh hưởng lớn</div>
-                                <p>Loại vật liệu bảo vệ bên ngoài (Cladding)</p>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
+                                Công Nghệ PU Foam Thế Hệ Mới - Tiết Kiệm 70% Thời Gian Thi Công
+                            </h3>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
+                                Khám phá công nghệ PU Foam tiên tiến giúp tiết kiệm thời gian thi công lên đến 70%, mang lại hiệu quả vượt trội cho các công trình công nghiệp...
+                            </p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #94C842, #B5E550); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">
+                                        A
+                                    </div>
+                                    <div>
+                                        <div style="font-weight: 600; color: #2d3436; font-size: 0.9rem;">Admin 3iGreen</div>
+                                        <div style="font-size: 0.8rem; color: #b2bec3;">5 phút đọc</div>
+                                    </div>
+                                </div>
+                                <a href="#" style="color: #94C842; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                                    Đọc thêm <i class="fas fa-arrow-right"></i>
+                                </a>
                             </div>
-                            <div class="factor-card">
-                                <h4>Tốc độ gió</h4>
-                                <div class="impact-level moderate-high">Ảnh hưởng nhiều</div>
-                                <p>Tốc độ gió của môi trường xung quanh</p>
+                        </div>
+                    </article>
+
+                    <!-- News 2 -->
+                    <article class="news-card animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="news-image" style="width: 100%; height: 250px; background: linear-gradient(135deg, #FFD93D, #FFA372); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h100v100H0z\" fill=\"%23FFD93D\" fill-opacity=\".1\"/%3E%3Crect x=\"20\" y=\"20\" width=\"60\" height=\"60\" fill=\"%23fff\" fill-opacity=\".2\" rx=\"10\"/%3E%3C/svg%3E') center/cover; opacity: 0.3;"></div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                                <i class="fas fa-award" style="font-size: 80px; opacity: 0.8;"></i>
                             </div>
+                            <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FFD93D;">
+                                <i class="fas fa-calendar"></i> 28/11/2024
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <div style="display: flex; gap: 0.8rem; margin-bottom: 1rem;">
+                                <span style="background: #fffbeb; color: #FFD93D; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">Giải thưởng</span>
+                            </div>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
+                                3iGreen Nhận Giải Thưởng "Doanh Nghiệp Xanh 2024"
+                            </h3>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
+                                3iGreen vinh dự được vinh danh tại lễ trao giải "Doanh Nghiệp Xanh 2024" nhờ những đóng góp xuất sắc trong lĩnh vực phát triển vật liệu bền vững...
+                            </p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFD93D, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">
+                                        3i
+                                    </div>
+                                    <div>
+                                        <div style="font-weight: 600; color: #2d3436; font-size: 0.9rem;">3iGreen Team</div>
+                                        <div style="font-size: 0.8rem; color: #b2bec3;">4 phút đọc</div>
+                                    </div>
+                                </div>
+                                <a href="#" style="color: #FFD93D; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                                    Đọc thêm <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News 3 -->
+                    <article class="news-card animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="news-image" style="width: 100%; height: 250px; background: linear-gradient(135deg, #FF6B35, #FFD93D); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h100v100H0z\" fill=\"%23FF6B35\" fill-opacity=\".1\"/%3E%3Cpolygon points=\"50,20 80,80 20,80\" fill=\"%23fff\" fill-opacity=\".2\"/%3E%3C/svg%3E') center/cover; opacity: 0.3;"></div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                                <i class="fas fa-lightbulb" style="font-size: 80px; opacity: 0.8;"></i>
+                            </div>
+                            <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FF6B35;">
+                                <i class="fas fa-calendar"></i> 20/11/2024
+                            </div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <div style="display: flex; gap: 0.8rem; margin-bottom: 1rem;">
+                                <span style="background: #fff5f0; color: #FF6B35; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600;">Hướng dẫn</span>
+                            </div>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
+                                5 Bí Quyết Chọn Vật Liệu Cách Nhiệt Hiệu Quả
+                            </h3>
+                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
+                                Hướng dẫn chi tiết giúp bạn lựa chọn vật liệu cách nhiệt phù hợp nhất cho công trình, tiết kiệm chi phí và đảm bảo hiệu suất tối ưu...
+                            </p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #FF6B35, #FFD93D); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">
+                                        KT
+                                    </div>
+                                    <div>
+                                        <div style="font-weight: 600; color: #2d3436; font-size: 0.9rem;">Chuyên gia kỹ thuật</div>
+                                        <div style="font-size: 0.8rem; color: #b2bec3;">7 phút đọc</div>
+                                    </div>
+                                </div>
+                                <a href="#" style="color: #FF6B35; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                                    Đọc thêm <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- View More Button -->
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#" style="display: inline-flex; align-items: center; gap: 1rem; background: linear-gradient(135deg, #94C842, #B5E550); color: white; padding: 1.2rem 3rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 15px 35px rgba(148, 200, 66, 0.3); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <i class="fas fa-newspaper"></i>
+                        Xem tất cả tin tức
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Tools Section -->
+        <section class="support-tools" id="support" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); padding: 6rem 0; position: relative; overflow: hidden;">
+            <!-- Animated Background Pattern -->
+            <div style="position: absolute; inset: 0; opacity: 0.05; background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+
+            <!-- Floating Elements -->
+            <div style="position: absolute; top: 10%; left: 5%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(148, 200, 66, 0.15), transparent); border-radius: 50%; filter: blur(60px); animation: float-slow 20s ease-in-out infinite;"></div>
+            <div style="position: absolute; bottom: 10%; right: 5%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255, 217, 61, 0.1), transparent); border-radius: 50%; filter: blur(80px); animation: float-slow 25s ease-in-out infinite 5s;"></div>
+
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="section-header animate-on-scroll" style="margin-bottom: 4rem;">
+                    <div class="section-badge" style="background: linear-gradient(135deg, #94C842, #FFD93D); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.5rem; border-radius: 50px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1.5rem; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.3);">
+                        <i class="fas fa-calculator" style="font-size: 1.1rem;"></i>
+                        <span style="color: white;">Công cụ hỗ trợ chuyên nghiệp</span>
+                    </div>
+                    <h2 class="section-title" style="color: white; font-size: 3rem; margin-bottom: 1.5rem;">
+                        <span style="background: linear-gradient(135deg, #94C842, #FFD93D); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">3iCalc</span> - Tính Toán Cách Nhiệt
+                    </h2>
+                    <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8); font-size: 1.2rem; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                        Phần mềm tính toán cách nhiệt chuyên nghiệp được phát triển bởi 3igreen, hỗ trợ kỹ sư thiết kế và nhà thầu tính toán chính xác độ dày cách nhiệt kinh tế nhất.
+                    </p>
+                </div>
+
+                <!-- Why Calculate Section -->
+                <div class="calc-intro animate-on-scroll" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; padding: 3rem; margin-bottom: 4rem;">
+                    <div style="text-align: center; margin-bottom: 2.5rem;">
+                        <div style="display: inline-flex; align-items: center; gap: 0.8rem; background: rgba(148, 200, 66, 0.1); padding: 0.8rem 1.8rem; border-radius: 50px; margin-bottom: 1.5rem;">
+                            <i class="fas fa-question-circle" style="color: #94C842; font-size: 1.3rem;"></i>
+                            <span style="color: #FFD93D; font-weight: 600; font-size: 0.95rem;">Tại sao cần tính toán?</span>
+                        </div>
+                        <h3 style="color: white; font-size: 2rem; margin-bottom: 1rem; font-weight: 700;">Tính Toán Độ Dày Cách Nhiệt Chính Xác</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.05rem; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+                            Việc lựa chọn đúng độ dày bảo ôn sẽ <strong style="color: #94C842;">ngăn chặn hiệu quả sự đọng sương, giảm thất thoát năng lượng, tối ưu chi phí vận hành</strong> cho chủ đầu tư.
+                        </p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+                        <div style="background: rgba(148, 200, 66, 0.1); border: 1px solid rgba(148, 200, 66, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #94C842, #B5E550); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(148, 200, 66, 0.3);">
+                                <i class="fas fa-thermometer-half" style="color: white; font-size: 1.8rem;"></i>
+                            </div>
+                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Nhiệt độ môi trường</h4>
+                            <div style="display: inline-block; background: rgba(255, 217, 61, 0.2); color: #FFD93D; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng vừa</div>
+                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Chênh lệch nhiệt độ trong/ngoài ống</p>
+                        </div>
+
+                        <div style="background: rgba(255, 107, 53, 0.1); border: 1px solid rgba(255, 107, 53, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #FF6B35, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);">
+                                <i class="fas fa-tint" style="color: white; font-size: 1.8rem;"></i>
+                            </div>
+                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Độ ẩm môi trường</h4>
+                            <div style="display: inline-block; background: rgba(255, 107, 53, 0.2); color: #FF6B35; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng rất lớn</div>
+                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Độ ẩm xung quanh hệ thống</p>
+                        </div>
+
+                        <div style="background: rgba(255, 217, 61, 0.1); border: 1px solid rgba(255, 217, 61, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFD93D, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(255, 217, 61, 0.3);">
+                                <i class="fas fa-fire" style="color: white; font-size: 1.8rem;"></i>
+                            </div>
+                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Hệ số dẫn nhiệt</h4>
+                            <div style="display: inline-block; background: rgba(255, 217, 61, 0.2); color: #FFD93D; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng lớn</div>
+                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Của vật liệu bảo ôn PU Foam</p>
+                        </div>
+
+                        <div style="background: rgba(148, 200, 66, 0.1); border: 1px solid rgba(148, 200, 66, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #78A82E, #94C842); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(120, 168, 46, 0.3);">
+                                <i class="fas fa-shield-alt" style="color: white; font-size: 1.8rem;"></i>
+                            </div>
+                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Vật liệu Jacketing</h4>
+                            <div style="display: inline-block; background: rgba(148, 200, 66, 0.2); color: #94C842; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng lớn</div>
+                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Vật liệu bảo vệ Cladding</p>
+                        </div>
+
+                        <div style="background: rgba(255, 217, 61, 0.1); border: 1px solid rgba(255, 217, 61, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFD93D, #94C842); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(255, 217, 61, 0.3);">
+                                <i class="fas fa-wind" style="color: white; font-size: 1.8rem;"></i>
+                            </div>
+                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Tốc độ gió</h4>
+                            <div style="display: inline-block; background: rgba(255, 217, 61, 0.2); color: #FFD93D; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng nhiều</div>
+                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Gió môi trường xung quanh</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="calc-tools-grid">
-                    <div class="calc-tool animate-on-scroll">
-                        <div class="tool-icon">
-                            <i class="fas fa-wind"></i>
+                <!-- Calculator Tools Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                    <!-- Tool 1: Ống gió -->
+                    <div class="calc-tool animate-on-scroll" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(148, 200, 66, 0.2); border-radius: 25px; padding: 2.5rem; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(148, 200, 66, 0.15), transparent); border-radius: 50%; filter: blur(40px);"></div>
+
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #94C842, #FFD93D); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 15px 35px rgba(148, 200, 66, 0.3); transition: transform 0.5s;">
+                            <i class="fas fa-wind" style="color: white; font-size: 2.2rem;"></i>
                         </div>
-                        <h3>Tính Độ Dày Cách Nhiệt Ống Gió</h3>
-                        <p>Tính toán độ dày cách nhiệt tối ưu cho hệ thống ống gió HVAC, đảm bảo hiệu quả năng lượng và ngăn ngừa đọng sương.</p>
-                        <div class="tool-features">
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Tính toán theo tiêu chuẩn ASHRAE</span>
+
+                        <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Ống Gió HVAC</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Tính toán độ dày cách nhiệt tối ưu cho hệ thống ống gió, ngăn ngừa đọng sương hiệu quả.</p>
+
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Theo tiêu chuẩn ASHRAE</span>
                             </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Phân tích kinh tế chi phí</span>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Phân tích kinh tế chi phí</span>
                             </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Báo cáo kỹ thuật chi tiết</span>
+                            <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Báo cáo kỹ thuật chi tiết</span>
                             </div>
                         </div>
-                        <button class="calc-btn" onclick="openCalculator('duct')">
+
+                        <button onclick="openCalculator('duct')" style="width: 100%; background: linear-gradient(135deg, #94C842, #FFD93D); color: white; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(148, 200, 66, 0.3);">
                             <i class="fas fa-calculator"></i>
-                            Tính toán ngay
+                            <span>Tính toán ngay</span>
                         </button>
                     </div>
 
-                    <div class="calc-tool animate-on-scroll">
-                        <div class="tool-icon">
-                            <i class="fas fa-thermometer-half"></i>
+                    <!-- Tool 2: Nước nóng -->
+                    <div class="calc-tool animate-on-scroll" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 107, 53, 0.2); border-radius: 25px; padding: 2.5rem; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(255, 107, 53, 0.15), transparent); border-radius: 50%; filter: blur(40px);"></div>
+
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #FF6B35, #FFA372); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 15px 35px rgba(255, 107, 53, 0.3); transition: transform 0.5s;">
+                            <i class="fas fa-thermometer-half" style="color: white; font-size: 2.2rem;"></i>
                         </div>
-                        <h3>Tính Tổn Thất Nhiệt Đường Ống Nước Nóng</h3>
-                        <p>Tính toán tổn thất nhiệt và độ dày cách nhiệt kinh tế cho hệ thống đường ống nước nóng trung tâm.</p>
-                        <div class="tool-features">
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Tính tổn thất nhiệt chính xác</span>
+
+                        <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Đường Ống Nước Nóng</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Tính tổn thất nhiệt và độ dày cách nhiệt kinh tế cho hệ thống nước nóng.</p>
+
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Tính tổn thất nhiệt chính xác</span>
                             </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Tối ưu hóa chi phí vận hành</span>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Tối ưu chi phí vận hành</span>
                             </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Nhiều loại vật liệu cách nhiệt</span>
+                            <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Nhiều loại vật liệu PU Foam</span>
                             </div>
                         </div>
-                        <button class="calc-btn" onclick="openCalculator('hotwater')">
+
+                        <button onclick="openCalculator('hotwater')" style="width: 100%; background: linear-gradient(135deg, #FF6B35, #FFA372); color: white; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);">
                             <i class="fas fa-calculator"></i>
-                            Tính toán ngay
+                            <span>Tính toán ngay</span>
                         </button>
                     </div>
 
-                    <div class="calc-tool animate-on-scroll">
-                        <div class="tool-icon">
-                            <i class="fas fa-database"></i>
+                    <!-- Tool 3: Tanks -->
+                    <div class="calc-tool animate-on-scroll" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 217, 61, 0.2); border-radius: 25px; padding: 2.5rem; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(255, 217, 61, 0.15), transparent); border-radius: 50%; filter: blur(40px);"></div>
+
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #FFD93D, #FFA372); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 15px 35px rgba(255, 217, 61, 0.3); transition: transform 0.5s;">
+                            <i class="fas fa-database" style="color: white; font-size: 2.2rem;"></i>
                         </div>
-                        <h3>Tính Tổn Thất Nhiệt Trên Tanks</h3>
-                        <p>Tính toán cách nhiệt cho bồn chứa, tanks công nghiệp với các hình dạng và kích thước khác nhau.</p>
-                        <div class="tool-features">
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Bồn cylindrical & spherical</span>
+
+                        <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Tanks & Bồn Chứa</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Tính toán cách nhiệt cho bồn chứa với các hình dạng và kích thước khác nhau.</p>
+
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Bồn cylindrical & spherical</span>
                             </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Tính toán diện tích bề mặt</span>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Tính diện tích bề mặt</span>
                             </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Phân tích ROI chi tiết</span>
+                            <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Phân tích ROI chi tiết</span>
                             </div>
                         </div>
-                        <button class="calc-btn" onclick="openCalculator('tanks')">
+
+                        <button onclick="openCalculator('tanks')" style="width: 100%; background: linear-gradient(135deg, #FFD93D, #FFA372); color: white; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(255, 217, 61, 0.3);">
                             <i class="fas fa-calculator"></i>
-                            Tính toán ngay
+                            <span>Tính toán ngay</span>
                         </button>
                     </div>
 
-                    <div class="calc-tool animate-on-scroll">
-                        <div class="tool-icon">
-                            <i class="fas fa-snowflake"></i>
+                    <!-- Tool 4: Chiller -->
+                    <div class="calc-tool animate-on-scroll" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(148, 200, 66, 0.2); border-radius: 25px; padding: 2.5rem; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(148, 200, 66, 0.15), transparent); border-radius: 50%; filter: blur(40px);"></div>
+
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #78A82E, #94C842); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 15px 35px rgba(120, 168, 46, 0.3); transition: transform 0.5s;">
+                            <i class="fas fa-snowflake" style="color: white; font-size: 2.2rem;"></i>
                         </div>
-                        <h3>Tính Độ Dày Cách Nhiệt Ống Chiller</h3>
-                        <p>Công cụ chuyên biệt cho hệ thống chiller, tính toán độ dày cách nhiệt ngăn ngừa đọng sương hiệu quả.</p>
-                        <div class="tool-features">
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Ngăn ngừa đọng sương 100%</span>
+
+                        <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Ống Chiller Lạnh</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Chuyên biệt cho hệ thống chiller, ngăn ngừa đọng sương 100% hiệu quả.</p>
+
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Ngăn đọng sương 100%</span>
                             </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Tối ưu cho nhiệt độ thấp</span>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Tối ưu nhiệt độ thấp</span>
                             </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Phù hợp PIR/PUR foam</span>
+                            <div style="display: flex; align-items: center; gap: 0.8rem;">
+                                <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem;"></i>
+                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Phù hợp vật liệu PU Foam</span>
                             </div>
                         </div>
-                        <button class="calc-btn" onclick="openCalculator('chiller')">
+
+                        <button onclick="openCalculator('chiller')" style="width: 100%; background: linear-gradient(135deg, #78A82E, #94C842); color: white; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(120, 168, 46, 0.3);">
                             <i class="fas fa-calculator"></i>
-                            Tính toán ngay
+                            <span>Tính toán ngay</span>
                         </button>
                     </div>
                 </div>
 
-                <div class="calc-benefits animate-on-scroll">
-                    <h3>Lợi Ích Của 3iCalc</h3>
-                    <div class="benefits-grid">
-                        <div class="benefit-item">
-                            <i class="fas fa-coins"></i>
+                <!-- Benefits Section -->
+                <div class="calc-benefits animate-on-scroll" style="margin-bottom: 4rem;">
+                    <h3 style="color: white; font-size: 2.2rem; text-align: center; margin-bottom: 3rem; font-weight: 700;">
+                        <span style="color: #FFD93D;">Lợi Ích</span> Của 3iCalc
+                    </h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div style="background: rgba(148, 200, 66, 0.1); border: 1px solid rgba(148, 200, 66, 0.2); border-radius: 20px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: all 0.4s;">
+                            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #94C842, #FFD93D); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 25px rgba(148, 200, 66, 0.3);">
+                                <i class="fas fa-coins" style="color: white; font-size: 2rem;"></i>
+                            </div>
                             <div>
-                                <h4>Tối Ưu Chi Phí</h4>
-                                <p>Cân nhắc chi phí đầu tư bảo ôn ban đầu và chi phí vận hành hàng năm để đưa ra độ dày kinh tế nhất</p>
+                                <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Tối Ưu Chi Phí</h4>
+                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; font-size: 0.95rem;">Cân nhắc chi phí đầu tư ban đầu và vận hành hàng năm để đưa ra độ dày kinh tế nhất</p>
                             </div>
                         </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-chart-line"></i>
+
+                        <div style="background: rgba(255, 217, 61, 0.1); border: 1px solid rgba(255, 217, 61, 0.2); border-radius: 20px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: all 0.4s;">
+                            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #FFD93D, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 25px rgba(255, 217, 61, 0.3);">
+                                <i class="fas fa-chart-line" style="color: white; font-size: 2rem;"></i>
+                            </div>
                             <div>
-                                <h4>Tính Toán Chính Xác</h4>
-                                <p>Sử dụng các công thức và tiêu chuẩn quốc tế được công nhận trong ngành cách nhiệt</p>
+                                <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Tính Toán Chính Xác</h4>
+                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; font-size: 0.95rem;">Sử dụng công thức và tiêu chuẩn quốc tế được công nhận trong ngành cách nhiệt</p>
                             </div>
                         </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-clock"></i>
+
+                        <div style="background: rgba(255, 107, 53, 0.1); border: 1px solid rgba(255, 107, 53, 0.2); border-radius: 20px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: all 0.4s;">
+                            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #FF6B35, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);">
+                                <i class="fas fa-clock" style="color: white; font-size: 2rem;"></i>
+                            </div>
                             <div>
-                                <h4>Tiết Kiệm Thời Gian</h4>
-                                <p>Giảm thời gian thiết kế từ 70% so với tính toán thủ công, tăng hiệu suất làm việc</p>
+                                <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Tiết Kiệm 70% Thời Gian</h4>
+                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; font-size: 0.95rem;">Giảm thời gian thiết kế so với tính thủ công, tăng hiệu suất làm việc đáng kể</p>
                             </div>
                         </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-file-alt"></i>
+
+                        <div style="background: rgba(120, 168, 46, 0.1); border: 1px solid rgba(120, 168, 46, 0.2); border-radius: 20px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: all 0.4s;">
+                            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #78A82E, #94C842); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 25px rgba(120, 168, 46, 0.3);">
+                                <i class="fas fa-file-alt" style="color: white; font-size: 2rem;"></i>
+                            </div>
                             <div>
-                                <h4>Báo Cáo Chi Tiết</h4>
-                                <p>Tạo báo cáo kỹ thuật chuyên nghiệp với biểu đồ, bảng tính và khuyến nghị cụ thể</p>
+                                <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Báo Cáo Chi Tiết</h4>
+                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; font-size: 0.95rem;">Tạo báo cáo chuyên nghiệp với biểu đồ, bảng tính và khuyến nghị cụ thể</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="calc-cta animate-on-scroll">
-                    <h3>Cần Hỗ Trợ Tính Toán Cụ Thể?</h3>
-                    <p>Đội ngũ kỹ sư của 3igreen sẵn sàng hỗ trợ tư vấn và tính toán cách nhiệt cho dự án của bạn</p>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-phone"></i>
-                            Tư vấn miễn phí
-                        </a>
-                        <a href="mailto:technical@3igreen.com.vn" class="btn btn-outline" style="color: var(--white); border-color: rgba(255,255,255,0.5);">
-                            <i class="fas fa-envelope"></i>
-                            Gửi yêu cầu kỹ thuật
-                        </a>
+                <!-- CTA Section -->
+                <div class="calc-cta animate-on-scroll" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(148, 200, 66, 0.3); border-radius: 30px; padding: 4rem; text-align: center;">
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <h3 style="color: white; font-size: 2.2rem; margin-bottom: 1.2rem; font-weight: 700;">
+                            Cần Hỗ Trợ Tính Toán Cụ Thể?
+                        </h3>
+                        <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-bottom: 2.5rem; line-height: 1.7;">
+                            Đội ngũ kỹ sư của 3igreen sẵn sàng hỗ trợ tư vấn và tính toán cách nhiệt cho dự án của bạn
+                        </p>
+                        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                            <a href="#contact" style="display: inline-flex; align-items: center; gap: 0.8rem; background: linear-gradient(135deg, #94C842, #FFD93D); color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s; box-shadow: 0 15px 35px rgba(148, 200, 66, 0.4);">
+                                <i class="fas fa-phone"></i>
+                                <span>Tư vấn miễn phí</span>
+                            </a>
+                            <a href="mailto:technical@3igreen.com.vn" style="display: inline-flex; align-items: center; gap: 0.8rem; background: transparent; color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.05rem; border: 2px solid rgba(255, 255, 255, 0.3); transition: all 0.3s;">
+                                <i class="fas fa-envelope"></i>
+                                <span>Gửi yêu cầu kỹ thuật</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -3650,7 +4363,7 @@
                     <div class="contact-info animate-on-scroll slide-in-left">
                         <h2>Liên Hệ Với Chúng Tôi</h2>
                         <p class="contact-description">
-                            Hãy để 3igreen tư vấn miễn phí và cung cấp giải pháp tối ưu nhất cho dự án của bạn. Chúng tôi cam kết phản hồi trong vòng 24 giờ với báo giá cạnh tranh nhất thị trường và công nghệ PIR/PUR tiên tiến.
+                            Hãy để 3igreen tư vấn miễn phí và cung cấp giải pháp tối ưu nhất cho dự án của bạn. Chúng tôi cam kết phản hồi trong vòng 24 giờ với báo giá cạnh tranh nhất thị trường và công nghệ PU Foam tiên tiến.
                         </p>
                         
                         <div class="contact-details">
@@ -3766,7 +4479,7 @@
                             
                             <div class="form-group">
                                 <label for="message">Mô tả chi tiết dự án *</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Vui lòng mô tả chi tiết về dự án: diện tích, yêu cầu kỹ thuật, điều kiện đặc biệt, loại vật liệu PIR/PUR cần sử dụng..." required></textarea>
+                                <textarea id="message" name="message" rows="5" placeholder="Vui lòng mô tả chi tiết về dự án: diện tích, yêu cầu kỹ thuật, điều kiện đặc biệt, loại vật liệu PU Foam cần sử dụng..." required></textarea>
                             </div>
                             
                             <div class="form-submit">
@@ -3788,7 +4501,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3><i class="fas fa-leaf"></i> 3igreen</h3>
-                    <p>Chuyên sản xuất và cung cấp các giải pháp vật liệu xanh chất lượng cao cho công nghiệp. Với hơn 10 năm kinh nghiệm và công nghệ PIR/PUR tiên tiến, chúng tôi tự hào là đối tác tin cậy của hàng trăm doanh nghiệp lớn.</p>
+                    <p>Chuyên sản xuất và cung cấp các giải pháp vật liệu xanh chất lượng cao cho công nghiệp. Với hơn 10 năm kinh nghiệm và công nghệ PU Foam tiên tiến, chúng tôi tự hào là đối tác tin cậy của hàng trăm doanh nghiệp lớn.</p>
                     <div class="footer-social">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
@@ -3801,7 +4514,7 @@
                     <h4>Sản phẩm</h4>
                     <ul class="footer-links">
                         <li><a href="#features">Gói đỡ PU Foam</a></li>
-                        <li><a href="#applications">Ứng dụng PIR/PUR</a></li>
+                        <li><a href="#applications">Ứng dụng PU Foam</a></li>
                         <li><a href="#specs">Thông số kỹ thuật</a></li>
                         <li><a href="#contact">Báo giá</a></li>
                         <li><a href="#about">Công nghệ KingsPipe</a></li>
@@ -4105,10 +4818,10 @@
                     const successMessage = document.createElement('div');
                     successMessage.className = 'success-message';
                     successMessage.innerHTML = `
-                        <div style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 1.5rem; border-radius: 15px; text-align: center; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);">
+                        <div style="background: linear-gradient(135deg, #94C842, #78A82E); color: white; padding: 1.5rem; border-radius: 15px; text-align: center; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);">
                             <i class="fas fa-check-circle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
                             <h4 style="margin-bottom: 0.5rem;">Gửi yêu cầu thành công!</h4>
-                            <p style="margin: 0; opacity: 0.9;">Cảm ơn bạn đã tin tưởng 3igreen. Chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ với báo giá chi tiết nhất về công nghệ PIR/PUR.</p>
+                            <p style="margin: 0; opacity: 0.9;">Cảm ơn bạn đã tin tưởng 3igreen. Chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ với báo giá chi tiết nhất về công nghệ PU Foam.</p>
                         </div>
                     `;
                     
@@ -4165,8 +4878,8 @@
 
         // Console welcome message
         console.log('%c🌱 3igreen - Vật Liệu Xanh Chất Lượng Cao 🌱', 'color: #2c5b3b; font-size: 20px; font-weight: bold;');
-        console.log('%cWebsite được thiết kế và phát triển bởi đội ngũ 3igreen', 'color: #6ee7b7; font-size: 14px;');
-        console.log('%cLiên hệ: 0973.098.338 | info@3igreen.com.vn', 'color: #14b8a6; font-size: 12px;');
+        console.log('%cWebsite được thiết kế và phát triển bởi đội ngũ 3igreen', 'color: #FFD93D; font-size: 14px;');
+        console.log('%cLiên hệ: 0973.098.338 | info@3igreen.com.vn', 'color: #FF6B35; font-size: 12px;');
 
         // Initialize everything when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
