@@ -243,15 +243,60 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <title>Gói Đỡ PU Foam Cách Nhiệt, Chịu Lực Cao - 3igreen | Tiết Kiệm 70% Thời Gian Thi Công</title>
     <meta name="description" content="3igreen chuyên sản xuất gói đỡ PU Foam chất lượng cao với hệ số dẫn nhiệt thấp, khả năng chịu lực tốt. Giải pháp tối ưu cho hệ thống lạnh, chiller, điều hòa không khí. Tiết kiệm 70% thời gian thi công.">
     <meta name="keywords" content="gói đỡ pu foam, gói đỡ ống chiller, gói đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pu foam đế vuông, pu foam đế tròn, kingspipe">
 
+    <!-- Additional SEO -->
+    <meta name="author" content="3igreen">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://3igreen.com.vn/">
+    <meta property="og:title" content="Gói Đỡ PU Foam Cách Nhiệt - 3igreen">
+    <meta property="og:description" content="Giải pháp gối đỡ PU Foam chuyên nghiệp cho hệ thống HVAC. Tiết kiệm 70% thời gian thi công.">
+    <meta property="og:image" content="https://3igreen.com.vn/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://3igreen.com.vn/">
+    <meta property="twitter:title" content="Gói Đỡ PU Foam Cách Nhiệt - 3igreen">
+    <meta property="twitter:description" content="Giải pháp gối đỡ PU Foam chuyên nghiệp cho hệ thống HVAC.">
+    <meta property="twitter:image" content="https://3igreen.com.vn/og-image.jpg">
+
+    <!-- Apple Mobile Web App -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="3igreen">
+
+    <!-- Microsoft -->
+    <meta name="msapplication-TileColor" content="#94C842">
+    <meta name="theme-color" content="#94C842">
+
+    <!-- Performance: Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+
+    <!-- Performance: Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&subset=vietnamese&display=swap" as="style">
+
+    <!-- External Stylesheets -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&subset=vietnamese&display=swap" rel="stylesheet">
+
+    <!-- Browser Compatibility CSS -->
+    <link href="browser-compatibility.css" rel="stylesheet">
+
+    <!-- Browser Polyfills (load early for IE11 and old browsers) -->
+    <script src="browser-polyfills.js"></script>
 
     <style>
         :root {
