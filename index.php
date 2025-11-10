@@ -251,7 +251,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&subset=vietnamese&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -269,8 +269,8 @@
             --light-gray: #E9ECEF;              /* Light Gray */
 
             --text-primary: #0A1628;            /* Primary Text - Dark Navy */
-            --text-secondary: #4A5568;          /* Secondary Text - Gray */
-            --text-muted: #A0AEC0;              /* Muted Text */
+            --text-secondary: #2D3748;          /* Secondary Text - Gray (tối hơn để dễ đọc) */
+            --text-muted: #718096;              /* Muted Text (tối hơn để dễ đọc) */
 
             --accent-gold: #FFD93D;             /* Premium Gold Accent */
             --accent-orange: #FF6B35;           /* Energy Orange */
@@ -3075,7 +3075,7 @@
                         <div style="padding: 2rem;">
                             <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Nguyễn Văn A</h3>
                             <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Điều Hành</p>
-                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">Hơn 15 năm kinh nghiệm trong lĩnh vực vật liệu xanh và công nghệ cách nhiệt tiên tiến.</p>
+                            <p style="color: #2D3748; line-height: 1.7; margin-bottom: 1.5rem;">Hơn 15 năm kinh nghiệm trong lĩnh vực vật liệu xanh và công nghệ cách nhiệt tiên tiến.</p>
                             <div class="social-links" style="display: flex; gap: 0.75rem;">
                                 <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fab fa-linkedin-in"></i>
@@ -3100,7 +3100,7 @@
                         <div style="padding: 2rem;">
                             <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Trần Thị B</h3>
                             <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Công Nghệ</p>
-                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia công nghệ PU Foam với 12 năm kinh nghiệm nghiên cứu và phát triển sản phẩm.</p>
+                            <p style="color: #2D3748; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia công nghệ PU Foam với 12 năm kinh nghiệm nghiên cứu và phát triển sản phẩm.</p>
                             <div class="social-links" style="display: flex; gap: 0.75rem;">
                                 <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fab fa-linkedin-in"></i>
@@ -3125,7 +3125,7 @@
                         <div style="padding: 2rem;">
                             <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Lê Văn C</h3>
                             <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Giám Đốc Kinh Doanh</p>
-                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">10 năm kinh nghiệm phát triển thị trường và xây dựng mối quan hệ đối tác chiến lược.</p>
+                            <p style="color: #2D3748; line-height: 1.7; margin-bottom: 1.5rem;">10 năm kinh nghiệm phát triển thị trường và xây dựng mối quan hệ đối tác chiến lược.</p>
                             <div class="social-links" style="display: flex; gap: 0.75rem;">
                                 <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fab fa-linkedin-in"></i>
@@ -3150,7 +3150,7 @@
                         <div style="padding: 2rem;">
                             <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Phạm Thị D</h3>
                             <p style="color: #94C842; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;">Quản Lý Sản Xuất</p>
-                            <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia sản xuất với 14 năm kinh nghiệm đảm bảo chất lượng và tối ưu quy trình.</p>
+                            <p style="color: #2D3748; line-height: 1.7; margin-bottom: 1.5rem;">Chuyên gia sản xuất với 14 năm kinh nghiệm đảm bảo chất lượng và tối ưu quy trình.</p>
                             <div class="social-links" style="display: flex; gap: 0.75rem;">
                                 <a href="#" style="width: 40px; height: 40px; background: rgba(148, 200, 66, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94C842; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(148, 200, 66, 0.2);">
                                     <i class="fab fa-linkedin-in"></i>
@@ -3167,15 +3167,15 @@
                 <div style="margin-top: 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
                     <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.1);">
                         <div style="font-size: 3rem; font-weight: 800; color: #94C842; margin-bottom: 0.5rem;">50+</div>
-                        <div style="color: #636e72; font-weight: 600;">Nhân viên chuyên nghiệp</div>
+                        <div style="color: #374151; font-weight: 600;">Nhân viên chuyên nghiệp</div>
                     </div>
                     <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.1);">
                         <div style="font-size: 3rem; font-weight: 800; color: #FFD93D; margin-bottom: 0.5rem;">15+</div>
-                        <div style="color: #636e72; font-weight: 600;">Năm kinh nghiệm</div>
+                        <div style="color: #374151; font-weight: 600;">Năm kinh nghiệm</div>
                     </div>
                     <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.1);">
                         <div style="font-size: 3rem; font-weight: 800; color: #FF6B35; margin-bottom: 0.5rem;">100%</div>
-                        <div style="color: #636e72; font-weight: 600;">Tâm huyết & chuyên nghiệp</div>
+                        <div style="color: #374151; font-weight: 600;">Tâm huyết & chuyên nghiệp</div>
                     </div>
                 </div>
             </div>
@@ -3306,7 +3306,7 @@
 
                         <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 1rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Gối Đỡ Vuông 2 Mảnh</h3>
 
-                        <p style="color: #6b7280; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế module 2 mảnh thông minh, lắp đặt siêu nhanh chóng. Phù hợp cho các dự án quy mô lớn cần tiết kiệm thời gian thi công.</p>
+                        <p style="color: #374151; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế module 2 mảnh thông minh, lắp đặt siêu nhanh chóng. Phù hợp cho các dự án quy mô lớn cần tiết kiệm thời gian thi công.</p>
 
                         <div class="product-specs" style="background: rgba(148, 200, 66, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(148, 200, 66, 0.1);">
                             <h4 style="font-size: 1rem; color: #0A1628; margin-bottom: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;">
@@ -3314,19 +3314,19 @@
                             </h4>
                             <ul style="list-style: none; padding: 0;">
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
-                                    <span style="color: #6b7280;">Đường kính ống:</span>
+                                    <span style="color: #374151;">Đường kính ống:</span>
                                     <strong style="color: #94C842;">Ø21 - Ø219mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
-                                    <span style="color: #6b7280;">Độ dày:</span>
+                                    <span style="color: #374151;">Độ dày:</span>
                                     <strong style="color: #94C842;">25 - 100mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
-                                    <span style="color: #6b7280;">Mật độ PU:</span>
+                                    <span style="color: #374151;">Mật độ PU:</span>
                                     <strong style="color: #94C842;">40 kg/m³</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
-                                    <span style="color: #6b7280;">Hệ số dẫn nhiệt:</span>
+                                    <span style="color: #374151;">Hệ số dẫn nhiệt:</span>
                                     <strong style="color: #94C842;">λ ≤ 0.022 W/m.K</strong>
                                 </li>
                             </ul>
@@ -3335,15 +3335,15 @@
                         <div class="product-features" style="margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #4b5563;">Lắp đặt nhanh, tiết kiệm 70% thời gian</span>
+                                <span style="color: #374151;">Lắp đặt nhanh, tiết kiệm 70% thời gian</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #4b5563;">Chống thấm tuyệt đối < 1%</span>
+                                <span style="color: #374151;">Chống thấm tuyệt đối < 1%</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #4b5563;">Chịu lực cao, không biến dạng</span>
+                                <span style="color: #374151;">Chịu lực cao, không biến dạng</span>
                             </div>
                         </div>
 
@@ -3364,7 +3364,7 @@
 
                         <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 1rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Gối Đỡ Tròn Cùm Kim Loại</h3>
 
-                        <p style="color: #6b7280; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Tích hợp cùm kim loại inox 304, siết chặt tối ưu. Phù hợp ống chịu áp lực cao, hệ thống chiller công nghiệp.</p>
+                        <p style="color: #374151; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Tích hợp cùm kim loại inox 304, siết chặt tối ưu. Phù hợp ống chịu áp lực cao, hệ thống chiller công nghiệp.</p>
 
                         <div class="product-specs" style="background: rgba(10, 22, 40, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(10, 22, 40, 0.1);">
                             <h4 style="font-size: 1rem; color: #0A1628; margin-bottom: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;">
@@ -3372,19 +3372,19 @@
                             </h4>
                             <ul style="list-style: none; padding: 0;">
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(10, 22, 40, 0.1);">
-                                    <span style="color: #6b7280;">Đường kính ống:</span>
+                                    <span style="color: #374151;">Đường kính ống:</span>
                                     <strong style="color: #0A1628;">Ø27 - Ø273mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(10, 22, 40, 0.1);">
-                                    <span style="color: #6b7280;">Độ dày:</span>
+                                    <span style="color: #374151;">Độ dày:</span>
                                     <strong style="color: #0A1628;">30 - 100mm</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(10, 22, 40, 0.1);">
-                                    <span style="color: #6b7280;">Mật độ PU:</span>
+                                    <span style="color: #374151;">Mật độ PU:</span>
                                     <strong style="color: #0A1628;">40 kg/m³</strong>
                                 </li>
                                 <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
-                                    <span style="color: #6b7280;">Cùm kim loại:</span>
+                                    <span style="color: #374151;">Cùm kim loại:</span>
                                     <strong style="color: #0A1628;">Inox 304</strong>
                                 </li>
                             </ul>
@@ -3393,15 +3393,15 @@
                         <div class="product-features" style="margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #4b5563;">Ôm sát ống, cách nhiệt tối ưu</span>
+                                <span style="color: #374151;">Ôm sát ống, cách nhiệt tối ưu</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #4b5563;">Cùm inox 304 bền bỉ chống gỉ</span>
+                                <span style="color: #374151;">Cùm inox 304 bền bỉ chống gỉ</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #4b5563;">Chịu áp lực cao, rung động mạnh</span>
+                                <span style="color: #374151;">Chịu áp lực cao, rung động mạnh</span>
                             </div>
                         </div>
 
@@ -3434,18 +3434,18 @@
                             <tbody>
                                 <tr style="border-bottom: 1px solid #e5e7eb;">
                                     <td style="padding: 1rem; font-weight: 700; color: #0A1628;"><i class="fas fa-ruler" style="color: #94C842;"></i> Độ dày</td>
-                                    <td style="padding: 1rem; text-align: center; color: #4A5568;">25 - 100mm</td>
-                                    <td style="padding: 1rem; text-align: center; color: #4A5568;">30 - 100mm</td>
+                                    <td style="padding: 1rem; text-align: center; color: #2D3748;">25 - 100mm</td>
+                                    <td style="padding: 1rem; text-align: center; color: #2D3748;">30 - 100mm</td>
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e5e7eb; background: rgba(148, 200, 66, 0.03);">
                                     <td style="padding: 1rem; font-weight: 700; color: #0A1628;"><i class="fas fa-clock" style="color: #94C842;"></i> Thời gian lắp đặt</td>
                                     <td style="padding: 1rem; text-align: center;"><i class="fas fa-bolt" style="color: #94C842;"></i> <strong style="color: #94C842;">Rất nhanh - 70% thời gian</strong></td>
-                                    <td style="padding: 1rem; text-align: center; color: #4A5568;"><i class="fas fa-check" style="color: #94C842;"></i> Nhanh</td>
+                                    <td style="padding: 1rem; text-align: center; color: #2D3748;"><i class="fas fa-check" style="color: #94C842;"></i> Nhanh</td>
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e5e7eb;">
                                     <td style="padding: 1rem; font-weight: 700; color: #0A1628;"><i class="fas fa-cogs" style="color: #94C842;"></i> Ứng dụng</td>
-                                    <td style="padding: 1rem; text-align: center; color: #4A5568;">Mọi loại ống, Chiller, HVAC</td>
-                                    <td style="padding: 1rem; text-align: center; color: #4A5568;">Ống áp lực cao, Chiller công nghiệp</td>
+                                    <td style="padding: 1rem; text-align: center; color: #2D3748;">Mọi loại ống, Chiller, HVAC</td>
+                                    <td style="padding: 1rem; text-align: center; color: #2D3748;">Ống áp lực cao, Chiller công nghiệp</td>
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e5e7eb; background: rgba(148, 200, 66, 0.03);">
                                     <td style="padding: 1rem; font-weight: 700; color: #0A1628;"><i class="fas fa-fire" style="color: #94C842;"></i> Hệ số dẫn nhiệt</td>
@@ -3467,7 +3467,7 @@
                     <h3 style="font-size: 1.75rem; font-weight: 800; color: #0A1628; margin-bottom: 1rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">
                         Chưa Chắc Chắn Sản Phẩm Nào Phù Hợp?
                     </h3>
-                    <p style="color: #4A5568; font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.7;">
+                    <p style="color: #2D3748; font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.7;">
                         Đội ngũ kỹ sư của chúng tôi sẵn sàng tư vấn miễn phí để giúp bạn lựa chọn giải pháp tối ưu nhất
                     </p>
                     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
@@ -3961,7 +3961,7 @@
                             <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
                                 Công Nghệ PU Foam Thế Hệ Mới - Tiết Kiệm 70% Thời Gian Thi Công
                             </h3>
-                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
+                            <p style="color: #374151; line-height: 1.7; margin-bottom: 1.5rem;">
                                 Khám phá công nghệ PU Foam tiên tiến giúp tiết kiệm thời gian thi công lên đến 70%, mang lại hiệu quả vượt trội cho các công trình công nghiệp...
                             </p>
                             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -3999,7 +3999,7 @@
                             <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
                                 3iGreen Nhận Giải Thưởng "Doanh Nghiệp Xanh 2024"
                             </h3>
-                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
+                            <p style="color: #374151; line-height: 1.7; margin-bottom: 1.5rem;">
                                 3iGreen vinh dự được vinh danh tại lễ trao giải "Doanh Nghiệp Xanh 2024" nhờ những đóng góp xuất sắc trong lĩnh vực phát triển vật liệu bền vững...
                             </p>
                             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -4037,7 +4037,7 @@
                             <h3 style="font-size: 1.4rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem; line-height: 1.4;">
                                 5 Bí Quyết Chọn Vật Liệu Cách Nhiệt Hiệu Quả
                             </h3>
-                            <p style="color: #636e72; line-height: 1.7; margin-bottom: 1.5rem;">
+                            <p style="color: #374151; line-height: 1.7; margin-bottom: 1.5rem;">
                                 Hướng dẫn chi tiết giúp bạn lựa chọn vật liệu cách nhiệt phù hợp nhất cho công trình, tiết kiệm chi phí và đảm bảo hiệu suất tối ưu...
                             </p>
                             <div style="display: flex; justify-content: space-between; align-items: center;">
