@@ -2310,8 +2310,8 @@
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(60px);
-            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             will-change: opacity, transform;
             backface-visibility: hidden;
         }
@@ -2322,11 +2322,22 @@
             will-change: auto;
         }
 
+        /* Fade In Animation */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .fade-in.animated {
+            opacity: 1;
+        }
+
+        /* Slide Animations */
         .slide-in-left {
             opacity: 0;
             transform: translateX(-60px);
-            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             will-change: opacity, transform;
             backface-visibility: hidden;
         }
@@ -2340,8 +2351,8 @@
         .slide-in-right {
             opacity: 0;
             transform: translateX(60px);
-            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             will-change: opacity, transform;
             backface-visibility: hidden;
         }
@@ -2350,6 +2361,41 @@
             opacity: 1;
             transform: translateX(0);
             will-change: auto;
+        }
+
+        /* Scale Up Animation */
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: opacity, transform;
+        }
+
+        .scale-in.animated {
+            opacity: 1;
+            transform: scale(1);
+            will-change: auto;
+        }
+
+        /* Stagger Animation for Children */
+        .stagger-children > * {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .stagger-children.animated > *:nth-child(1) { transition-delay: 0.1s; }
+        .stagger-children.animated > *:nth-child(2) { transition-delay: 0.2s; }
+        .stagger-children.animated > *:nth-child(3) { transition-delay: 0.3s; }
+        .stagger-children.animated > *:nth-child(4) { transition-delay: 0.4s; }
+        .stagger-children.animated > *:nth-child(5) { transition-delay: 0.5s; }
+        .stagger-children.animated > *:nth-child(6) { transition-delay: 0.6s; }
+
+        .stagger-children.animated > * {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         /* Mobile Optimization */
@@ -2597,10 +2643,16 @@
                 padding-top: 100px;
                 height: auto;
                 min-height: 100vh;
+                padding-bottom: 3rem;
             }
 
             .hero-text h1 {
                 font-size: 2rem;
+                line-height: 1.3;
+            }
+
+            .hero-text .subtitle {
+                font-size: 1rem;
             }
 
             .hero-features {
@@ -2609,6 +2661,13 @@
 
             .section-title {
                 font-size: 1.8rem;
+                line-height: 1.3;
+                margin-bottom: 1rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+                line-height: 1.6;
             }
 
             .stats-grid {
@@ -2647,6 +2706,37 @@
             .logo-img {
                 width: 35px;
                 height: 35px;
+            }
+
+            /* Reduce animation distance on mobile */
+            .animate-on-scroll {
+                transform: translateY(30px);
+            }
+
+            .slide-in-left {
+                transform: translateX(-30px);
+            }
+
+            .slide-in-right {
+                transform: translateX(30px);
+            }
+
+            /* Better button spacing on mobile */
+            .hero-buttons {
+                gap: 1rem;
+            }
+
+            /* Improve readability */
+            body {
+                font-size: 16px;
+            }
+
+            /* Better touch targets */
+            .btn,
+            .fab,
+            a {
+                min-height: 44px;
+                min-width: 44px;
             }
         }
 
@@ -2947,7 +3037,7 @@
         <!-- Stats Section -->
         <div class="stats-section">
             <div class="container">
-                <div class="stats-grid">
+                <div class="stats-grid stagger-children">
                     <div class="stat-card">
                         <div class="number">500+</div>
                         <div class="label">Dự án hoàn thành</div>
@@ -3061,9 +3151,9 @@
                     <p class="section-subtitle">Đội ngũ lãnh đạo giàu kinh nghiệm, tâm huyết với sứ mệnh phát triển vật liệu xanh bền vững</p>
                 </div>
 
-                <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="team-grid stagger-children" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
                     <!-- CEO -->
-                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                    <div class="team-member" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
                         <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
                             <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                                 <i class="fas fa-user-tie" style="font-size: 64px; color: #94C842;"></i>
@@ -3088,7 +3178,7 @@
                     </div>
 
                     <!-- CTO -->
-                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                    <div class="team-member" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
                         <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
                             <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                                 <i class="fas fa-user-cog" style="font-size: 64px; color: #94C842;"></i>
@@ -3113,7 +3203,7 @@
                     </div>
 
                     <!-- Sales Director -->
-                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                    <div class="team-member" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
                         <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
                             <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                                 <i class="fas fa-user-chart" style="font-size: 64px; color: #94C842;"></i>
@@ -3138,7 +3228,7 @@
                     </div>
 
                     <!-- Production Manager -->
-                    <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
+                    <div class="team-member" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
                         <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
                             <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                                 <i class="fas fa-user-hard-hat" style="font-size: 64px; color: #94C842;"></i>
@@ -4655,7 +4745,7 @@
             });
         });
 
-        // Animate on Scroll
+        // Animate on Scroll - Enhanced for multiple animation types
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -4669,8 +4759,20 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            observer.observe(el);
+        // Observe all animation classes
+        const animationSelectors = [
+            '.animate-on-scroll',
+            '.fade-in',
+            '.scale-in',
+            '.slide-in-left',
+            '.slide-in-right',
+            '.stagger-children'
+        ];
+
+        animationSelectors.forEach(selector => {
+            document.querySelectorAll(selector).forEach(el => {
+                observer.observe(el);
+            });
         });
 
         // Scroll to Top
