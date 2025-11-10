@@ -1,11 +1,18 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-// Khởi tạo scene, camera, renderer
+// Khởi tạo scene, camera, renderer với tối ưu hóa
 const canvas = document.querySelector('#c');
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+const renderer = new THREE.WebGLRenderer({
+    canvas,
+    antialias: true,
+    alpha: false,  // Disable alpha cho performance tốt hơn
+    powerPreference: "high-performance",  // Ưu tiên GPU mạnh hơn
+    stencil: false  // Tắt stencil buffer nếu không dùng
+});
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));  // Giới hạn pixel ratio cho mobile
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xf5f7fa);
@@ -266,14 +273,29 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-// Resize
+// Resize với debounce cho performance
 function handleResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 }
 
-window.addEventListener('resize', handleResize);
+// Debounce function để giảm số lần gọi resize
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Sử dụng debounce cho resize event
+window.addEventListener('resize', debounce(handleResize, 100));
 handleResize();
 
 // Event listeners for UI controls
@@ -285,6 +307,36 @@ window.addEventListener('resetCamera', () => {
 
 window.addEventListener('toggleAnimation', (e) => {
     animationPaused = e.detail.paused;
+});
+
+// Tối ưu: Pause animation khi tab không hiển thị
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        // Tab không hiển thị - tạm dừng animation để tiết kiệm tài nguyên
+        animationPaused = true;
+    } else {
+        // Tab hiển thị lại - tiếp tục animation
+        animationPaused = false;
+        clock.start();  // Reset clock để tránh jump trong animation
+    }
+});
+
+// Cleanup khi trang unload (optional - cho memory management tốt hơn)
+window.addEventListener('beforeunload', () => {
+    // Dispose geometries và materials để giải phóng memory
+    scene.traverse((object) => {
+        if (object.geometry) {
+            object.geometry.dispose();
+        }
+        if (object.material) {
+            if (Array.isArray(object.material)) {
+                object.material.forEach(material => material.dispose());
+            } else {
+                object.material.dispose();
+            }
+        }
+    });
+    renderer.dispose();
 });
 
 animate();

@@ -1,0 +1,295 @@
+/**
+ * Browser Compatibility & Optimization CSS
+ * Vendor prefixes và fallbacks cho tất cả trình duyệt
+ */
+
+/* ==================== VENDOR PREFIXES ==================== */
+
+/* Backdrop Filter Fallback */
+@supports not (backdrop-filter: blur(20px)) {
+    header {
+        background: rgba(255, 255, 255, 0.98) !important;
+    }
+
+    .calc-modal {
+        background: rgba(0, 0, 0, 0.9) !important;
+    }
+}
+
+/* Box Sizing cho tất cả trình duyệt */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Transform với vendor prefixes */
+.logo:hover {
+    -webkit-transform: translateX(4px);
+    -moz-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    -o-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+/* Animations với vendor prefixes */
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+    to { -o-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loader {
+    -webkit-animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    -moz-animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    -o-animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Flexbox với vendor prefixes */
+nav,
+.loading {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.loading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Transitions với vendor prefixes */
+a,
+header,
+.logo {
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Linear Gradient với vendor prefixes */
+.scroll-progress {
+    background: -webkit-linear-gradient(left, #94C842, #FFD93D);
+    background: -moz-linear-gradient(left, #94C842, #FFD93D);
+    background: -o-linear-gradient(left, #94C842, #FFD93D);
+    background: linear-gradient(90deg, #94C842, #FFD93D);
+}
+
+/* Border Radius với vendor prefixes */
+.logo i,
+.loader {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* User Select với vendor prefixes */
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Font Smoothing cho tất cả trình duyệt */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/* ==================== FALLBACKS ==================== */
+
+/* Fallback cho CSS Variables (IE11 và trình duyệt cũ) */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #0A1628;
+    background: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #0A1628;
+}
+
+p {
+    color: #2D3748;
+}
+
+.logo i {
+    color: #94C842;
+}
+
+.logo-text {
+    color: #0A1628;
+}
+
+/* Scroll Behavior Fallback */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        -webkit-animation-duration: 0.01ms !important;
+        -moz-animation-duration: 0.01ms !important;
+        -o-animation-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+        -moz-animation-iteration-count: 1 !important;
+        -o-animation-iteration-count: 1 !important;
+        animation-iteration-count: 1 !important;
+        -webkit-transition-duration: 0.01ms !important;
+        -moz-transition-duration: 0.01ms !important;
+        -o-transition-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ==================== CROSS-BROWSER FIXES ==================== */
+
+/* Fix cho Safari Mobile - Viewport Height */
+@supports (-webkit-touch-callout: none) {
+    .section {
+        min-height: -webkit-fill-available;
+    }
+}
+
+/* Fix cho IE11 - Flexbox min-height bug */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .loading {
+        height: 100vh;
+    }
+}
+
+/* Fix cho Edge cũ */
+@supports (-ms-ime-align: auto) {
+    header {
+        background: rgba(255, 255, 255, 0.98);
+    }
+}
+
+/* Object Fit Fallback */
+@supports not (object-fit: cover) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Sticky Position Fallback */
+@supports not (position: sticky) {
+    header {
+        position: fixed;
+    }
+}
+
+/* Grid Fallback cho trình duyệt cũ */
+@supports not (display: grid) {
+    .grid-layout {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .grid-item {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 300px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 300px;
+        flex: 1 1 300px;
+    }
+}
+
+/* ==================== PERFORMANCE OPTIMIZATIONS ==================== */
+
+/* Hardware Acceleration */
+.logo,
+header,
+.scroll-progress,
+.loader {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+}
+
+/* Will Change cho animations */
+.logo:hover,
+.loader,
+.scroll-progress {
+    will-change: transform, opacity;
+}
+
+/* Contain Layout cho performance */
+.section {
+    contain: layout style paint;
+}
+
+/* ==================== PRINT STYLES ==================== */
+
+@media print {
+    header,
+    .scroll-progress,
+    .loading {
+        display: none !important;
+    }
+
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
