@@ -284,13 +284,15 @@
     <link rel="dns-prefetch" href="https://unpkg.com">
 
     <!-- Performance: Preload critical fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&subset=vietnamese&display=swap" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&subset=vietnamese&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&subset=vietnamese&display=swap" as="style">
 
     <!-- External Stylesheets -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&subset=vietnamese&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&subset=vietnamese&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&subset=vietnamese&display=swap" rel="stylesheet">
 
     <!-- Browser Compatibility CSS -->
     <link href="browser-compatibility.css" rel="stylesheet">
@@ -316,6 +318,7 @@
             --text-primary: #0A1628;            /* Primary Text - Dark Navy */
             --text-secondary: #2D3748;          /* Secondary Text - Gray (tối hơn để dễ đọc) */
             --text-muted: #718096;              /* Muted Text (tối hơn để dễ đọc) */
+            --text-light: #F8F9FA;              /* Light Text - For dark backgrounds */
 
             --accent-gold: #FFD93D;             /* Premium Gold Accent */
             --accent-orange: #FF6B35;           /* Energy Orange */
@@ -338,9 +341,9 @@
             --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-            /* Typography Scale - Industrial Bold */
-            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-display: 'Poppins', sans-serif;
+            /* Typography Scale - Industrial Bold with Vietnamese Support */
+            --font-primary: 'Noto Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Poppins', 'Noto Sans', sans-serif;
 
             /* Spacing System */
             --space-1: 0.25rem;
@@ -720,9 +723,9 @@
             height: 100%;
             background: linear-gradient(
                 135deg,
-                rgba(13, 27, 42, 0.92) 0%,
-                rgba(27, 38, 59, 0.88) 50%,
-                rgba(13, 27, 42, 0.85) 100%
+                rgba(13, 27, 42, 0.94) 0%,
+                rgba(27, 38, 59, 0.92) 50%,
+                rgba(13, 27, 42, 0.90) 100%
             );
             z-index: 1;
             pointer-events: none;
@@ -812,7 +815,7 @@
 
         .hero-text .subtitle {
             font-size: clamp(1.125rem, 2vw, 1.375rem);
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.95);
             margin-bottom: var(--space-8);
             font-weight: 400;
             line-height: 1.7;
@@ -3040,13 +3043,8 @@
             <ul class="nav-menu">
                 <li><a href="#home">Trang chủ</a></li>
                 <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#team">Lãnh đạo</a></li>
-                <li><a href="#features">Tính năng</a></li>
                 <li><a href="#products">Sản phẩm</a></li>
                 <li><a href="#projects">Dự án</a></li>
-                <li><a href="#news">Tin tức</a></li>
-                <li><a href="#support">Công cụ hỗ trợ</a></li>
-                <li><a href="#applications">Ứng dụng</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
             </ul>
             <a href="#contact" class="nav-cta">
