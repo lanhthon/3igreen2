@@ -670,6 +670,64 @@
             padding: calc(var(--space-24) + 80px) 0 var(--space-24);
         }
 
+        /* Hero Background Slider */
+        .hero-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        /* Smooth slider animation with zoom effect */
+        @keyframes slideZoom {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+            animation: slideZoom 10s ease-in-out infinite;
+        }
+
+        /* Hero Overlay for Better Text Readability */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                135deg,
+                rgba(13, 27, 42, 0.92) 0%,
+                rgba(27, 38, 59, 0.88) 50%,
+                rgba(13, 27, 42, 0.85) 100%
+            );
+            z-index: 1;
+            pointer-events: none;
+        }
+
         /* Industrial Grid Pattern */
         .hero::before {
             content: '';
@@ -683,6 +741,8 @@
                 linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px);
             background-size: 50px 50px;
             opacity: 0.5;
+            z-index: 1;
+            pointer-events: none;
         }
 
         /* Diagonal Accent Cut */
@@ -698,6 +758,8 @@
             border-radius: 50%;
             filter: blur(100px);
             animation: float-blob 20s ease-in-out infinite;
+            z-index: 1;
+            pointer-events: none;
         }
 
         @keyframes float-blob {
@@ -3000,6 +3062,17 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
+            <!-- Hero Background Slider -->
+            <div class="hero-slider">
+                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=1920&q=80');"></div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80');"></div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?auto=format&fit=crop&w=1920&q=80');"></div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1920&q=80');"></div>
+            </div>
+
+            <!-- Hero Overlay for Better Text Readability -->
+            <div class="hero-overlay"></div>
+
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Gói Đỡ <span class="highlight">PU Foam</span> Cách Nhiệt Chuyên Nghiệp</h1>
@@ -4694,6 +4767,33 @@
                 document.body.style.overflow = 'visible';
             }, 2000);
         });
+
+        // Hero Background Slider
+        function initHeroSlider() {
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+
+            function nextSlide() {
+                // Remove active class from current slide
+                slides[currentSlide].classList.remove('active');
+
+                // Move to next slide
+                currentSlide = (currentSlide + 1) % slides.length;
+
+                // Add active class to new slide
+                slides[currentSlide].classList.add('active');
+            }
+
+            // Change slide every 5 seconds
+            setInterval(nextSlide, 5000);
+        }
+
+        // Initialize slider when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initHeroSlider);
+        } else {
+            initHeroSlider();
+        }
 
         // Header Scroll Effect
         let ticking = false;
