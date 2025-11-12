@@ -2825,96 +2825,208 @@
             outline-offset: 2px !important;
         }
 
-        /* Dark Mode Support - Premium Industrial Dark Theme */
+        /* Dark Mode Support - Construction Industrial Theme */
         @media (prefers-color-scheme: dark) {
             :root {
-                /* Dark Mode Color Adjustments */
-                --navy-dark: #0A0E14;               /* Darker Navy for BG */
-                --navy: #121820;                    /* Dark Background */
-                --navy-light: #1A2332;              /* Lighter Navy for cards */
+                /* Construction Color Palette - Concrete & Steel */
+                --navy-dark: #1E1E1E;               /* Charcoal Black - Deep foundation */
+                --navy: #252525;                    /* Dark Concrete - Main BG */
+                --navy-light: #2D3436;              /* Concrete Gray - Cards */
 
-                --white: #0A0E14;                   /* BG becomes dark */
-                --off-white: #121820;               /* Off-white becomes dark */
-                --light-gray: #1A2332;              /* Light gray becomes navy */
+                --white: #1E1E1E;                   /* BG becomes charcoal */
+                --off-white: #252525;               /* Off-white becomes dark concrete */
+                --light-gray: #363A3C;              /* Light gray becomes steel gray */
 
-                --text-primary: #F8F9FA;            /* Light text for readability */
-                --text-secondary: #CBD5E0;          /* Secondary text lighter */
-                --text-muted: #A0AEC0;              /* Muted text lighter */
+                --text-primary: #E8E8E8;            /* Concrete White - High contrast */
+                --text-secondary: #C4C4C4;          /* Light Concrete - Secondary text */
+                --text-muted: #8B8B8B;              /* Medium Gray - Muted text */
 
-                /* Green stays vibrant */
-                --primary-green: #A8D657;           /* Lighter green for dark mode */
-                --primary-green-dark: #94C842;      /* Original green as dark variant */
-                --primary-green-light: #B8E068;     /* Even lighter green */
+                /* Industrial Green - Eco Construction */
+                --primary-green: #9ED963;           /* Bright Eco Green */
+                --primary-green-dark: #7FC242;      /* Deep Green */
+                --primary-green-light: #B4E87A;     /* Light Green accent */
 
-                /* Accent colors stay vibrant */
-                --accent-gold: #FFE55C;             /* Lighter gold for visibility */
-                --accent-orange: #FF8A5B;           /* Lighter orange */
+                /* Construction Safety Colors */
+                --accent-gold: #FDB813;             /* Construction Yellow */
+                --accent-orange: #FF8C42;           /* Safety Orange - Hard hat color */
 
-                /* Adjusted shadows for dark mode */
-                --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-                --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-                --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-                --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
-                --shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.7);
+                /* Construction Shadows - Strong & Deep */
+                --shadow-sm: 0 3px 6px rgba(0, 0, 0, 0.5);
+                --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.6);
+                --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.7);
+                --shadow-xl: 0 15px 40px rgba(0, 0, 0, 0.8);
+                --shadow-2xl: 0 25px 60px rgba(0, 0, 0, 0.9);
             }
 
-            /* Navigation adjustments */
+            /* Navigation - Steel Header */
             .nav-menu {
-                background: rgba(26, 35, 50, 0.95);
-                backdrop-filter: blur(20px);
+                background: rgba(45, 52, 54, 0.98);
+                backdrop-filter: blur(10px);
+                border-bottom: 3px solid rgba(148, 200, 66, 0.3);
             }
 
             header {
-                background: rgba(18, 24, 32, 0.95);
+                background: rgba(37, 37, 37, 0.98);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+                border-bottom: 2px solid rgba(148, 200, 66, 0.2);
             }
 
-            /* Card and section adjustments */
+            /* Cards - Concrete Panels with Steel Borders */
             .feature-card,
             .app-item,
             .spec-card,
             .contact-card {
-                background: linear-gradient(135deg, rgba(26, 35, 50, 0.8), rgba(18, 24, 32, 0.9));
-                border: 1px solid rgba(168, 214, 87, 0.1);
+                background: linear-gradient(145deg, #2D3436 0%, #252525 100%);
+                border: 2px solid rgba(148, 200, 66, 0.25);
+                box-shadow:
+                    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+                    0 8px 24px rgba(0, 0, 0, 0.6);
             }
 
-            /* Hero section gradient */
+            .feature-card:hover,
+            .app-item:hover,
+            .spec-card:hover {
+                border-color: rgba(148, 200, 66, 0.5);
+                transform: translateY(-4px);
+                box-shadow:
+                    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+                    0 12px 32px rgba(0, 0, 0, 0.7),
+                    0 0 30px rgba(148, 200, 66, 0.15);
+            }
+
+            /* Hero Section - Construction Site Backdrop */
             .hero {
-                background: linear-gradient(135deg, #0A0E14 0%, #1A2332 50%, #0A1628 100%);
+                background: linear-gradient(135deg,
+                    #1E1E1E 0%,
+                    #252525 25%,
+                    #2D3436 50%,
+                    #252525 75%,
+                    #1E1E1E 100%);
+                position: relative;
             }
 
-            /* Footer */
+            .hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background:
+                    linear-gradient(90deg, rgba(148, 200, 66, 0.03) 1px, transparent 1px),
+                    linear-gradient(rgba(148, 200, 66, 0.03) 1px, transparent 1px);
+                background-size: 60px 60px;
+                opacity: 0.3;
+                pointer-events: none;
+            }
+
+            /* Footer - Foundation Concrete */
             footer {
-                background: linear-gradient(135deg, #0A0E14, #121820);
+                background: linear-gradient(180deg, #1E1E1E 0%, #151515 100%);
+                border-top: 3px solid rgba(148, 200, 66, 0.3);
+                box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
             }
 
-            /* Ensure good contrast for buttons */
+            /* Buttons - Safety Green with Industrial Feel */
             .btn-primary,
             .fab {
-                box-shadow: 0 8px 24px rgba(168, 214, 87, 0.3);
+                background: linear-gradient(135deg, #9ED963, #7FC242);
+                box-shadow:
+                    0 6px 20px rgba(148, 200, 66, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                border: 2px solid rgba(148, 200, 66, 0.5);
+                font-weight: 700;
             }
 
             .btn-primary:hover,
             .fab:hover {
-                box-shadow: 0 12px 32px rgba(168, 214, 87, 0.4);
+                background: linear-gradient(135deg, #B4E87A, #9ED963);
+                box-shadow:
+                    0 8px 28px rgba(148, 200, 66, 0.5),
+                    0 0 40px rgba(148, 200, 66, 0.2),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+                transform: translateY(-2px);
             }
 
-            /* Input fields */
+            .btn-secondary {
+                background: linear-gradient(135deg, #4A5568, #5A6C7D);
+                border: 2px solid rgba(90, 108, 125, 0.5);
+            }
+
+            .btn-secondary:hover {
+                background: linear-gradient(135deg, #5A6C7D, #6A7C8D);
+                box-shadow: 0 6px 20px rgba(74, 85, 104, 0.4);
+            }
+
+            /* Input Fields - Concrete Forms */
             input,
             textarea,
             select {
-                background: rgba(26, 35, 50, 0.5);
-                border-color: rgba(168, 214, 87, 0.2);
+                background: rgba(45, 52, 54, 0.6);
+                border: 2px solid rgba(148, 200, 66, 0.2);
                 color: var(--text-primary);
+                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+            }
+
+            input:focus,
+            textarea:focus,
+            select:focus {
+                background: rgba(45, 52, 54, 0.8);
+                border-color: rgba(148, 200, 66, 0.6);
+                box-shadow:
+                    inset 0 2px 4px rgba(0, 0, 0, 0.4),
+                    0 0 0 3px rgba(148, 200, 66, 0.15);
             }
 
             input::placeholder,
             textarea::placeholder {
                 color: var(--text-muted);
+                opacity: 0.7;
             }
 
-            /* Ensure images don't get too bright */
+            /* Icons & Accents - Construction Colors */
+            .fa-leaf,
+            .fa-solar-panel,
+            .fa-recycle,
+            .fa-wind {
+                color: var(--primary-green);
+                filter: drop-shadow(0 0 8px rgba(148, 200, 66, 0.3));
+            }
+
+            /* Section Titles - Bold Construction Style */
+            .section-title {
+                text-shadow:
+                    2px 2px 4px rgba(0, 0, 0, 0.8),
+                    0 0 20px rgba(148, 200, 66, 0.2);
+                border-bottom: 3px solid rgba(148, 200, 66, 0.3);
+                padding-bottom: 0.5rem;
+            }
+
+            /* Images - Slight dimming for consistency */
             img {
-                opacity: 0.95;
+                opacity: 0.92;
+                filter: brightness(0.95) contrast(1.05);
+            }
+
+            /* Scrollbar - Industrial Style */
+            ::-webkit-scrollbar {
+                width: 12px;
+                background: #1E1E1E;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #252525;
+                border-left: 1px solid rgba(148, 200, 66, 0.1);
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: linear-gradient(180deg, #4A5568, #5A6C7D);
+                border-radius: 6px;
+                border: 2px solid #252525;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(180deg, #5A6C7D, #6A7C8D);
             }
         }
 
