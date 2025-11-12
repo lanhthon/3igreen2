@@ -670,45 +670,27 @@
             padding: calc(var(--space-24) + 80px) 0 var(--space-24);
         }
 
-        /* Hero Background Slider */
-        .hero-slider {
+        /* Hero Background Video */
+        .hero-video-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: 0;
+            overflow: hidden;
         }
 
-        .hero-slide {
+        .hero-video-bg video {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 1.5s ease-in-out;
-        }
-
-        /* Smooth slider animation with zoom effect */
-        @keyframes slideZoom {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        .hero-slide.active {
-            opacity: 1;
-            animation: slideZoom 10s ease-in-out infinite;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
         }
 
         /* Hero Overlay for Better Text Readability */
@@ -955,7 +937,7 @@
         }
 
         .floating-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-4px) scale(1.02);
             box-shadow: var(--shadow-hover);
         }
 
@@ -963,14 +945,14 @@
             top: 0;
             right: 0;
             width: 280px;
-            animation: float 6s ease-in-out infinite;
+            z-index: 3;
         }
 
         .card-2 {
             bottom: 100px;
             left: 0;
             width: 250px;
-            animation: float 6s ease-in-out infinite 2s;
+            z-index: 2;
         }
 
         .card-3 {
@@ -978,7 +960,11 @@
             left: 50%;
             transform: translateX(-50%);
             width: 200px;
-            animation: float 6s ease-in-out infinite 4s;
+            z-index: 1;
+        }
+
+        .card-3:hover {
+            transform: translateX(-50%) translateY(-4px) scale(1.02);
         }
 
         .floating-card h4 {
@@ -3062,12 +3048,11 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
-            <!-- Hero Background Slider -->
-            <div class="hero-slider">
-                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=1920&q=80');"></div>
-                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80');"></div>
-                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?auto=format&fit=crop&w=1920&q=80');"></div>
-                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1920&q=80');"></div>
+            <!-- Hero Background Video -->
+            <div class="hero-video-bg">
+                <video autoplay muted loop playsinline id="heroVideo">
+                    <source src="https://cdn.coverr.co/videos/coverr-industrial-factory-production-line-8488/1080p.mp4" type="video/mp4">
+                </video>
             </div>
 
             <!-- Hero Overlay for Better Text Readability -->
@@ -4767,33 +4752,6 @@
                 document.body.style.overflow = 'visible';
             }, 2000);
         });
-
-        // Hero Background Slider
-        function initHeroSlider() {
-            const slides = document.querySelectorAll('.hero-slide');
-            let currentSlide = 0;
-
-            function nextSlide() {
-                // Remove active class from current slide
-                slides[currentSlide].classList.remove('active');
-
-                // Move to next slide
-                currentSlide = (currentSlide + 1) % slides.length;
-
-                // Add active class to new slide
-                slides[currentSlide].classList.add('active');
-            }
-
-            // Change slide every 5 seconds
-            setInterval(nextSlide, 5000);
-        }
-
-        // Initialize slider when DOM is ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initHeroSlider);
-        } else {
-            initHeroSlider();
-        }
 
         // Header Scroll Effect
         let ticking = false;
