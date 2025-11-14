@@ -3484,43 +3484,97 @@
                 </div>
             </div>
             <div class="partners-slider">
-                <!-- Duplicate logos for seamless loop -->
+                <!-- Partner logos - First set -->
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+1" alt="Partner 1">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=HỢP+LỰC+MEP" alt="HỢP LỰC MEP" title="Chiến lược - CÔNG TY CỔ PHẦN CƠ ĐIỆN HỢP LỰC">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+2" alt="Partner 2">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=ĐOÀN+NHẤT" alt="ĐOÀN NHẤT" title="Chiến lược - CÔNG TY CỔ PHẦN CƠ ĐIỆN ĐOÀN NHẤT">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+3" alt="Partner 3">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BCA+THĂNG+LONG" alt="BCA THĂNG LONG" title="CHI NHÁNH CÔNG TY TNHH MỘT THÀNH VIÊN BCA - THĂNG LONG">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+4" alt="Partner 4">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=CENTEC" alt="CENTEC" title="Thân Thiết - CÔNG TY CỔ PHẦN CENTEC">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+5" alt="Partner 5">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=QME" alt="QME" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN CHẤT LƯỢNG">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+6" alt="Partner 6">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=SMARTME" alt="SMARTME" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN SMARTME">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=LAM+SƠN" alt="LAM SƠN" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN VÀ NĂNG LƯỢNG LAM SƠN">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=AIR+POWER" alt="AIR POWER" title="CÔNG TY CỔ PHẦN AIR POWER">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BENZEN" alt="BENZEN" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN BENZEN VIỆT NAM">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BMEC" alt="BMEC" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN BMEC">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BKRE" alt="BKRE" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH BKRE BÁCH KHOA">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=PME" alt="PME" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN THÁI BÌNH DƯƠNG">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=HADOMEE" alt="HADOMEE" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN XÂY DỰNG - THIẾT BỊ CÔNG NGHIỆP HÀ ĐÔ">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=ANH+KHANG" alt="ANH KHANG" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN PHÒNG SẠCH ANH KHANG">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=PHAN+BÁCH" alt="PHAN BÁCH" title="CÔNG TY CỔ PHẦN CÔNG NGHỆ CƠ ĐIỆN LẠNH PHAN BÁCH">
                 </div>
                 <!-- Duplicate for seamless loop -->
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+1" alt="Partner 1">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=HỢP+LỰC+MEP" alt="HỢP LỰC MEP" title="Chiến lược - CÔNG TY CỔ PHẦN CƠ ĐIỆN HỢP LỰC">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+2" alt="Partner 2">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=ĐOÀN+NHẤT" alt="ĐOÀN NHẤT" title="Chiến lược - CÔNG TY CỔ PHẦN CƠ ĐIỆN ĐOÀN NHẤT">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+3" alt="Partner 3">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BCA+THĂNG+LONG" alt="BCA THĂNG LONG" title="CHI NHÁNH CÔNG TY TNHH MỘT THÀNH VIÊN BCA - THĂNG LONG">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+4" alt="Partner 4">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=CENTEC" alt="CENTEC" title="Thân Thiết - CÔNG TY CỔ PHẦN CENTEC">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+5" alt="Partner 5">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=QME" alt="QME" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN CHẤT LƯỢNG">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+6" alt="Partner 6">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=SMARTME" alt="SMARTME" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN SMARTME">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=LAM+SƠN" alt="LAM SƠN" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN VÀ NĂNG LƯỢNG LAM SƠN">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=AIR+POWER" alt="AIR POWER" title="CÔNG TY CỔ PHẦN AIR POWER">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BENZEN" alt="BENZEN" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN BENZEN VIỆT NAM">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BMEC" alt="BMEC" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN BMEC">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BKRE" alt="BKRE" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH BKRE BÁCH KHOA">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=PME" alt="PME" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN THÁI BÌNH DƯƠNG">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=HADOMEE" alt="HADOMEE" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN XÂY DỰNG - THIẾT BỊ CÔNG NGHIỆP HÀ ĐÔ">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=ANH+KHANG" alt="ANH KHANG" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN PHÒNG SẠCH ANH KHANG">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=PHAN+BÁCH" alt="PHAN BÁCH" title="CÔNG TY CỔ PHẦN CÔNG NGHỆ CƠ ĐIỆN LẠNH PHAN BÁCH">
                 </div>
             </div>
         </section>
