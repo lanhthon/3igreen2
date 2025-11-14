@@ -467,7 +467,7 @@
         }
 
         .loading-text {
-            color: var(--white);
+            color: var(--navy-dark);
             font-size: 1rem;
             font-weight: 600;
             letter-spacing: 0.1em;
@@ -755,7 +755,7 @@
             max-width: 100vw;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+            background: linear-gradient(135deg, #FFFFFF 0%, #F0F9E8 100%);
             position: relative;
             overflow: hidden;
             overflow-x: hidden;
@@ -877,7 +877,7 @@
             font-family: var(--font-display);
             font-size: clamp(3rem, 6vw, 5.5rem);
             font-weight: 800;
-            color: var(--white);
+            color: var(--navy-dark);
             margin-bottom: var(--space-6);
             line-height: 1.05;
             letter-spacing: -0.03em;
@@ -905,7 +905,7 @@
 
         .hero-text .subtitle {
             font-size: clamp(1.125rem, 2vw, 1.375rem);
-            color: rgba(255, 255, 255, 0.98);
+            color: var(--text-primary);
             margin-bottom: var(--space-8);
             text-shadow: 0 2px 8px rgba(0,0,0,0.3);
             font-weight: 400;
@@ -929,10 +929,10 @@
             display: flex;
             align-items: center;
             gap: var(--space-3);
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(148, 200, 66, 0.1);
             padding: var(--space-3) var(--space-4);
             border-radius: var(--radius-md);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(148, 200, 66, 0.15);
             backdrop-filter: blur(10px);
         }
 
@@ -942,7 +942,7 @@
         }
 
         .hero-feature span {
-            color: var(--white);
+            color: var(--navy-dark);
             font-size: 0.95rem;
             font-weight: 500;
         }
@@ -1007,14 +1007,14 @@
 
         .btn-outline {
             background: transparent;
-            color: var(--white);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: var(--navy-dark);
+            border: 2px solid var(--primary-green);
             backdrop-filter: blur(10px);
         }
 
         .btn-outline:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.6);
+            background: rgba(148, 200, 66, 0.1);
+            border-color: var(--primary-green-dark);
             transform: translateY(-2px);
         }
 
@@ -1035,12 +1035,12 @@
 
         .floating-card {
             position: absolute;
-            background: var(--glass-bg);
+            background: rgba(148, 200, 66, 0.1);
             backdrop-filter: blur(30px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(148, 200, 66, 0.3);
             border-radius: var(--border-radius);
             padding: 2rem;
-            color: var(--white);
+            color: var(--navy-dark);
             box-shadow: var(--shadow-lg);
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
                         box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1095,7 +1095,7 @@
             justify-content: space-between;
             margin-top: 1.5rem;
             padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid rgba(148, 200, 66, 0.3);
         }
 
         .stat-item {
@@ -1276,8 +1276,8 @@
 
         /* Stats Section - Modern Premium Industrial */
         .stats-section {
-            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
-            color: var(--white);
+            background: linear-gradient(135deg, #FFFFFF 0%, #F0F9E8 100%);
+            color: var(--navy-dark);
             padding: var(--space-24) 0;
             margin: 0;
             position: relative;
@@ -1309,14 +1309,14 @@
 
         .stat-card {
             padding: var(--space-8);
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(148, 200, 66, 0.1);
             border-radius: var(--radius-lg);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(148, 200, 66, 0.15);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .stat-card:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(148, 200, 66, 0.15);
             transform: translateY(-4px);
             border-color: var(--primary-green);
         }
@@ -1631,7 +1631,7 @@
         }
 
         .stat-card:hover .label {
-            color: rgba(255, 255, 255, 0.9);
+            color: var(--text-secondary);
         }
 
         /* Product Features Section */
@@ -1749,8 +1749,8 @@
 
         /* Technical Specifications - Modern Premium Industrial */
         .specs {
-            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
-            color: var(--white);
+            background: linear-gradient(135deg, #FFFFFF 0%, #F0F9E8 100%);
+            color: var(--navy-dark);
             position: relative;
             overflow: hidden;
         }
@@ -1781,9 +1781,9 @@
         }
 
         .spec-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(148, 200, 66, 0.1);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(148, 200, 66, 0.15);
             border-radius: var(--radius-lg);
             padding: var(--space-8);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1791,7 +1791,7 @@
 
         .spec-card:hover {
             transform: translateY(-4px);
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(148, 200, 66, 0.15);
             border-color: var(--primary-green);
             box-shadow: var(--shadow-xl);
         }
@@ -1835,7 +1835,7 @@
             justify-content: space-between;
             align-items: center;
             padding: var(--space-3) 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(148, 200, 66, 0.15);
             font-size: 1rem;
         }
 
@@ -2148,8 +2148,8 @@
         }
 
         .projects-cta {
-            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
-            color: var(--white);
+            background: linear-gradient(135deg, #FFFFFF 0%, #F0F9E8 100%);
+            color: var(--navy-dark);
             border-radius: var(--radius-xl);
             padding: var(--space-16) var(--space-12);
             text-align: center;
@@ -2251,15 +2251,15 @@
             gap: var(--space-4);
             margin-bottom: var(--space-6);
             padding: var(--space-6);
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(148, 200, 66, 0.05);
             border-radius: 15px;
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(148, 200, 66, 0.2);
             transition: var(--transition);
         }
 
         .contact-item:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(148, 200, 66, 0.15);
             transform: translateX(4px);
             border-color: var(--primary-green);
         }
@@ -2292,11 +2292,11 @@
         }
 
         .contact-form {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(148, 200, 66, 0.05);
             backdrop-filter: blur(20px);
             border-radius: var(--radius-lg);
             padding: var(--space-12);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(148, 200, 66, 0.2);
             box-shadow: var(--shadow-xl);
         }
 
@@ -2332,17 +2332,17 @@
         .form-group select {
             width: 100%;
             padding: var(--space-4);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(10, 22, 40, 0.2);
             border-radius: var(--radius-md);
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--white);
+            background: rgba(255, 255, 255, 0.7);
+            color: var(--navy-dark);
             font-size: 1rem;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .form-group input::placeholder,
         .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(10, 22, 40, 0.6);
         }
 
         .form-group input:focus,
@@ -2350,7 +2350,7 @@
         .form-group select:focus {
             outline: none;
             border-color: var(--primary-green);
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 0 3px rgba(148, 200, 66, 0.1);
         }
 
@@ -2468,7 +2468,7 @@
         }
 
         .footer-links a {
-            color: rgba(255, 255, 255, 0.7);
+            color: var(--text-secondary);
             text-decoration: none;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: inline-block;
@@ -2481,7 +2481,7 @@
         }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(10, 22, 40, 0.1);
             padding-top: 2rem;
             text-align: center;
         }
@@ -2801,7 +2801,7 @@
                 text-align: center;
                 gap: 0.5rem;
                 padding: 1rem;
-                background: rgba(255, 255, 255, 0.1);
+                background: rgba(148, 200, 66, 0.15);
                 border-radius: 10px;
                 backdrop-filter: blur(10px);
             }
