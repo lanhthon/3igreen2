@@ -246,7 +246,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>Gói Đỡ PU Foam Cách Nhiệt, Chịu Lực Cao - 3igreen | Tiết Kiệm 70% Thời Gian Thi Công</title>
+    <title>Gối Đỡ PU Foam Cách Nhiệt, Chịu Lực Cao - 3igreen | Tiết Kiệm 70% Thời Gian Thi Công</title>
     <meta name="description" content="3igreen chuyên sản xuất gói đỡ PU Foam chất lượng cao với hệ số dẫn nhiệt thấp, khả năng chịu lực tốt. Giải pháp tối ưu cho hệ thống lạnh, chiller, điều hòa không khí. Tiết kiệm 70% thời gian thi công.">
     <meta name="keywords" content="gói đỡ pu foam, gói đỡ ống chiller, gói đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pu foam đế vuông, pu foam đế tròn, kingspipe">
 
@@ -257,14 +257,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://3igreen.com.vn/">
-    <meta property="og:title" content="Gói Đỡ PU Foam Cách Nhiệt - 3igreen">
+    <meta property="og:title" content="Gối Đỡ PU Foam Cách Nhiệt - 3igreen">
     <meta property="og:description" content="Giải pháp gối đỡ PU Foam chuyên nghiệp cho hệ thống HVAC. Tiết kiệm 70% thời gian thi công.">
     <meta property="og:image" content="https://3igreen.com.vn/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://3igreen.com.vn/">
-    <meta property="twitter:title" content="Gói Đỡ PU Foam Cách Nhiệt - 3igreen">
+    <meta property="twitter:title" content="Gối Đỡ PU Foam Cách Nhiệt - 3igreen">
     <meta property="twitter:description" content="Giải pháp gối đỡ PU Foam chuyên nghiệp cho hệ thống HVAC.">
     <meta property="twitter:image" content="https://3igreen.com.vn/og-image.jpg">
 
@@ -325,7 +325,7 @@
 
             --text-primary: #0A1628;            /* Primary Text - Dark Navy */
             --text-secondary: #2D3748;          /* Secondary Text - Gray (tối hơn để dễ đọc) */
-            --text-muted: #718096;              /* Muted Text (tối hơn để dễ đọc) */
+            --text-muted: #4A5568;              /* Muted Text (tối hơn để dễ đọc hơn) */
 
             --accent-gold: #FFD93D;             /* Premium Gold Accent */
             --accent-orange: #FF6B35;           /* Energy Orange */
@@ -1585,7 +1585,7 @@
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 3rem;
             margin-top: 4rem;
             position: relative;
@@ -1601,6 +1601,9 @@
             border: 1px solid var(--light-gray);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .feature-card::after {
@@ -1708,7 +1711,7 @@
 
         .specs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: var(--space-8);
             margin-top: var(--space-16);
         }
@@ -1720,6 +1723,9 @@
             border-radius: var(--radius-lg);
             padding: var(--space-8);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .spec-card:hover {
@@ -1803,7 +1809,7 @@
 
         .app-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: var(--space-8);
             margin-top: var(--space-16);
             position: relative;
@@ -1820,6 +1826,9 @@
             position: relative;
             overflow: hidden;
             border: 1px solid var(--light-gray);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .app-item::after {
@@ -1922,7 +1931,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: var(--space-8);
             margin-top: var(--space-16);
             position: relative;
@@ -1937,6 +1946,9 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid var(--light-gray);
             position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .project-card:hover {
@@ -2275,7 +2287,7 @@
 
         .form-group input::placeholder,
         .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.7);
         }
 
         .form-group input:focus,
@@ -2401,7 +2413,7 @@
         }
 
         .footer-links a {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.85);
             text-decoration: none;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: inline-block;
@@ -2441,13 +2453,13 @@
         .fab {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: #94C842;
             color: var(--white);
             border: none;
             border-radius: 50%;
             font-size: 1.5rem;
             cursor: pointer;
-            box-shadow: var(--shadow);
+            box-shadow: 0 8px 24px rgba(148, 200, 66, 0.3);
             transition: var(--transition);
             display: flex;
             align-items: center;
@@ -2456,9 +2468,9 @@
         }
 
         .fab:hover {
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+            background: #7FB831;
             transform: translateY(-5px) scale(1.1);
-            box-shadow: var(--shadow-hover);
+            box-shadow: 0 12px 32px rgba(148, 200, 66, 0.5);
         }
 
         .fab.phone {
@@ -3667,7 +3679,7 @@
                         <i class="fas fa-star"></i>
                         Tính năng vượt trội
                     </div>
-                    <h2 class="section-title">Đặc Tính Nổi Bật Của Gói Đỡ PU Foam PU Foam</h2>
+                    <h2 class="section-title">Đặc Tính Nổi Bật Của Gối Đỡ PU Foam</h2>
                     <p class="section-subtitle">Sản phẩm gói đỡ PU Foam 3igreen được thiết kế và sản xuất với những tính năng vượt trội, áp dụng công nghệ PU Foam hiện đại nhất, đáp ứng mọi yêu cầu khắt khe của các hệ thống công nghiệp hiện đại.</p>
                 </div>
                 
