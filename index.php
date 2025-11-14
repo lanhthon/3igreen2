@@ -246,9 +246,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>Gói Đỡ PU Foam Cách Nhiệt, Chịu Lực Cao - 3igreen | Tiết Kiệm 70% Thời Gian Thi Công</title>
-    <meta name="description" content="3igreen chuyên sản xuất gói đỡ PU Foam chất lượng cao với hệ số dẫn nhiệt thấp, khả năng chịu lực tốt. Giải pháp tối ưu cho hệ thống lạnh, chiller, điều hòa không khí. Tiết kiệm 70% thời gian thi công.">
-    <meta name="keywords" content="gói đỡ pu foam, gói đỡ ống chiller, gói đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pu foam đế vuông, pu foam đế tròn, kingspipe">
+    <title>gối Đỡ PU Foam Cách Nhiệt, Chịu Lực Cao - 3igreen | Tiết Kiệm 70% Thời Gian Thi Công</title>
+    <meta name="description" content="3igreen chuyên sản xuất gối đỡ PU Foam chất lượng cao với hệ số dẫn nhiệt thấp, khả năng chịu lực tốt. Giải pháp tối ưu cho hệ thống lạnh, chiller, điều hòa không khí. Tiết kiệm 70% thời gian thi công.">
+    <meta name="keywords" content="gối đỡ pu foam, gối đỡ ống chiller, gối đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pu foam đế vuông, pu foam đế tròn, kingspipe">
 
     <!-- Additional SEO -->
     <meta name="author" content="3igreen">
@@ -257,14 +257,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://3igreen.com.vn/">
-    <meta property="og:title" content="Gói Đỡ PU Foam Cách Nhiệt - 3igreen">
+    <meta property="og:title" content="gối Đỡ PU Foam Cách Nhiệt - 3igreen">
     <meta property="og:description" content="Giải pháp gối đỡ PU Foam chuyên nghiệp cho hệ thống HVAC. Tiết kiệm 70% thời gian thi công.">
     <meta property="og:image" content="https://3igreen.com.vn/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://3igreen.com.vn/">
-    <meta property="twitter:title" content="Gói Đỡ PU Foam Cách Nhiệt - 3igreen">
+    <meta property="twitter:title" content="gối Đỡ PU Foam Cách Nhiệt - 3igreen">
     <meta property="twitter:description" content="Giải pháp gối đỡ PU Foam chuyên nghiệp cho hệ thống HVAC.">
     <meta property="twitter:image" content="https://3igreen.com.vn/og-image.jpg">
 
@@ -3442,7 +3442,7 @@
 
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Gói Đỡ <span class="highlight">PU Foam</span> Cách Nhiệt Chuyên Nghiệp</h1>
+                    <h1>gối Đỡ <span class="highlight">PU Foam</span> Cách Nhiệt Chuyên Nghiệp</h1>
                     <p class="subtitle">Giải pháp tối ưu cho hệ thống lạnh, chiller và điều hòa không khí với công nghệ tiên tiến nhất, đảm bảo hiệu suất vượt trội và tiết kiệm năng lượng tối đa. <strong>Tiết kiệm 70% thời gian thi công</strong> như công nghệ KingsPipe.</p>
                     
                     <div class="hero-features">
@@ -3547,7 +3547,7 @@
                         <h3>Tiên Phong Trong Công Nghệ Vật Liệu Xanh PU Foam</h3>
                         <p>Với hơn 10 năm kinh nghiệm trong lĩnh vực sản xuất và ứng dụng vật liệu xanh, <strong>CÔNG TY TNHH SẢN XUẤT VÀ ỨNG DỤNG VẬT LIỆU XANH 3I</strong> đã khẳng định được vị thế hàng đầu trong ngành.</p>
                         
-                        <p>Chúng tôi chuyên sản xuất các sản phẩm gói đỡ PU Foam chất lượng cao, ứng dụng công nghệ PU (Polyisocyanurate) và PUR (Polyurethane) tiên tiến, được ứng dụng rộng rãi trong các hệ thống công nghiệp hiện đại. <strong>Tiết kiệm 70% thời gian thi công</strong> nhờ thiết kế sáng tạo và quy trình tối ưu.</p>
+                        <p>Chúng tôi chuyên sản xuất các sản phẩm gối đỡ PU Foam chất lượng cao, ứng dụng công nghệ PU (Polyisocyanurate) và PUR (Polyurethane) tiên tiến, được ứng dụng rộng rãi trong các hệ thống công nghiệp hiện đại. <strong>Tiết kiệm 70% thời gian thi công</strong> nhờ thiết kế sáng tạo và quy trình tối ưu.</p>
 
                         <div class="about-highlights">
                             <div class="highlight-item">
@@ -3851,8 +3851,8 @@
                         <i class="fas fa-star"></i>
                         Tính năng vượt trội
                     </div>
-                    <h2 class="section-title">Đặc Tính Nổi Bật Của Gói Đỡ PU Foam PU Foam</h2>
-                    <p class="section-subtitle">Sản phẩm gói đỡ PU Foam 3igreen được thiết kế và sản xuất với những tính năng vượt trội, áp dụng công nghệ PU Foam hiện đại nhất, đáp ứng mọi yêu cầu khắt khe của các hệ thống công nghiệp hiện đại.</p>
+                    <h2 class="section-title">Đặc Tính Nổi Bật Của gối Đỡ PU Foam PU Foam</h2>
+                    <p class="section-subtitle">Sản phẩm gối đỡ PU Foam 3igreen được thiết kế và sản xuất với những tính năng vượt trội, áp dụng công nghệ PU Foam hiện đại nhất, đáp ứng mọi yêu cầu khắt khe của các hệ thống công nghiệp hiện đại.</p>
                 </div>
                 
                 <div class="features-grid">
@@ -3861,7 +3861,7 @@
                             <i class="fas fa-thermometer-half"></i>
                         </div>
                         <h3>Cách Nhiệt Siêu Việt PU</h3>
-                        <p>Với hệ số dẫn nhiệt cực thấp λ ≤ 0.022 W/m.K của công nghệ PU (Polyisocyanurate), gói đỡ PU Foam ngăn chặn hiệu quả sự trao đổi nhiệt, giúp duy trì nhiệt độ ổn định cho hệ thống.</p>
+                        <p>Với hệ số dẫn nhiệt cực thấp λ ≤ 0.022 W/m.K của công nghệ PU (Polyisocyanurate), gối đỡ PU Foam ngăn chặn hiệu quả sự trao đổi nhiệt, giúp duy trì nhiệt độ ổn định cho hệ thống.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Giảm thất thoát nhiệt lên đến 95%</li>
                             <li><i class="fas fa-check-circle"></i> Chống đọng sương hoàn toàn</li>
@@ -3960,7 +3960,7 @@
                     <div id="product-ciwa" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(148, 200, 66, 0.2);">
                         <!-- Product Image -->
                         <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(148, 200, 66, 0.1), rgba(148, 200, 66, 0.05));">
-                            <img src="https://via.placeholder.com/600x400/94C842/FFFFFF?text=KINGSPIPE+CIWA" alt="KINGSPIPE CIWA - Cách nhiệt ống nước lạnh chiller" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="1.png" alt="KINGSPIPE CIWA - Cách nhiệt ống nước lạnh chiller" style="width: 100%; height: 100%; object-fit: cover;">
                             <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #94C842, #6B9631); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(148, 200, 66, 0.5);">
                                 <i class="fas fa-snowflake"></i> NƯỚC LẠNH
                             </div>
@@ -4003,7 +4003,7 @@
                     <div id="product-howa" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(255, 107, 53, 0.2);">
                         <!-- Product Image -->
                         <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.05));">
-                            <img src="https://via.placeholder.com/600x400/FF6B35/FFFFFF?text=KINGSPIPE+HOWA" alt="KINGSPIPE HOWA - Cách nhiệt ống nước nóng" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="2.png" alt="KINGSPIPE HOWA - Cách nhiệt ống nước nóng" style="width: 100%; height: 100%; object-fit: cover;">
                             <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF6B35, #D9534F); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(255, 107, 53, 0.5);">
                                 <i class="fas fa-fire"></i> NƯỚC NÓNG
                             </div>
@@ -4046,7 +4046,7 @@
                     <div id="product-steam" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(255, 152, 0, 0.2);">
                         <!-- Product Image -->
                         <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 152, 0, 0.05));">
-                            <img src="https://via.placeholder.com/600x400/FF9800/FFFFFF?text=KINGSPIPE+STEAM" alt="KINGSPIPE STEAM - Cách nhiệt ống hơi steam" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="3.png" alt="KINGSPIPE STEAM - Cách nhiệt ống hơi steam" style="width: 100%; height: 100%; object-fit: cover;">
                             <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF9800, #F57C00); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(255, 152, 0, 0.5);">
                                 <i class="fas fa-burn"></i> STEAM
                             </div>
@@ -4089,7 +4089,7 @@
                     <div id="product-sound-lag" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(156, 39, 176, 0.2);">
                         <!-- Product Image -->
                         <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(156, 39, 176, 0.05));">
-                            <img src="https://via.placeholder.com/600x400/9C27B0/FFFFFF?text=KINGSPIPE+SOUND+LAG" alt="KINGSPIPE SOUND LAG - Cách âm ống" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="4.png" alt="KINGSPIPE SOUND LAG - Cách âm ống" style="width: 100%; height: 100%; object-fit: cover;">
                             <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(156, 39, 176, 0.5);">
                                 <i class="fas fa-volume-mute"></i> CÁCH ÂM
                             </div>
@@ -4132,7 +4132,7 @@
                     <div id="product-pir" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(33, 150, 243, 0.2);">
                         <!-- Product Image -->
                         <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(33, 150, 243, 0.05));">
-                            <img src="https://via.placeholder.com/600x400/2196F3/FFFFFF?text=TAM+PIR" alt="Tấm PIR - Cách nhiệt tường trần" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="4.png" alt="Tấm PIR - Cách nhiệt tường trần" style="width: 100%; height: 100%; object-fit: cover;">
                             <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #2196F3, #1976D2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(33, 150, 243, 0.5);">
                                 <i class="fas fa-layer-group"></i> TƯỜNG TRẦN
                             </div>
@@ -4175,7 +4175,7 @@
                     <div id="product-goi-do-tron" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(251, 146, 60, 0.2);">
                         <!-- Product Image -->
                         <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(251, 146, 60, 0.1), rgba(251, 146, 60, 0.05));">
-                            <img src="https://via.placeholder.com/600x400/FB923C/FFFFFF?text=GOI+DO+TRON" alt="Gối đỡ PU FOAM đế tròn" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="sanpham.jpg" alt="Gối đỡ PU FOAM đế tròn" style="width: 100%; height: 100%; object-fit: cover;">
                             <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FB923C, #F97316); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(251, 146, 60, 0.5);">
                                 <i class="fas fa-circle"></i> ĐẾ TRÒN
                             </div>
@@ -4218,7 +4218,7 @@
                     <div id="product-goi-do-vuong" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(16, 185, 129, 0.2);">
                         <!-- Product Image -->
                         <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));">
-                            <img src="https://via.placeholder.com/600x400/10B981/FFFFFF?text=GOI+DO+VUONG" alt="Gối đỡ PU FOAM đế vuông" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="sanpham.jpg" alt="Gối đỡ PU FOAM đế vuông" style="width: 100%; height: 100%; object-fit: cover;">
                             <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #10B981, #059669); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.5);">
                                 <i class="fas fa-square"></i> ĐẾ VUÔNG
                             </div>
@@ -4413,7 +4413,7 @@
                         Ứng dụng thực tế
                     </div>
                     <h2 class="section-title">Ứng Dụng Rộng Rãi Trong Công Nghiệp</h2>
-                    <p class="section-subtitle">Gói đỡ PU Foam 3igreen được tin dùng trong nhiều lĩnh vực quan trọng, từ hệ thống lạnh công nghiệp đến các dự án dân dụng quy mô lớn, đặc biệt hiệu quả trong các ứng dụng yêu cầu cách nhiệt cao.</p>
+                    <p class="section-subtitle">gối đỡ PU Foam 3igreen được tin dùng trong nhiều lĩnh vực quan trọng, từ hệ thống lạnh công nghiệp đến các dự án dân dụng quy mô lớn, đặc biệt hiệu quả trong các ứng dụng yêu cầu cách nhiệt cao.</p>
                 </div>
                 
                 <div class="app-grid">
@@ -5620,7 +5620,7 @@
                 <div class="footer-section">
                     <h4>Sản phẩm</h4>
                     <ul class="footer-links">
-                        <li><a href="#features">Gói đỡ PU Foam</a></li>
+                        <li><a href="#features">gối đỡ PU Foam</a></li>
                         <li><a href="#applications">Ứng dụng PU Foam</a></li>
                         <li><a href="#specs">Thông số kỹ thuật</a></li>
                         <li><a href="#contact">Báo giá</a></li>
