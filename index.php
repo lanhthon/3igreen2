@@ -363,6 +363,9 @@
         html {
             scroll-behavior: smooth;
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+            position: relative;
         }
 
         body {
@@ -371,6 +374,9 @@
             color: var(--text-primary);
             background: var(--white);
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+            position: relative;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -496,6 +502,9 @@
         /* Utility Classes */
         .section {
             padding: var(--space-24) 0;
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
         }
 
         .section-dark {
@@ -528,6 +537,7 @@
             position: fixed;
             top: 0;
             width: 100%;
+            max-width: 100vw;
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--light-gray);
@@ -546,6 +556,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 var(--space-6);
@@ -663,11 +674,14 @@
         /* Premium Industrial Hero */
         .hero {
             min-height: 100vh;
+            width: 100%;
+            max-width: 100vw;
             display: flex;
             align-items: center;
             background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             position: relative;
             overflow: hidden;
+            overflow-x: hidden;
             padding: calc(var(--space-24) + 80px) 0 var(--space-24);
         }
 
@@ -769,6 +783,7 @@
         }
 
         .hero-content {
+            width: 100%;
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 var(--space-6);
@@ -813,8 +828,9 @@
 
         .hero-text .subtitle {
             font-size: clamp(1.125rem, 2vw, 1.375rem);
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.98);
             margin-bottom: var(--space-8);
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
             font-weight: 400;
             line-height: 1.7;
             max-width: 600px;
@@ -1243,6 +1259,89 @@
             line-height: 1.5;
         }
 
+        /* Partners Logo Slider */
+        .partners-section {
+            background: var(--white);
+            padding: var(--space-16) 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .partners-section::before,
+        .partners-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .partners-section::before {
+            left: 0;
+            background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        }
+
+        .partners-section::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        }
+
+        .partners-slider {
+            display: flex;
+            gap: var(--space-12);
+            animation: scrollLogos 30s linear infinite;
+            will-change: transform;
+        }
+
+        .partners-slider:hover {
+            animation-play-state: paused;
+        }
+
+        .partner-logo {
+            flex-shrink: 0;
+            width: 180px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            border: 1px solid var(--light-gray);
+        }
+
+        .partner-logo:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .partner-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .partner-logo:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        @keyframes scrollLogos {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
         /* About Section - Modern Premium Industrial */
         .about {
             background: var(--off-white);
@@ -1270,6 +1369,8 @@
             align-items: center;
             position: relative;
             z-index: 2;
+            width: 100%;
+            max-width: 100%;
         }
 
         .about-text h3 {
@@ -1294,6 +1395,8 @@
             grid-template-columns: repeat(2, 1fr);
             gap: var(--space-4);
             margin-top: var(--space-8);
+            width: 100%;
+            max-width: 100%;
         }
 
         .highlight-item {
@@ -1307,6 +1410,8 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid var(--light-gray);
             position: relative;
+            width: 100%;
+            max-width: 100%;
         }
 
         .highlight-item::before {
@@ -1358,8 +1463,15 @@
             line-height: 1.6;
         }
 
+        .about-text {
+            width: 100%;
+            max-width: 100%;
+        }
+
         .about-visual {
             position: relative;
+            width: 100%;
+            max-width: 100%;
         }
 
         .company-card {
@@ -1369,6 +1481,9 @@
             box-shadow: var(--shadow-xl);
             border: 1px solid var(--light-gray);
             border: 1px solid rgba(30, 81, 40, 0.1);
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
         }
 
         .company-logo {
@@ -1402,6 +1517,8 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
+            width: 100%;
+            max-width: 100%;
         }
 
         .stat-card {
@@ -2199,6 +2316,9 @@
             color: var(--white);
             padding: var(--space-24) 0 var(--space-8) 0;
             position: relative;
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
         }
 
         .footer-content {
@@ -2462,6 +2582,20 @@
 
         /* Mobile Optimization */
         @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                max-width: 100vw !important;
+            }
+
+            * {
+                max-width: 100%;
+            }
+
+            .section, .hero, footer {
+                overflow-x: hidden !important;
+                max-width: 100vw !important;
+            }
+
             .nav-menu {
                 position: fixed;
                 top: 80px;
@@ -2580,6 +2714,75 @@
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-text, .about-visual {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .highlight-item {
+                padding: var(--space-4);
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .highlight-item h5 {
+                font-size: 0.95rem;
+            }
+
+            .highlight-item p {
+                font-size: 0.85rem;
+            }
+
+            .company-stats {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 0 1rem;
+            }
+
+            .stat-card {
+                width: 100%;
+                max-width: 100%;
+                padding: 1.5rem 1rem;
+            }
+
+            .stat-card .number {
+                font-size: 2rem;
+                word-break: keep-all;
+                white-space: nowrap;
+            }
+
+            .stat-card .label {
+                font-size: 0.9rem;
+            }
+
+            .company-card {
+                padding: var(--space-6);
+                width: 100%;
+                max-width: 100%;
+                overflow: hidden;
+            }
+
+            .company-info {
+                width: 100%;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+            }
+
+            .company-info p {
+                font-size: 0.95rem;
+                line-height: 1.6;
             }
 
             .projects-grid,
@@ -3035,6 +3238,13 @@
                 border: 1px solid #ccc;
             }
         }
+        
+        .logo-img {
+    height: 40px;     /* chỉnh kích thước tùy ý */
+    width: auto;
+    object-fit: contain;
+}
+
     </style>
 </head>
 <body>
@@ -3050,10 +3260,10 @@
     <!-- Header -->
     <header>
         <nav>
-            <a href="#" class="logo">
-                <i class="fas fa-leaf"></i>
-                <span class="logo-text">3igreen</span>
-            </a>
+           <a href="#" class="logo">
+    <img src="logo.png" alt="Logo" class="logo-img">
+</a>
+
             <ul class="nav-menu">
                 <li><a href="#home">Trang chủ</a></li>
                 <li><a href="#about">Giới thiệu</a></li>
@@ -3234,7 +3444,7 @@
                     <div class="about-visual slide-in-right animate-on-scroll">
                         <div class="company-card">
                             <div class="company-logo">
-                                <i class="fas fa-leaf"></i>
+                                <img src="logo.png" alt="3iGreen Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 20px;">
                             </div>
                             <div class="company-info">
                                 <h4>3igreen - Vật Liệu Xanh</h4>
@@ -3261,6 +3471,60 @@
             </div>
         </section>
 
+        <!-- Partners Section -->
+        <section class="partners-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="section-badge">
+                        <i class="fas fa-handshake"></i>
+                        Đối tác chiến lược
+                    </div>
+                    <h2 class="section-title">Đối Tác Tin Cậy</h2>
+                    <p class="section-subtitle">Được tin tưởng bởi các tập đoàn và doanh nghiệp hàng đầu</p>
+                </div>
+            </div>
+            <div class="partners-slider">
+                <!-- Duplicate logos for seamless loop -->
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+1" alt="Partner 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+2" alt="Partner 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+3" alt="Partner 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+4" alt="Partner 4">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+5" alt="Partner 5">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+6" alt="Partner 6">
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+1" alt="Partner 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+2" alt="Partner 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+3" alt="Partner 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+4" alt="Partner 4">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+5" alt="Partner 5">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+6" alt="Partner 6">
+                </div>
+            </div>
+        </section>
+
         <!-- Leadership & Team Section -->
         <section class="team" id="team" style="padding: 6rem 0; background: var(--white); position: relative;">
             <div class="container">
@@ -3276,10 +3540,8 @@
                 <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
                     <!-- CEO -->
                     <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
-                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                                <i class="fas fa-user-tie" style="font-size: 64px; color: #94C842;"></i>
-                            </div>
+                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%);">
+                            <img src="ceo.jpg" alt="CEO" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-crown"></i> CEO
                             </div>
@@ -3301,10 +3563,8 @@
 
                     <!-- CTO -->
                     <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
-                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                                <i class="fas fa-user-cog" style="font-size: 64px; color: #94C842;"></i>
-                            </div>
+                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%);">
+                            <img src="ceo.jpg" alt="CTO" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-cog"></i> CTO
                             </div>
@@ -3326,10 +3586,8 @@
 
                     <!-- Sales Director -->
                     <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
-                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                                <i class="fas fa-user-chart" style="font-size: 64px; color: #94C842;"></i>
-                            </div>
+                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%);">
+                            <img src="ceo.jpg" alt="Sales Director" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-chart-line"></i> Director
                             </div>
@@ -3351,10 +3609,8 @@
 
                     <!-- Production Manager -->
                     <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
-                        <div class="member-photo" style="width: 100%; height: 300px; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                            <div style="width: 160px; height: 160px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                                <i class="fas fa-user-hard-hat" style="font-size: 64px; color: #94C842;"></i>
-                            </div>
+                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%);">
+                            <img src="ceo.jpg" alt="Production Manager" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-industry"></i> Manager
                             </div>
@@ -3885,6 +4141,7 @@
                 <div class="projects-grid">
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
+                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -3926,6 +4183,7 @@
 
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
+                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -3967,6 +4225,7 @@
 
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
+                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -4008,6 +4267,7 @@
 
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
+                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -4049,6 +4309,7 @@
 
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
+                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -4090,6 +4351,7 @@
 
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
+                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -4156,11 +4418,8 @@
                 <div class="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
                     <!-- News 1 -->
                     <article class="news-card animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
-                        <div class="news-image" style="width: 100%; height: 250px; background: linear-gradient(135deg, #94C842, #B5E550); position: relative; overflow: hidden;">
-                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h100v100H0z\" fill=\"%2394C842\" fill-opacity=\".1\"/%3E%3Ccircle cx=\"50\" cy=\"50\" r=\"40\" fill=\"%23fff\" fill-opacity=\".2\"/%3E%3C/svg%3E') center/cover; opacity: 0.3;"></div>
-                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
-                                <i class="fas fa-leaf" style="font-size: 80px; opacity: 0.8;"></i>
-                            </div>
+                        <div class="news-image" style="width: 100%; height: 250px; position: relative; overflow: hidden;">
+                            <img src="6.jpg" alt="News 1" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #94C842;">
                                 <i class="fas fa-calendar"></i> 01/12/2024
                             </div>
@@ -4195,11 +4454,8 @@
 
                     <!-- News 2 -->
                     <article class="news-card animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
-                        <div class="news-image" style="width: 100%; height: 250px; background: linear-gradient(135deg, #FFD93D, #FFA372); position: relative; overflow: hidden;">
-                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h100v100H0z\" fill=\"%23FFD93D\" fill-opacity=\".1\"/%3E%3Crect x=\"20\" y=\"20\" width=\"60\" height=\"60\" fill=\"%23fff\" fill-opacity=\".2\" rx=\"10\"/%3E%3C/svg%3E') center/cover; opacity: 0.3;"></div>
-                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
-                                <i class="fas fa-award" style="font-size: 80px; opacity: 0.8;"></i>
-                            </div>
+                        <div class="news-image" style="width: 100%; height: 250px; position: relative; overflow: hidden;">
+                            <img src="6.jpg" alt="News 2" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FFD93D;">
                                 <i class="fas fa-calendar"></i> 28/11/2024
                             </div>
@@ -4233,11 +4489,8 @@
 
                     <!-- News 3 -->
                     <article class="news-card animate-on-scroll" style="background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 20px 40px rgba(148, 200, 66, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
-                        <div class="news-image" style="width: 100%; height: 250px; background: linear-gradient(135deg, #FF6B35, #FFD93D); position: relative; overflow: hidden;">
-                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h100v100H0z\" fill=\"%23FF6B35\" fill-opacity=\".1\"/%3E%3Cpolygon points=\"50,20 80,80 20,80\" fill=\"%23fff\" fill-opacity=\".2\"/%3E%3C/svg%3E') center/cover; opacity: 0.3;"></div>
-                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
-                                <i class="fas fa-lightbulb" style="font-size: 80px; opacity: 0.8;"></i>
-                            </div>
+                        <div class="news-image" style="width: 100%; height: 250px; position: relative; overflow: hidden;">
+                            <img src="6.jpg" alt="News 3" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: #FF6B35;">
                                 <i class="fas fa-calendar"></i> 20/11/2024
                             </div>
@@ -4922,12 +5175,24 @@
 
         // Counter Animation for Stats
         function animateCounter(element, target, duration = 2000) {
+            // Prevent re-animation
+            if (element.dataset.animated === 'true') {
+                return;
+            }
+            element.dataset.animated = 'true';
+
             let start = 0;
             const isPercentage = target.toString().includes('%');
             const isPlus = target.toString().includes('+');
             const targetNumber = parseInt(target.toString().replace(/[^\d]/g, ''));
+
+            if (isNaN(targetNumber) || targetNumber === 0) {
+                return;
+            }
+
             const increment = targetNumber / (duration / 16);
-            
+            let animationFrameId;
+
             function updateCounter() {
                 start += increment;
                 if (start < targetNumber) {
@@ -4935,9 +5200,12 @@
                     if (isPercentage) displayValue += '%';
                     if (isPlus) displayValue += '+';
                     element.textContent = displayValue;
-                    requestAnimationFrame(updateCounter);
+                    animationFrameId = requestAnimationFrame(updateCounter);
                 } else {
                     element.textContent = target;
+                    if (animationFrameId) {
+                        cancelAnimationFrame(animationFrameId);
+                    }
                 }
             }
             updateCounter();
@@ -4946,15 +5214,23 @@
         // Stats Animation Observer
         const statsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                if (entry.isIntersecting && !entry.target.dataset.observed) {
+                    entry.target.dataset.observed = 'true';
                     const numbers = entry.target.querySelectorAll('.stat-number, .number');
                     numbers.forEach(number => {
-                        const target = number.textContent;
-                        animateCounter(number, target);
+                        if (!number.dataset.animated) {
+                            const target = number.textContent.trim();
+                            if (target) {
+                                animateCounter(number, target);
+                            }
+                        }
                     });
                     statsObserver.unobserve(entry.target);
                 }
             });
+        }, {
+            threshold: 0.3,
+            rootMargin: '0px'
         });
 
         document.querySelectorAll('.stats-section, .company-stats').forEach(section => {
