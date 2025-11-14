@@ -3811,8 +3811,8 @@
                         <i class="fas fa-box-open"></i>
                         Sản phẩm
                     </div>
-                    <h2 class="section-title">Dòng Sản Phẩm Gối Đỡ PU Foam</h2>
-                    <p class="section-subtitle">Đa dạng các loại gối đỡ phù hợp với mọi nhu cầu công trình, từ dân dụng đến công nghiệp quy mô lớn</p>
+                    <h2 class="section-title">Dòng Sản Phẩm KINGSPIPE - Cách Nhiệt Chuyên Nghiệp</h2>
+                    <p class="section-subtitle">Giải pháp cách nhiệt tiên tiến với công nghệ PUR/PIR 4Ta2Gp, đáp ứng mọi nhu cầu từ nước lạnh chiller đến hơi steam nhiệt độ cao</p>
                 </div>
 
                 <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
