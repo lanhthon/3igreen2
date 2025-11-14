@@ -138,19 +138,14 @@ body {
 /* Fallback cho CSS Variables (IE11 và trình duyệt cũ) */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    color: #0A1628;
-    background: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
-    color: #0A1628;
+    /* Không hardcode màu - để CSS trong index.php và inline styles quyết định */
 }
 
-p {
-    color: #2D3748;
-}
-
+/* Logo colors - chỉ fallback cho những element cụ thể */
 .logo i {
     color: #94C842;
 }
