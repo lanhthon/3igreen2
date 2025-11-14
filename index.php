@@ -630,6 +630,89 @@
             width: 100%;
         }
 
+        /* Dropdown Menu Styles */
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .dropdown-toggle i {
+            font-size: 0.75rem;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-dropdown:hover .dropdown-toggle i {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 1rem);
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15);
+            padding: 0.75rem 0;
+            min-width: 280px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            border: 1px solid rgba(148, 200, 66, 0.1);
+        }
+
+        .nav-dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            top: calc(100% + 0.5rem);
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu a::before {
+            display: none;
+        }
+
+        .dropdown-menu a i {
+            color: var(--primary-green);
+            font-size: 1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .dropdown-menu a:hover {
+            background: rgba(148, 200, 66, 0.08);
+            color: var(--navy-dark);
+            padding-left: 1.75rem;
+        }
+
+        .dropdown-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(148, 200, 66, 0.2), transparent);
+            margin: 0.5rem 0;
+        }
+
         /* Premium CTA Button */
         .nav-cta {
             background: var(--primary-green);
@@ -2634,6 +2717,47 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
+            }
+
+            /* Mobile Dropdown Styles */
+            .nav-dropdown {
+                width: 100%;
+            }
+
+            .dropdown-toggle {
+                justify-content: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+                transform: none;
+                opacity: 1;
+                visibility: visible;
+                box-shadow: none;
+                border: none;
+                background: rgba(148, 200, 66, 0.05);
+                margin-top: 0.5rem;
+                border-radius: var(--radius-md);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+                padding: 0;
+            }
+
+            .nav-dropdown.active .dropdown-menu {
+                max-height: 500px;
+                padding: 0.75rem 0;
+            }
+
+            .dropdown-menu a {
+                font-size: 1rem;
+                padding: 0.75rem 1rem;
+                justify-content: center;
+            }
+
+            .dropdown-menu a:hover {
+                padding-left: 1rem;
             }
 
             .nav-cta {
@@ -3269,7 +3393,20 @@
                 <li><a href="#about">Giới thiệu</a></li>
                 <li><a href="#team">Lãnh đạo</a></li>
                 <li><a href="#features">Tính năng</a></li>
-                <li><a href="#products">Sản phẩm</a></li>
+                <li class="nav-dropdown">
+                    <a href="#products" class="dropdown-toggle">
+                        Sản phẩm <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#products">Tất cả sản phẩm</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a href="#product-ciwa"><i class="fas fa-snowflake"></i> KINGSPIPE CIWA - Nước lạnh chiller</a></li>
+                        <li><a href="#product-howa"><i class="fas fa-fire"></i> KINGSPIPE HOWA - Nước nóng</a></li>
+                        <li><a href="#product-steam"><i class="fas fa-burn"></i> KINGSPIPE STEAM - Hơi steam</a></li>
+                        <li><a href="#product-sound-lag"><i class="fas fa-volume-mute"></i> KINGSPIPE SOUND LAG - Cách âm</a></li>
+                        <li><a href="#product-pir"><i class="fas fa-layer-group"></i> Tấm PIR - Tường trần</a></li>
+                    </ul>
+                </li>
                 <li><a href="#projects">Dự án</a></li>
                 <li><a href="#news">Tin tức</a></li>
                 <li><a href="#support">Công cụ hỗ trợ</a></li>
@@ -3817,7 +3954,7 @@
 
                 <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
                     <!-- Product 1: KINGSPIPE CIWA -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #94C842;">
+                    <div id="product-ciwa" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #94C842; scroll-margin-top: 100px;">
                         <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #94C842, #6B9631); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(148, 200, 66, 0.4);">
                             <i class="fas fa-snowflake"></i> NƯỚC LẠNH
                         </div>
@@ -3883,7 +4020,7 @@
                     </div>
 
                     <!-- Product 2: KINGSPIPE HOWA -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #FF6B35;">
+                    <div id="product-howa" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #FF6B35; scroll-margin-top: 100px;">
                         <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF6B35, #D9534F); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);">
                             <i class="fas fa-fire"></i> NƯỚC NÓNG
                         </div>
@@ -3949,7 +4086,7 @@
                     </div>
 
                     <!-- Product 3: KINGSPIPE STEAM -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #FF9800;">
+                    <div id="product-steam" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #FF9800; scroll-margin-top: 100px;">
                         <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF9800, #F57C00); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);">
                             <i class="fas fa-burn"></i> STEAM
                         </div>
@@ -4015,7 +4152,7 @@
                     </div>
 
                     <!-- Product 4: KINGSPIPE SOUND LAG -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #9C27B0;">
+                    <div id="product-sound-lag" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #9C27B0; scroll-margin-top: 100px;">
                         <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.4);">
                             <i class="fas fa-volume-mute"></i> CÁCH ÂM
                         </div>
@@ -4081,7 +4218,7 @@
                     </div>
 
                     <!-- Product 5: Cách nhiệt tường, trần PIR -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #2196F3;">
+                    <div id="product-pir" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #2196F3; scroll-margin-top: 100px;">
                         <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #2196F3, #1976D2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);">
                             <i class="fas fa-layer-group"></i> TƯỜNG TRẦN
                         </div>
@@ -5645,14 +5782,42 @@
                 }
             });
 
-            // Close mobile menu when clicking on a link
-            document.querySelectorAll('.nav-menu a').forEach(link => {
+            // Close mobile menu when clicking on a link (except dropdown toggle)
+            document.querySelectorAll('.nav-menu a:not(.dropdown-toggle)').forEach(link => {
                 link.addEventListener('click', () => {
                     navMenu.classList.remove('active');
                     const icon = mobileMenu.querySelector('i');
                     icon.classList.remove('fa-times');
                     icon.classList.add('fa-bars');
                 });
+            });
+        }
+
+        // Dropdown Menu Toggle for Mobile
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const navDropdown = document.querySelector('.nav-dropdown');
+
+        if (dropdownToggle && navDropdown) {
+            dropdownToggle.addEventListener('click', (e) => {
+                // Only prevent default and toggle on mobile
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    navDropdown.classList.toggle('active');
+                }
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768 && !navDropdown.contains(e.target)) {
+                    navDropdown.classList.remove('active');
+                }
+            });
+
+            // Reset dropdown state on window resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    navDropdown.classList.remove('active');
+                }
             });
         }
 
