@@ -292,12 +292,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&subset=vietnamese&display=swap" rel="stylesheet">
 
-    <!-- Browser Compatibility CSS -->
-    <link href="/browser-compatibility.css" rel="stylesheet">
-
-    <!-- Browser Polyfills (load early for IE11 and old browsers) -->
-    <script src="/browser-polyfills.js"></script>
-
     <style>
         :root {
             /* Modern Premium Industrial Color Palette */
@@ -3231,98 +3225,7 @@
             outline-offset: 2px !important;
         }
 
-        /* Dark Mode Support - Premium Industrial Dark Theme */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                /* Dark Mode Color Adjustments */
-                --navy-dark: #0A0E14;               /* Darker Navy for BG */
-                --navy: #121820;                    /* Dark Background */
-                --navy-light: #1A2332;              /* Lighter Navy for cards */
-
-                --white: #0A0E14;                   /* BG becomes dark */
-                --off-white: #121820;               /* Off-white becomes dark */
-                --light-gray: #1A2332;              /* Light gray becomes navy */
-
-                --text-primary: #F8F9FA;            /* Light text for readability */
-                --text-secondary: #CBD5E0;          /* Secondary text lighter */
-                --text-muted: #A0AEC0;              /* Muted text lighter */
-
-                /* Green stays vibrant */
-                --primary-green: #A8D657;           /* Lighter green for dark mode */
-                --primary-green-dark: #94C842;      /* Original green as dark variant */
-                --primary-green-light: #B8E068;     /* Even lighter green */
-
-                /* Accent colors stay vibrant */
-                --accent-gold: #FFE55C;             /* Lighter gold for visibility */
-                --accent-orange: #FF8A5B;           /* Lighter orange */
-
-                /* Adjusted shadows for dark mode */
-                --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-                --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-                --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-                --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
-                --shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.7);
-            }
-
-            /* Navigation adjustments */
-            .nav-menu {
-                background: rgba(26, 35, 50, 0.95);
-                backdrop-filter: blur(20px);
-            }
-
-            header {
-                background: rgba(18, 24, 32, 0.95);
-            }
-
-            /* Card and section adjustments */
-            .feature-card,
-            .app-item,
-            .spec-card,
-            .contact-card {
-                background: linear-gradient(135deg, rgba(26, 35, 50, 0.8), rgba(18, 24, 32, 0.9));
-                border: 1px solid rgba(168, 214, 87, 0.1);
-            }
-
-            /* Hero section gradient */
-            .hero {
-                background: linear-gradient(135deg, #0A0E14 0%, #1A2332 50%, #0A1628 100%);
-            }
-
-            /* Footer */
-            footer {
-                background: linear-gradient(135deg, #0A0E14, #121820);
-            }
-
-            /* Ensure good contrast for buttons */
-            .btn-primary,
-            .fab {
-                box-shadow: 0 8px 24px rgba(168, 214, 87, 0.3);
-            }
-
-            .btn-primary:hover,
-            .fab:hover {
-                box-shadow: 0 12px 32px rgba(168, 214, 87, 0.4);
-            }
-
-            /* Input fields */
-            input,
-            textarea,
-            select {
-                background: rgba(26, 35, 50, 0.5);
-                border-color: rgba(168, 214, 87, 0.2);
-                color: var(--text-primary);
-            }
-
-            input::placeholder,
-            textarea::placeholder {
-                color: var(--text-muted);
-            }
-
-            /* Ensure images don't get too bright */
-            img {
-                opacity: 0.95;
-            }
-        }
+        /* Dark Mode Support Removed - Causing color conflicts with designed sections */
 
         /* Print Styles */
         @media print {
