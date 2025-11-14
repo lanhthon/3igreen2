@@ -3952,336 +3952,226 @@
                     <p class="section-subtitle">Giải pháp cách nhiệt tiên tiến với công nghệ PUR/PIR 4Ta2Gp, đáp ứng mọi nhu cầu từ nước lạnh chiller đến hơi steam nhiệt độ cao</p>
                 </div>
 
-                <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; margin-top: 4rem;">
                     <!-- Product 1: KINGSPIPE CIWA -->
-                    <div id="product-ciwa" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #94C842; scroll-margin-top: 100px;">
-                        <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #94C842, #6B9631); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(148, 200, 66, 0.4);">
-                            <i class="fas fa-snowflake"></i> NƯỚC LẠNH
+                    <div id="product-ciwa" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(148, 200, 66, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(148, 200, 66, 0.1), rgba(148, 200, 66, 0.05));">
+                            <img src="https://via.placeholder.com/600x400/94C842/FFFFFF?text=KINGSPIPE+CIWA" alt="KINGSPIPE CIWA - Cách nhiệt ống nước lạnh chiller" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #94C842, #6B9631); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(148, 200, 66, 0.5);">
+                                <i class="fas fa-snowflake"></i> NƯỚC LẠNH
+                            </div>
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(148, 200, 66, 0.1), rgba(148, 200, 66, 0.05)); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: #94C842; box-shadow: 0 8px 24px rgba(148, 200, 66, 0.2);">
-                            <i class="fas fa-temperature-low"></i>
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE CIWA</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Nhiệt Đường Ống Nước Lạnh Chiller</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Ống đúc sẵn từ PUR/PIR với công nghệ 4Ta2Gp, có cấu trúc ô kín, hệ số dẫn nhiệt rất thấp, ngăn ngừa đọng sương và thất thoát năng lượng.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(148, 200, 66, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #94C842;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống đọng sương tuyệt đối</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Lớp Jacketing chống UV, ăn mòn</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Tiết kiệm 70% thời gian thi công</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #94C842, #6B9631); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(148, 200, 66, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                            </a>
                         </div>
-
-                        <h3 style="font-size: 1.75rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE CIWA</h3>
-                        <p style="color: #94C842; font-weight: 700; text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;">Cách Nhiệt Đường Ống Nước Lạnh Chiller</p>
-
-                        <p style="color: #374151; text-align: center; margin-bottom: 2rem; line-height: 1.8; font-size: 0.95rem;">Ống đúc sẵn từ PUR/PIR với công nghệ 4Ta2Gp, có cấu trúc ô kín với hệ số dẫn nhiệt rất thấp, giúp ngăn ngừa đọng sương trên đường ống nước lạnh chiller và chống thất thoát năng lượng.</p>
-
-                        <div class="product-specs" style="background: linear-gradient(135deg, rgba(148, 200, 66, 0.05), rgba(148, 200, 66, 0.02)); padding: 1.75rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(148, 200, 66, 0.2);">
-                            <h4 style="font-size: 1.1rem; color: #0A1628; margin-bottom: 1.2rem; font-weight: 800; font-family: 'Poppins', sans-serif;">
-                                <i class="fas fa-cogs" style="color: #94C842;"></i> Đặc điểm nổi bật
-                            </h4>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.8rem;">
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Chống đọng sương tuyệt đối</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Lớp Jacketing chống UV, ăn mòn</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Ngăn hơi ẩm 100%</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Lắp đặt nhanh, tiết kiệm 70% thời gian</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(10, 22, 40, 0.03); border-radius: 12px;">
-                            <h5 style="color: #0A1628; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;"><i class="fas fa-industry" style="color: #94C842;"></i> Ứng dụng</h5>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.5rem;">
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #94C842;"></i>
-                                    Nhà máy dược phẩm
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #94C842;"></i>
-                                    Phòng sạch công nghiệp
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #94C842;"></i>
-                                    Nhà máy thực phẩm
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #94C842;"></i>
-                                    Bệnh viện, trường học, khách sạn
-                                </li>
-                            </ul>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #94C842, #6B9631); color: white; text-align: center; padding: 1.2rem; border-radius: 12px; text-decoration: none; font-weight: 800; transition: all 0.3s; box-shadow: 0 6px 20px rgba(148, 200, 66, 0.4); font-family: 'Poppins', sans-serif; font-size: 1.05rem;">
-                            <i class="fas fa-file-download"></i> TẢI CATALOGUE & BÁO GIÁ
-                        </a>
                     </div>
 
                     <!-- Product 2: KINGSPIPE HOWA -->
-                    <div id="product-howa" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #FF6B35; scroll-margin-top: 100px;">
-                        <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF6B35, #D9534F); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);">
-                            <i class="fas fa-fire"></i> NƯỚC NÓNG
+                    <div id="product-howa" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(255, 107, 53, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.05));">
+                            <img src="https://via.placeholder.com/600x400/FF6B35/FFFFFF?text=KINGSPIPE+HOWA" alt="KINGSPIPE HOWA - Cách nhiệt ống nước nóng" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF6B35, #D9534F); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(255, 107, 53, 0.5);">
+                                <i class="fas fa-fire"></i> NƯỚC NÓNG
+                            </div>
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.05)); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: #FF6B35; box-shadow: 0 8px 24px rgba(255, 107, 53, 0.2);">
-                            <i class="fas fa-temperature-high"></i>
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE HOWA</h3>
+                            <p style="color: #FF6B35; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Nhiệt Đường Ống Nước Nóng Trung Tâm</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Ống đúc sẵn từ PUR/PIR công nghệ 4Ta2Gp, ngăn ngừa thất thoát nhiệt. Thiết kế lắp ghép 2 nửa rất dễ dàng, rút ngắn thời gian thi công.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(255, 107, 53, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #FF6B35;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống thất thoát nhiệt hiệu quả</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Lắp ghép 2 nửa siêu nhanh</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống cháy lan, tự dập tắt</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #FF6B35, #D9534F); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(255, 107, 53, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                            </a>
                         </div>
-
-                        <h3 style="font-size: 1.75rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE HOWA</h3>
-                        <p style="color: #FF6B35; font-weight: 700; text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;">Cách Nhiệt Đường Ống Nước Nóng Trung Tâm</p>
-
-                        <p style="color: #374151; text-align: center; margin-bottom: 2rem; line-height: 1.8; font-size: 0.95rem;">Ống đúc sẵn từ PUR/PIR với công nghệ 4Ta2Gp, ngăn ngừa thất thoát nhiệt trên đường ống nước nóng. Thiết kế lắp ghép 2 nửa ống rất dễ dàng, rút ngắn thời gian thi công.</p>
-
-                        <div class="product-specs" style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.05), rgba(255, 107, 53, 0.02)); padding: 1.75rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(255, 107, 53, 0.2);">
-                            <h4 style="font-size: 1.1rem; color: #0A1628; margin-bottom: 1.2rem; font-weight: 800; font-family: 'Poppins', sans-serif;">
-                                <i class="fas fa-cogs" style="color: #FF6B35;"></i> Đặc điểm nổi bật
-                            </h4>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.8rem;">
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Chống thất thoát nhiệt hiệu quả</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Lắp ghép 2 nửa siêu nhanh</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Chống cháy lan, tự dập tắt</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Thay thế & bảo dưỡng dễ dàng</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(10, 22, 40, 0.03); border-radius: 12px;">
-                            <h5 style="color: #0A1628; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;"><i class="fas fa-wrench" style="color: #FF6B35;"></i> Ưu điểm vượt trội</h5>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.5rem;">
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #FF6B35;"></i>
-                                    Có sẵn lớp áo bảo vệ chuyên dụng ngoài trời
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #FF6B35;"></i>
-                                    Đồng bộ với phụ kiện Cút, Tê
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #FF6B35;"></i>
-                                    Hệ số phát xạ bề mặt rất thấp
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #FF6B35;"></i>
-                                    Không phát sinh chất độc hại
-                                </li>
-                            </ul>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #FF6B35, #D9534F); color: white; text-align: center; padding: 1.2rem; border-radius: 12px; text-decoration: none; font-weight: 800; transition: all 0.3s; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4); font-family: 'Poppins', sans-serif; font-size: 1.05rem;">
-                            <i class="fas fa-file-download"></i> TẢI CATALOGUE & BÁO GIÁ
-                        </a>
                     </div>
 
                     <!-- Product 3: KINGSPIPE STEAM -->
-                    <div id="product-steam" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #FF9800; scroll-margin-top: 100px;">
-                        <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF9800, #F57C00); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);">
-                            <i class="fas fa-burn"></i> STEAM
+                    <div id="product-steam" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(255, 152, 0, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 152, 0, 0.05));">
+                            <img src="https://via.placeholder.com/600x400/FF9800/FFFFFF?text=KINGSPIPE+STEAM" alt="KINGSPIPE STEAM - Cách nhiệt ống hơi steam" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF9800, #F57C00); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(255, 152, 0, 0.5);">
+                                <i class="fas fa-burn"></i> STEAM
+                            </div>
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 152, 0, 0.05)); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: #FF9800; box-shadow: 0 8px 24px rgba(255, 152, 0, 0.2);">
-                            <i class="fas fa-fire-alt"></i>
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE STEAM</h3>
+                            <p style="color: #FF9800; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Nhiệt Ống Dầu Nóng, Hơi Steam</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Ống đúc sẵn 2 lớp bảo ôn Rockwool + PUR/PIR công nghệ 4Ta2Gp, chịu nhiệt độ cao, ngăn ngừa thất thoát nhiệt trên ống dầu nóng, hơi steam.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(255, 152, 0, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #FF9800;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>2 lớp bảo ôn Rockwool + PUR/PIR</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chịu nhiệt độ cực cao</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống cháy, tự dập tắt lửa</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #FF9800, #F57C00); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(255, 152, 0, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                            </a>
                         </div>
-
-                        <h3 style="font-size: 1.75rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE STEAM</h3>
-                        <p style="color: #FF9800; font-weight: 700; text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;">Cách Nhiệt Ống Dầu Nóng, Hơi Steam</p>
-
-                        <p style="color: #374151; text-align: center; margin-bottom: 2rem; line-height: 1.8; font-size: 0.95rem;">Ống đúc sẵn 2 lớp bảo ôn Rockwool (100-120kg/m³) + lớp PUR/PIR công nghệ 4Ta2Gp, chịu nhiệt độ cao, ngăn ngừa thất thoát nhiệt trên ống dầu nóng, hơi steam.</p>
-
-                        <div class="product-specs" style="background: linear-gradient(135deg, rgba(255, 152, 0, 0.05), rgba(255, 152, 0, 0.02)); padding: 1.75rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(255, 152, 0, 0.2);">
-                            <h4 style="font-size: 1.1rem; color: #0A1628; margin-bottom: 1.2rem; font-weight: 800; font-family: 'Poppins', sans-serif;">
-                                <i class="fas fa-cogs" style="color: #FF9800;"></i> Đặc điểm nổi bật
-                            </h4>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.8rem;">
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">2 lớp bảo ôn Rockwool + PUR/PIR</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Chịu nhiệt độ cực cao</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Chống cháy, tự dập tắt lửa</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Không bị sẹp khi tác động lực</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(10, 22, 40, 0.03); border-radius: 12px;">
-                            <h5 style="color: #0A1628; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;"><i class="fas fa-star" style="color: #FF9800;"></i> Ưu điểm</h5>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.5rem;">
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #FF9800;"></i>
-                                    Chống thất thoát nhiệt hiệu quả cao
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #FF9800;"></i>
-                                    Lớp bảo vệ bề mặt chống ăn mòn
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #FF9800;"></i>
-                                    Tiết kiệm thời gian & chi phí nhân công
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #FF9800;"></i>
-                                    Dễ dàng thay thế, bảo dưỡng
-                                </li>
-                            </ul>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #FF9800, #F57C00); color: white; text-align: center; padding: 1.2rem; border-radius: 12px; text-decoration: none; font-weight: 800; transition: all 0.3s; box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4); font-family: 'Poppins', sans-serif; font-size: 1.05rem;">
-                            <i class="fas fa-file-download"></i> TẢI CATALOGUE & BÁO GIÁ
-                        </a>
                     </div>
 
                     <!-- Product 4: KINGSPIPE SOUND LAG -->
-                    <div id="product-sound-lag" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #9C27B0; scroll-margin-top: 100px;">
-                        <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.4);">
-                            <i class="fas fa-volume-mute"></i> CÁCH ÂM
+                    <div id="product-sound-lag" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(156, 39, 176, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(156, 39, 176, 0.05));">
+                            <img src="https://via.placeholder.com/600x400/9C27B0/FFFFFF?text=KINGSPIPE+SOUND+LAG" alt="KINGSPIPE SOUND LAG - Cách âm ống" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(156, 39, 176, 0.5);">
+                                <i class="fas fa-volume-mute"></i> CÁCH ÂM
+                            </div>
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(156, 39, 176, 0.05)); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: #9C27B0; box-shadow: 0 8px 24px rgba(156, 39, 176, 0.2);">
-                            <i class="fas fa-bell-slash"></i>
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE SOUND LAG</h3>
+                            <p style="color: #9C27B0; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Âm Chống Rung Đường Ống</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Ống đúc sẵn 2 lớp cách âm chuyên nghiệp Rockwool + PUR/PIR, khả năng giảm âm vượt trội, chống rung động hiệu quả cao.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(156, 39, 176, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #9C27B0;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Giảm âm thanh vượt trội</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống rung động hiệu quả</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Bảo vệ môi trường làm việc</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(156, 39, 176, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                            </a>
                         </div>
-
-                        <h3 style="font-size: 1.75rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE SOUND LAG</h3>
-                        <p style="color: #9C27B0; font-weight: 700; text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;">Tiêu Âm Ống Nước Thải, Nước Mưa</p>
-
-                        <p style="color: #374151; text-align: center; margin-bottom: 2rem; line-height: 1.8; font-size: 0.95rem;">Giải pháp kết hợp xốp KING-PU tiêu âm + lớp K-GM 2mm siêu đặc cách âm + Aluminium Foil chống ẩm và chống cháy. Triệt tiêu tối đa tiếng ồn từ ống nước.</p>
-
-                        <div class="product-specs" style="background: linear-gradient(135deg, rgba(156, 39, 176, 0.05), rgba(156, 39, 176, 0.02)); padding: 1.75rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(156, 39, 176, 0.2);">
-                            <h4 style="font-size: 1.1rem; color: #0A1628; margin-bottom: 1.2rem; font-weight: 800; font-family: 'Poppins', sans-serif;">
-                                <i class="fas fa-cogs" style="color: #9C27B0;"></i> Đặc điểm nổi bật
-                            </h4>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.8rem;">
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Triệt tiêu tối đa tiếng ồn</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Bề mặt sạch, dễ vệ sinh</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Lắp đặt nhanh chóng</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Thay thế, bảo dưỡng dễ dàng</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(10, 22, 40, 0.03); border-radius: 12px;">
-                            <h5 style="color: #0A1628; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;"><i class="fas fa-building" style="color: #9C27B0;"></i> Ứng dụng</h5>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.5rem;">
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #9C27B0;"></i>
-                                    Chung cư cao cấp, khách sạn
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #9C27B0;"></i>
-                                    Tòa nhà văn phòng, rạp chiếu phim
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #9C27B0;"></i>
-                                    Hệ thống HVAC, quạt hút trần
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #9C27B0;"></i>
-                                    Ống thoát nước mưa, nước thải
-                                </li>
-                            </ul>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; text-align: center; padding: 1.2rem; border-radius: 12px; text-decoration: none; font-weight: 800; transition: all 0.3s; box-shadow: 0 6px 20px rgba(156, 39, 176, 0.4); font-family: 'Poppins', sans-serif; font-size: 1.05rem;">
-                            <i class="fas fa-file-download"></i> TẢI CATALOGUE & BÁO GIÁ
-                        </a>
                     </div>
 
-                    <!-- Product 5: Cách nhiệt tường, trần PIR -->
-                    <div id="product-pir" class="product-card animate-on-scroll" style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #2196F3; scroll-margin-top: 100px;">
-                        <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #2196F3, #1976D2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);">
-                            <i class="fas fa-layer-group"></i> TƯỜNG TRẦN
+                    <!-- Product 5: Tấm PIR -->
+                    <div id="product-pir" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(33, 150, 243, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(33, 150, 243, 0.05));">
+                            <img src="https://via.placeholder.com/600x400/2196F3/FFFFFF?text=TAM+PIR" alt="Tấm PIR - Cách nhiệt tường trần" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #2196F3, #1976D2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(33, 150, 243, 0.5);">
+                                <i class="fas fa-layer-group"></i> TƯỜNG TRẦN
+                            </div>
                         </div>
 
-                        <div class="product-icon" style="width: 120px; height: 120px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(33, 150, 243, 0.05)); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: #2196F3; box-shadow: 0 8px 24px rgba(33, 150, 243, 0.2);">
-                            <i class="fas fa-th-large"></i>
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">TẤM PIR CÁCH NHIỆT</h3>
+                            <p style="color: #2196F3; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Nhiệt, Cách Âm Tường & Trần</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Tấm cách nhiệt PIR cao cấp cho tường và trần, hệ số dẫn nhiệt cực thấp, chống cháy tuyệt đối, nhẹ, dễ thi công.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(33, 150, 243, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #2196F3;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Hệ số dẫn nhiệt cực thấp</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống cháy cao cấp</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Nhẹ, dễ thi công</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #2196F3, #1976D2); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(33, 150, 243, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                            </a>
                         </div>
-
-                        <h3 style="font-size: 1.75rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">TẤM PIR CÁCH NHIỆT</h3>
-                        <p style="color: #2196F3; font-weight: 700; text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;">Cách Nhiệt, Cách Âm Tường & Trần</p>
-
-                        <p style="color: #374151; text-align: center; margin-bottom: 2rem; line-height: 1.8; font-size: 0.95rem;">Tấm cách nhiệt PIR cao cấp cho tường và trần, hệ số dẫn nhiệt cực thấp, chống cháy tuyệt đối, nhẹ, dễ thi công. Giải pháp hoàn hảo cho công trình yêu cầu cao.</p>
-
-                        <div class="product-specs" style="background: linear-gradient(135deg, rgba(33, 150, 243, 0.05), rgba(33, 150, 243, 0.02)); padding: 1.75rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(33, 150, 243, 0.2);">
-                            <h4 style="font-size: 1.1rem; color: #0A1628; margin-bottom: 1.2rem; font-weight: 800; font-family: 'Poppins', sans-serif;">
-                                <i class="fas fa-cogs" style="color: #2196F3;"></i> Đặc điểm nổi bật
-                            </h4>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.8rem;">
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Hệ số dẫn nhiệt cực thấp</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Chống cháy cao cấp</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Nhẹ, dễ thi công</span>
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                                    <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.2rem; flex-shrink: 0;"></i>
-                                    <span style="color: #374151; font-weight: 600;">Tiết kiệm không gian</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(10, 22, 40, 0.03); border-radius: 12px;">
-                            <h5 style="color: #0A1628; font-weight: 700; margin-bottom: 1rem; font-size: 1rem;"><i class="fas fa-home" style="color: #2196F3;"></i> Ứng dụng</h5>
-                            <ul style="list-style: none; padding: 0; display: grid; gap: 0.5rem;">
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #2196F3;"></i>
-                                    Cách nhiệt tường, vách ngăn
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #2196F3;"></i>
-                                    Cách nhiệt trần, mái nhà
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #2196F3;"></i>
-                                    Nhà xưởng, kho lạnh
-                                </li>
-                                <li style="color: #374151; padding-left: 1.5rem; position: relative;">
-                                    <i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #2196F3;"></i>
-                                    Phòng sạch, phòng máy lạnh
-                                </li>
-                            </ul>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: linear-gradient(135deg, #2196F3, #1976D2); color: white; text-align: center; padding: 1.2rem; border-radius: 12px; text-decoration: none; font-weight: 800; transition: all 0.3s; box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4); font-family: 'Poppins', sans-serif; font-size: 1.05rem;">
-                            <i class="fas fa-file-download"></i> TẢI CATALOGUE & BÁO GIÁ
-                        </a>
                     </div>
+                </div>
+
+                <!-- Comparison Table Section -->
+                <div style="margin-top: 5rem; background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.1);">
+                    <h3 style="text-align: center; font-size: 2rem; color: #0A1628; margin-bottom: 3rem; font-weight: 800; font-family: 'Poppins', sans-serif;">
                         <i class="fas fa-balance-scale" style="color: #94C842;"></i> So Sánh Các Dòng Sản Phẩm
                     </h3>
 
