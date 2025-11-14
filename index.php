@@ -3405,6 +3405,9 @@
                         <li><a href="#product-steam"><i class="fas fa-burn"></i> KINGSPIPE STEAM - Hơi steam</a></li>
                         <li><a href="#product-sound-lag"><i class="fas fa-volume-mute"></i> KINGSPIPE SOUND LAG - Cách âm</a></li>
                         <li><a href="#product-pir"><i class="fas fa-layer-group"></i> Tấm PIR - Tường trần</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a href="#product-goi-do-tron"><i class="fas fa-circle"></i> Gối đỡ PU Foam - Đế tròn</a></li>
+                        <li><a href="#product-goi-do-vuong"><i class="fas fa-square"></i> Gối đỡ PU Foam - Đế vuông</a></li>
                     </ul>
                 </li>
                 <li><a href="#projects">Dự án</a></li>
@@ -3991,7 +3994,7 @@
                             <!-- CTA Button -->
                             <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #94C842, #6B9631); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(148, 200, 66, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
                                 <i class="fas fa-download"></i>
-                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                                <span>NHẬN BÁO GIÁ</span>
                             </a>
                         </div>
                     </div>
@@ -4034,7 +4037,7 @@
                             <!-- CTA Button -->
                             <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #FF6B35, #D9534F); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(255, 107, 53, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
                                 <i class="fas fa-download"></i>
-                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                                <span>NHẬN BÁO GIÁ</span>
                             </a>
                         </div>
                     </div>
@@ -4077,7 +4080,7 @@
                             <!-- CTA Button -->
                             <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #FF9800, #F57C00); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(255, 152, 0, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
                                 <i class="fas fa-download"></i>
-                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                                <span>NHẬN BÁO GIÁ</span>
                             </a>
                         </div>
                     </div>
@@ -4120,7 +4123,7 @@
                             <!-- CTA Button -->
                             <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(156, 39, 176, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
                                 <i class="fas fa-download"></i>
-                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                                <span>NHẬN BÁO GIÁ</span>
                             </a>
                         </div>
                     </div>
@@ -4163,7 +4166,93 @@
                             <!-- CTA Button -->
                             <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #2196F3, #1976D2); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(33, 150, 243, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
                                 <i class="fas fa-download"></i>
-                                <span>TẢI CATALOGUE & BÁO GIÁ</span>
+                                <span>NHẬN BÁO GIÁ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 6: Gối đỡ đế tròn -->
+                    <div id="product-goi-do-tron" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(251, 146, 60, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(251, 146, 60, 0.1), rgba(251, 146, 60, 0.05));">
+                            <img src="https://via.placeholder.com/600x400/FB923C/FFFFFF?text=GOI+DO+TRON" alt="Gối đỡ PU FOAM đế tròn" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FB923C, #F97316); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(251, 146, 60, 0.5);">
+                                <i class="fas fa-circle"></i> ĐẾ TRÒN
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">GỐI ĐỠ PU FOAM ĐẾ TRÒN</h3>
+                            <p style="color: #FB923C; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Gối Đỡ Ống Chiller, PCCC - DN15-DN800</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Gối đỡ PU Foam đế tròn có hệ số dẫn nhiệt rất thấp, khả năng chịu lực tốt. Giải pháp tuyệt vời thay gối gỗ, gối cao su cho hệ thống lạnh, điều hòa, chiller.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(251, 146, 60, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #FB923C;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FB923C; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Tỉ trọng 180-200kg/m³ (lên tới 300kg/m³)</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FB923C; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Khả năng chịu lực tốt, tuổi thọ cao</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FB923C; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Có ron/không ron, foam thường/chống cháy</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #FB923C, #F97316); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(251, 146, 60, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>NHẬN BÁO GIÁ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 7: Gối đỡ đế vuông -->
+                    <div id="product-goi-do-vuong" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(16, 185, 129, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));">
+                            <img src="https://via.placeholder.com/600x400/10B981/FFFFFF?text=GOI+DO+VUONG" alt="Gối đỡ PU FOAM đế vuông" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #10B981, #059669); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.5);">
+                                <i class="fas fa-square"></i> ĐẾ VUÔNG
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">GỐI ĐỠ PU FOAM ĐẾ VUÔNG</h3>
+                            <p style="color: #10B981; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Gối Đỡ Ống Chiller, PCCC - DN15-DN800</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Gối đỡ PU Foam đế vuông chuyên dụng cho phòng lạnh, cấp đông. Dùng tại các vị trí chịu lực của đường ống, thay thế gối gỗ, gối cao su truyền thống.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(16, 185, 129, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #10B981;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #10B981; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Đi kèm phụ kiện cùm Ula chuyên dụng</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #10B981; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chịu lực tốt, cách nhiệt hiệu quả</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #10B981; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Phù hợp ống đồng, ống chiller, PCCC</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #10B981, #059669); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>NHẬN BÁO GIÁ</span>
                             </a>
                         </div>
                     </div>
