@@ -441,7 +441,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: var(--navy-dark);
+            background: linear-gradient(135deg, #FFFFFF 0%, #F0F9E8 100%);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -502,8 +502,8 @@
         }
 
         .section-dark {
-            background: var(--navy-dark);
-            color: var(--white);
+            background: linear-gradient(135deg, #FFFFFF 0%, #F0F9E8 100%);
+            color: var(--navy-dark);
         }
 
         .section-light {
@@ -2197,8 +2197,8 @@
 
         /* Contact Section - Modern Premium Industrial */
         .contact {
-            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
-            color: var(--white);
+            background: linear-gradient(135deg, #FFFFFF 0%, #F0F9E8 100%);
+            color: var(--navy-dark);
             position: relative;
             overflow: hidden;
         }
@@ -2389,8 +2389,8 @@
 
         /* Footer - Modern Premium Industrial */
         footer {
-            background: var(--navy-dark);
-            color: var(--white);
+            background: linear-gradient(135deg, #FFFFFF 0%, #F0F9E8 100%);
+            color: var(--navy-dark);
             padding: var(--space-24) 0 var(--space-8) 0;
             position: relative;
             width: 100%;
@@ -3637,7 +3637,7 @@
                 <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
                     <!-- CEO -->
                     <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
-                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%);">
+                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #F0F9E8 0%, #E8F5E0 100%);">
                             <img src="ceo.jpg" alt="CEO" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-crown"></i> CEO
@@ -3660,7 +3660,7 @@
 
                     <!-- CTO -->
                     <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
-                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%);">
+                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #F0F9E8 0%, #E8F5E0 100%);">
                             <img src="ceo.jpg" alt="CTO" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-cog"></i> CTO
@@ -3683,7 +3683,7 @@
 
                     <!-- Sales Director -->
                     <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
-                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #0A1628 0%, #1A2332 100%);">
+                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #F0F9E8 0%, #E8F5E0 100%);">
                             <img src="ceo.jpg" alt="Sales Director" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-chart-line"></i> Director
@@ -3706,7 +3706,7 @@
 
                     <!-- Production Manager -->
                     <div class="team-member animate-on-scroll" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #E9ECEF;">
-                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #1A2332 0%, #2C3E50 100%);">
+                        <div class="member-photo" style="width: 100%; height: 300px; position: relative; overflow: hidden; background: linear-gradient(135deg, #F0F9E8 0%, #E8F5E0 100%);">
                             <img src="ceo.jpg" alt="Production Manager" style="width: 100%; height: 100%; object-fit: cover;">
                             <div style="position: absolute; top: 16px; right: 16px; background: rgba(148, 200, 66, 0.95); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; font-weight: 700; color: white;">
                                 <i class="fas fa-industry"></i> Manager
@@ -5080,7 +5080,7 @@
         </section>
 
         <!-- Support Tools Section -->
-        <section class="support-tools" id="support" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); padding: 6rem 0; position: relative; overflow: hidden;">
+        <section class="support-tools" id="support" style="background: linear-gradient(135deg, #FFFFFF 0%, #F0F9E8 100%); padding: 6rem 0; position: relative; overflow: hidden;">
             <!-- Animated Background Pattern -->
             <div style="position: absolute; inset: 0; opacity: 0.05; background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
 
@@ -5092,12 +5092,12 @@
                 <div class="section-header animate-on-scroll" style="margin-bottom: 4rem;">
                     <div class="section-badge" style="background: linear-gradient(135deg, #94C842, #FFD93D); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.5rem; border-radius: 50px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1.5rem; box-shadow: 0 10px 30px rgba(148, 200, 66, 0.3);">
                         <i class="fas fa-calculator" style="font-size: 1.1rem;"></i>
-                        <span style="color: white;">Công cụ hỗ trợ chuyên nghiệp</span>
+                        <span style="color: #0A1628;">Công cụ hỗ trợ chuyên nghiệp</span>
                     </div>
-                    <h2 class="section-title" style="color: white; font-size: 3rem; margin-bottom: 1.5rem;">
+                    <h2 class="section-title" style="color: #0A1628; font-size: 3rem; margin-bottom: 1.5rem;">
                         <span style="background: linear-gradient(135deg, #94C842, #FFD93D); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">3iCalc</span> - Tính Toán Cách Nhiệt
                     </h2>
-                    <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8); font-size: 1.2rem; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                    <p class="section-subtitle" style="color: #2D3748; font-size: 1.2rem; max-width: 800px; margin: 0 auto; line-height: 1.8;">
                         Phần mềm tính toán cách nhiệt chuyên nghiệp được phát triển bởi 3igreen, hỗ trợ kỹ sư thiết kế và nhà thầu tính toán chính xác độ dày cách nhiệt kinh tế nhất.
                     </p>
                 </div>
@@ -5109,8 +5109,8 @@
                             <i class="fas fa-question-circle" style="color: #94C842; font-size: 1.3rem;"></i>
                             <span style="color: #FFD93D; font-weight: 600; font-size: 0.95rem;">Tại sao cần tính toán?</span>
                         </div>
-                        <h3 style="color: white; font-size: 2rem; margin-bottom: 1rem; font-weight: 700;">Tính Toán Độ Dày Cách Nhiệt Chính Xác</h3>
-                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.05rem; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+                        <h3 style="color: #0A1628; font-size: 2rem; margin-bottom: 1rem; font-weight: 700;">Tính Toán Độ Dày Cách Nhiệt Chính Xác</h3>
+                        <p style="color: #4B5563; font-size: 1.05rem; max-width: 700px; margin: 0 auto; line-height: 1.7;">
                             Việc lựa chọn đúng độ dày bảo ôn sẽ <strong style="color: #94C842;">ngăn chặn hiệu quả sự đọng sương, giảm thất thoát năng lượng, tối ưu chi phí vận hành</strong> cho chủ đầu tư.
                         </p>
                     </div>
@@ -5118,47 +5118,47 @@
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
                         <div style="background: rgba(148, 200, 66, 0.1); border: 1px solid rgba(148, 200, 66, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
                             <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #94C842, #B5E550); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(148, 200, 66, 0.3);">
-                                <i class="fas fa-thermometer-half" style="color: white; font-size: 1.8rem;"></i>
+                                <i class="fas fa-thermometer-half" style="color: #0A1628; font-size: 1.8rem;"></i>
                             </div>
-                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Nhiệt độ môi trường</h4>
+                            <h4 style="color: #0A1628; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Nhiệt độ môi trường</h4>
                             <div style="display: inline-block; background: rgba(255, 217, 61, 0.2); color: #FFD93D; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng vừa</div>
-                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Chênh lệch nhiệt độ trong/ngoài ống</p>
+                            <p style="color: #6B7280; font-size: 0.9rem; line-height: 1.5;">Chênh lệch nhiệt độ trong/ngoài ống</p>
                         </div>
 
                         <div style="background: rgba(255, 107, 53, 0.1); border: 1px solid rgba(255, 107, 53, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
                             <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #FF6B35, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);">
-                                <i class="fas fa-tint" style="color: white; font-size: 1.8rem;"></i>
+                                <i class="fas fa-tint" style="color: #0A1628; font-size: 1.8rem;"></i>
                             </div>
-                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Độ ẩm môi trường</h4>
+                            <h4 style="color: #0A1628; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Độ ẩm môi trường</h4>
                             <div style="display: inline-block; background: rgba(255, 107, 53, 0.2); color: #FF6B35; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng rất lớn</div>
-                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Độ ẩm xung quanh hệ thống</p>
+                            <p style="color: #6B7280; font-size: 0.9rem; line-height: 1.5;">Độ ẩm xung quanh hệ thống</p>
                         </div>
 
                         <div style="background: rgba(255, 217, 61, 0.1); border: 1px solid rgba(255, 217, 61, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
                             <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFD93D, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(255, 217, 61, 0.3);">
-                                <i class="fas fa-fire" style="color: white; font-size: 1.8rem;"></i>
+                                <i class="fas fa-fire" style="color: #0A1628; font-size: 1.8rem;"></i>
                             </div>
-                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Hệ số dẫn nhiệt</h4>
+                            <h4 style="color: #0A1628; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Hệ số dẫn nhiệt</h4>
                             <div style="display: inline-block; background: rgba(255, 217, 61, 0.2); color: #FFD93D; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng lớn</div>
-                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Của vật liệu bảo ôn PU Foam</p>
+                            <p style="color: #6B7280; font-size: 0.9rem; line-height: 1.5;">Của vật liệu bảo ôn PU Foam</p>
                         </div>
 
                         <div style="background: rgba(148, 200, 66, 0.1); border: 1px solid rgba(148, 200, 66, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
                             <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #78A82E, #94C842); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(120, 168, 46, 0.3);">
-                                <i class="fas fa-shield-alt" style="color: white; font-size: 1.8rem;"></i>
+                                <i class="fas fa-shield-alt" style="color: #0A1628; font-size: 1.8rem;"></i>
                             </div>
-                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Vật liệu Jacketing</h4>
+                            <h4 style="color: #0A1628; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Vật liệu Jacketing</h4>
                             <div style="display: inline-block; background: rgba(148, 200, 66, 0.2); color: #94C842; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng lớn</div>
-                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Vật liệu bảo vệ Cladding</p>
+                            <p style="color: #6B7280; font-size: 0.9rem; line-height: 1.5;">Vật liệu bảo vệ Cladding</p>
                         </div>
 
                         <div style="background: rgba(255, 217, 61, 0.1); border: 1px solid rgba(255, 217, 61, 0.3); border-radius: 20px; padding: 1.8rem; text-align: center; transition: all 0.3s;">
                             <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFD93D, #94C842); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 10px 25px rgba(255, 217, 61, 0.3);">
-                                <i class="fas fa-wind" style="color: white; font-size: 1.8rem;"></i>
+                                <i class="fas fa-wind" style="color: #0A1628; font-size: 1.8rem;"></i>
                             </div>
-                            <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Tốc độ gió</h4>
+                            <h4 style="color: #0A1628; font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Tốc độ gió</h4>
                             <div style="display: inline-block; background: rgba(255, 217, 61, 0.2); color: #FFD93D; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.8rem;">Ảnh hưởng nhiều</div>
-                            <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; line-height: 1.5;">Gió môi trường xung quanh</p>
+                            <p style="color: #6B7280; font-size: 0.9rem; line-height: 1.5;">Gió môi trường xung quanh</p>
                         </div>
                     </div>
                 </div>
@@ -5170,28 +5170,28 @@
                         <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(148, 200, 66, 0.15), transparent); border-radius: 50%; filter: blur(40px);"></div>
 
                         <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #94C842, #FFD93D); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 15px 35px rgba(148, 200, 66, 0.3); transition: transform 0.5s;">
-                            <i class="fas fa-wind" style="color: white; font-size: 2.2rem;"></i>
+                            <i class="fas fa-wind" style="color: #0A1628; font-size: 2.2rem;"></i>
                         </div>
 
-                        <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Ống Gió HVAC</h3>
-                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Tính toán độ dày cách nhiệt tối ưu cho hệ thống ống gió, ngăn ngừa đọng sương hiệu quả.</p>
+                        <h3 style="color: #0A1628; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Ống Gió HVAC</h3>
+                        <p style="color: #4B5563; margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Tính toán độ dày cách nhiệt tối ưu cho hệ thống ống gió, ngăn ngừa đọng sương hiệu quả.</p>
 
                         <div style="margin-bottom: 2rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Theo tiêu chuẩn ASHRAE</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Theo tiêu chuẩn ASHRAE</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Phân tích kinh tế chi phí</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Phân tích kinh tế chi phí</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Báo cáo kỹ thuật chi tiết</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Báo cáo kỹ thuật chi tiết</span>
                             </div>
                         </div>
 
-                        <button onclick="openCalculator('duct')" style="width: 100%; background: linear-gradient(135deg, #94C842, #FFD93D); color: white; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(148, 200, 66, 0.3);">
+                        <button onclick="openCalculator('duct')" style="width: 100%; background: linear-gradient(135deg, #94C842, #FFD93D); color: #0A1628; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(148, 200, 66, 0.3);">
                             <i class="fas fa-calculator"></i>
                             <span>Tính toán ngay</span>
                         </button>
@@ -5202,28 +5202,28 @@
                         <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(255, 107, 53, 0.15), transparent); border-radius: 50%; filter: blur(40px);"></div>
 
                         <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #FF6B35, #FFA372); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 15px 35px rgba(255, 107, 53, 0.3); transition: transform 0.5s;">
-                            <i class="fas fa-thermometer-half" style="color: white; font-size: 2.2rem;"></i>
+                            <i class="fas fa-thermometer-half" style="color: #0A1628; font-size: 2.2rem;"></i>
                         </div>
 
-                        <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Đường Ống Nước Nóng</h3>
-                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Tính tổn thất nhiệt và độ dày cách nhiệt kinh tế cho hệ thống nước nóng.</p>
+                        <h3 style="color: #0A1628; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Đường Ống Nước Nóng</h3>
+                        <p style="color: #4B5563; margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Tính tổn thất nhiệt và độ dày cách nhiệt kinh tế cho hệ thống nước nóng.</p>
 
                         <div style="margin-bottom: 2rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Tính tổn thất nhiệt chính xác</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Tính tổn thất nhiệt chính xác</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Tối ưu chi phí vận hành</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Tối ưu chi phí vận hành</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Nhiều loại vật liệu PU Foam</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Nhiều loại vật liệu PU Foam</span>
                             </div>
                         </div>
 
-                        <button onclick="openCalculator('hotwater')" style="width: 100%; background: linear-gradient(135deg, #FF6B35, #FFA372); color: white; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);">
+                        <button onclick="openCalculator('hotwater')" style="width: 100%; background: linear-gradient(135deg, #FF6B35, #FFA372); color: #0A1628; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);">
                             <i class="fas fa-calculator"></i>
                             <span>Tính toán ngay</span>
                         </button>
@@ -5234,28 +5234,28 @@
                         <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(255, 217, 61, 0.15), transparent); border-radius: 50%; filter: blur(40px);"></div>
 
                         <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #FFD93D, #FFA372); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 15px 35px rgba(255, 217, 61, 0.3); transition: transform 0.5s;">
-                            <i class="fas fa-database" style="color: white; font-size: 2.2rem;"></i>
+                            <i class="fas fa-database" style="color: #0A1628; font-size: 2.2rem;"></i>
                         </div>
 
-                        <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Tanks & Bồn Chứa</h3>
-                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Tính toán cách nhiệt cho bồn chứa với các hình dạng và kích thước khác nhau.</p>
+                        <h3 style="color: #0A1628; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Tanks & Bồn Chứa</h3>
+                        <p style="color: #4B5563; margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Tính toán cách nhiệt cho bồn chứa với các hình dạng và kích thước khác nhau.</p>
 
                         <div style="margin-bottom: 2rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Bồn cylindrical & spherical</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Bồn cylindrical & spherical</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Tính diện tích bề mặt</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Tính diện tích bề mặt</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Phân tích ROI chi tiết</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Phân tích ROI chi tiết</span>
                             </div>
                         </div>
 
-                        <button onclick="openCalculator('tanks')" style="width: 100%; background: linear-gradient(135deg, #FFD93D, #FFA372); color: white; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(255, 217, 61, 0.3);">
+                        <button onclick="openCalculator('tanks')" style="width: 100%; background: linear-gradient(135deg, #FFD93D, #FFA372); color: #0A1628; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(255, 217, 61, 0.3);">
                             <i class="fas fa-calculator"></i>
                             <span>Tính toán ngay</span>
                         </button>
@@ -5266,28 +5266,28 @@
                         <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(148, 200, 66, 0.15), transparent); border-radius: 50%; filter: blur(40px);"></div>
 
                         <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #78A82E, #94C842); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 15px 35px rgba(120, 168, 46, 0.3); transition: transform 0.5s;">
-                            <i class="fas fa-snowflake" style="color: white; font-size: 2.2rem;"></i>
+                            <i class="fas fa-snowflake" style="color: #0A1628; font-size: 2.2rem;"></i>
                         </div>
 
-                        <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Ống Chiller Lạnh</h3>
-                        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Chuyên biệt cho hệ thống chiller, ngăn ngừa đọng sương 100% hiệu quả.</p>
+                        <h3 style="color: #0A1628; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Ống Chiller Lạnh</h3>
+                        <p style="color: #4B5563; margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Chuyên biệt cho hệ thống chiller, ngăn ngừa đọng sương 100% hiệu quả.</p>
 
                         <div style="margin-bottom: 2rem;">
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Ngăn đọng sương 100%</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Ngăn đọng sương 100%</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #FFD93D; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Tối ưu nhiệt độ thấp</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Tối ưu nhiệt độ thấp</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.8rem;">
                                 <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem;"></i>
-                                <span style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">Phù hợp vật liệu PU Foam</span>
+                                <span style="color: #2D3748; font-size: 0.9rem;">Phù hợp vật liệu PU Foam</span>
                             </div>
                         </div>
 
-                        <button onclick="openCalculator('chiller')" style="width: 100%; background: linear-gradient(135deg, #78A82E, #94C842); color: white; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(120, 168, 46, 0.3);">
+                        <button onclick="openCalculator('chiller')" style="width: 100%; background: linear-gradient(135deg, #78A82E, #94C842); color: #0A1628; border: none; padding: 1rem 1.5rem; border-radius: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.8rem; font-size: 1rem; box-shadow: 0 10px 25px rgba(120, 168, 46, 0.3);">
                             <i class="fas fa-calculator"></i>
                             <span>Tính toán ngay</span>
                         </button>
@@ -5296,47 +5296,47 @@
 
                 <!-- Benefits Section -->
                 <div class="calc-benefits animate-on-scroll" style="margin-bottom: 4rem;">
-                    <h3 style="color: white; font-size: 2.2rem; text-align: center; margin-bottom: 3rem; font-weight: 700;">
+                    <h3 style="color: #0A1628; font-size: 2.2rem; text-align: center; margin-bottom: 3rem; font-weight: 700;">
                         <span style="color: #FFD93D;">Lợi Ích</span> Của 3iCalc
                     </h3>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                         <div style="background: rgba(148, 200, 66, 0.1); border: 1px solid rgba(148, 200, 66, 0.2); border-radius: 20px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: all 0.4s;">
                             <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #94C842, #FFD93D); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 25px rgba(148, 200, 66, 0.3);">
-                                <i class="fas fa-coins" style="color: white; font-size: 2rem;"></i>
+                                <i class="fas fa-coins" style="color: #0A1628; font-size: 2rem;"></i>
                             </div>
                             <div>
-                                <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Tối Ưu Chi Phí</h4>
-                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; font-size: 0.95rem;">Cân nhắc chi phí đầu tư ban đầu và vận hành hàng năm để đưa ra độ dày kinh tế nhất</p>
+                                <h4 style="color: #0A1628; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Tối Ưu Chi Phí</h4>
+                                <p style="color: #4B5563; line-height: 1.6; font-size: 0.95rem;">Cân nhắc chi phí đầu tư ban đầu và vận hành hàng năm để đưa ra độ dày kinh tế nhất</p>
                             </div>
                         </div>
 
                         <div style="background: rgba(255, 217, 61, 0.1); border: 1px solid rgba(255, 217, 61, 0.2); border-radius: 20px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: all 0.4s;">
                             <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #FFD93D, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 25px rgba(255, 217, 61, 0.3);">
-                                <i class="fas fa-chart-line" style="color: white; font-size: 2rem;"></i>
+                                <i class="fas fa-chart-line" style="color: #0A1628; font-size: 2rem;"></i>
                             </div>
                             <div>
-                                <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Tính Toán Chính Xác</h4>
-                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; font-size: 0.95rem;">Sử dụng công thức và tiêu chuẩn quốc tế được công nhận trong ngành cách nhiệt</p>
+                                <h4 style="color: #0A1628; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Tính Toán Chính Xác</h4>
+                                <p style="color: #4B5563; line-height: 1.6; font-size: 0.95rem;">Sử dụng công thức và tiêu chuẩn quốc tế được công nhận trong ngành cách nhiệt</p>
                             </div>
                         </div>
 
                         <div style="background: rgba(255, 107, 53, 0.1); border: 1px solid rgba(255, 107, 53, 0.2); border-radius: 20px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: all 0.4s;">
                             <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #FF6B35, #FFA372); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);">
-                                <i class="fas fa-clock" style="color: white; font-size: 2rem;"></i>
+                                <i class="fas fa-clock" style="color: #0A1628; font-size: 2rem;"></i>
                             </div>
                             <div>
-                                <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Tiết Kiệm 70% Thời Gian</h4>
-                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; font-size: 0.95rem;">Giảm thời gian thiết kế so với tính thủ công, tăng hiệu suất làm việc đáng kể</p>
+                                <h4 style="color: #0A1628; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Tiết Kiệm 70% Thời Gian</h4>
+                                <p style="color: #4B5563; line-height: 1.6; font-size: 0.95rem;">Giảm thời gian thiết kế so với tính thủ công, tăng hiệu suất làm việc đáng kể</p>
                             </div>
                         </div>
 
                         <div style="background: rgba(120, 168, 46, 0.1); border: 1px solid rgba(120, 168, 46, 0.2); border-radius: 20px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: all 0.4s;">
                             <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #78A82E, #94C842); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 25px rgba(120, 168, 46, 0.3);">
-                                <i class="fas fa-file-alt" style="color: white; font-size: 2rem;"></i>
+                                <i class="fas fa-file-alt" style="color: #0A1628; font-size: 2rem;"></i>
                             </div>
                             <div>
-                                <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Báo Cáo Chi Tiết</h4>
-                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; font-size: 0.95rem;">Tạo báo cáo chuyên nghiệp với biểu đồ, bảng tính và khuyến nghị cụ thể</p>
+                                <h4 style="color: #0A1628; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 700;">Báo Cáo Chi Tiết</h4>
+                                <p style="color: #4B5563; line-height: 1.6; font-size: 0.95rem;">Tạo báo cáo chuyên nghiệp với biểu đồ, bảng tính và khuyến nghị cụ thể</p>
                             </div>
                         </div>
                     </div>
@@ -5345,18 +5345,18 @@
                 <!-- CTA Section -->
                 <div class="calc-cta animate-on-scroll" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(148, 200, 66, 0.3); border-radius: 30px; padding: 4rem; text-align: center;">
                     <div style="max-width: 600px; margin: 0 auto;">
-                        <h3 style="color: white; font-size: 2.2rem; margin-bottom: 1.2rem; font-weight: 700;">
+                        <h3 style="color: #0A1628; font-size: 2.2rem; margin-bottom: 1.2rem; font-weight: 700;">
                             Cần Hỗ Trợ Tính Toán Cụ Thể?
                         </h3>
-                        <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-bottom: 2.5rem; line-height: 1.7;">
+                        <p style="color: #2D3748; font-size: 1.1rem; margin-bottom: 2.5rem; line-height: 1.7;">
                             Đội ngũ kỹ sư của 3igreen sẵn sàng hỗ trợ tư vấn và tính toán cách nhiệt cho dự án của bạn
                         </p>
                         <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                            <a href="#contact" style="display: inline-flex; align-items: center; gap: 0.8rem; background: linear-gradient(135deg, #94C842, #FFD93D); color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s; box-shadow: 0 15px 35px rgba(148, 200, 66, 0.4);">
+                            <a href="#contact" style="display: inline-flex; align-items: center; gap: 0.8rem; background: linear-gradient(135deg, #94C842, #FFD93D); color: #0A1628; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s; box-shadow: 0 15px 35px rgba(148, 200, 66, 0.4);">
                                 <i class="fas fa-phone"></i>
                                 <span>Tư vấn miễn phí</span>
                             </a>
-                            <a href="mailto:technical@3igreen.com.vn" style="display: inline-flex; align-items: center; gap: 0.8rem; background: transparent; color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.05rem; border: 2px solid rgba(255, 255, 255, 0.3); transition: all 0.3s;">
+                            <a href="mailto:technical@3igreen.com.vn" style="display: inline-flex; align-items: center; gap: 0.8rem; background: transparent; color: #0A1628; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.05rem; border: 2px solid rgba(255, 255, 255, 0.3); transition: all 0.3s;">
                                 <i class="fas fa-envelope"></i>
                                 <span>Gửi yêu cầu kỹ thuật</span>
                             </a>
