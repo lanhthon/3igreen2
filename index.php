@@ -1285,6 +1285,8 @@
             align-items: center;
             position: relative;
             z-index: 2;
+            width: 100%;
+            max-width: 100%;
         }
 
         .about-text h3 {
@@ -1309,6 +1311,8 @@
             grid-template-columns: repeat(2, 1fr);
             gap: var(--space-4);
             margin-top: var(--space-8);
+            width: 100%;
+            max-width: 100%;
         }
 
         .highlight-item {
@@ -1322,6 +1326,8 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid var(--light-gray);
             position: relative;
+            width: 100%;
+            max-width: 100%;
         }
 
         .highlight-item::before {
@@ -1373,8 +1379,15 @@
             line-height: 1.6;
         }
 
+        .about-text {
+            width: 100%;
+            max-width: 100%;
+        }
+
         .about-visual {
             position: relative;
+            width: 100%;
+            max-width: 100%;
         }
 
         .company-card {
@@ -1384,6 +1397,9 @@
             box-shadow: var(--shadow-xl);
             border: 1px solid var(--light-gray);
             border: 1px solid rgba(30, 81, 40, 0.1);
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
         }
 
         .company-logo {
@@ -1417,6 +1433,8 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
+            width: 100%;
+            max-width: 100%;
         }
 
         .stat-card {
@@ -2612,6 +2630,75 @@
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-text, .about-visual {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .highlight-item {
+                padding: var(--space-4);
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .highlight-item h5 {
+                font-size: 0.95rem;
+            }
+
+            .highlight-item p {
+                font-size: 0.85rem;
+            }
+
+            .company-stats {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 0 1rem;
+            }
+
+            .stat-card {
+                width: 100%;
+                max-width: 100%;
+                padding: 1.5rem 1rem;
+            }
+
+            .stat-card .number {
+                font-size: 2rem;
+                word-break: keep-all;
+                white-space: nowrap;
+            }
+
+            .stat-card .label {
+                font-size: 0.9rem;
+            }
+
+            .company-card {
+                padding: var(--space-6);
+                width: 100%;
+                max-width: 100%;
+                overflow: hidden;
+            }
+
+            .company-info {
+                width: 100%;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+            }
+
+            .company-info p {
+                font-size: 0.95rem;
+                line-height: 1.6;
             }
 
             .projects-grid,
@@ -4954,12 +5041,24 @@
 
         // Counter Animation for Stats
         function animateCounter(element, target, duration = 2000) {
+            // Prevent re-animation
+            if (element.dataset.animated === 'true') {
+                return;
+            }
+            element.dataset.animated = 'true';
+
             let start = 0;
             const isPercentage = target.toString().includes('%');
             const isPlus = target.toString().includes('+');
             const targetNumber = parseInt(target.toString().replace(/[^\d]/g, ''));
+
+            if (isNaN(targetNumber) || targetNumber === 0) {
+                return;
+            }
+
             const increment = targetNumber / (duration / 16);
-            
+            let animationFrameId;
+
             function updateCounter() {
                 start += increment;
                 if (start < targetNumber) {
@@ -4967,9 +5066,12 @@
                     if (isPercentage) displayValue += '%';
                     if (isPlus) displayValue += '+';
                     element.textContent = displayValue;
-                    requestAnimationFrame(updateCounter);
+                    animationFrameId = requestAnimationFrame(updateCounter);
                 } else {
                     element.textContent = target;
+                    if (animationFrameId) {
+                        cancelAnimationFrame(animationFrameId);
+                    }
                 }
             }
             updateCounter();
@@ -4978,15 +5080,23 @@
         // Stats Animation Observer
         const statsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                if (entry.isIntersecting && !entry.target.dataset.observed) {
+                    entry.target.dataset.observed = 'true';
                     const numbers = entry.target.querySelectorAll('.stat-number, .number');
                     numbers.forEach(number => {
-                        const target = number.textContent;
-                        animateCounter(number, target);
+                        if (!number.dataset.animated) {
+                            const target = number.textContent.trim();
+                            if (target) {
+                                animateCounter(number, target);
+                            }
+                        }
                     });
                     statsObserver.unobserve(entry.target);
                 }
             });
+        }, {
+            threshold: 0.3,
+            rootMargin: '0px'
         });
 
         document.querySelectorAll('.stats-section, .company-stats').forEach(section => {
