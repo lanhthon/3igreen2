@@ -362,6 +362,7 @@
 
         html {
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
         body {
@@ -2466,16 +2467,21 @@
                 top: 80px;
                 left: -100%;
                 width: 100%;
+                max-width: 100vw;
                 height: calc(100vh - 80px);
                 background: rgba(255, 255, 255, 0.98);
                 backdrop-filter: blur(30px);
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                padding-top: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
                 transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                 box-shadow: var(--shadow-lg);
-                gap: 2rem;
+                gap: 1.5rem;
+                overflow-y: auto;
+                overflow-x: hidden;
+                -webkit-overflow-scrolling: touch;
             }
 
             .nav-menu.active {
@@ -2483,10 +2489,17 @@
             }
 
             .nav-menu a {
-                font-size: 1.2rem;
-                padding: 1rem;
-                width: 100%;
+                font-size: 1.1rem;
+                padding: 0.875rem 1rem;
+                width: 90%;
+                max-width: 100%;
                 text-align: center;
+            }
+
+            .nav-menu li {
+                width: 100%;
+                display: flex;
+                justify-content: center;
             }
 
             .nav-cta {
@@ -2495,6 +2508,10 @@
 
             .mobile-menu {
                 display: block;
+            }
+
+            nav {
+                padding: 0 var(--space-4);
             }
 
             .logo-text {
