@@ -528,6 +528,7 @@
             position: fixed;
             top: 0;
             width: 100%;
+            max-width: 100vw;
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--light-gray);
@@ -546,6 +547,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 var(--space-6);
