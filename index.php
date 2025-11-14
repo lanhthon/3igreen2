@@ -246,9 +246,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>Gối Đỡ PU Foam Cách Nhiệt, Chịu Lực Cao - 3igreen | Tiết Kiệm 70% Thời Gian Thi Công</title>
-    <meta name="description" content="3igreen chuyên sản xuất gói đỡ PU Foam chất lượng cao với hệ số dẫn nhiệt thấp, khả năng chịu lực tốt. Giải pháp tối ưu cho hệ thống lạnh, chiller, điều hòa không khí. Tiết kiệm 70% thời gian thi công.">
-    <meta name="keywords" content="gói đỡ pu foam, gói đỡ ống chiller, gói đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pu foam đế vuông, pu foam đế tròn, kingspipe">
+    <title>gối Đỡ PU Foam Cách Nhiệt, Chịu Lực Cao - 3igreen | Tiết Kiệm 70% Thời Gian Thi Công</title>
+    <meta name="description" content="3igreen chuyên sản xuất gối đỡ PU Foam chất lượng cao với hệ số dẫn nhiệt thấp, khả năng chịu lực tốt. Giải pháp tối ưu cho hệ thống lạnh, chiller, điều hòa không khí. Tiết kiệm 70% thời gian thi công.">
+    <meta name="keywords" content="gối đỡ pu foam, gối đỡ ống chiller, gối đỡ cách nhiệt, vật liệu xanh 3i, 3igreen, pu foam, pu foam đế vuông, pu foam đế tròn, kingspipe">
 
     <!-- Additional SEO -->
     <meta name="author" content="3igreen">
@@ -257,14 +257,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://3igreen.com.vn/">
-    <meta property="og:title" content="Gối Đỡ PU Foam Cách Nhiệt - 3igreen">
+    <meta property="og:title" content="gối Đỡ PU Foam Cách Nhiệt - 3igreen">
     <meta property="og:description" content="Giải pháp gối đỡ PU Foam chuyên nghiệp cho hệ thống HVAC. Tiết kiệm 70% thời gian thi công.">
     <meta property="og:image" content="https://3igreen.com.vn/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://3igreen.com.vn/">
-    <meta property="twitter:title" content="Gối Đỡ PU Foam Cách Nhiệt - 3igreen">
+    <meta property="twitter:title" content="gối Đỡ PU Foam Cách Nhiệt - 3igreen">
     <meta property="twitter:description" content="Giải pháp gối đỡ PU Foam chuyên nghiệp cho hệ thống HVAC.">
     <meta property="twitter:image" content="https://3igreen.com.vn/og-image.jpg">
 
@@ -298,16 +298,6 @@
     <!-- Browser Polyfills (load early for IE11 and old browsers) -->
     <script src="/browser-polyfills.js"></script>
 
-    <!-- Import Map for Three.js -->
-    <script type="importmap">
-    {
-        "imports": {
-            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-        }
-    }
-    </script>
-
     <style>
         :root {
             /* Modern Premium Industrial Color Palette */
@@ -325,7 +315,7 @@
 
             --text-primary: #0A1628;            /* Primary Text - Dark Navy */
             --text-secondary: #2D3748;          /* Secondary Text - Gray (tối hơn để dễ đọc) */
-            --text-muted: #4A5568;              /* Muted Text (tối hơn để dễ đọc hơn) */
+            --text-muted: #718096;              /* Muted Text (tối hơn để dễ đọc) */
 
             --accent-gold: #FFD93D;             /* Premium Gold Accent */
             --accent-orange: #FF6B35;           /* Energy Orange */
@@ -638,6 +628,89 @@
 
         .nav-menu a:hover::before {
             width: 100%;
+        }
+
+        /* Dropdown Menu Styles */
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .dropdown-toggle i {
+            font-size: 0.75rem;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-dropdown:hover .dropdown-toggle i {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 1rem);
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: 0 10px 40px rgba(10, 22, 40, 0.15);
+            padding: 0.75rem 0;
+            min-width: 280px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            border: 1px solid rgba(148, 200, 66, 0.1);
+        }
+
+        .nav-dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            top: calc(100% + 0.5rem);
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu a::before {
+            display: none;
+        }
+
+        .dropdown-menu a i {
+            color: var(--primary-green);
+            font-size: 1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .dropdown-menu a:hover {
+            background: rgba(148, 200, 66, 0.08);
+            color: var(--navy-dark);
+            padding-left: 1.75rem;
+        }
+
+        .dropdown-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(148, 200, 66, 0.2), transparent);
+            margin: 0.5rem 0;
         }
 
         /* Premium CTA Button */
@@ -1585,7 +1658,7 @@
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 3rem;
             margin-top: 4rem;
             position: relative;
@@ -1601,9 +1674,6 @@
             border: 1px solid var(--light-gray);
             position: relative;
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
         }
 
         .feature-card::after {
@@ -1711,7 +1781,7 @@
 
         .specs-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: var(--space-8);
             margin-top: var(--space-16);
         }
@@ -1723,9 +1793,6 @@
             border-radius: var(--radius-lg);
             padding: var(--space-8);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
         }
 
         .spec-card:hover {
@@ -1809,7 +1876,7 @@
 
         .app-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: var(--space-8);
             margin-top: var(--space-16);
             position: relative;
@@ -1826,9 +1893,6 @@
             position: relative;
             overflow: hidden;
             border: 1px solid var(--light-gray);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
         }
 
         .app-item::after {
@@ -1931,7 +1995,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             gap: var(--space-8);
             margin-top: var(--space-16);
             position: relative;
@@ -1946,9 +2010,6 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid var(--light-gray);
             position: relative;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
         }
 
         .project-card:hover {
@@ -2287,7 +2348,7 @@
 
         .form-group input::placeholder,
         .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.6);
         }
 
         .form-group input:focus,
@@ -2413,7 +2474,7 @@
         }
 
         .footer-links a {
-            color: rgba(255, 255, 255, 0.85);
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: inline-block;
@@ -2453,13 +2514,13 @@
         .fab {
             width: 60px;
             height: 60px;
-            background: #94C842;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: var(--white);
             border: none;
             border-radius: 50%;
             font-size: 1.5rem;
             cursor: pointer;
-            box-shadow: 0 8px 24px rgba(148, 200, 66, 0.3);
+            box-shadow: var(--shadow);
             transition: var(--transition);
             display: flex;
             align-items: center;
@@ -2468,9 +2529,9 @@
         }
 
         .fab:hover {
-            background: #7FB831;
+            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
             transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 12px 32px rgba(148, 200, 66, 0.5);
+            box-shadow: var(--shadow-hover);
         }
 
         .fab.phone {
@@ -2656,6 +2717,47 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
+            }
+
+            /* Mobile Dropdown Styles */
+            .nav-dropdown {
+                width: 100%;
+            }
+
+            .dropdown-toggle {
+                justify-content: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+                transform: none;
+                opacity: 1;
+                visibility: visible;
+                box-shadow: none;
+                border: none;
+                background: rgba(148, 200, 66, 0.05);
+                margin-top: 0.5rem;
+                border-radius: var(--radius-md);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+                padding: 0;
+            }
+
+            .nav-dropdown.active .dropdown-menu {
+                max-height: 500px;
+                padding: 0.75rem 0;
+            }
+
+            .dropdown-menu a {
+                font-size: 1rem;
+                padding: 0.75rem 1rem;
+                justify-content: center;
+            }
+
+            .dropdown-menu a:hover {
+                padding-left: 1rem;
             }
 
             .nav-cta {
@@ -3291,7 +3393,23 @@
                 <li><a href="#about">Giới thiệu</a></li>
                 <li><a href="#team">Lãnh đạo</a></li>
                 <li><a href="#features">Tính năng</a></li>
-                <li><a href="#products">Sản phẩm</a></li>
+                <li class="nav-dropdown">
+                    <a href="#products" class="dropdown-toggle">
+                        Sản phẩm <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#products">Tất cả sản phẩm</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a href="#product-ciwa"><i class="fas fa-snowflake"></i> KINGSPIPE CIWA - Nước lạnh chiller</a></li>
+                        <li><a href="#product-howa"><i class="fas fa-fire"></i> KINGSPIPE HOWA - Nước nóng</a></li>
+                        <li><a href="#product-steam"><i class="fas fa-burn"></i> KINGSPIPE STEAM - Hơi steam</a></li>
+                        <li><a href="#product-sound-lag"><i class="fas fa-volume-mute"></i> KINGSPIPE SOUND LAG - Cách âm</a></li>
+                        <li><a href="#product-pir"><i class="fas fa-layer-group"></i> Tấm PIR - Tường trần</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a href="#product-goi-do-tron"><i class="fas fa-circle"></i> Gối đỡ PU Foam - Đế tròn</a></li>
+                        <li><a href="#product-goi-do-vuong"><i class="fas fa-square"></i> Gối đỡ PU Foam - Đế vuông</a></li>
+                    </ul>
+                </li>
                 <li><a href="#projects">Dự án</a></li>
                 <li><a href="#news">Tin tức</a></li>
                 <li><a href="#support">Công cụ hỗ trợ</a></li>
@@ -3313,10 +3431,10 @@
         <section class="hero" id="home">
             <!-- Hero Background Slider -->
             <div class="hero-slider">
-                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=1920&q=80');"></div>
-                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80');"></div>
-                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?auto=format&fit=crop&w=1920&q=80');"></div>
-                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1920&q=80');"></div>
+                <div class="hero-slide active" style="background-image: url('6.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('13.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('sanpham.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('sanpham2.jpg');"></div>
             </div>
 
             <!-- Hero Overlay for Better Text Readability -->
@@ -3324,7 +3442,7 @@
 
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Gói Đỡ <span class="highlight">PU Foam</span> Cách Nhiệt Chuyên Nghiệp</h1>
+                    <h1>gối Đỡ <span class="highlight">PU Foam</span> Cách Nhiệt Chuyên Nghiệp</h1>
                     <p class="subtitle">Giải pháp tối ưu cho hệ thống lạnh, chiller và điều hòa không khí với công nghệ tiên tiến nhất, đảm bảo hiệu suất vượt trội và tiết kiệm năng lượng tối đa. <strong>Tiết kiệm 70% thời gian thi công</strong> như công nghệ KingsPipe.</p>
                     
                     <div class="hero-features">
@@ -3429,7 +3547,7 @@
                         <h3>Tiên Phong Trong Công Nghệ Vật Liệu Xanh PU Foam</h3>
                         <p>Với hơn 10 năm kinh nghiệm trong lĩnh vực sản xuất và ứng dụng vật liệu xanh, <strong>CÔNG TY TNHH SẢN XUẤT VÀ ỨNG DỤNG VẬT LIỆU XANH 3I</strong> đã khẳng định được vị thế hàng đầu trong ngành.</p>
                         
-                        <p>Chúng tôi chuyên sản xuất các sản phẩm gói đỡ PU Foam chất lượng cao, ứng dụng công nghệ PU (Polyisocyanurate) và PUR (Polyurethane) tiên tiến, được ứng dụng rộng rãi trong các hệ thống công nghiệp hiện đại. <strong>Tiết kiệm 70% thời gian thi công</strong> nhờ thiết kế sáng tạo và quy trình tối ưu.</p>
+                        <p>Chúng tôi chuyên sản xuất các sản phẩm gối đỡ PU Foam chất lượng cao, ứng dụng công nghệ PU (Polyisocyanurate) và PUR (Polyurethane) tiên tiến, được ứng dụng rộng rãi trong các hệ thống công nghiệp hiện đại. <strong>Tiết kiệm 70% thời gian thi công</strong> nhờ thiết kế sáng tạo và quy trình tối ưu.</p>
 
                         <div class="about-highlights">
                             <div class="highlight-item">
@@ -3506,43 +3624,97 @@
                 </div>
             </div>
             <div class="partners-slider">
-                <!-- Duplicate logos for seamless loop -->
+                <!-- Partner logos - First set -->
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+1" alt="Partner 1">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=HỢP+LỰC+MEP" alt="HỢP LỰC MEP" title="Chiến lược - CÔNG TY CỔ PHẦN CƠ ĐIỆN HỢP LỰC">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+2" alt="Partner 2">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=ĐOÀN+NHẤT" alt="ĐOÀN NHẤT" title="Chiến lược - CÔNG TY CỔ PHẦN CƠ ĐIỆN ĐOÀN NHẤT">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+3" alt="Partner 3">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BCA+THĂNG+LONG" alt="BCA THĂNG LONG" title="CHI NHÁNH CÔNG TY TNHH MỘT THÀNH VIÊN BCA - THĂNG LONG">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+4" alt="Partner 4">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=CENTEC" alt="CENTEC" title="Thân Thiết - CÔNG TY CỔ PHẦN CENTEC">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+5" alt="Partner 5">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=QME" alt="QME" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN CHẤT LƯỢNG">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+6" alt="Partner 6">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=SMARTME" alt="SMARTME" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN SMARTME">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=LAM+SƠN" alt="LAM SƠN" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN VÀ NĂNG LƯỢNG LAM SƠN">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=AIR+POWER" alt="AIR POWER" title="CÔNG TY CỔ PHẦN AIR POWER">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BENZEN" alt="BENZEN" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN BENZEN VIỆT NAM">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BMEC" alt="BMEC" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN BMEC">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BKRE" alt="BKRE" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH BKRE BÁCH KHOA">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=PME" alt="PME" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN THÁI BÌNH DƯƠNG">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=HADOMEE" alt="HADOMEE" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN XÂY DỰNG - THIẾT BỊ CÔNG NGHIỆP HÀ ĐÔ">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=ANH+KHANG" alt="ANH KHANG" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN PHÒNG SẠCH ANH KHANG">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=PHAN+BÁCH" alt="PHAN BÁCH" title="CÔNG TY CỔ PHẦN CÔNG NGHỆ CƠ ĐIỆN LẠNH PHAN BÁCH">
                 </div>
                 <!-- Duplicate for seamless loop -->
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+1" alt="Partner 1">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=HỢP+LỰC+MEP" alt="HỢP LỰC MEP" title="Chiến lược - CÔNG TY CỔ PHẦN CƠ ĐIỆN HỢP LỰC">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+2" alt="Partner 2">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=ĐOÀN+NHẤT" alt="ĐOÀN NHẤT" title="Chiến lược - CÔNG TY CỔ PHẦN CƠ ĐIỆN ĐOÀN NHẤT">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+3" alt="Partner 3">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BCA+THĂNG+LONG" alt="BCA THĂNG LONG" title="CHI NHÁNH CÔNG TY TNHH MỘT THÀNH VIÊN BCA - THĂNG LONG">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+4" alt="Partner 4">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=CENTEC" alt="CENTEC" title="Thân Thiết - CÔNG TY CỔ PHẦN CENTEC">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+5" alt="Partner 5">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=QME" alt="QME" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN CHẤT LƯỢNG">
                 </div>
                 <div class="partner-logo">
-                    <img src="https://via.placeholder.com/180x80/f8f9fa/94C842?text=Partner+6" alt="Partner 6">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=SMARTME" alt="SMARTME" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN SMARTME">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=LAM+SƠN" alt="LAM SƠN" title="Thân Thiết - CÔNG TY CỔ PHẦN CƠ ĐIỆN VÀ NĂNG LƯỢNG LAM SƠN">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=AIR+POWER" alt="AIR POWER" title="CÔNG TY CỔ PHẦN AIR POWER">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BENZEN" alt="BENZEN" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN BENZEN VIỆT NAM">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BMEC" alt="BMEC" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN BMEC">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=BKRE" alt="BKRE" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH BKRE BÁCH KHOA">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=PME" alt="PME" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN THÁI BÌNH DƯƠNG">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=HADOMEE" alt="HADOMEE" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN XÂY DỰNG - THIẾT BỊ CÔNG NGHIỆP HÀ ĐÔ">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=ANH+KHANG" alt="ANH KHANG" title="CÔNG TY CỔ PHẦN CƠ ĐIỆN PHÒNG SẠCH ANH KHANG">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/180x80/ffffff/94C842?text=PHAN+BÁCH" alt="PHAN BÁCH" title="CÔNG TY CỔ PHẦN CÔNG NGHỆ CƠ ĐIỆN LẠNH PHAN BÁCH">
                 </div>
             </div>
         </section>
@@ -3679,8 +3851,8 @@
                         <i class="fas fa-star"></i>
                         Tính năng vượt trội
                     </div>
-                    <h2 class="section-title">Đặc Tính Nổi Bật Của Gối Đỡ PU Foam</h2>
-                    <p class="section-subtitle">Sản phẩm gói đỡ PU Foam 3igreen được thiết kế và sản xuất với những tính năng vượt trội, áp dụng công nghệ PU Foam hiện đại nhất, đáp ứng mọi yêu cầu khắt khe của các hệ thống công nghiệp hiện đại.</p>
+                    <h2 class="section-title">Đặc Tính Nổi Bật Của gối Đỡ PU Foam PU Foam</h2>
+                    <p class="section-subtitle">Sản phẩm gối đỡ PU Foam 3igreen được thiết kế và sản xuất với những tính năng vượt trội, áp dụng công nghệ PU Foam hiện đại nhất, đáp ứng mọi yêu cầu khắt khe của các hệ thống công nghiệp hiện đại.</p>
                 </div>
                 
                 <div class="features-grid">
@@ -3689,7 +3861,7 @@
                             <i class="fas fa-thermometer-half"></i>
                         </div>
                         <h3>Cách Nhiệt Siêu Việt PU</h3>
-                        <p>Với hệ số dẫn nhiệt cực thấp λ ≤ 0.022 W/m.K của công nghệ PU (Polyisocyanurate), gói đỡ PU Foam ngăn chặn hiệu quả sự trao đổi nhiệt, giúp duy trì nhiệt độ ổn định cho hệ thống.</p>
+                        <p>Với hệ số dẫn nhiệt cực thấp λ ≤ 0.022 W/m.K của công nghệ PU (Polyisocyanurate), gối đỡ PU Foam ngăn chặn hiệu quả sự trao đổi nhiệt, giúp duy trì nhiệt độ ổn định cho hệ thống.</p>
                         <ul class="feature-benefits">
                             <li><i class="fas fa-check-circle"></i> Giảm thất thoát nhiệt lên đến 95%</li>
                             <li><i class="fas fa-check-circle"></i> Chống đọng sương hoàn toàn</li>
@@ -3779,140 +3951,316 @@
                         <i class="fas fa-box-open"></i>
                         Sản phẩm
                     </div>
-                    <h2 class="section-title">Dòng Sản Phẩm Gối Đỡ PU Foam</h2>
-                    <p class="section-subtitle">Đa dạng các loại gối đỡ phù hợp với mọi nhu cầu công trình, từ dân dụng đến công nghiệp quy mô lớn</p>
+                    <h2 class="section-title">Dòng Sản Phẩm KINGSPIPE - Cách Nhiệt Chuyên Nghiệp</h2>
+                    <p class="section-subtitle">Giải pháp cách nhiệt tiên tiến với công nghệ PUR/PIR 4Ta2Gp, đáp ứng mọi nhu cầu từ nước lạnh chiller đến hơi steam nhiệt độ cao</p>
                 </div>
 
-                <!-- 3D Visualization Section -->
-                <div class="canvas-container" style="width: 100%; height: 600px; margin: 3rem 0; position: relative; background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(10, 22, 40, 0.15);">
-                    <canvas id="c" style="width: 100%; height: 100%; display: block;"></canvas>
-                    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,0.95); padding: 1rem 2rem; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); backdrop-filter: blur(10px); text-align: center;">
-                        <p style="margin: 0; color: #2D3748; font-size: 0.9rem;"><i class="fas fa-mouse"></i> Kéo để xoay - <i class="fas fa-mouse-pointer"></i> Cuộn để zoom - <i class="fas fa-expand"></i> Xem chi tiết 3D</p>
+                <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; margin-top: 4rem;">
+                    <!-- Product 1: KINGSPIPE CIWA -->
+                    <div id="product-ciwa" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(148, 200, 66, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(148, 200, 66, 0.1), rgba(148, 200, 66, 0.05));">
+                            <img src="1.png" alt="KINGSPIPE CIWA - Cách nhiệt ống nước lạnh chiller" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #94C842, #6B9631); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(148, 200, 66, 0.5);">
+                                <i class="fas fa-snowflake"></i> NƯỚC LẠNH
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE CIWA</h3>
+                            <p style="color: #94C842; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Nhiệt Đường Ống Nước Lạnh Chiller</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Ống đúc sẵn từ PUR/PIR với công nghệ 4Ta2Gp, có cấu trúc ô kín, hệ số dẫn nhiệt rất thấp, ngăn ngừa đọng sương và thất thoát năng lượng.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(148, 200, 66, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #94C842;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống đọng sương tuyệt đối</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Lớp Jacketing chống UV, ăn mòn</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Tiết kiệm 70% thời gian thi công</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #94C842, #6B9631); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(148, 200, 66, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>NHẬN BÁO GIÁ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: KINGSPIPE HOWA -->
+                    <div id="product-howa" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(255, 107, 53, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.05));">
+                            <img src="2.png" alt="KINGSPIPE HOWA - Cách nhiệt ống nước nóng" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF6B35, #D9534F); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(255, 107, 53, 0.5);">
+                                <i class="fas fa-fire"></i> NƯỚC NÓNG
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE HOWA</h3>
+                            <p style="color: #FF6B35; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Nhiệt Đường Ống Nước Nóng Trung Tâm</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Ống đúc sẵn từ PUR/PIR công nghệ 4Ta2Gp, ngăn ngừa thất thoát nhiệt. Thiết kế lắp ghép 2 nửa rất dễ dàng, rút ngắn thời gian thi công.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(255, 107, 53, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #FF6B35;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống thất thoát nhiệt hiệu quả</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Lắp ghép 2 nửa siêu nhanh</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF6B35; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống cháy lan, tự dập tắt</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #FF6B35, #D9534F); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(255, 107, 53, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>NHẬN BÁO GIÁ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: KINGSPIPE STEAM -->
+                    <div id="product-steam" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(255, 152, 0, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 152, 0, 0.05));">
+                            <img src="3.png" alt="KINGSPIPE STEAM - Cách nhiệt ống hơi steam" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FF9800, #F57C00); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(255, 152, 0, 0.5);">
+                                <i class="fas fa-burn"></i> STEAM
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE STEAM</h3>
+                            <p style="color: #FF9800; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Nhiệt Ống Dầu Nóng, Hơi Steam</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Ống đúc sẵn 2 lớp bảo ôn Rockwool + PUR/PIR công nghệ 4Ta2Gp, chịu nhiệt độ cao, ngăn ngừa thất thoát nhiệt trên ống dầu nóng, hơi steam.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(255, 152, 0, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #FF9800;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>2 lớp bảo ôn Rockwool + PUR/PIR</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chịu nhiệt độ cực cao</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FF9800; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống cháy, tự dập tắt lửa</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #FF9800, #F57C00); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(255, 152, 0, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>NHẬN BÁO GIÁ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: KINGSPIPE SOUND LAG -->
+                    <div id="product-sound-lag" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(156, 39, 176, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(156, 39, 176, 0.05));">
+                            <img src="4.png" alt="KINGSPIPE SOUND LAG - Cách âm ống" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(156, 39, 176, 0.5);">
+                                <i class="fas fa-volume-mute"></i> CÁCH ÂM
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">KINGSPIPE SOUND LAG</h3>
+                            <p style="color: #9C27B0; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Âm Chống Rung Đường Ống</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Ống đúc sẵn 2 lớp cách âm chuyên nghiệp Rockwool + PUR/PIR, khả năng giảm âm vượt trội, chống rung động hiệu quả cao.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(156, 39, 176, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #9C27B0;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Giảm âm thanh vượt trội</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống rung động hiệu quả</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #9C27B0; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Bảo vệ môi trường làm việc</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(156, 39, 176, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>NHẬN BÁO GIÁ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: Tấm PIR -->
+                    <div id="product-pir" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(33, 150, 243, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(33, 150, 243, 0.05));">
+                            <img src="4.png" alt="Tấm PIR - Cách nhiệt tường trần" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #2196F3, #1976D2); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(33, 150, 243, 0.5);">
+                                <i class="fas fa-layer-group"></i> TƯỜNG TRẦN
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">TẤM PIR CÁCH NHIỆT</h3>
+                            <p style="color: #2196F3; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Cách Nhiệt, Cách Âm Tường & Trần</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Tấm cách nhiệt PIR cao cấp cho tường và trần, hệ số dẫn nhiệt cực thấp, chống cháy tuyệt đối, nhẹ, dễ thi công.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(33, 150, 243, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #2196F3;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Hệ số dẫn nhiệt cực thấp</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chống cháy cao cấp</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #2196F3; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Nhẹ, dễ thi công</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #2196F3, #1976D2); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(33, 150, 243, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>NHẬN BÁO GIÁ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 6: Gối đỡ đế tròn -->
+                    <div id="product-goi-do-tron" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(251, 146, 60, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(251, 146, 60, 0.1), rgba(251, 146, 60, 0.05));">
+                            <img src="sanpham.jpg" alt="Gối đỡ PU FOAM đế tròn" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #FB923C, #F97316); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(251, 146, 60, 0.5);">
+                                <i class="fas fa-circle"></i> ĐẾ TRÒN
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">GỐI ĐỠ PU FOAM ĐẾ TRÒN</h3>
+                            <p style="color: #FB923C; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Gối Đỡ Ống Chiller, PCCC - DN15-DN800</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Gối đỡ PU Foam đế tròn có hệ số dẫn nhiệt rất thấp, khả năng chịu lực tốt. Giải pháp tuyệt vời thay gối gỗ, gối cao su cho hệ thống lạnh, điều hòa, chiller.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(251, 146, 60, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #FB923C;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FB923C; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Tỉ trọng 180-200kg/m³ (lên tới 300kg/m³)</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FB923C; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Khả năng chịu lực tốt, tuổi thọ cao</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #FB923C; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Có ron/không ron, foam thường/chống cháy</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #FB923C, #F97316); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(251, 146, 60, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>NHẬN BÁO GIÁ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 7: Gối đỡ đế vuông -->
+                    <div id="product-goi-do-vuong" class="product-card animate-on-scroll" style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); scroll-margin-top: 100px; border: 1px solid rgba(16, 185, 129, 0.2);">
+                        <!-- Product Image -->
+                        <div style="position: relative; height: 280px; overflow: hidden; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));">
+                            <img src="sanpham.jpg" alt="Gối đỡ PU FOAM đế vuông" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: linear-gradient(135deg, #10B981, #059669); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.5);">
+                                <i class="fas fa-square"></i> ĐẾ VUÔNG
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.65rem; font-weight: 900; color: #0A1628; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; letter-spacing: -0.02em;">GỐI ĐỠ PU FOAM ĐẾ VUÔNG</h3>
+                            <p style="color: #10B981; font-weight: 700; margin-bottom: 1.25rem; font-size: 1.05rem;">Gối Đỡ Ống Chiller, PCCC - DN15-DN800</p>
+
+                            <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.95rem;">Gối đỡ PU Foam đế vuông chuyên dụng cho phòng lạnh, cấp đông. Dùng tại các vị trí chịu lực của đường ống, thay thế gối gỗ, gối cao su truyền thống.</p>
+
+                            <!-- Features -->
+                            <div style="background: rgba(16, 185, 129, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #10B981;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem;">
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #10B981; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Đi kèm phụ kiện cùm Ula chuyên dụng</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #10B981; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Chịu lực tốt, cách nhiệt hiệu quả</span>
+                                    </li>
+                                    <li style="display: flex; align-items: center; gap: 0.75rem; color: #374151; font-weight: 500; font-size: 0.9rem;">
+                                        <i class="fas fa-check-circle" style="color: #10B981; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                        <span>Phù hợp ống đồng, ống chiller, PCCC</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="#contact" class="product-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; background: linear-gradient(135deg, #10B981, #059669); color: white; text-align: center; padding: 1.1rem; border-radius: 12px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3); font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                                <i class="fas fa-download"></i>
+                                <span>NHẬN BÁO GIÁ</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
-                    <!-- Product 1: Gối đỡ vuông 2 mảnh -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 1px solid #E9ECEF;">
-                        <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: var(--primary-green); color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">
-                            <i class="fas fa-star"></i> Phổ biến
-                        </div>
-
-                        <div class="product-icon" style="width: 100px; height: 100px; margin: 0 auto 1.5rem; background: rgba(148, 200, 66, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #94C842;">
-                            <i class="fas fa-cube"></i>
-                        </div>
-
-                        <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 1rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Gối Đỡ Vuông 2 Mảnh</h3>
-
-                        <p style="color: #374151; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Thiết kế module 2 mảnh thông minh, lắp đặt siêu nhanh chóng. Phù hợp cho các dự án quy mô lớn cần tiết kiệm thời gian thi công.</p>
-
-                        <div class="product-specs" style="background: rgba(148, 200, 66, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(148, 200, 66, 0.1);">
-                            <h4 style="font-size: 1rem; color: #0A1628; margin-bottom: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;">
-                                <i class="fas fa-info-circle" style="color: #94C842;"></i> Thông số kỹ thuật
-                            </h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
-                                    <span style="color: #374151;">Đường kính ống:</span>
-                                    <strong style="color: #94C842;">Ø21 - Ø219mm</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
-                                    <span style="color: #374151;">Độ dày:</span>
-                                    <strong style="color: #94C842;">25 - 100mm</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed #d1fae5;">
-                                    <span style="color: #374151;">Mật độ PU:</span>
-                                    <strong style="color: #94C842;">40 kg/m³</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
-                                    <span style="color: #374151;">Hệ số dẫn nhiệt:</span>
-                                    <strong style="color: #94C842;">λ ≤ 0.022 W/m.K</strong>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="product-features" style="margin-bottom: 1.5rem;">
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #374151;">Lắp đặt nhanh, tiết kiệm 70% thời gian</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #374151;">Chống thấm tuyệt đối < 1%</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #374151;">Chịu lực cao, không biến dạng</span>
-                            </div>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: var(--primary-green); color: white; text-align: center; padding: 1rem; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(148, 200, 66, 0.3); font-family: 'Poppins', sans-serif;">
-                            <i class="fas fa-envelope"></i> Nhận Báo Giá Ngay
-                        </a>
-                    </div>
-
-                    <!-- Product 2: Gối đỡ tròn có cùm -->
-                    <div class="product-card animate-on-scroll" style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 2px solid #94C842;">
-                        <div class="product-badge" style="position: absolute; top: 16px; right: 16px; background: var(--navy-dark); color: var(--primary-green); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">
-                            <i class="fas fa-crown"></i> Premium
-                        </div>
-
-                        <div class="product-icon" style="width: 100px; height: 100px; margin: 0 auto 1.5rem; background: var(--navy-dark); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #94C842;">
-                            <i class="fas fa-circle"></i>
-                        </div>
-
-                        <h3 style="font-size: 1.5rem; font-weight: 800; color: #0A1628; margin-bottom: 1rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">Gối Đỡ Tròn Cùm Kim Loại</h3>
-
-                        <p style="color: #374151; text-align: center; margin-bottom: 1.5rem; line-height: 1.7;">Tích hợp cùm kim loại inox 304, siết chặt tối ưu. Phù hợp ống chịu áp lực cao, hệ thống chiller công nghiệp.</p>
-
-                        <div class="product-specs" style="background: rgba(10, 22, 40, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(10, 22, 40, 0.1);">
-                            <h4 style="font-size: 1rem; color: #0A1628; margin-bottom: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;">
-                                <i class="fas fa-info-circle" style="color: #94C842;"></i> Thông số kỹ thuật
-                            </h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(10, 22, 40, 0.1);">
-                                    <span style="color: #374151;">Đường kính ống:</span>
-                                    <strong style="color: #0A1628;">Ø27 - Ø273mm</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(10, 22, 40, 0.1);">
-                                    <span style="color: #374151;">Độ dày:</span>
-                                    <strong style="color: #0A1628;">30 - 100mm</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px dashed rgba(10, 22, 40, 0.1);">
-                                    <span style="color: #374151;">Mật độ PU:</span>
-                                    <strong style="color: #0A1628;">40 kg/m³</strong>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
-                                    <span style="color: #374151;">Cùm kim loại:</span>
-                                    <strong style="color: #0A1628;">Inox 304</strong>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="product-features" style="margin-bottom: 1.5rem;">
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #374151;">Ôm sát ống, cách nhiệt tối ưu</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #374151;">Cùm inox 304 bền bỉ chống gỉ</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.8rem;">
-                                <i class="fas fa-check-circle" style="color: #94C842; font-size: 1.1rem;"></i>
-                                <span style="color: #374151;">Chịu áp lực cao, rung động mạnh</span>
-                            </div>
-                        </div>
-
-                        <a href="#contact" class="product-btn" style="display: block; width: 100%; background: var(--navy-dark); color: var(--primary-green); text-align: center; padding: 1rem; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 16px rgba(10, 22, 40, 0.3); font-family: 'Poppins', sans-serif; border: 1px solid rgba(148, 200, 66, 0.3);">
-                            <i class="fas fa-envelope"></i> Nhận Báo Giá Ngay
-                        </a>
-                    </div>
-
-                </div>
-
-                <!-- Product comparison table -->
-                <div class="product-comparison" style="margin-top: 4rem; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); border: 1px solid #E9ECEF;">
-                    <h3 style="font-size: 1.75rem; font-weight: 800; color: #0A1628; margin-bottom: 2rem; text-align: center; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em;">
+                <!-- Comparison Table Section -->
+                <div style="margin-top: 5rem; background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(10, 22, 40, 0.1);">
+                    <h3 style="text-align: center; font-size: 2rem; color: #0A1628; margin-bottom: 3rem; font-weight: 800; font-family: 'Poppins', sans-serif;">
                         <i class="fas fa-balance-scale" style="color: #94C842;"></i> So Sánh Các Dòng Sản Phẩm
                     </h3>
 
@@ -4065,7 +4413,7 @@
                         Ứng dụng thực tế
                     </div>
                     <h2 class="section-title">Ứng Dụng Rộng Rãi Trong Công Nghiệp</h2>
-                    <p class="section-subtitle">Gói đỡ PU Foam 3igreen được tin dùng trong nhiều lĩnh vực quan trọng, từ hệ thống lạnh công nghiệp đến các dự án dân dụng quy mô lớn, đặc biệt hiệu quả trong các ứng dụng yêu cầu cách nhiệt cao.</p>
+                    <p class="section-subtitle">gối đỡ PU Foam 3igreen được tin dùng trong nhiều lĩnh vực quan trọng, từ hệ thống lạnh công nghiệp đến các dự án dân dụng quy mô lớn, đặc biệt hiệu quả trong các ứng dụng yêu cầu cách nhiệt cao.</p>
                 </div>
                 
                 <div class="app-grid">
@@ -4169,177 +4517,268 @@
                 </div>
                 
                 <div class="projects-grid">
+                    <!-- Project 1: NM MEIKO Hòa Bình -->
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <img src="da1.jpg" alt="NM MEIKO Hòa Bình" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
-                                        <span class="stat-number">1,000</span>
-                                        <span class="stat-label">Tỷ đồng</span>
+                                        <span class="stat-number">700</span>
+                                        <span class="stat-label">Triệu VND</span>
                                     </div>
                                     <div class="stat">
-                                        <span class="stat-number">16,000</span>
-                                        <span class="stat-label">m² diện tích</span>
+                                        <span class="stat-number">NSN</span>
+                                        <span class="stat-label">Nhà thầu</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-category">Nhà máy điện tử</div>
-                            <h3>Nhà Máy Điện Tử Thông Minh Phenikaa</h3>
-                            <p>Hệ thống cách nhiệt PU Foam cho nhà máy điện tử thông minh công suất 4.5 tỷ linh kiện/năm tại Khu Công nghệ cao Hòa Lạc, Hà Nội.</p>
+                            <div class="project-category">Nhà máy Nhật</div>
+                            <h3>NM MEIKO Hòa Bình</h3>
+                            <p>Dự án cung cấp gối đỡ PU & cùm Ula cho nhà máy MEIKO tại KCN Bờ trái Sông Đà - Hòa Bình - Phú Thọ. Thầu MEP: NSN - Việt Nhật - Thành Đạt Phát - CTC.</p>
                             <div class="project-features">
-                                <span class="feature-tag">Cách nhiệt thông minh</span>
-                                <span class="feature-tag">Tiêu chuẩn ISO</span>
-                                <span class="feature-tag">Tiết kiệm năng lượng</span>
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Báo giá</span>
                             </div>
                             <div class="project-details">
                                 <div class="detail-item">
                                     <i class="fas fa-calendar"></i>
-                                    <span>2020-2022</span>
+                                    <span>Thi công</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Phú Thọ</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Nhật Bản</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: NM LITE-ON Quảng Ninh -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="NM LITE-ON" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">600</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">38.26</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy Đài Loan</div>
+                            <h3>NM LITE-ON VIỆT NAM - Giai Đoạn 1</h3>
+                            <p>Nhà máy sản xuất linh kiện điện tử tại KCN Sông Khoai, Quảng Ninh. Khởi công: 05/2025 - Hoàn thành: 06/2026. Tổng thầu cơ điện: Cơ (Taikisha) - Điện (Thăng Tiến).</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Báo giá</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>05/2025 - 06/2026</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Quảng Ninh</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Đài Loan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: NM NITTO Việt Nam -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="NM NITTO" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">400</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">25</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy Nhật</div>
+                            <h3>NM NITTO Việt Nam</h3>
+                            <p>Nhà máy sản xuất công nghệ cao tại KCN Thăng Long 2 - Hưng Yên. Thời gian: 12/2024 - 12/2025. Thầu MEP: Takasago - SAO BẮC.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Chốt đơn</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>12/2024 - 12/2025</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Hưng Yên</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Nhật Bản</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: NM TENMA Hạ Long -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="NM TENMA" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">29</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">TODA</span>
+                                        <span class="stat-label">Tổng thầu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy Nhật</div>
+                            <h3>NM TENMA HẠ LONG VIỆT NAM</h3>
+                            <p>Nhà máy sản xuất linh kiện điện tử tại KCN Sông Khoai, Quảng Ninh. Khởi công: 07/2025 - Hoàn thành: 06/2026. Thầu MEP: NSN - KINDEN.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Thi công</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>07/2025 - 06/2026</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Quảng Ninh</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Nhật Bản</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: TTTL Vin Cổ Loa -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="Vin Cổ Loa" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">1,000</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">VinGroup</span>
+                                        <span class="stat-label">Chủ đầu tư</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Building</div>
+                            <h3>Dự Án TTTL Vin Cổ Loa</h3>
+                            <p>Tổ hợp TTTM, Khách sạn & BV Vinmec tại Đông Anh - Hà Nội. Thời gian: 12/2024 - 12/2025. Tổng thầu: Vincons.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Chốt đơn</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>12/2024 - 12/2025</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span>Hà Nội</span>
                                 </div>
                                 <div class="detail-item">
-                                    <i class="fas fa-industry"></i>
-                                    <span>Điện tử</span>
+                                    <i class="fas fa-building"></i>
+                                    <span>Mixed-Use</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Project 6: THÁP MELIA Nha Trang -->
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <img src="da1.jpg" alt="Melia Nha Trang" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
-                                        <span class="stat-number">2</span>
-                                        <span class="stat-label">Tỷ USD</span>
+                                        <span class="stat-number">600</span>
+                                        <span class="stat-label">Triệu VND</span>
                                     </div>
                                     <div class="stat">
-                                        <span class="stat-number">1,500</span>
-                                        <span class="stat-label">MW công suất</span>
+                                        <span class="stat-number">KDI</span>
+                                        <span class="stat-label">Chủ đầu tư</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-category">Nhà máy điện LNG</div>
-                            <h3>Nhà Máy Nhiệt Điện LNG Nghi Sơn</h3>
-                            <p>Hệ thống cách nhiệt chuyên nghiệp cho nhà máy nhiệt điện LNG công suất 1,500MW tại Khu kinh tế Nghi Sơn, Thanh Hóa.</p>
+                            <div class="project-category">Khách sạn</div>
+                            <h3>THÁP MELIA HOTELS & RESORTS</h3>
+                            <p>Khách sạn 5 sao cao cấp tại Nha Trang. Chủ đầu tư: KDI Holdings. Tổng thầu: Hyundai E&C. Thầu MEP: Vân Khánh.</p>
                             <div class="project-features">
-                                <span class="feature-tag">Chiller system</span>
-                                <span class="feature-tag">Cách nhiệt LNG</span>
-                                <span class="feature-tag">Công nghệ Hàn Quốc</span>
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Chốt đơn</span>
                             </div>
                             <div class="project-details">
                                 <div class="detail-item">
                                     <i class="fas fa-calendar"></i>
-                                    <span>2027-2030</span>
+                                    <span>Đang thi công</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>Thanh Hóa</span>
+                                    <span>Nha Trang</span>
                                 </div>
                                 <div class="detail-item">
-                                    <i class="fas fa-bolt"></i>
-                                    <span>Năng lượng</span>
+                                    <i class="fas fa-hotel"></i>
+                                    <span>5 Sao</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Project 7: NM Pegatron GD3 -->
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
-                            <div class="project-overlay">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <span class="stat-number">25</span>
-                                        <span class="stat-label">Triệu EUR</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="stat-number">16,000</span>
-                                        <span class="stat-label">m² nhà xưởng</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-category">Panel cách nhiệt</div>
-                            <h3>Nhà Máy Panel Cách Nhiệt Kingspan</h3>
-                            <p>Dự án cách nhiệt cho nhà máy sản xuất panel cách nhiệt cao cấp tiêu chuẩn LEED Platinum tại KCN Phú Mỹ II, Bà Rịa - Vũng Tàu.</p>
-                            <div class="project-features">
-                                <span class="feature-tag">LEED Platinum</span>
-                                <span class="feature-tag">Panel PU</span>
-                                <span class="feature-tag">Châu Âu</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-calendar"></i>
-                                    <span>2022-2023</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Bà Rịa - VT</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-layer-group"></i>
-                                    <span>Panel</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card animate-on-scroll">
-                        <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
-                            <div class="project-overlay">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <span class="stat-number">2.2</span>
-                                        <span class="stat-label">Tỷ USD</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="stat-number">1,200</span>
-                                        <span class="stat-label">MW</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-category">Nhiệt điện than</div>
-                            <h3>Nhiệt Điện Than Vũng Áng II</h3>
-                            <p>Hệ thống cách nhiệt tổng thể cho nhà máy nhiệt điện than công nghệ cao tại Hà Tĩnh với các tiêu chuẩn môi trường nghiêm ngặt.</p>
-                            <div class="project-features">
-                                <span class="feature-tag">Chiller công nghiệp</span>
-                                <span class="feature-tag">Cooling tower</span>
-                                <span class="feature-tag">Nhật - Hàn</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-calendar"></i>
-                                    <span>2022-2025</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Hà Tĩnh</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-fire"></i>
-                                    <span>Nhiệt điện</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card animate-on-scroll">
-                        <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <img src="da1.jpg" alt="Pegatron" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -4347,41 +4786,85 @@
                                         <span class="stat-label">Triệu VND</span>
                                     </div>
                                     <div class="stat">
-                                        <span class="stat-number">8,000</span>
-                                        <span class="stat-label">m² diện tích</span>
+                                        <span class="stat-number">30</span>
+                                        <span class="stat-label">Triệu USD</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-category">Trung tâm thương mại</div>
-                            <h3>HVAC Trung Tâm Thương Mại</h3>
-                            <p>Hệ thống HVAC cách nhiệt cho trung tâm thương mại quy mô lớn với công nghệ chiller tiết kiệm năng lượng vượt trội.</p>
+                            <div class="project-category">Nhà máy TQ</div>
+                            <h3>Nhà Máy Pegatron - Giai Đoạn 3</h3>
+                            <p>Nhà máy sản xuất điện tử tại KCN DeepC, Hải Phòng. Thời gian: 12/2024 - 12/2025. Tổng thầu: ZYF. Thầu MEP: MIC - Yousing.</p>
                             <div class="project-features">
-                                <span class="feature-tag">HVAC System</span>
-                                <span class="feature-tag">Energy saving</span>
-                                <span class="feature-tag">Smart control</span>
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Báo giá</span>
                             </div>
                             <div class="project-details">
                                 <div class="detail-item">
                                     <i class="fas fa-calendar"></i>
-                                    <span>2023-2024</span>
+                                    <span>12/2024 - 12/2025</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>TP.HCM</span>
+                                    <span>Hải Phòng</span>
                                 </div>
                                 <div class="detail-item">
-                                    <i class="fas fa-store"></i>
-                                    <span>Thương mại</span>
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Trung Quốc</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Project 8: NM GOERTEK VINA -->
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <img src="da1.jpg" alt="GOERTEK" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">500</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">34.61</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy TQ</div>
+                            <h3>NM GOERTEK VINA SỐ 3 - GĐ 3</h3>
+                            <p>Nhà máy sản xuất thiết bị điện tử tại KCN Nam Sơn – Hạp Lĩnh, Bắc Ninh. Khởi công: 07/2024. Tổng thầu: Hợp Lực. Thầu MEP: Hợp Lực MEP.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Đang theo</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>07/2024 - 09/2025</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Bắc Ninh</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Trung Quốc</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 9: NM COOLER MASTER -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="COOLER MASTER" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -4389,33 +4872,162 @@
                                         <span class="stat-label">Triệu VND</span>
                                     </div>
                                     <div class="stat">
-                                        <span class="stat-number">5,000</span>
-                                        <span class="stat-label">m² kho lạnh</span>
+                                        <span class="stat-number">17.68</span>
+                                        <span class="stat-label">Triệu USD</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-category">Thực phẩm</div>
-                            <h3>Kho Lạnh Thực Phẩm Công Nghiệp</h3>
-                            <p>Hệ thống cách nhiệt chuyên dụng cho kho lạnh thực phẩm với nhiệt độ -25°C, đảm bảo chất lượng bảo quản tối ưu.</p>
+                            <div class="project-category">Nhà máy TQ</div>
+                            <h3>NM COOLER MASTER - Giai Đoạn 2</h3>
+                            <p>Nhà máy sản xuất linh kiện điện tử tại KCN Gia Bình, Bắc Ninh. Thời gian: 07/2026 - 07/2027. Tổng thầu: CJSC. Thầu MEP: SIGMA.</p>
                             <div class="project-features">
-                                <span class="feature-tag">Cold storage</span>
-                                <span class="feature-tag">-25°C</span>
-                                <span class="feature-tag">Food grade</span>
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Hoàn thiện</span>
                             </div>
                             <div class="project-details">
                                 <div class="detail-item">
                                     <i class="fas fa-calendar"></i>
-                                    <span>2023</span>
+                                    <span>07/2026 - 07/2027</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>Đồng Nai</span>
+                                    <span>Bắc Ninh</span>
                                 </div>
                                 <div class="detail-item">
-                                    <i class="fas fa-snowflake"></i>
-                                    <span>Thực phẩm</span>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Taiwan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 10: CRYSTAL HOLIDAYS VÂN ĐỒN -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="Vân Đồn" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">EVERLAND</span>
+                                        <span class="stat-label">Chủ đầu tư</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">DELTA</span>
+                                        <span class="stat-label">Tổng thầu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Resort</div>
+                            <h3>CRYSTAL HOLIDAYS HARBOUR VÂN ĐỒN</h3>
+                            <p>Khu đô thị cao cấp tại Ao Tiên, Vân Đồn, Quảng Ninh. Thầu MEP: TTSC. Liên hệ: Ms. Thu.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Đang theo</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Thi công</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Quảng Ninh</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-umbrella-beach"></i>
+                                    <span>Resort</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 11: KHÁCH SẠN TIẾN BỘ PLAZA -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="Tiến Bộ Plaza" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">270</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">SIGMA</span>
+                                        <span class="stat-label">Thầu MEP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Khách sạn</div>
+                            <h3>KHÁCH SẠN TIẾN BỘ PLAZA</h3>
+                            <p>Khách sạn cao cấp tại số 175 P. Nguyễn Thái Học, Cát Linh, Ba Đình, Hà Nội. Thầu MEP: SIGMA. Liên hệ: Mrs. Linh.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Hạng mục báo giá</span>
+                                <span class="feature-tag">270 triệu VND</span>
+                                <span class="feature-tag">Chốt đơn</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Thi công</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Hà Nội</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-hotel"></i>
+                                    <span>Khách sạn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 12: MỞ RỘNG NHÀ MÁY SHIN-ETSU -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="SHIN-ETSU" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">200</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">Obayashi</span>
+                                        <span class="stat-label">Tổng thầu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy Nhật</div>
+                            <h3>MỞ RỘNG NHÀ MÁY ĐẤT HIẾM SHIN-ETSU</h3>
+                            <p>Nhà máy sản xuất đất hiếm cao cấp tại KCN Đình Vũ, Hải Phòng. Thời gian: 10/2025 - 12/2026. Tổng thầu: Công Ty Obayashi Việt Nam.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Đang theo</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>10/2025 - 12/2026</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Hải Phòng</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Nhật Bản</span>
                                 </div>
                             </div>
                         </div>
@@ -5008,7 +5620,7 @@
                 <div class="footer-section">
                     <h4>Sản phẩm</h4>
                     <ul class="footer-links">
-                        <li><a href="#features">Gói đỡ PU Foam</a></li>
+                        <li><a href="#features">gối đỡ PU Foam</a></li>
                         <li><a href="#applications">Ứng dụng PU Foam</a></li>
                         <li><a href="#specs">Thông số kỹ thuật</a></li>
                         <li><a href="#contact">Báo giá</a></li>
@@ -5149,14 +5761,42 @@
                 }
             });
 
-            // Close mobile menu when clicking on a link
-            document.querySelectorAll('.nav-menu a').forEach(link => {
+            // Close mobile menu when clicking on a link (except dropdown toggle)
+            document.querySelectorAll('.nav-menu a:not(.dropdown-toggle)').forEach(link => {
                 link.addEventListener('click', () => {
                     navMenu.classList.remove('active');
                     const icon = mobileMenu.querySelector('i');
                     icon.classList.remove('fa-times');
                     icon.classList.add('fa-bars');
                 });
+            });
+        }
+
+        // Dropdown Menu Toggle for Mobile
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const navDropdown = document.querySelector('.nav-dropdown');
+
+        if (dropdownToggle && navDropdown) {
+            dropdownToggle.addEventListener('click', (e) => {
+                // Only prevent default and toggle on mobile
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    navDropdown.classList.toggle('active');
+                }
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768 && !navDropdown.contains(e.target)) {
+                    navDropdown.classList.remove('active');
+                }
+            });
+
+            // Reset dropdown state on window resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    navDropdown.classList.remove('active');
+                }
             });
         }
 
@@ -5447,8 +6087,5 @@
             }
         });
     </script>
-
-    <!-- Main JavaScript with Three.js 3D Visualization -->
-    <script type="module" src="/main.js"></script>
 </body>
 </html>
