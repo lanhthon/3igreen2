@@ -4139,177 +4139,268 @@
                 </div>
                 
                 <div class="projects-grid">
+                    <!-- Project 1: NM MEIKO Hòa Bình -->
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <img src="da1.jpg" alt="NM MEIKO Hòa Bình" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
-                                        <span class="stat-number">1,000</span>
-                                        <span class="stat-label">Tỷ đồng</span>
+                                        <span class="stat-number">700</span>
+                                        <span class="stat-label">Triệu VND</span>
                                     </div>
                                     <div class="stat">
-                                        <span class="stat-number">16,000</span>
-                                        <span class="stat-label">m² diện tích</span>
+                                        <span class="stat-number">NSN</span>
+                                        <span class="stat-label">Nhà thầu</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-category">Nhà máy điện tử</div>
-                            <h3>Nhà Máy Điện Tử Thông Minh Phenikaa</h3>
-                            <p>Hệ thống cách nhiệt PU Foam cho nhà máy điện tử thông minh công suất 4.5 tỷ linh kiện/năm tại Khu Công nghệ cao Hòa Lạc, Hà Nội.</p>
+                            <div class="project-category">Nhà máy Nhật</div>
+                            <h3>NM MEIKO Hòa Bình</h3>
+                            <p>Dự án cung cấp gối đỡ PU & cùm Ula cho nhà máy MEIKO tại KCN Bờ trái Sông Đà - Hòa Bình - Phú Thọ. Thầu MEP: NSN - Việt Nhật - Thành Đạt Phát - CTC.</p>
                             <div class="project-features">
-                                <span class="feature-tag">Cách nhiệt thông minh</span>
-                                <span class="feature-tag">Tiêu chuẩn ISO</span>
-                                <span class="feature-tag">Tiết kiệm năng lượng</span>
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Báo giá</span>
                             </div>
                             <div class="project-details">
                                 <div class="detail-item">
                                     <i class="fas fa-calendar"></i>
-                                    <span>2020-2022</span>
+                                    <span>Thi công</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Phú Thọ</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Nhật Bản</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: NM LITE-ON Quảng Ninh -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="NM LITE-ON" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">600</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">38.26</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy Đài Loan</div>
+                            <h3>NM LITE-ON VIỆT NAM - Giai Đoạn 1</h3>
+                            <p>Nhà máy sản xuất linh kiện điện tử tại KCN Sông Khoai, Quảng Ninh. Khởi công: 05/2025 - Hoàn thành: 06/2026. Tổng thầu cơ điện: Cơ (Taikisha) - Điện (Thăng Tiến).</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Báo giá</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>05/2025 - 06/2026</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Quảng Ninh</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Đài Loan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: NM NITTO Việt Nam -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="NM NITTO" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">400</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">25</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy Nhật</div>
+                            <h3>NM NITTO Việt Nam</h3>
+                            <p>Nhà máy sản xuất công nghệ cao tại KCN Thăng Long 2 - Hưng Yên. Thời gian: 12/2024 - 12/2025. Thầu MEP: Takasago - SAO BẮC.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Chốt đơn</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>12/2024 - 12/2025</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Hưng Yên</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Nhật Bản</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: NM TENMA Hạ Long -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="NM TENMA" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">29</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">TODA</span>
+                                        <span class="stat-label">Tổng thầu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy Nhật</div>
+                            <h3>NM TENMA HẠ LONG VIỆT NAM</h3>
+                            <p>Nhà máy sản xuất linh kiện điện tử tại KCN Sông Khoai, Quảng Ninh. Khởi công: 07/2025 - Hoàn thành: 06/2026. Thầu MEP: NSN - KINDEN.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Thi công</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>07/2025 - 06/2026</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Quảng Ninh</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Nhật Bản</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: TTTL Vin Cổ Loa -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="Vin Cổ Loa" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">1,000</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">VinGroup</span>
+                                        <span class="stat-label">Chủ đầu tư</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Building</div>
+                            <h3>Dự Án TTTL Vin Cổ Loa</h3>
+                            <p>Tổ hợp TTTM, Khách sạn & BV Vinmec tại Đông Anh - Hà Nội. Thời gian: 12/2024 - 12/2025. Tổng thầu: Vincons.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Chốt đơn</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>12/2024 - 12/2025</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span>Hà Nội</span>
                                 </div>
                                 <div class="detail-item">
-                                    <i class="fas fa-industry"></i>
-                                    <span>Điện tử</span>
+                                    <i class="fas fa-building"></i>
+                                    <span>Mixed-Use</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Project 6: THÁP MELIA Nha Trang -->
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <img src="da1.jpg" alt="Melia Nha Trang" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
-                                        <span class="stat-number">2</span>
-                                        <span class="stat-label">Tỷ USD</span>
+                                        <span class="stat-number">600</span>
+                                        <span class="stat-label">Triệu VND</span>
                                     </div>
                                     <div class="stat">
-                                        <span class="stat-number">1,500</span>
-                                        <span class="stat-label">MW công suất</span>
+                                        <span class="stat-number">KDI</span>
+                                        <span class="stat-label">Chủ đầu tư</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-category">Nhà máy điện LNG</div>
-                            <h3>Nhà Máy Nhiệt Điện LNG Nghi Sơn</h3>
-                            <p>Hệ thống cách nhiệt chuyên nghiệp cho nhà máy nhiệt điện LNG công suất 1,500MW tại Khu kinh tế Nghi Sơn, Thanh Hóa.</p>
+                            <div class="project-category">Khách sạn</div>
+                            <h3>THÁP MELIA HOTELS & RESORTS</h3>
+                            <p>Khách sạn 5 sao cao cấp tại Nha Trang. Chủ đầu tư: KDI Holdings. Tổng thầu: Hyundai E&C. Thầu MEP: Vân Khánh.</p>
                             <div class="project-features">
-                                <span class="feature-tag">Chiller system</span>
-                                <span class="feature-tag">Cách nhiệt LNG</span>
-                                <span class="feature-tag">Công nghệ Hàn Quốc</span>
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Chốt đơn</span>
                             </div>
                             <div class="project-details">
                                 <div class="detail-item">
                                     <i class="fas fa-calendar"></i>
-                                    <span>2027-2030</span>
+                                    <span>Đang thi công</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>Thanh Hóa</span>
+                                    <span>Nha Trang</span>
                                 </div>
                                 <div class="detail-item">
-                                    <i class="fas fa-bolt"></i>
-                                    <span>Năng lượng</span>
+                                    <i class="fas fa-hotel"></i>
+                                    <span>5 Sao</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Project 7: NM Pegatron GD3 -->
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
-                            <div class="project-overlay">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <span class="stat-number">25</span>
-                                        <span class="stat-label">Triệu EUR</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="stat-number">16,000</span>
-                                        <span class="stat-label">m² nhà xưởng</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-category">Panel cách nhiệt</div>
-                            <h3>Nhà Máy Panel Cách Nhiệt Kingspan</h3>
-                            <p>Dự án cách nhiệt cho nhà máy sản xuất panel cách nhiệt cao cấp tiêu chuẩn LEED Platinum tại KCN Phú Mỹ II, Bà Rịa - Vũng Tàu.</p>
-                            <div class="project-features">
-                                <span class="feature-tag">LEED Platinum</span>
-                                <span class="feature-tag">Panel PU</span>
-                                <span class="feature-tag">Châu Âu</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-calendar"></i>
-                                    <span>2022-2023</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Bà Rịa - VT</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-layer-group"></i>
-                                    <span>Panel</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card animate-on-scroll">
-                        <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
-                            <div class="project-overlay">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <span class="stat-number">2.2</span>
-                                        <span class="stat-label">Tỷ USD</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="stat-number">1,200</span>
-                                        <span class="stat-label">MW</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-category">Nhiệt điện than</div>
-                            <h3>Nhiệt Điện Than Vũng Áng II</h3>
-                            <p>Hệ thống cách nhiệt tổng thể cho nhà máy nhiệt điện than công nghệ cao tại Hà Tĩnh với các tiêu chuẩn môi trường nghiêm ngặt.</p>
-                            <div class="project-features">
-                                <span class="feature-tag">Chiller công nghiệp</span>
-                                <span class="feature-tag">Cooling tower</span>
-                                <span class="feature-tag">Nhật - Hàn</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-calendar"></i>
-                                    <span>2022-2025</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Hà Tĩnh</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-fire"></i>
-                                    <span>Nhiệt điện</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card animate-on-scroll">
-                        <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <img src="da1.jpg" alt="Pegatron" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -4317,41 +4408,85 @@
                                         <span class="stat-label">Triệu VND</span>
                                     </div>
                                     <div class="stat">
-                                        <span class="stat-number">8,000</span>
-                                        <span class="stat-label">m² diện tích</span>
+                                        <span class="stat-number">30</span>
+                                        <span class="stat-label">Triệu USD</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-category">Trung tâm thương mại</div>
-                            <h3>HVAC Trung Tâm Thương Mại</h3>
-                            <p>Hệ thống HVAC cách nhiệt cho trung tâm thương mại quy mô lớn với công nghệ chiller tiết kiệm năng lượng vượt trội.</p>
+                            <div class="project-category">Nhà máy TQ</div>
+                            <h3>Nhà Máy Pegatron - Giai Đoạn 3</h3>
+                            <p>Nhà máy sản xuất điện tử tại KCN DeepC, Hải Phòng. Thời gian: 12/2024 - 12/2025. Tổng thầu: ZYF. Thầu MEP: MIC - Yousing.</p>
                             <div class="project-features">
-                                <span class="feature-tag">HVAC System</span>
-                                <span class="feature-tag">Energy saving</span>
-                                <span class="feature-tag">Smart control</span>
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Báo giá</span>
                             </div>
                             <div class="project-details">
                                 <div class="detail-item">
                                     <i class="fas fa-calendar"></i>
-                                    <span>2023-2024</span>
+                                    <span>12/2024 - 12/2025</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>TP.HCM</span>
+                                    <span>Hải Phòng</span>
                                 </div>
                                 <div class="detail-item">
-                                    <i class="fas fa-store"></i>
-                                    <span>Thương mại</span>
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Trung Quốc</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Project 8: NM GOERTEK VINA -->
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="da1.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <img src="da1.jpg" alt="GOERTEK" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">500</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">34.61</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy TQ</div>
+                            <h3>NM GOERTEK VINA SỐ 3 - GĐ 3</h3>
+                            <p>Nhà máy sản xuất thiết bị điện tử tại KCN Nam Sơn – Hạp Lĩnh, Bắc Ninh. Khởi công: 07/2024. Tổng thầu: Hợp Lực. Thầu MEP: Hợp Lực MEP.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Đang theo</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>07/2024 - 09/2025</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Bắc Ninh</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Trung Quốc</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 9: NM COOLER MASTER -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="COOLER MASTER" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                             <div class="project-overlay">
                                 <div class="project-stats">
                                     <div class="stat">
@@ -4359,33 +4494,162 @@
                                         <span class="stat-label">Triệu VND</span>
                                     </div>
                                     <div class="stat">
-                                        <span class="stat-number">5,000</span>
-                                        <span class="stat-label">m² kho lạnh</span>
+                                        <span class="stat-number">17.68</span>
+                                        <span class="stat-label">Triệu USD</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-category">Thực phẩm</div>
-                            <h3>Kho Lạnh Thực Phẩm Công Nghiệp</h3>
-                            <p>Hệ thống cách nhiệt chuyên dụng cho kho lạnh thực phẩm với nhiệt độ -25°C, đảm bảo chất lượng bảo quản tối ưu.</p>
+                            <div class="project-category">Nhà máy TQ</div>
+                            <h3>NM COOLER MASTER - Giai Đoạn 2</h3>
+                            <p>Nhà máy sản xuất linh kiện điện tử tại KCN Gia Bình, Bắc Ninh. Thời gian: 07/2026 - 07/2027. Tổng thầu: CJSC. Thầu MEP: SIGMA.</p>
                             <div class="project-features">
-                                <span class="feature-tag">Cold storage</span>
-                                <span class="feature-tag">-25°C</span>
-                                <span class="feature-tag">Food grade</span>
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Hoàn thiện</span>
                             </div>
                             <div class="project-details">
                                 <div class="detail-item">
                                     <i class="fas fa-calendar"></i>
-                                    <span>2023</span>
+                                    <span>07/2026 - 07/2027</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>Đồng Nai</span>
+                                    <span>Bắc Ninh</span>
                                 </div>
                                 <div class="detail-item">
-                                    <i class="fas fa-snowflake"></i>
-                                    <span>Thực phẩm</span>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Taiwan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 10: CRYSTAL HOLIDAYS VÂN ĐỒN -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="Vân Đồn" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">EVERLAND</span>
+                                        <span class="stat-label">Chủ đầu tư</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">DELTA</span>
+                                        <span class="stat-label">Tổng thầu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Resort</div>
+                            <h3>CRYSTAL HOLIDAYS HARBOUR VÂN ĐỒN</h3>
+                            <p>Khu đô thị cao cấp tại Ao Tiên, Vân Đồn, Quảng Ninh. Thầu MEP: TTSC. Liên hệ: Ms. Thu.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Đang theo</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Thi công</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Quảng Ninh</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-umbrella-beach"></i>
+                                    <span>Resort</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 11: KHÁCH SẠN TIẾN BỘ PLAZA -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="Tiến Bộ Plaza" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">270</span>
+                                        <span class="stat-label">Triệu VND</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">SIGMA</span>
+                                        <span class="stat-label">Thầu MEP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Khách sạn</div>
+                            <h3>KHÁCH SẠN TIẾN BỘ PLAZA</h3>
+                            <p>Khách sạn cao cấp tại số 175 P. Nguyễn Thái Học, Cát Linh, Ba Đình, Hà Nội. Thầu MEP: SIGMA. Liên hệ: Mrs. Linh.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Hạng mục báo giá</span>
+                                <span class="feature-tag">270 triệu VND</span>
+                                <span class="feature-tag">Chốt đơn</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Thi công</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Hà Nội</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-hotel"></i>
+                                    <span>Khách sạn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 12: MỞ RỘNG NHÀ MÁY SHIN-ETSU -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="da1.jpg" alt="SHIN-ETSU" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+                            <div class="project-overlay">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">200</span>
+                                        <span class="stat-label">Triệu USD</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">Obayashi</span>
+                                        <span class="stat-label">Tổng thầu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Nhà máy Nhật</div>
+                            <h3>MỞ RỘNG NHÀ MÁY ĐẤT HIẾM SHIN-ETSU</h3>
+                            <p>Nhà máy sản xuất đất hiếm cao cấp tại KCN Đình Vũ, Hải Phòng. Thời gian: 10/2025 - 12/2026. Tổng thầu: Công Ty Obayashi Việt Nam.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Gối đỡ PU</span>
+                                <span class="feature-tag">Cùm Ula</span>
+                                <span class="feature-tag">Đang theo</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>10/2025 - 12/2026</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Hải Phòng</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Nhật Bản</span>
                                 </div>
                             </div>
                         </div>
