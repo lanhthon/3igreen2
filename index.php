@@ -363,6 +363,9 @@
         html {
             scroll-behavior: smooth;
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+            position: relative;
         }
 
         body {
@@ -371,6 +374,9 @@
             color: var(--text-primary);
             background: var(--white);
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+            position: relative;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -496,6 +502,9 @@
         /* Utility Classes */
         .section {
             padding: var(--space-24) 0;
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
         }
 
         .section-dark {
@@ -665,11 +674,14 @@
         /* Premium Industrial Hero */
         .hero {
             min-height: 100vh;
+            width: 100%;
+            max-width: 100vw;
             display: flex;
             align-items: center;
             background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
             position: relative;
             overflow: hidden;
+            overflow-x: hidden;
             padding: calc(var(--space-24) + 80px) 0 var(--space-24);
         }
 
@@ -771,6 +783,7 @@
         }
 
         .hero-content {
+            width: 100%;
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 var(--space-6);
@@ -2201,6 +2214,9 @@
             color: var(--white);
             padding: var(--space-24) 0 var(--space-8) 0;
             position: relative;
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
         }
 
         .footer-content {
@@ -2464,6 +2480,20 @@
 
         /* Mobile Optimization */
         @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                max-width: 100vw !important;
+            }
+
+            * {
+                max-width: 100%;
+            }
+
+            .section, .hero, footer {
+                overflow-x: hidden !important;
+                max-width: 100vw !important;
+            }
+
             .nav-menu {
                 position: fixed;
                 top: 80px;
