@@ -293,10 +293,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&subset=vietnamese&display=swap" rel="stylesheet">
 
     <!-- Browser Compatibility CSS -->
-    <link href="browser-compatibility.css" rel="stylesheet">
+    <link href="/browser-compatibility.css" rel="stylesheet">
 
     <!-- Browser Polyfills (load early for IE11 and old browsers) -->
-    <script src="browser-polyfills.js"></script>
+    <script src="/browser-polyfills.js"></script>
+
+    <!-- Import Map for Three.js -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
 
     <style>
         :root {
@@ -3761,6 +3771,14 @@
                     <p class="section-subtitle">Đa dạng các loại gối đỡ phù hợp với mọi nhu cầu công trình, từ dân dụng đến công nghiệp quy mô lớn</p>
                 </div>
 
+                <!-- 3D Visualization Section -->
+                <div class="canvas-container" style="width: 100%; height: 600px; margin: 3rem 0; position: relative; background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(10, 22, 40, 0.15);">
+                    <canvas id="c" style="width: 100%; height: 100%; display: block;"></canvas>
+                    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,0.95); padding: 1rem 2rem; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); backdrop-filter: blur(10px); text-align: center;">
+                        <p style="margin: 0; color: #2D3748; font-size: 0.9rem;"><i class="fas fa-mouse"></i> Kéo để xoay - <i class="fas fa-mouse-pointer"></i> Cuộn để zoom - <i class="fas fa-expand"></i> Xem chi tiết 3D</p>
+                    </div>
+                </div>
+
                 <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
                     <!-- Product 1: Gối đỡ vuông 2 mảnh -->
                     <div class="product-card animate-on-scroll" style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; border: 1px solid #E9ECEF;">
@@ -5417,5 +5435,8 @@
             }
         });
     </script>
+
+    <!-- Main JavaScript with Three.js 3D Visualization -->
+    <script type="module" src="/main.js"></script>
 </body>
 </html>
