@@ -2395,7 +2395,7 @@
 
         /* Footer - Modern Premium Industrial */
         footer {
-            background: var(--navy-dark);
+            background: #0a0a0a;
             color: var(--white);
             padding: var(--space-24) 0 var(--space-8) 0;
             position: relative;
@@ -2532,6 +2532,17 @@
             background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
             transform: translateY(-5px) scale(1.1);
             box-shadow: var(--shadow-hover);
+        }
+
+        /* Scroll to top button - Green theme */
+        .fab[onclick*="scrollToTop"] {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-green-dark));
+        }
+
+        .fab[onclick*="scrollToTop"]:hover {
+            background: linear-gradient(135deg, var(--primary-green-light), var(--primary-green));
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 30px rgba(148, 200, 66, 0.4);
         }
 
         .fab.phone {
