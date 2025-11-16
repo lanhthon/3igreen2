@@ -1340,6 +1340,7 @@
             font-size: 1.125rem;
             opacity: 0.9;
             line-height: 1.5;
+            color: var(--white);
         }
 
         /* Partners Logo Slider */
@@ -1829,6 +1830,7 @@
             font-weight: 700;
             margin: 0;
             letter-spacing: -0.01em;
+            color: var(--white);
         }
 
         .spec-list {
@@ -1843,6 +1845,7 @@
             padding: var(--space-3) 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 1rem;
+            color: var(--white);
         }
 
         .spec-list li:last-child {
@@ -2201,6 +2204,137 @@
             z-index: 2;
         }
 
+        /* Partners Section - Modern Premium Industrial */
+        .partners {
+            background: var(--off-white);
+            padding: var(--space-24) 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partners::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 600px;
+            height: 600px;
+            background: var(--primary-green);
+            opacity: 0.03;
+            border-radius: 50%;
+            filter: blur(120px);
+        }
+
+        .partners-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .partners h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--navy-dark);
+            margin-bottom: var(--space-4);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .partners-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-16);
+            opacity: 0.9;
+        }
+
+        .partners-slider {
+            position: relative;
+            overflow: hidden;
+            padding: var(--space-8) 0;
+        }
+
+        .partners-track {
+            display: flex;
+            gap: var(--space-12);
+            animation: scroll-partners 30s linear infinite;
+        }
+
+        .partners-track:hover {
+            animation-play-state: paused;
+        }
+
+        .partner-logo {
+            flex-shrink: 0;
+            width: 180px;
+            height: 100px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--light-gray);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partner-logo::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-green), var(--accent-yellow));
+            opacity: 0;
+            transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .partner-logo:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green);
+        }
+
+        .partner-logo:hover::after {
+            opacity: 0.05;
+        }
+
+        .partner-logo img,
+        .partner-logo span {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: grayscale(1);
+            transition: filter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .partner-logo span {
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--navy-dark);
+        }
+
+        .partner-logo:hover img,
+        .partner-logo:hover span {
+            filter: grayscale(0);
+        }
+
+        @keyframes scroll-partners {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
         /* Contact Section - Modern Premium Industrial */
         .contact {
             background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
@@ -2238,6 +2372,7 @@
             margin-bottom: var(--space-8);
             line-height: 1.2;
             letter-spacing: -0.02em;
+            color: var(--white);
         }
 
         .contact-description {
@@ -2245,6 +2380,7 @@
             margin-bottom: var(--space-8);
             opacity: 0.9;
             line-height: 1.7;
+            color: var(--white);
         }
 
         .contact-details {
@@ -2288,6 +2424,7 @@
             font-size: 1.125rem;
             font-weight: 700;
             margin-bottom: var(--space-2);
+            color: var(--white);
         }
 
         .contact-item div p {
@@ -2295,6 +2432,7 @@
             margin: 0;
             font-size: 1rem;
             line-height: 1.5;
+            color: var(--white);
         }
 
         .contact-form {
@@ -2313,6 +2451,7 @@
             margin-bottom: var(--space-8);
             text-align: center;
             letter-spacing: -0.02em;
+            color: var(--white);
         }
 
         .form-row {
@@ -2331,6 +2470,7 @@
             margin-bottom: var(--space-3);
             font-weight: 600;
             font-size: 1rem;
+            color: var(--white);
         }
 
         .form-group input,
@@ -5470,6 +5610,76 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container">
+                <div class="partners-content">
+                    <h2 class="animate-on-scroll fade-in">Đối Tác Tin Cậy</h2>
+                    <p class="partners-subtitle animate-on-scroll fade-in">
+                        Được tin tưởng bởi các doanh nghiệp hàng đầu trong ngành xây dựng và sản xuất
+                    </p>
+
+                    <div class="partners-slider">
+                        <div class="partners-track">
+                            <div class="partner-logo">
+                                <span><i class="fas fa-building"></i> Vingroup</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-industry"></i> Hòa Phát</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-home"></i> Vinhomes</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-city"></i> Novaland</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-warehouse"></i> Kizuna</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-boxes"></i> CJ Logistics</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-truck"></i> Giao Hàng Nhanh</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-store"></i> BigC</span>
+                            </div>
+                            <!-- Duplicate để tạo hiệu ứng scroll liên tục -->
+                            <div class="partner-logo">
+                                <span><i class="fas fa-building"></i> Vingroup</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-industry"></i> Hòa Phát</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-home"></i> Vinhomes</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-city"></i> Novaland</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-warehouse"></i> Kizuna</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-boxes"></i> CJ Logistics</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-truck"></i> Giao Hàng Nhanh</span>
+                            </div>
+                            <div class="partner-logo">
+                                <span><i class="fas fa-store"></i> BigC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: var(--space-8); color: var(--text-secondary); font-size: 0.95rem; opacity: 0.8;">
+                        <i class="fas fa-handshake"></i> Hợp tác cùng phát triển - Uy tín tạo nên giá trị
+                    </p>
                 </div>
             </div>
         </section>
